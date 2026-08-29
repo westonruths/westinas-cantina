@@ -4,9 +4,14 @@ A public, component-based family recipe menu for building meals from the Ruths h
 
 ## Menu model
 
-The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—then filters recipes by reusable component type. Dinner is intentionally organized into **Proteins**, **Veggies**, **Carbs**, **Soups**, and **Sauces & Extras**, rather than restaurant-style “mains” and “appetizers.”
+The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—with two restaurant-style browsing modes:
 
-When planning a week, check the live kitchen inventory against this menu first. Explore new recipes only when the existing menu has less than roughly 50% ingredient overlap, as directed by the family workflow.
+- **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
+- **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
+
+Every menu item can be dragged into the persistent seven-day weekly board, or added through the day selector for touch/mobile use. The board stores only in the browser’s local storage; it is not published.
+
+The menu is sorted by current inventory fit within each section. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
 ## Data provenance
 
