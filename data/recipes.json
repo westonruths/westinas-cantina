@@ -24,7 +24,25 @@
       "private_attachment": false,
       "golden_note": "Golden CSA pepper side/appetizer when shishito or Padrón peppers are available.",
       "notes": "Added from the household golden-recipe registry.",
-      "image_url": "https://cookieandkate.com/images/2019/08/charred-shishito-peppers-recipe-3.jpg"
+      "image_url": "https://cookieandkate.com/images/2019/08/charred-shishito-peppers-recipe-3.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 ounces (3 heaping cups) shishito peppers",
+        "2 teaspoons extra-virgin olive oil or avocado oil",
+        "Lemon wedge, optional",
+        "Salt, preferably flaky sea salt or kosher salt, to taste"
+      ],
+      "recipe_steps": [
+        "Rinse and pat the peppers dry on a clean tea towel. Transfer the peppers to a medium bowl, drizzle in the oil, and toss until the peppers are evenly coated. Set aside.",
+        "Preheat a medium skillet over medium heat until it’s hot enough that a drop of water sizzles and evaporates quickly on contact. Add the peppers and let them cook, stirring every minute or so (not too often), until they are tender with charred spots, about 8 to 12 minutes.",
+        "Transfer the peppers to a serving plate. Spritz with a lemon wedge, if desired. Sprinkle with salt, to taste (don’t skimp). Serve with a little bowl on the side for the pepper stems."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT10M",
+        "totalTime": "PT15M"
+      }
     },
     {
       "id": "overnight-focaccia",
@@ -48,7 +66,46 @@
       "notes": "Added from the household golden-recipe registry.",
       "family": "Focaccia",
       "variant_label": "Overnight Focaccia",
-      "image_url": "https://art.whisk.com/image/upload/fl_progressive,h_630,w_1200,c_fill/v1662722214/v3/user-recipes/be4a05c555d30f4915c4ffa1722af706.jpg"
+      "image_url": "https://art.whisk.com/image/upload/fl_progressive,h_630,w_1200,c_fill/v1662722214/v3/user-recipes/be4a05c555d30f4915c4ffa1722af706.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "500g white bread flour (12% protein content or higher, see notes on flour below",
+        "420ml slightly warm water, just a bit warmer than your body temperature",
+        "4g 1 teaspoon) instant yeast If using âdry activeâ yeast, you must add 1g (1/4 tsp) extra and mix it with the warm water and honey and let it bloom/become frothy for 5-10 minutes before adding other ingredients",
+        "5g honey (1 teaspoon) (sub maple syrup or granulated sugar to make vegan)",
+        "15ml (1 Tablespoon) extra virgin olive oil",
+        "10g (2 teaspoons) fine sea salt",
+        "Extra virgin olive oil, for drizzling",
+        "Flaky sea salt, to finish",
+        "Olives",
+        "Rosemary",
+        "peppers",
+        "cherry tomatoes",
+        "herbs",
+        "cheese",
+        "jalapenos",
+        "onions",
+        "pesto",
+        "chimichurri"
+      ],
+      "recipe_steps": [
+        [
+          "Please see the notes below the recipe about the importance of using bread flour for this recipe and how to adapt the recipe for plain/all purpose flour if bread flour isnât available."
+        ],
+        "Day One - Dough Mixing Day",
+        "Day Two - Baking Day",
+        "Dimpling, Topping + Baking Your Focaccia",
+        "NOTES ON FREEZING FOCACCIA",
+        "NOTES ON FLOUR",
+        "NOTES ON EQUIPMENT",
+        "NOTES ON YEAST"
+      ],
+      "recipe_yield": "12",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT20M",
+        "totalTime": "PT40M"
+      }
     },
     {
       "id": "twice-cooked-pork-hui-guo-rou",
@@ -70,7 +127,31 @@
       "private_attachment": false,
       "golden_note": "Intentional richer Sichuan pork-belly dinner.",
       "notes": "Added from the household golden-recipe registry.",
-      "image_url": "https://redhousespice.com/wp-content/uploads/2017/06/Twice-cooked-pork-5-scaled.jpg"
+      "image_url": "https://redhousespice.com/wp-content/uploads/2017/06/Twice-cooked-pork-5-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "300 g pork belly, in one piece (10oz)",
+        "5 slices ginger",
+        "2 teaspoon cooking oil",
+        "1 tablespoon Sichuan chilli bean paste (see note 1)",
+        "1 tablespoon fermented black beans (Dou Chi, 豆豉) (see note 2)",
+        "3 cloves garlic, sliced",
+        "1 small leek, cut diagonally (see note 3)",
+        "2 fresh red chili peppers, cut diagonally",
+        "1 teaspoon light soy sauce",
+        "1 teaspoon Shaoxing rice wine",
+        "1 pinch sugar"
+      ],
+      "recipe_steps": [
+        "Precook the pork",
+        "Stir-fry the dish"
+      ],
+      "recipe_yield": "2 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT35M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "hasselback-potatoes",
@@ -92,7 +173,29 @@
       "private_attachment": false,
       "notes": "",
       "golden_note": "Special-occasion or elevated potato side dish.",
-      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2022/12/hasselback-potatoes-1.jpg"
+      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2022/12/hasselback-potatoes-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "6 medium Yukon Gold potatoes",
+        "Extra-virgin olive oil",
+        "Sea salt and freshly ground black pepper",
+        "Fresh sage leaves",
+        "1 recipe Garlic Butter (melted)",
+        "Fresh parsley (for serving)",
+        "Red pepper flakes (for serving)"
+      ],
+      "recipe_steps": [
+        "Preheat the oven to 425°F and line a baking sheet with parchment paper.",
+        "Place one of the potatoes on a cutting board and lay butter knives or chopsticks along both of its long sides. Use a sharp knife to cut the potato crosswise into ⅛-inch-thick slices, stopping when your knife reaches the butter knives or chopsticks so that the potato stays intact at the bottom. Repeat with the remaining potatoes.",
+        "Place the potatoes on the baking sheet. Drizzle with olive oil, sprinkle with salt and pepper, and use your hands to coat, doing your best to get the oil and seasonings in between the potato slices. Slide a sage leaf into each of the cracks between the potato slices. Drizzle with a little more olive oil and roast for 50 minutes.",
+        "Remove the potatoes from the oven and brush with the garlic butter. Roast for another 25 minutes, or until the potatoes are tender in the middle and crisp around the edges. Season to taste with salt and pepper and top with parsley and red pepper flakes. Serve with more garlic butter on the side."
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT75M",
+        "totalTime": "PT95M"
+      }
     },
     {
       "id": "korean-bbq-salad",
@@ -123,7 +226,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "golden_note": "Korean BBQ lettuce salad standard."
+      "golden_note": "Korean BBQ lettuce salad standard.",
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "1 bunch green or red leaf lettuce (about 8–9 oz)",
+        "2 garlic cloves, minced",
+        "1 green onion, chopped",
+        "¼ cup onion, thinly sliced",
+        "2 Tbsp soy sauce",
+        "1 tsp fish sauce or salt",
+        "1 tsp sugar",
+        "1 Tbsp white vinegar",
+        "2 Tbsp Korean hot pepper flakes",
+        "1 Tbsp toasted sesame oil",
+        "1 Tbsp toasted sesame seeds"
+      ],
+      "recipe_steps": [
+        "Wash and drain the lettuce well, then tear it into bite-size pieces.",
+        "Mix garlic, green onion, onion, soy sauce, fish sauce, sugar, vinegar, hot pepper flakes, and sesame oil until the sugar dissolves.",
+        "Add the lettuce and gently mix by hand.",
+        "Sprinkle with sesame seeds and serve immediately."
+      ],
+      "recipe_yield": "Serves 4",
+      "recipe_timings": {
+        "totalTime": "about 15 minutes"
+      },
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
+      "content_note": "Recovered from direct Maangchi recipe text."
     },
     {
       "id": "steamed-egg",
@@ -146,7 +275,33 @@
       "private_attachment": false,
       "notes": "",
       "golden_note": "Silky steamed-egg reference recipe.",
-      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/c8a76c5ab9896ab1d10be90a72a1f3ca5565b6d8-6000x3375.jpg"
+      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/c8a76c5ab9896ab1d10be90a72a1f3ca5565b6d8-6000x3375.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "4 egg",
+        "2 cup warm water",
+        "2 stalk scallions",
+        "0.5 teaspoon salt",
+        "0.5 teaspoon chicken bouillon",
+        "1 tbsp oil",
+        "1 dash white pepper"
+      ],
+      "recipe_steps": [
+        "First, we chop our scallions to be added as garnish at the end. This gives our dish more color and flavor.",
+        "Put the steamer rack in the wok, and place your bowl on top of the rack.",
+        "Crack the eggs into a bowl, and add salt, chicken bouillon, and oil. Start mixing the eggs with a fork or chopstick.",
+        "This is a really important step that determines the steamed eggs’ final fate of silkiness.",
+        "Make sure that the water is boiling in the wok and that your stove is still on high heat.",
+        "After you cover the wok, leave the stove on high heat until the water starts boiling again. This should take anywhere from 1 to 4 minutes.",
+        "Once the dish is done steaming, remove the lid. Add scallion and white pepper to taste.",
+        "We're done! It's time to remove the steamed eggs from the wok."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT10M",
+        "totalTime": "PT15M"
+      }
     },
     {
       "id": "tuscan-kale-salad",
@@ -176,7 +331,29 @@
       "private_attachment": false,
       "notes": "",
       "golden_note": "Golden CSA lacinato-kale salad reference.",
-      "image_url": "https://static01.nyt.com/images/2014/02/20/dining/recipes-kalewithpecorino/recipes-kalewithpecorino-facebookJumbo-v2.jpg"
+      "image_url": "https://static01.nyt.com/images/2014/02/20/dining/recipes-kalewithpecorino/recipes-kalewithpecorino-facebookJumbo-v2.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 bunch Tuscan kale (also known as black or lacinato kale)",
+        "1 thin slice country bread (part whole-wheat or rye is nice), or ¼ cup homemade bread crumbs (coarse)",
+        "½ garlic clove, finely chopped",
+        "¼ cup finely grated pecorino cheese, more for garnish",
+        "3 tablespoons extra virgin olive oil, more for garnish",
+        "Freshly squeezed juice of 1 lemon",
+        "¼ teaspoon kosher salt",
+        "⅛ teaspoon red pepper flakes",
+        "Freshly ground black pepper, to taste"
+      ],
+      "recipe_steps": [
+        "Trim bottom 2 inches off kale stems and discard. Slice kale, including ribs, into ¾-inch-wide ribbons. You should have 4 to 5 cups. Place kale in a large bowl.",
+        "If using bread, toast it until golden on both sides. Tear it into small pieces and grind in a food processor until mixture forms coarse crumbs.",
+        "Using a mortar and pestle, or with the back of a knife, pound garlic into a paste. Transfer garlic to a small bowl. Add ¼ cup cheese, 3 tablespoons oil, lemon juice, salt, pepper flakes and black pepper, and whisk to combine. Pour dressing over kale and toss very well to thoroughly combine (dressing will be thick and need lots of tossing to coat leaves).",
+        "Let salad sit for 5 minutes, then serve topped with bread crumbs, additional cheese and a drizzle of oil."
+      ],
+      "recipe_yield": "2 to 4 servings",
+      "recipe_timings": {
+        "totalTime": "PT20M"
+      }
     },
     {
       "id": "baby-bok-choy",
@@ -199,7 +376,28 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://static01.nyt.com/images/2023/12/14/multimedia/SS-Sauteed-Bok-Choy-fhjz/SS-Sauteed-Bok-Choy-fhjz-facebookJumbo.jpg"
+      "image_url": "https://static01.nyt.com/images/2023/12/14/multimedia/SS-Sauteed-Bok-Choy-fhjz/SS-Sauteed-Bok-Choy-fhjz-facebookJumbo.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 tablespoons neutral cooking oil, like canola",
+        "2 garlic cloves, peeled and minced",
+        "1 ½-inch piece ginger root, peeled and minced",
+        "¼ teaspoon red-pepper flakes, or to taste",
+        "4 bunches of baby bok choy, approximately 1½ pounds, cleaned, with the ends trimmed",
+        "1 tablespoon soy sauce",
+        "1 tablespoon chicken stock or water",
+        "Toasted sesame oil for drizzling"
+      ],
+      "recipe_steps": [
+        "In a large sauté pan with a lid, heat oil over medium-high heat until it starts to shimmer. Add garlic, ginger and red-pepper flakes and cook, stirring constantly, until fragrant, about 45 seconds.",
+        "Add bok choy and stir carefully to cover with oil, then cook for approximately 2 minutes. Add soy sauce, stock or water, then cover pan and cook for approximately 2 minutes more, until steam begins to escape from beneath the lid of the pan.",
+        "Uncover and continue to cook until liquid is close to evaporated and stalks are soft to the touch, approximately 3 minutes more.",
+        "Remove to a warmed platter and drizzle with sesame oil."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "totalTime": "PT15M"
+      }
     },
     {
       "id": "dan-dan-noodles",
@@ -229,7 +427,47 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2014/11/dan-dan-noodles-12.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2014/11/dan-dan-noodles-12.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 tablespoons Sichuan peppercorns",
+        "1 cinnamon stick",
+        "2 star anise",
+        "1 cup oil",
+        "1/4 cup crushed red pepper flakes",
+        "3 teaspoons oil",
+        "8 oz. ground pork",
+        "2 teaspoons sweet bean sauce or hoisin sauce",
+        "2 teaspoons shaoxing wine",
+        "1 teaspoon dark soy sauce",
+        "1/2 teaspoon five spice powder",
+        "1/3 cup sui mi ya cai",
+        "2 tablespoons sesame paste (tahini)",
+        "3 tablespoons soy sauce",
+        "2 teaspoons sugar",
+        "1/4 teaspoon five spice powder",
+        "1/2 teaspoon Sichuan peppercorn powder ((we ground whole Sichuan peppercorns in a mortar and pestle))",
+        "1/2 cup of your prepared chili oil ((scary, but yes!))",
+        "2 cloves garlic ((very finely minced))",
+        "¼ cup hot cooking water from the noodles",
+        "1 pound fresh or dried white noodles ((medium thickness))",
+        "1 small bunch leafy greens ((spinach, bok choy, or choy sum))",
+        "chopped peanuts",
+        "chopped scallion ((optional))"
+      ],
+      "recipe_steps": [
+        "To make the chili oil: In a small pot, add the Sichuan peppercorns, cinnamon stick, star anise, and oil. Over medium low heat, slowly heat to 325 degrees, and then turn off the heat. Wait 6 - 7 minutes, then remove the peppercorns, cinnamon stick, and star anise with a slotted spoon. Add the crushed red pepper flakes and allow them to steep in the hot oil. It should start smelling fragrant, almost like popcorn. Allow the oil to cool. This makes more chili oil than you’ll need, but you’ll be glad to have it on hand for use in other dishes. Store in a glass jar and keep refrigerated.",
+        "To make the meat mixture: In a wok, heat a teaspoon of oil over medium heat, and brown the ground pork. Add the sweet bean sauce, shaoxing wine, dark soy sauce, and five spice powder. Cook until all the liquid is evaporated. Set aside. Heat the other 2 teaspoons of oil in the wok over medium heat, and sautee the sui mi ya cai (pickled vegetables) for a few minutes. Set aside.",
+        "To make the sauce: Mix together all the sauce ingredients. Taste and adjust seasoning if you like. You can loosen it with more hot water, add more Sichuan peppercorn powder, etc.",
+        "To prepare the noodles and veggies: Cook the noodles according to package directions and drain. Blanch the greens in the noodle water, and drain.",
+        "Divide the sauce among six bowls (or four if you want larger servings), followed by the noodles and the leafy greens. Add the cooked pork and sui mi ya cai over the top. Sprinkle with chopped peanuts (optional) and scallions.",
+        "Mix everything together and enjoy!"
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "cookTime": "PT90M",
+        "totalTime": "PT90M"
+      }
     },
     {
       "id": "egg-drop-soup",
@@ -256,7 +494,32 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/egg-drop-soup-4.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/egg-drop-soup-4.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "4 cups chicken stock ((about 1 liter, organic or homemade preferred!))",
+        "1/2 teaspoon sesame oil",
+        "3/4 teaspoon salt",
+        "1/8 teaspoon sugar",
+        "1/8 teaspoon white pepper",
+        "1/2 teaspoon turmeric",
+        "3 tablespoons cornstarch ((mixed with 1/3 cup water))",
+        "3 eggs ((lightly beaten))",
+        "1 scallion ((chopped))",
+        "1/4 teaspoon MSG ((increase amount to personal preference))"
+      ],
+      "recipe_steps": [
+        "Bring the chicken stock to a simmer in a medium soup pot. Stir in the sesame oil, salt, sugar, white pepper, and MSG (if using). Add in the turmeric or 5 drops of yellow food coloring, if using. This will give the soup that rich restaurant-style yellow color, but it is optional. Taste the soup, and adjust the seasoning if needed.",
+        "Next add the cornstarch and water mixture. Make sure the cornstarch and water is mixed well, as the cornstarch settles very quickly. Stir the soup continuously as you drizzle in the slurry, or you'll get clumps of cooked starch in your soup. Use more or less starch if you like a thicker or thinner soup. You can also add the starch in a couple small batches, let the soup simmer for a couple of minutes, then check to see if the consistency is to your liking.",
+        "Now we're ready for the most exciting part: the egg. This recipe calls for the egg to be lightly beaten, which results in both white and yellow egg swirls. The speed at which you stir the soup when adding the egg also determines whether you get large “egg flowers” or small egg flowers (i.e. swirly bits of egg). Use a ladle to stir the soup in a circular motion, and slowly drizzle in the egg until you have added it all.",
+        "Ladle the soup into bowls, top with scallions, and serve!"
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT10M",
+        "totalTime": "PT15M"
+      }
     },
     {
       "id": "fettuccine-alfredo",
@@ -281,7 +544,30 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "24 ounces dry fettuccine pasta",
+        "1 cup butter",
+        "0.75 pint heavy cream",
+        "1 dash garlic salt",
+        "salt and pepper to taste",
+        "0.75 cup grated Romano cheese",
+        "0.5 cup grated Parmesan cheese"
+      ],
+      "recipe_steps": [
+        "Gather all ingredients.",
+        "Fill a large pot with lightly salted water and bring to a rolling boil. Cook fettuccine at a boil until tender yet firm to the bite, about 8 minutes. Drain.",
+        "Heat butter and cream in a large saucepan over low heat until butter melted; add garlic salt, salt, and black pepper.",
+        "Increase the heat to medium; stir in Romano and Parmesan cheeses until melted and sauce has thickened.",
+        "Add cooked pasta to sauce; toss until thoroughly coated. Serve immediately."
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT15M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "foccacia-bread",
@@ -309,7 +595,13 @@
       "private_attachment": false,
       "notes": "",
       "family": "Focaccia",
-      "variant_label": "Foccacia Bread"
+      "variant_label": "Foccacia Bread",
+      "content_status": "unavailable",
+      "recipe_ingredients": [],
+      "recipe_steps": [],
+      "recipe_yield": "",
+      "recipe_timings": {},
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
     },
     {
       "id": "grilled-artichokes",
@@ -336,7 +628,30 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://homecookedharvest.com/wp-content/uploads/2021/04/Grilled-Artichoke-Recipe-C.jpg"
+      "image_url": "https://homecookedharvest.com/wp-content/uploads/2021/04/Grilled-Artichoke-Recipe-C.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1/2 cup mayonnaise",
+        "2 tablespoons lemon juice (freshly squeezed)",
+        "2 large garlic cloves (1 teaspoon, minced)",
+        "1 tablespoon fresh parsley (minced)",
+        "salt &amp; pepper (to taste)",
+        "4 artichokes (fresh)",
+        "2 tablespoons olive oil",
+        "1 tablespoon lemon juice (freshly squeezed)",
+        "pinch of salt",
+        "pepper (freshly ground)"
+      ],
+      "recipe_steps": [
+        "Easy Lemon Aioli",
+        "Grilled Artichokes"
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT45M",
+        "totalTime": "PT60M"
+      }
     },
     {
       "id": "hainanese-chicken-rice",
@@ -363,7 +678,66 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/154660.jpg"
+      "image_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/154660.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 lb whole chicken, giblets removed",
+        "¼ cup kosher salt, divided",
+        "4 inch pieces fresh ginger, peeled and cut into ¼-inch (6 mm) slices",
+        "1 bunch fresh scallion",
+        "1 gal cold water, plus more as needed",
+        "2 tablespoons sesame oil",
+        "¼ cup sesame oil",
+        "2 tablespoons chicken fat, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon fresh ginger, minced",
+        "1 teaspoon kosher salt",
+        "2 cups long grain rice, rinsed and drained",
+        "2 cups reserved chicken poaching broth",
+        "2 tablespoons sambal",
+        "2 tablespoons sriracha",
+        "2 teaspoons sugar",
+        "1 tablespoon garlic, minced",
+        "1 tablespoon fresh ginger, minced",
+        "1 tablespoon lime juice",
+        "2 tablespoons reserved chicken poaching broth",
+        "2 tablespoons fresh ginger, grated",
+        "2 tablespoons garlic, finely minced",
+        "kosher salt, to taste",
+        "3 tablespoons peanut oil",
+        "1 tablespoon rice vinegar",
+        "reserved fried garlic and ginger",
+        "1 tablespoon oyster sauce",
+        "3 tablespoons dark sweet soy sauce",
+        "1 tablespoon light soy sauce",
+        "2 tablespoons reserved chicken poaching broth",
+        "2 cucumbers, thinly sliced, for serving",
+        "1 bunch fresh cilantro, for serving"
+      ],
+      "recipe_steps": [
+        "To clean the chicken, rub all over with a handful of kosher salt, getting rid of any loose skin. Rinse the chicken well inside and out. Pat dry with paper towels.",
+        "Remove any excess fat from the chicken and set aside for later.",
+        "Season the chicken generously with salt. Stuff the chicken cavity with the ginger slices and scallions.",
+        "Place the chicken in a large stock pot, cover with cold water by 1 inch (2 cm), and season with salt to taste.",
+        "Bring to a boil over high heat, then immediately reduce the heat to low to maintain a simmer. Cover and cook for about 30 minutes, or until the internal temperature of the chicken reaches 165°F (75°C). Remove the pot from the heat.",
+        "Remove the chicken from the pot, reserving the poaching liquid for later, and transfer to an ice bath for 5 minutes to stop the cooking process and to keep the chicken skin springy. Discard the ginger and green onion.",
+        "After it’s cooled, pat the chicken dry with paper towels and rub all over with sesame oil. This will help prevent the chicken from drying out.",
+        "In a large wok or skillet, heat ¼ cup (60 ml) of sesame oil over medium-high heat. Add 2 tablespoons of reserved chopped chicken fat, the garlic, ginger, and salt, and fry until aromatic, about 10 minutes.",
+        "Reserve ¼ of the fried garlic mixture, then add the rice to the remaining fried garlic and stir to coat. Cook for 3 minutes.",
+        "Transfer the rice to a rice cooker and add 2 cups (480 ml) of reserved poaching broth. Steam the rice for 60 minutes, or until tender.",
+        "While the rice is cooking, carve the chicken for serving.",
+        "Make the chili sauce: combine the sambal, Sriracha, sugar, garlic, ginger, lime juice, and chicken broth in a small bowl and stir to incorporate.",
+        "Make the ginger garlic sauce: in a small bowl, combine the ginger, garlic, salt, peanut oil, and rice vinegar, and stir to incorporate.",
+        "Make the soy sauce: in a small bowl, combine the reserved fried garlic and ginger with the oyster sauce, dark soy sauce, light soy sauce, and chicken broth, and stir to incorporate.",
+        "Serve the sliced chicken with the rice, dipping sauces, sliced cucumbers, and fresh cilantro.",
+        "Enjoy!"
+      ],
+      "recipe_yield": "6 servings",
+      "recipe_timings": {
+        "prepTime": "PT1H",
+        "cookTime": "PT2H",
+        "totalTime": "PT3H"
+      }
     },
     {
       "id": "heirloom-tomato-salad",
@@ -390,7 +764,34 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://diethood.com/wp-content/uploads/2020/07/Heirloom-Tomatoes-Salad-5.jpg"
+      "image_url": "https://diethood.com/wp-content/uploads/2020/07/Heirloom-Tomatoes-Salad-5.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 pound heirloom tomatoes (sliced into 1/2-inch wedges)",
+        "1 cup colored grape tomatoes (halved)",
+        "sea salt (or kosher salt, to taste)",
+        "fresh ground black pepper (to taste)",
+        "½ cup thinly sliced red onions",
+        "2 tablespoons extra virgin olive oil",
+        "2 to 3 teaspoons balsamic vinegar (or to taste)",
+        "1 clove garlic (minced )",
+        "⅓ cup crumbled feta cheese",
+        "2 tablespoons chopped fresh basil",
+        "1 tablespoon chopped fresh parsley"
+      ],
+      "recipe_steps": [
+        "Arrange tomatoes in a salad bowl and sprinkle with salt, and pepper.",
+        "Add onions over the tomatoes.",
+        "In a small mixing bowl combine olive oil, balsamic vinegar, and garlic; drizzle over salad and gently toss to combine.",
+        "Taste for salt and/or vinegar; adjust to taste.",
+        "Top the salad with crumbled feta.",
+        "Garnish with chopped basil and parsley. Serve and enjoy!"
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "totalTime": "PT10M"
+      }
     },
     {
       "id": "herb-roasted-rack-of-lamb",
@@ -413,7 +814,34 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://coupleinthekitchen.com/wp-content/uploads/2022/08/Herb-Roasted-Rack-of-Lamb-Recipe-12.jpg"
+      "image_url": "https://coupleinthekitchen.com/wp-content/uploads/2022/08/Herb-Roasted-Rack-of-Lamb-Recipe-12.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 rack of lamb, at room temperature",
+        "3 tbsp grape seed oil",
+        "1 tbsp rosemary leaves, de-stemmed and finely chopped (about 3 sprigs)",
+        "1 tbsp thyme leaves, de-stemmed and finely chopped (about 6 sprigs)",
+        "1/4 cup beef stock",
+        "2 Tbsp butter",
+        "Salt and pepper"
+      ],
+      "recipe_steps": [
+        "Preheat the oven to 450 F. Pat the lamb dry with paper towel and season well with salt and pepper",
+        "Coat the lamb with 2 tbsp of a high smoke point oil, such as grape seed oil, and cover with the minced herbs.",
+        "Heat another tbsp of oil in a frying pan over medium high heat, then add the lamb, fat-side down. Leave the meat to cook for 2-3 mins until seared.",
+        "Sear the ends for a minute, then transfer to a grill rack set over a baking dish or tray (to catch the excess fat and juices).",
+        "Roast the lamb until the meat reaches 130 F internal temp for about 15 to 20 mins (for medium rare), then transfer to a chopping board, wrap in foil and set aside to rest for 10 mins.",
+        "Meanwhile, pour the lamb renderings from the bottom of a roasting pan and add 2 tbsp butter and ¼ cup of beef stock.",
+        "Whisk to heat over a medium heat. Simmer for 3-5 mins to reduce, or until the sauce can coat a spoon.",
+        "Season to taste with salt and pepper. Keep the sauce warm over a very low heat if necessary.",
+        "Carve the lamb into chops and serve with the sauce."
+      ],
+      "recipe_yield": "8",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT20M",
+        "totalTime": "PT35M"
+      }
     },
     {
       "id": "italian-wedding-soup",
@@ -444,7 +872,38 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2025/03/italian-wedding-soup-04.jpg"
+      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2025/03/italian-wedding-soup-04.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 oz. lean ground beef",
+        "8 oz. ground pork",
+        "1/2 cup fresh white bread crumbs* ((from fresh bread not dried))",
+        "1/4 cup chopped fresh parsley",
+        "1 1/2 tsp minced fresh oregano ((or 3/4 tsp dried))",
+        "1/2 cup finely shredded parmesan",
+        "1 large egg",
+        "Salt and freshly ground black pepper",
+        "1 Tbsp olive oil",
+        "1 Tbsp olive oil",
+        "1 1/4 cups chopped carrots",
+        "1 1/4 cups chopped yellow onion",
+        "3/4 cup chopped celery",
+        "4 cloves garlic, (minced (1 1/2 Tbsp))",
+        "5 (14.5 oz) cans low-sodium chicken broth",
+        "1 cup dry acini di pepe ( or orzo pasta**)",
+        "6 oz fresh baby spinach, (roughly chopped )",
+        "Finely shredded parmesan, (for serving)"
+      ],
+      "recipe_steps": [
+        "For the meatballs:",
+        "For the soup:"
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT25M",
+        "cookTime": "PT25M",
+        "totalTime": "PT50M"
+      }
     },
     {
       "id": "lemon-orzo-chickpea-soup",
@@ -478,7 +937,37 @@
       "source_entries": 2,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2019/04/Avgolemono-Greek-Lemon-Orzo-Chickpea-Soup-Recipe-6.jpg"
+      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2019/04/Avgolemono-Greek-Lemon-Orzo-Chickpea-Soup-Recipe-6.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 tablespoon olive oil",
+        "1 small white onion (peeled and diced)",
+        "3 medium carrots (diced)",
+        "5 cloves garlic (minced)",
+        "10 cups vegetable stock",
+        "2 (15-ounce) cans chickpeas (rinsed and drained)",
+        "1 cup orzo*",
+        "4 eggs",
+        "1/2 cup freshly-squeezed lemon juice (plus extra lemon slices for serving)",
+        "2 large handfuls fresh baby spinach",
+        "1-3 tablespoons chopped fresh dill*",
+        "sea salt and freshly-cracked black pepper"
+      ],
+      "recipe_steps": [
+        "Heat oil in a large stockpot over medium-high heat. Add onion and sauté for 3 minutes, stirring occasionally. Add carrots and garlic and sauté for 5 more minutes, stirring occasionally.",
+        "Add stock and chickpeas, and stir to combine. Continue cooking until the soup reaches a simmer. Then reduce heat to medium (or medium-low), whatever works to maintain a steady low simmer.",
+        "Add orzo and stir to combine. Continue cooking until the orzo is al dente, stirring occasionally so that the orzo doesn't stick to the bottom of the pan.",
+        "Meanwhile, as the orzo is cooking, whisk together the eggs and lemon juice in a separate mixing bowl or measuring cup until combined. Ladle out 1 cup of the hot soup broth, and while whisking the egg mixture with one hand continuously, very very slowly drizzle the broth into the eggs until combined. Repeat with 1 more cup of hot broth.",
+        "Once the orzo is ready to go, remove the stockpot from the heat. Then while stirring the entire soup with one hand continuously, very very slowly drizzle the egg mixture into the soup until combined. The egg mixture should make the soup nice and creamy. (But if the eggs look like they are scrambling when you add them in -- kind of like in egg drop soup -- stop and let the soup cool down for a few minutes before adding the rest of the eggs.)",
+        "Return the soup to low heat. Stir in the spinach and dill and stir for 1-2 minutes until the spinach has wilted. Then taste and season the soup with a few pinches of salt and black pepper, as needed.",
+        "Serve warm, garnished with extra dill and lemon wedges."
+      ],
+      "recipe_yield": "8 -10 servings",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT30M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "one-skillet-chicken-and-couscous",
@@ -507,7 +996,34 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2024/01/Skillet-Chicken-with-Couscous-09.jpg"
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2024/01/Skillet-Chicken-with-Couscous-09.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 ¼ pound boneless skinless chicken thighs (4-6 pieces)",
+        "1 teaspoon garlic powder",
+        "1 teaspoon paprika",
+        "1 teaspoon salt",
+        "½ teaspoon black pepper",
+        "1 tablespoon olive oil",
+        "1 cup pearl couscous",
+        "2 garlic cloves (minced)",
+        "1 tablespoon fresh thyme leaves",
+        "2 cups chicken broth",
+        "½ lemon (sliced)"
+      ],
+      "recipe_steps": [
+        "Preheat the oven to 400°F. Pat the chicken thighs dry with a paper towel.",
+        "In a small bowl, mix together garlic powder, paprika, salt, and pepper. Sprinkle generously over the chicken thighs.",
+        "Heat the olive oil in a cast-iron skillet over medium-high heat. Add the seasoned chicken to the skillet, presentation-side down. Cook until the chicken is golden brown and releases easily from the skillet, about 3–4 minutes per side. Remove chicken from the skillet and set aside.",
+        "To the same skillet, add the couscous, garlic, and thyme. Cook until the garlic is fragrant and the couscous is toasted, about 2–3 minutes. Add the chicken broth to deglaze the skillet, and bring the mixture to a boil.",
+        "Add the chicken back to the skillet. Nestle the lemon slices around the chicken and place the skillet in the oven. Bake until the chicken is cooked through and the couscous puffs up, about 15 minutes."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT30M",
+        "totalTime": "PT40M"
+      }
     },
     {
       "id": "pan-fried-noodles",
@@ -533,7 +1049,36 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/cantonese-soy-sauce-pan-fried-noodles-10.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/cantonese-soy-sauce-pan-fried-noodles-10.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 1/2 cups bean sprouts",
+        "2 scallions",
+        "2 teaspoons soy sauce",
+        "1 teaspoon dark soy sauce",
+        "½ teaspoon sesame oil",
+        "¼ teaspoon salt",
+        "¼ teaspoon sugar",
+        "½ tablespoon shaoxing rice wine",
+        "¼ teaspoon white pepper",
+        "8 oz. fresh thin Hong Kong Style Egg Noodles",
+        "3 tablespoons vegetable oil"
+      ],
+      "recipe_steps": [
+        "Bring 2 quarts of water to a boil. Rinse the bean sprouts in cold water and drain. Julienne the scallions. Mix the soy sauces, sesame oil, salt, sugar, wine and white pepper in a small bowl and set aside.",
+        "Boil the noodles. Fresh noodles should be boiled for about 1 minute. For dried noodles, boil for 2 minutes. Rinse in cold water and drain very well.",
+        "Heat the wok over high heat and add a tablespoon of oil to coat the wok (you can also use a cast iron or non-stick pan for this). Spread the noodles in a thin, even layer on the wok and tilt the wok in a circular motion to distribute the oil and crisp the bottom layer of the noodles evenly. It should take about 5 minutes for the first side.",
+        "Flip the noodles over. add another tablespoon of oil around the perimeter of the wok, and let the other side crisp up. Don’t stress if you can’t turn the noodles over in one shot. The goal here is just to get an even crispness and to dry out the noodles during this cooking stage. Set the noodles aside on a plate.",
+        "Heat the wok over high heat. Add a tablespoon of oil and all of the white parts of the scallion to the pan. Cook for about 15 seconds. Next, add the noodles to the wok and toss them well, breaking up the noodles so they’re not all in one big clump. Add the soy sauce mixture and toss continuously for a couple minutes. Keep the heat on high.",
+        "After the noodles are uniformly golden brown, add the bean sprouts and toss. Add the rest of the scallions and toss the mixture again for another 1 to 2 minutes until you see the bean sprouts just starting to turn transparent. You want the sprouts to be cooked but still crunchy.",
+        "Plate and serve!"
+      ],
+      "recipe_yield": "2",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "pan-seared-chicken-thighs",
@@ -556,7 +1101,35 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2020/01/Pan-Seared-Chicken-Thighs-07.jpg"
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2020/01/Pan-Seared-Chicken-Thighs-07.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 ½ pounds chicken thighs boneless (skinless, about 4 pieces)",
+        "1 teaspoon onion powder",
+        "1 teaspoon cumin",
+        "½ teaspoon coriander",
+        "½ teaspoon paprika",
+        "½ teaspoon turmeric",
+        "¾ teaspoon salt",
+        "½ teaspoon black pepper",
+        "1 tablespoon olive oil",
+        "4 garlic cloves (sliced)",
+        "½ cup chicken broth",
+        "Chopped parsley for garnish"
+      ],
+      "recipe_steps": [
+        "Pat the chicken thighs dry with paper towels. In a small bowl, whisk together onion powder, cumin, coriander, paprika, turmeric, salt, and black pepper. Season both sides of the chicken thighs with the seasoning mix.",
+        "Heat a large skillet over medium-high heat. Add the olive oil and carefully place the chicken thighs, presentation-side down, into the hot pan, making sure not to overcrowd them.",
+        "Cook the chicken thighs for 7 minutes without touching until they develop a golden brown crust. Flip the chicken to the other side and continue to cook until they reach an internal temperature of at least 165°F, 8–10 more minutes.",
+        "Lower the heat to medium-low, add garlic, and cook for 1 minute, until garlic is golden and fragrant. Pour chicken broth to deglaze the bottom and sides of the pan with the crispy browned bits until they're no longer sticking to the pan.",
+        "Remove the chicken thighs from the pan and let them rest for a few minutes before slicing or serving. Spoon the pan sauce over the chicken. Garnish with fresh chopped parsley and serve immediately."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT15M",
+        "totalTime": "PT20M"
+      }
     },
     {
       "id": "peking-duck-mas-version",
@@ -585,7 +1158,10 @@
       "private_attachment": false,
       "notes": "Private household recipe details were not published.",
       "family": "Peking Duck",
-      "variant_label": "Peking Duck (Ma’s version)"
+      "variant_label": "Peking Duck (Ma’s version)",
+      "content_status": "household_only",
+      "recipe_ingredients": [],
+      "recipe_steps": []
     },
     {
       "id": "pi-dan-shou-rou-zhou-congee",
@@ -616,7 +1192,35 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2016/10/congee-recipe-2.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2016/10/congee-recipe-2.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "¾ cup white rice",
+        "4 ounces pork shoulder ((115g, julienned))",
+        "½ teaspoon cornstarch",
+        "1 teaspoon oyster sauce",
+        "1 teaspoon vegetable oil",
+        "7 cups water ((or chicken broth; 1.65 liters))",
+        "2 thousand year-old eggs",
+        "3 slices ginger",
+        "¼ teaspoon ground white pepper",
+        "Salt ((to taste))",
+        "Chopped scallion and cilantro ((to garnish))"
+      ],
+      "recipe_steps": [
+        "Wash the rice, drain, and transfer to a zip-loc bag or freezer-safe container. Leave it in the freezer for at least 8 hours.",
+        "Marinate the pork with the cornstarch, oyster sauce, and vegetable oil for about 15 to 20 minutes.",
+        "Meanwhile, in a medium pot, bring 7 cups of water to a boil. Add the frozen rice (no need to defrost) and bring it to a boil again, stirring the rice to prevent sticking. Reduce the heat to a low simmer, and cover and cook for about 15 minutes. Periodically check and stir the congee. It’s important to stir from the bottom to prevent sticking, as the rice texture thickens quickly.",
+        "While that’s cooking, dice the thousand year-old egg and set it aside. Very thinly julienne the ginger. Don’t prepare this ahead of time, as we want the flavor of freshly cut ginger.",
+        "After 15 minutes, it’s time to add the julienned ginger, pork, and thousand year-old egg. Stir and simmer for another 5 minutes or so. Finally, stir in the white pepper and salt to taste. Serve piping hot with chopped scallions and cilantro.",
+        "It's that easy, folks!"
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "pork-dumplings-with-napa-cabbage",
@@ -643,7 +1247,39 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://redhousespice.com/wp-content/uploads/2021/04/a-half-eaten-dumpling-scaled.jpg"
+      "image_url": "https://redhousespice.com/wp-content/uploads/2021/04/a-half-eaten-dumpling-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "250 g all-purpose flour/plain flour (about 2 cups (see note 1))",
+        "130 g water at room temperature (½ cup+2 tsp (see note 2))",
+        "½ head Napa cabbage (aka Chinese cabbage) (about 300g)",
+        "¼ teaspoon salt",
+        "250 g minced pork (about 9oz)",
+        "2 stalk scallions (finely chopped)",
+        "1 teaspoon minced ginger",
+        "2 tablespoon light soy sauce",
+        "1 pinch ground Sichuan pepper (or five-spice powder)",
+        "1 tablespoon dried shrimp (soaked in 2 tbsp water until soft (see note 3))",
+        "½ tablespoon sesame oil",
+        "Homemade chili oil",
+        "Black rice vinegar"
+      ],
+      "recipe_steps": [
+        "Make the dough",
+        "Mix the filling",
+        "Roll the wrappers",
+        "Assemble the dumplings",
+        "Boil the dumplings",
+        "Serve the dumplings",
+        "Freeze uncooked dumplings",
+        "Cook frozen dumplings"
+      ],
+      "recipe_yield": "30 dumplings",
+      "recipe_timings": {
+        "prepTime": "PT50M",
+        "cookTime": "PT10M",
+        "totalTime": "PT90M"
+      }
     },
     {
       "id": "rotisserie-chicken-stock",
@@ -673,7 +1309,34 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 rotisserie chicken (, meat removed so you&#39;re only left with bones and skin)",
+        "2 ribs celery (, with leaves, cut into chunks)",
+        "2 medium carrots (, cut into chunks)",
+        "2 medium onions (, cut into chunks)",
+        "2 bay leaves",
+        "1/2 teaspoon dried rosemary",
+        "1/2 teaspoon dried thyme",
+        "10 whole peppercorns",
+        "8 cups cold water",
+        "2 Tablespoons Better than bouillon chicken paste* (, or 6 chicken bouillon cubes )"
+      ],
+      "recipe_steps": [
+        "Place rotisserie chicken, vegetables, spices and water into a large soup pot.",
+        "Slowly bring to a boil over medium heat. Skim off any foam that rises to the surface.",
+        "Reduce heat, cover and simmer on low heat for at least 2 hours or longer.",
+        "Remove from heat and allow to cool.",
+        "Strain stock through a fine sieve strainer, discarding all vegetables and seasonings so you are only left with the stock. Season with chicken boullion paste, to taste.",
+        "Store in the fridge for up to 3-4 days. Skim off the fat that rises to the top. If not using within a few days, freeze for up to 3 months."
+      ],
+      "recipe_yield": "8",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT120M",
+        "totalTime": "PT135M"
+      }
     },
     {
       "id": "salt-pepper-pork-chops",
@@ -698,7 +1361,40 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2023/08/salt-pepper-pork-chops.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2023/08/salt-pepper-pork-chops.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 pound pork shoulder ((sliced about 1/3 inch thick into pieces about 4 to 5 inches across))",
+        "3 tablespoons water",
+        "1 ½ tablespoons Shaoxing wine",
+        "1/2 teaspoon salt",
+        "1 teaspoon sesame oil",
+        "1/8 teaspoon five spice powder ((optional))",
+        "¼ cup all purpose flour",
+        "2 tablespoons cornstarch",
+        "1/8 teaspoon white pepper",
+        "1 1/2 tablespoons oil",
+        "3 tablespoons water",
+        "3 cups peanut oil ((for frying))",
+        "3 cloves garlic ((thinly sliced))",
+        "3 long hot green peppers ((sliced crosswise into thin rounds))",
+        "1 long hot red pepper ((sliced crosswise into thin rounds))",
+        "½ teaspoon coarse sea salt",
+        "1/8 teaspoon coarsely ground white pepper"
+      ],
+      "recipe_steps": [
+        "Combine the pork and marinade ingredients in a large bowl and use your hands to mix and coat the pork evenly. Let sit at least 15 minutes.",
+        "Move the pork to one side of the bowl, add the ingredients for the coating, and mix until you get a loose batter. Next, combine the pork and the batter until everything is well-coated, and set aside.",
+        "Heat the oil in a small sauce pot to about 250 degrees, or until you put in a piece of garlic and it bubbles a little. Toss in the garlic and cook until it just starts to turn color (30 seconds). Scoop it out onto a paper towel to drain. Be careful not to brown the garlic, or it will be bitter.",
+        "Heat the oil to 380 degrees, fry the pork in batches until golden brown, and place on a paper towel to drain.",
+        "Once all pieces are done, drain the oil leaving 1 tablespoon in the wok and heat your wok over very high heat until just smoking. Add the green and red peppers, salt, and white pepper to the wok and toss for about 15-30 seconds until fragrant. Turn off the heat, and add the pork chops and the fried garlic. You can now practice your pow wok skills to toss everything together. Serve immediately with white rice!"
+      ],
+      "recipe_yield": "4 to 6 servings",
+      "recipe_timings": {
+        "prepTime": "PT25M",
+        "cookTime": "PT25M",
+        "totalTime": "PT50M"
+      }
     },
     {
       "id": "spinach-artichoke-dip",
@@ -728,7 +1424,32 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2018/12/spinach-artichoke-dip-16.jpg"
+      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2018/12/spinach-artichoke-dip-16.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 oz. cream cheese, (well softened)",
+        "1/4 cup sour cream",
+        "1/4 cup mayonnaise",
+        "1 garlic clove, (minced (1 tsp))",
+        "2/3 cup (76g) finely shredded parmesan cheese",
+        "1/2 cup (56g) finely shredded mozzarella cheese",
+        "Pepper, (to taste)",
+        "1 (14 oz) can quartered artichoke hearts, (can liquid drained, squeeze artichokes to drain excess liquid, chopped)",
+        "6 oz. frozen spinach, (thawed, squeezed to drain excess liquid)"
+      ],
+      "recipe_steps": [
+        "Preheat oven to 350 degrees. Spray a small (1 quart) baking dish with non-stick cooking spray.",
+        "In a mixing bowl stir together cream cheese, sour cream, mayonnaise, garlic, parmesan, mozzarella and pepper.",
+        "Stir in artichokes and spinach.",
+        "Spread mixture evenly into prepared baking dish. Bake in preheated oven until heated through and melty, about 20 minutes.",
+        "Serve warm with tortilla chips, crackers or toasted baguette slices"
+      ],
+      "recipe_yield": "8",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "vietnamese-spring-rolls",
@@ -758,7 +1479,41 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 ounces rice vermicelli",
+        "8 rice wrappers (8.5 inch diameter)",
+        "8 large cooked shrimp - peeled, deveined and cut in half",
+        "2 leaves lettuce, chopped",
+        "3 tablespoons chopped fresh mint leaves",
+        "3 tablespoons chopped fresh cilantro",
+        "1.3333333730698 tablespoons chopped fresh Thai basil",
+        "0.25 cup water",
+        "2 tablespoons fresh lime juice",
+        "2 tablespoons white sugar",
+        "4 teaspoons fish sauce",
+        "1 clove garlic, minced",
+        "0.5 teaspoon garlic chili sauce",
+        "3 tablespoons hoisin sauce",
+        "1 teaspoon finely chopped peanuts"
+      ],
+      "recipe_steps": [
+        "Gather all ingredients.",
+        "Fill a large pot with lightly salted water and bring to a rolling boil; stir in noodles and return to a boil. Cook noodles uncovered, stirring occasionally, until tender yet firm to the bite, 3 to 5 minutes; drain and set aside to cool.",
+        "Fill a large bowl with warm water. Dip one wrapper into the hot water for 1 second to soften.",
+        "Lay wrapper flat; place 2 shrimp halves, some cooled noodles, lettuce, mint, cilantro, and basil in a line across middle of wrapper, leaving about 2 inches uncovered on each side.",
+        "Fold opposing uncovered sides of wrapper inward, then tightly roll 1 of the opposing edges of the wrapper around the filling. Repeat with remaining ingredients.",
+        "Combine water, lime juice, sugar, fish sauce, garlic, and chili sauce in a small bowl; set aside.",
+        "Combine hoisin sauce and peanuts in a separate small bowl; set aside.",
+        "Serve spring rolls with both sauces for dipping."
+      ],
+      "recipe_yield": "8 spring rolls",
+      "recipe_timings": {
+        "prepTime": "PT45M",
+        "cookTime": "PT5M",
+        "totalTime": "PT50M"
+      }
     },
     {
       "id": "10-minute-homemade-ramen",
@@ -786,7 +1541,30 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/01/E79D3D00-FE91-47A8-9B33-0903C49C0479-scaled.jpg"
+      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/01/E79D3D00-FE91-47A8-9B33-0903C49C0479-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 serving noodles",
+        "2 tablespoons green onion (chopped)",
+        "2 tablespoons cilantro (chopped)",
+        "1/2 tsp white pepper",
+        "1 tsp dashi powder",
+        "1.5 tablespoon Soy Sauce",
+        "1 tablespoon Sesame Oil",
+        "2 cups noodle water"
+      ],
+      "recipe_steps": [
+        "Prepare noodles based on instructions, and save 2-3 cups of noodle water",
+        "Add green onion, cilantro, white pepper, dashi powder, soy sauce, and sesame oil in a bowl.",
+        "Pour hot noodle water into the bowl, and add in the noodles.",
+        "Optional, finish off with a drizzle of chili oil."
+      ],
+      "recipe_yield": "1 Serving",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT5M",
+        "totalTime": "PT10M"
+      }
     },
     {
       "id": "basil-parmesan-pasta-with-crispy-chicken",
@@ -820,7 +1598,37 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2021/03/Basil-Parmesan-Pasta-with-Crispy-Chicken-Prosciutto-and-Arugula-1.jpg"
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2021/03/Basil-Parmesan-Pasta-with-Crispy-Chicken-Prosciutto-and-Arugula-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 pound chicken cutlets or tenders",
+        "1 cup Panko bread crumbs",
+        "1 1/2 cups grated parmesan",
+        "1/2 teaspoon onion powder",
+        "3 tablespoons extra virgin olive oil",
+        "kosher salt and black pepper",
+        "1 pound spaghetti",
+        "3 cloves garlic, finely chopped or grated",
+        "crushed red pepper flakes",
+        "2 tablespoons salted butter",
+        "1 1/2 cups fresh basil, finely chopped",
+        "2 cups low sodium chicken broth",
+        "3/4 cup heavy cream or canned coconut milk",
+        "2 ounces cream cheese, at room temperature",
+        "3 ounces thinly sliced prosciutto",
+        "2 cups baby arugula",
+        "juice from 1 lemon",
+        "2 tablespoons chopped fresh parsley"
+      ],
+      "recipe_steps": [
+        "1. Place the Panko, 1/2 cup parmesan, and the onion powder in a shallow bowl. Dredge both sides of the chicken through the Panko, pressing to adhere by using your fist to really make the crumbs stick. Place the chicken on a plate. Set aside.2. Bring a large pot of salted water to a boil. Cook the pasta according to package directions until al dente. Drain.3. To make the sauce. Heat 1 tablespoon olive oil and the garlic together over medium-high heat. Cook 2-3 minutes until fragrant. Add the butter and stir in the basil. Add a pinch each of red pepper flakes, salt, and pepper. Cook another minute, until the basil is fragrant, then pour in the broth and cream. Add the cream cheese. Whisk until smooth. Bring the sauce to a gentle simmer and cook 5-8 minutes, until thickened slightly.4. To cook the chicken. Heat 2 tablespoons of oil in a large skillet over medium-high heat. Add the chicken and cook until golden brown, 3-4 minutes. Flip the chicken and cook until golden brown on the other side, 3-4 minutes. Transfer to a cutting board and season with salt. Slice into thin strips. Add the prosciutto to the pan and cook 1 minute to warm through. 5. To the sauce, stir in 1 cup parmesan. Toss in the pasta and cook 3-5 minutes, then remove from the heat and stir in the parsley.6. Toss the arugula with a drizzle of olive oil, a squeeze of lemon, and a pinch each of salt and pepper. Divide the pasta between plates and top with slices of chicken, warm prosciutto, and arugula. Twirl and devour...with bread on the side."
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT25M",
+        "cookTime": "PT15M",
+        "totalTime": "PT40M"
+      }
     },
     {
       "id": "beef-stew",
@@ -851,7 +1659,42 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.spendwithpennies.com/wp-content/uploads/2018/09/SpendWithPennies-Homemade-Beef-Stew-24.jpg"
+      "image_url": "https://www.spendwithpennies.com/wp-content/uploads/2018/09/SpendWithPennies-Homemade-Beef-Stew-24.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 pounds stewing beef (trimmed and cubed)",
+        "3 tablespoons all-purpose flour",
+        "½ teaspoon garlic powder",
+        "½ teaspoon salt",
+        "½ teaspoon black pepper",
+        "3 tablespoons olive oil (more as needed)",
+        "1 onion (chopped)",
+        "6 cups beef broth",
+        "½ cup red wine (optional)",
+        "1 pound potatoes (peeled and cubed)",
+        "4 carrots (cut into 1 inch pieces)",
+        "4 ribs celery (cut into 1 inch pieces)",
+        "3 tablespoons tomato paste",
+        "1 teaspoon dried rosemary (or 1 sprig fresh)",
+        "2 tablespoons cornstarch (or as needed)",
+        "2 tablespoons water (or as needed)",
+        "¾ cup peas"
+      ],
+      "recipe_steps": [
+        "Combine flour, garlic powder, salt, and pepper. Toss beef in flour mixture.",
+        "Heat olive oil in a large Dutch oven or pot over medium-high heat. Shake off any excess flour from the beef and brown in small batches. Remove and set aside in a bowl.",
+        "Add the onions to the pot, adding more oil as needed, and cook until they begin to soften, about 3 minutes.",
+        "Add beef broth and red wine while scraping up any brown bits in the pan.",
+        "Stir in browned beef, potatoes, carrots, celery, tomato paste, and rosemary. Reduce heat to medium-low, cover, and simmer 1 hour or until beef is tender (up to 90 minutes).",
+        "Mix equal parts cornstarch and water to create a slurry. Slowly add the slurry to the boiling stew to reach desired consistency (you may not need all of the slurry, if you'd like a thicker stew, you can add extra).",
+        "Stir in peas and simmer 5-10 minutes before serving . Season with salt & pepper to taste."
+      ],
+      "recipe_yield": "8 servings",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT70M",
+        "totalTime": "PT90M"
+      }
     },
     {
       "id": "biang-biang-noodles",
@@ -882,7 +1725,37 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://redhousespice.com/wp-content/uploads/2018/11/Xian-biang-biang-noodles-landscape.jpg"
+      "image_url": "https://redhousespice.com/wp-content/uploads/2018/11/Xian-biang-biang-noodles-landscape.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "250 g all-purpose flour (about 2 cups)",
+        "¼ teaspoon salt",
+        "125 ml water (½ cup+2 tsp (see note 1))",
+        "cooking oil (for coating the dough)",
+        "1 tablespoon scallions (finely chopped)",
+        "2 teaspoon garlic (minced)",
+        "Chili flakes (to taste)",
+        "Chili powder (to taste)",
+        "¼ teaspoon ground Sichuan pepper",
+        "Salt (to taste)",
+        "3 tablespoon cooking oil",
+        "1 tablespoon light soy sauce",
+        "1 tablespoon black rice vinegar",
+        "1 head bok choy (or other green leafy vegetables)"
+      ],
+      "recipe_steps": [
+        "Make the dough",
+        "Shape the dough",
+        "Pull the noodles (please refer to the video in the post above)",
+        "Cook the noodles",
+        "Season the noodles"
+      ],
+      "recipe_yield": "2 servings",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT10M",
+        "totalTime": "PT100M"
+      }
     },
     {
       "id": "bone-marrow-parsley-salad",
@@ -912,7 +1785,31 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "http://static1.squarespace.com/static/584f1070197aea4b234f3707/58a4a66dbe6594f08a041c57/5967d84ca5790a40de64adbc/1641933690540/IMG_2161-1022x1024.jpg?format=1500w"
+      "image_url": "http://static1.squarespace.com/static/584f1070197aea4b234f3707/58a4a66dbe6594f08a041c57/5967d84ca5790a40de64adbc/1641933690540/IMG_2161-1022x1024.jpg?format=1500w",
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "12 marrowbone pieces, about 3 in / 7½ cm each",
+        "1 bunch flat-leaf parsley, leaves picked",
+        "2 shallots, very thinly sliced",
+        "2 Tbsp capers",
+        "2 Tbsp extra-virgin olive oil",
+        "Juice of 1 lemon",
+        "Coarse salt",
+        "Black pepper",
+        "Toasted bread"
+      ],
+      "recipe_steps": [
+        "Heat oven to 450°F. Roast marrowbones in an ovenproof pan for about 20 minutes, until loose and giving but not melted away.",
+        "While the bones roast, lightly chop parsley and combine with shallots and capers.",
+        "Dress the parsley salad with olive oil and lemon juice immediately before serving; season to taste.",
+        "Scrape marrow onto toast, season with coarse salt, and top with parsley salad. Serve immediately."
+      ],
+      "recipe_yield": "Serves 3",
+      "recipe_timings": {
+        "cookTime": "about 20 minutes"
+      },
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
+      "content_note": "Recovered from direct page text."
     },
     {
       "id": "braised-beef-shank",
@@ -941,7 +1838,36 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thebigmansworld.com/wp-content/uploads/2022/11/beef-shanks-recipe.jpg"
+      "image_url": "https://thebigmansworld.com/wp-content/uploads/2022/11/beef-shanks-recipe.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 pounds beef shanks (appoximately 3 portions)",
+        "1/2 teaspoon salt",
+        "1/2 teaspoon pepper",
+        "3 tablespoons all purpose flour",
+        "3 tablespoons olive oil",
+        "1 large onion (dliced)",
+        "1 cup carrots (diced)",
+        "1 cup celery (chopped)",
+        "3 sprigs thyme",
+        "3 bay leaves",
+        "200 mls white wine (or more beef broth)",
+        "1 1/2 cups canned tomatoes",
+        "1 3/4 cups beef broth"
+      ],
+      "recipe_steps": [
+        "Pat dry the beef shanks to remove any excess moisture. Secure the meat to the bone with kitchen twine. Season each shank with salt and pepper and dredge them in flour, shaking off any excess.",
+        "In a Dutch oven pot, add oil and place it over high heat. Once hot, Add the beef shanks into the pan and brown all sides, about 3 minutes each. Remove the shanks from the pot.",
+        "In the same pot add onion, carrot and celery and saute until translucent. Add fresh thyme, bay leaves and tomato. Cook for 10 minutes then add white wine, beef stock and return the shanks in the pot. Once it boils, remove the pot from the heat.",
+        "Preheat the oven to 170C/325F. Place the lid on the Dutch oven and cook in the oven for 45 minutes or up to 2 hours, until fork tender to your liking.",
+        "Carefully remove the cooked shanks from the pot and cut off the kitchen twine and discard. Pour all the sauce from the pot over the shanks and serve immediately."
+      ],
+      "recipe_yield": "6 servings",
+      "recipe_timings": {
+        "prepTime": "PT1M",
+        "cookTime": "PT58M",
+        "totalTime": "PT59M"
+      }
     },
     {
       "id": "cajun-shrimp-rice",
@@ -969,7 +1895,36 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/one-pan-spanish-shrimp-rice-1.jpg"
+      "image_url": "https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/one-pan-spanish-shrimp-rice-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 ⅓ cups uncooked long grain white rice",
+        "2 ⅔ cup chicken broth",
+        "1 pound large or jumbo shrimp (peeled and de-veined )",
+        "4 tablespoons butter (melted, divided)",
+        "1 teaspoon minced garlic",
+        "cajun seasoning (see below)",
+        "1 ½ teaspoons paprika",
+        "1 teaspoon salt",
+        "1 teaspoon garlic powder",
+        "½ teaspoon cracked black pepper",
+        "½ teaspoon onion powder",
+        "½ teaspoon dried oregano (may sub an Italian herb blend or Herbs de Provence)",
+        "½ teaspoon cayenne pepper",
+        "¼ teaspoon crushed red pepper flakes"
+      ],
+      "recipe_steps": [
+        "Whisk together all of the ingredients for the cajun seasoning. Melt 2 tablespoons butter in a large skillet over medium heat. Stir in garlic, half of the cajun seasoning, and the rice.",
+        "Stir in chicken broth, bring to a boil, reduce to a simmer and cover. Cook for 15 minutes, stirring 1-2 times throughout.",
+        "While rice is cooking, prepare the shrimp by stirring together remaining 2 tablespoons melted butter and remaining cajun seasoning. Pour over shrimp and toss to coat.",
+        "Stir shrimp into the rice, cover and cook 3-5 minutes longer until shrimp is pink and opaque. Garnish with chopped parsley if desired and serve."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "chicken-wild-rice",
@@ -1001,7 +1956,13 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "content_status": "unavailable",
+      "recipe_ingredients": [],
+      "recipe_steps": [],
+      "recipe_yield": "",
+      "recipe_timings": {},
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
     },
     {
       "id": "chicken-congee",
@@ -1032,7 +1993,40 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/2dc817d65a2cb6d512081097046fd66606ec9fb2-1000x563.jpg"
+      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/2dc817d65a2cb6d512081097046fd66606ec9fb2-1000x563.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 rice cup white rice",
+        "8 cup water",
+        "0.5 oz ginger",
+        "12 oz chicken",
+        "2 tsp cornstarch",
+        "1 tbsp oyster sauce",
+        "2 tbsp water",
+        "0.5 tsp chicken bouillon",
+        "2 tbsp vegetable oil",
+        "1 tsp salt",
+        "1 tsp chicken bouillon",
+        "2 pieces green onion",
+        "1 piece cilantro"
+      ],
+      "recipe_steps": [
+        "We'll start by washing our rice in a bowl:",
+        "To save some time, we'll start boiling some water for later. For jook / congee recipes, the water-to-rice ratio is usually very high. In my dad's recipe, it's 8-to-1.",
+        "Cut the chicken into thin slices and place it in a bowl to marinate.",
+        "Pour the boiled water from earlier into a pot, set on high heat, and wait for the pot to boil before adding the rice. It's important not to add the rice before the pot starts boiling.",
+        "Once the pot is boiling again, we'll partially cover the pot and let it cook at medium heat for 25 minutes.",
+        "Once we've hit 25 minutes, we can either proceed with this step or cook it for longer.",
+        "Set the stove to high heat, and slowly add the chicken over the course of 30 to 60 seconds, stirring constantly as you go. If you add it all at once, it will clump up.",
+        "Almost there! Add the strips of ginger, as well as salt and chicken bouillon. Stir everything around for 20 to 30 seconds.",
+        "Turn off the heat, and pour the jook into your favorite bowl. Garnish with the green onions and cilantro."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT35M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "chicken-gyros-with-feta-tzatziki",
@@ -1060,7 +2054,37 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/02/Quick-Sheet-Pan-Chicken-Gyros-with-Feta-Tzatziki-1.jpg"
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/02/Quick-Sheet-Pan-Chicken-Gyros-with-Feta-Tzatziki-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1/3 cup full-fat plain Greek yogurt",
+        "1/4 cup extra virgin olive oil",
+        "1 1/2 pounds boneless skinless chicken breasts or thighs, cubed",
+        "1/4 cup fresh lemon juice",
+        "6 garlic cloves, chopped",
+        "2 shallots, chopped",
+        "1 tablespoon smoked paprika",
+        "1 tablespoon chopped fresh oregano",
+        "red pepper flakes",
+        "Kosher salt and black pepper",
+        "6 fresh pitas or naan warmed,",
+        "pickled red onion, lettuce, dill, and parsley for serving",
+        "8 ounces feta cheese",
+        "1/4 cup + 1/3 cup plain Greek yogurt",
+        "2 cloves garlic grated",
+        "juice from 1 lemon",
+        "1-2 Persian cucumbers, shredded",
+        "kosher salt"
+      ],
+      "recipe_steps": [
+        "1. In a bowl, combine the yogurt, olive oil, cubed chicken, lemon juice, garlic, shallots, paprika, oregano, chili flakes, and a large pinch each of salt and pepper. Let marinate for 15 minutes at room temperature or up to overnight in the refrigerator.2. Preheat the oven to 425° F. Arrange the chicken on a baking sheet. Bake 15 minutes, toss and bake another 5-10 minutes, or until cooked through. Switch the oven to broil. Broil 1-2 minutes, until the chicken chars on the edges (watch carefully) 3. Meanwhile, make the Tzatziki. Combine the feta, 1/4 cup yogurt, garlic, and lemon juice in a blender and blend until creamy. Stir in 1/3 cup more yogurt, the cucumbers, and a pinch of salt and red pepper flakes.4. To assemble, stuff/spread each pita with tzatziki, then lettuce, and chicken. Add red onions and herbs. Drizzle over more tzatziki and if desired, harissa (recipe in notes)."
+      ],
+      "recipe_yield": "3",
+      "recipe_timings": {
+        "prepTime": "PT30M",
+        "cookTime": "PT25M",
+        "totalTime": "PT55M"
+      }
     },
     {
       "id": "chicken-khao-soi-noodles",
@@ -1090,7 +2114,47 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/03/khao-soi-9.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/03/khao-soi-9.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 Thai bird&#x27;s eye chilies",
+        "2 medium shallots",
+        "6 cloves garlic",
+        "1-inch piece ginger ((peeled and sliced))",
+        "1/4 cup cilantro ((stems and leaves, rinsed))",
+        "zest of 1 lime",
+        "2 teaspoons ground turmeric",
+        "2 teaspoons ground coriander",
+        "1 teaspoon curry powder",
+        "2 tablespoons shrimp paste",
+        "2 tablespoons vegetable oil",
+        "1 pound boneless, skinless chicken thighs ((sliced))",
+        "2 tablespoons Thai red curry paste",
+        "4 cups low sodium chicken stock",
+        "2 teaspoons brown sugar",
+        "14 ounces unsweetened coconut milk",
+        "3 tablespoons fish sauce ((or to taste))",
+        "1 pound fresh Chinese egg noodles ((thick wonton noodles work well))",
+        "thinly sliced shallots",
+        "lime wedges",
+        "pickled mustard stems/greens",
+        "crispy noodles",
+        "chopped cilantro",
+        "Thai chili paste ((Nam Prik Pao))"
+      ],
+      "recipe_steps": [
+        "Add all the curry paste ingredients to a food processor and pulse until you get a smooth paste.",
+        "Heat oil in a large pot over medium high heat. Add 2 tablespoons vegetable oil and stir-fry the chicken until browned. Remove from the pot and set aside. To the fat left in the pot, add the paste. Fry for 3-5 minutes, until fragrant. Add the canned Thai red curry paste, broth, and brown sugar, and bring to a boil.",
+        "Reduce the heat to low. When the broth is at a low simmer, add the coconut milk and fish sauce. Add the chicken back to the broth.",
+        "Meanwhile, cook the noodles according to package instructions.",
+        "To serve, divide the noodles among 4 bowls. Cover with chicken and broth, and garnish with sliced shallots, lime wedges, pickled mustard greens, fried noodles, cilantro, and Thai chili paste."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT30M",
+        "cookTime": "PT30M",
+        "totalTime": "PT60M"
+      }
     },
     {
       "id": "chimchurri-steak-marinade",
@@ -1111,7 +2175,10 @@
       "source_publisher": "Household entry",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": "Private household recipe details were not published."
+      "notes": "Private household recipe details were not published.",
+      "content_status": "household_only",
+      "recipe_ingredients": [],
+      "recipe_steps": []
     },
     {
       "id": "chinchurri-sauce",
@@ -1137,7 +2204,30 @@
       "source_entries": 2,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2012/04/Chimichurri-Sauce-Recipe-6.jpg"
+      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2012/04/Chimichurri-Sauce-Recipe-6.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1/2 cup extra virgin olive oil",
+        "1/2 cup (1 ounce) finely-minced fresh parsley",
+        "2 tablespoons red wine vinegar",
+        "1 tablespoon lemon juice",
+        "1 teaspoon dried oregano",
+        "1/2 teaspoon fine sea salt",
+        "1/2 teaspoon crushed red pepper flakes",
+        "1/4 teaspoon freshly-ground black pepper",
+        "3 to 4 large garlic cloves (minced or grated)",
+        "1 small shallot (finely minced (about 1/4 cup))"
+      ],
+      "recipe_steps": [
+        "Combine. Whisk all of the ingredients together until combined.",
+        "Season. Taste and season with additional salt, pepper and/or vinegar if needed.",
+        "Serve. Serve immediately and enjoy!"
+      ],
+      "recipe_yield": "",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "totalTime": "PT5M"
+      }
     },
     {
       "id": "chongqing-chicken",
@@ -1165,7 +2255,37 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2015/04/chongqing-chicken-7.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2015/04/chongqing-chicken-7.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 boneless skinless chicken thighs",
+        "1 teaspoon cornstarch",
+        "3/4 teaspoon salt",
+        "1 teaspoon oil",
+        "2 teaspoons Shaoxing wine",
+        "1 teaspoon dark soy sauce",
+        "3 tablespoons oil",
+        "2 tablespoons Sichuan peppercorns",
+        "2 slices ginger ((julienned))",
+        "5 cloves garlic ((sliced))",
+        "1 cup whole dried red chilies ((see note!))",
+        "1 teaspoon Shaoxing wine",
+        "1/2 teaspoon sugar",
+        "1 scallion ((chopped))"
+      ],
+      "recipe_steps": [
+        "Note: You can use fewer dried chilies if you like. This dish won’t actually be that spicy, unless you break open some of the dry hot peppers. If you do like the dish spicy, don’t break open more than six peppers. It will be hot enough, trust me.",
+        "Start by rinsing the chicken and cutting it into bite-sized pieces. Add the chicken to a bowl and toss with the marinade ingredients. Set aside for 30 minutes.",
+        "Prepare the rest of the ingredients. When you’re ready to cook, heat 3 tablespoons oil in a wok over high heat. Add the chicken in a single layer, and let it sear (DO NOT STIR at this point). Once you’ve got a good, crisp crust on the bottom of the chicken, stir and continue to sear the chicken until it’s browned and crisp on all sides. You really need a hot wok to achieve this. Turn off the heat and remove the chicken to a plate with a slotted spoon.",
+        "There should be about 1 tablespoon of oil left in the wok at this point. Add more if you need to. Heat the wok over medium low heat, and add the Sichuan peppercorns. Let them toast for 1-2 minutes, until fragrant. Add the ginger and garlic, and cook for 1 minute. Add the whole dried chilies, and stir for another minute. Monitor the heat levels to avoid burning.",
+        "Turn up the heat to high, and add the chicken, Shaoxing wine, sugar, and scallion. Continue to stir-fry, until any liquid in the wok has evaporated. Serve with rice and a veggie!"
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT35M",
+        "cookTime": "PT10M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "chongqing-xiao-mian",
@@ -1185,7 +2305,43 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://redhousespice.com/wp-content/uploads/2019/12/chongqing-noodles-Red-House-Spice-6-scaled.jpg"
+      "image_url": "https://redhousespice.com/wp-content/uploads/2019/12/chongqing-noodles-Red-House-Spice-6-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 tablespoon cooking oil",
+        "3.5 oz ground pork (or beef)",
+        "1 teaspoon minced ginger",
+        "1 tablespoon minced Ya Cai (or Zha Cai (see note 1))",
+        "1 pinch dried chilli flakes",
+        "1 teaspoon Shaoxing rice wine",
+        "2 teaspoon sweet bean sauce (aka Tian Mian Jiang (see note 2))",
+        "7 oz dried noodles (see note 3)",
+        "1 handful leafy green (eg. bok choy, water spinach, choy sum, etc.)",
+        "1¼ cup chicken/beef/vegetable stock (see note 4)",
+        "3.5 oz canned chickpeas, drained (see note 5)",
+        "2 tablespoon light soy sauce",
+        "2 teaspoon black rice vinegar",
+        "2 tablespoon Chinese chilli oil (or to taste)",
+        "½ teaspoon ground Sichuan pepper (or to taste)",
+        "1 teaspoon minced garlic",
+        "1 teaspoon minced ginger",
+        "½ teaspoon sesame oil",
+        "1 pinch sugar",
+        "1 tablespoon roasted peanuts/cashews (crushed)",
+        "1 tablespoon finely chopped scallion"
+      ],
+      "recipe_steps": [
+        "Cook the meat topping",
+        "Boil the noodles & vegetable",
+        "Prepare the broth",
+        "Assemble the dish"
+      ],
+      "recipe_yield": "2 bowls",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "fresh-homemade-pasta",
@@ -1205,7 +2361,10 @@
       "source_publisher": "Household entry",
       "source_entries": 1,
       "private_attachment": true,
-      "notes": "Private household recipe details were not published."
+      "notes": "Private household recipe details were not published.",
+      "content_status": "private_attachment",
+      "recipe_ingredients": [],
+      "recipe_steps": []
     },
     {
       "id": "hamburger-helper",
@@ -1233,7 +2392,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2022/08/hamburger-helper-recipe-1.jpg"
+      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2022/08/hamburger-helper-recipe-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 pound lean ground beef",
+        "1/2 medium onion (chopped)",
+        "2 heaping tablespoons tomato paste",
+        "1/2 teaspoon garlic powder",
+        "1/2 teaspoon chili powder",
+        "3 cups beef broth",
+        "1 cup uncooked elbow macaroni",
+        "2 cups freshly grated cheddar cheese",
+        "Salt &amp; pepper (to taste)"
+      ],
+      "recipe_steps": [
+        "Add the beef and onions to a soup pot. Cook over medium-high heat until the beef has browned (about 7-10 minutes), breaking the meat up with your spoon as you go along. If there's a lot of excess fat, spoon most of it out.",
+        "Stir in the tomato paste, garlic powder, and chili powder.",
+        "Add in the beef broth and increase the heat to high. Once it starts boiling, add in the macaroni.",
+        "Reduce the heat so it's not furiously boiling (a rapid simmer is good). I cook mine over medium heat. Let it cook uncovered until the pasta is tender and most of the liquid has been absorbed (about 13-15 minutes). I stir it every couple of minutes.",
+        "While it's cooking, grate the cheese (this saves prep time at the start of the recipe).",
+        "Take the pot off the heat and stir in the cheese. Season with salt & pepper as needed. I let it sit for a couple minutes prior to serving (soaks up the sauce and flavors more), but you can serve it right away."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT25M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "korean-spinach-banchan",
@@ -1253,7 +2438,31 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "8 oz spinach, cleaned and washed",
+        "1 garlic clove, minced",
+        "1 green onion, chopped",
+        "1½ tsp soy sauce",
+        "1½ tsp toasted sesame oil",
+        "2 tsp toasted sesame seeds",
+        "Korean dried shredded red pepper, optional"
+      ],
+      "recipe_steps": [
+        "Boil 8–10 cups water.",
+        "Blanch spinach for 30–60 seconds, stirring.",
+        "Drain and rinse in cold water twice.",
+        "Squeeze out excess water and cut into bite-size pieces.",
+        "Mix with garlic, green onion, soy sauce, sesame oil, and sesame seeds.",
+        "Garnish with dried red pepper if using and serve with rice."
+      ],
+      "recipe_yield": "about 4 servings",
+      "recipe_timings": {
+        "totalTime": "about 15 minutes"
+      },
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
+      "content_note": "Recovered from direct Maangchi recipe text."
     },
     {
       "id": "lemon-rosemary-chicken",
@@ -1278,7 +2487,34 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.littlespicejar.com/wp-content/uploads/2019/04/Easy-Lemon-Rosemary-Chicken-4.jpg"
+      "image_url": "https://www.littlespicejar.com/wp-content/uploads/2019/04/Easy-Lemon-Rosemary-Chicken-4.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "4 boneless, skinless chicken breasts (1 ¼ pounds total)",
+        "1¼ teaspoon lemon pepper seasoning",
+        "3 tablespoons butter",
+        "3 tablespoons lemon juice",
+        "5 garlic cloves (minced or pressed)",
+        "⅓ cup chicken broth",
+        "1¼ teaspoon fresh rosemary (chopped)",
+        "1¼ teaspoon fresh parsley (chopped)",
+        "¼ teaspoon red pepper flakes (more or less to taste)",
+        "2 teaspoons honey (or maple syrup)",
+        "additional lemon slices (for garnish)"
+      ],
+      "recipe_steps": [
+        "PREP: Position a rack in the center of the oven and preheat the oven to 425ºF.",
+        "SAUCE: In a 1-cup measuring cup, combine 2 tablespoons of butter, lemon juice, minced garlic, chicken broth, freshly chopped rosemary, parsley, red pepper, and honey and microwave in 30-second increments until the butter melts. Keep a close eye on it so it doesn’t boil over!",
+        "CHICKEN: Season the chicken breasts with lemon pepper seasoning on both sides and a big pinch of salt.",
+        "COOK: Add the remaining tablespoon of butter to an ovenproof skillet placed over medium-high heat and when it's hot, sear the chicken breasts. Do not overcrowd the pan or your chicken won’t brown. You may want to do this in two batches. Cook the chicken for 2-3 minutes per side. If you don’t have an ovenproof skillet, transfer the chicken to a 9x13 baking dish sprayed with cooking spray.",
+        "BAKE: Pour the prepared sauce over the chicken. Bake for 13-17 minutes or until the internal temperature of the chicken reaches 165ºF. Feel for firmness on the thickest part of the breast if you don’t have a thermometer. Spoon the sauce over the chicken breasts a couple of times during the baking process to keep the chicken moist! The amount of time required for the chicken to bake just depends on the thickness."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT20M",
+        "totalTime": "PT35M"
+      }
     },
     {
       "id": "lemongrass-chicken-with-rice-and-zucchini",
@@ -1304,7 +2540,39 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://pinchofyum.com/tachyon/Lemongrass-Chicken-2.jpg"
+      "image_url": "https://pinchofyum.com/tachyon/Lemongrass-Chicken-2.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 1/2 pounds boneless skinless chicken thighs",
+        "1 teaspoon paprika",
+        "garlic powder, onion powder, salt, and pepper to taste",
+        "olive oil",
+        "3 cloves garlic, minced",
+        "1 jalapeño, ribs and seeds removed (optional), minced",
+        "one 1-inch knob of ginger, grated or minced",
+        "2 tablespoons lemongrass or lemongrass paste",
+        "1 tablespoon brown sugar",
+        "one 14-ounce can unsweetened coconut cream (important: NOT cream of coconut)",
+        "juice and zest of one lime",
+        "salt to taste",
+        "2 zucchinis",
+        "1-2 tablespoons olive oil",
+        "salt and pepper to taste",
+        "cilantro and/or basil, chopped",
+        "rice"
+      ],
+      "recipe_steps": [
+        "Heat the oil in a large skillet over medium high heat. Add the chicken thighs, sprinkle with spices, and cook for 8-10 minutes until cooked through (165 degrees F). Remove from pan. Once cooled, shred / pull into small bite-sized pieces.",
+        "Add the garlic, jalapeño, and ginger to the chicken pan (you don’t have to wipe it out – save all those good flavors). Sauté until fragrant. Add the lemongrass and brown sugar; stir to combine. Add coconut cream and bring to a low, gentle simmer. Season with lime zest, lime juice, and salt.",
+        "Cut zucchini into coins, toss with olive oil and salt and pepper, and arrange in a layer on a baking sheet. Bake for 10-15 minutes at 450 degrees.",
+        "Add chicken back in to the sauce. Stir in some fresh cilantro or basil just before serving. Serve over rice with any veggies that you like (see zucchini directions in the notes section). And now enjoy this amazing flavor moment. ♡"
+      ],
+      "recipe_yield": "4-6 servings",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT20M",
+        "totalTime": "PT35M"
+      }
     },
     {
       "id": "marry-me-chicken",
@@ -1336,7 +2604,40 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://littlesunnykitchen.com/wp-content/uploads/Marry-Me-Chicken-22.jpg"
+      "image_url": "https://littlesunnykitchen.com/wp-content/uploads/Marry-Me-Chicken-22.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 large chicken breasts (boneless and skinless, sliced lengthwise into thin cutlets)",
+        "½ teaspoon salt",
+        "¼ teaspoon ground black pepper",
+        "6 tablespoons all-purpose flour",
+        "2 tablespoons olive oil",
+        "2 tablespoons unsalted butter",
+        "3 cloves garlic (minced)",
+        "1 cup chicken stock",
+        "1 cup heavy cream ((double cream in the UK))",
+        "½ cup grated parmesan cheese",
+        "1 teaspoon chili flakes",
+        "¼ teaspoon oregano",
+        "¼ teaspoon thyme",
+        "⅓ cup sundried tomatoes (chopped)",
+        "1 tablespoon fresh basil leaves"
+      ],
+      "recipe_steps": [
+        "Season chicken with salt and pepper, then dredge in flour and shake off any excess.",
+        "In a large skillet, heat olive oil and melt the butter on medium heat. Swirl the pan to coat with oil and butter evenly.",
+        "Brown the chicken on both sides until golden and cooked through, about 4 to 5 minutes per side. Work in batches if needed so you don’t overcrowd the pan. The chicken is done when the internal temperature reaches 165°F (74°C). Transfer onto a plate, cover, and set aside.",
+        "Saute the garlic for a minute or until it's fragrant. Add the chicken stock, and deglaze the pan scraping any bits stuck to the bottom of the pan with a wooden spoon.",
+        "Adjust the heat to medium-low, and add the heavy cream and the parmesan cheese to the skillet. Allow the sauce to simmer for a couple of minutes, then season with chili flakes, thyme, and oregano.",
+        "Season with salt and pepper to your taste, add the sundried tomatoes then put the chicken back in the sauce and let the sauce simmer and thicken for a few more minutes.",
+        "Garnish with chopped fresh basil leaves and serve warm over pasta or rice."
+      ],
+      "recipe_yield": "6 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT15M",
+        "totalTime": "PT25M"
+      }
     },
     {
       "id": "minestrone-soup",
@@ -1366,7 +2667,40 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.tasteofhome.com/wp-content/uploads/2024/10/Contest-Winning-Easy-Minestrone_EXPS_TOHVP24_119788_LC_09_26_2.jpg"
+      "image_url": "https://www.tasteofhome.com/wp-content/uploads/2024/10/Contest-Winning-Easy-Minestrone_EXPS_TOHVP24_119788_LC_09_26_2.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 large carrots, diced",
+        "2 celery ribs, chopped",
+        "1 medium onion, chopped",
+        "1 tablespoon olive oil",
+        "1 tablespoon butter",
+        "2 garlic cloves, minced",
+        "2 cans (14-1/2 ounces each) reduced-sodium chicken broth",
+        "2 cans (8 ounces each) no-salt-added tomato sauce",
+        "1 can (16 ounces) kidney beans, rinsed and drained",
+        "1 can (15 ounces) garbanzo beans or chickpeas, rinsed and drained",
+        "1 can (14-1/2 ounces) diced tomatoes, undrained",
+        "1-1/2 cups shredded cabbage",
+        "1 tablespoon dried basil",
+        "1-1/2 teaspoons dried parsley flakes",
+        "1 teaspoon dried oregano",
+        "1/2 teaspoon pepper",
+        "1 cup uncooked whole wheat elbow macaroni",
+        "11 teaspoons grated Parmesan cheese"
+      ],
+      "recipe_steps": [
+        "In a large saucepan, saute the onions, carrot and celery in oil and butter until tender. Stir in the garlic and cook for one minute longer.",
+        "Stir in the broth, tomato sauce, kidney beans, chickpeas, tomatoes (with juices), cabbage, basil, parsley, oregano and pepper. Bring to a boil, then reduce the heat. Cover with a lid and simmer for 15 minutes.",
+        "Stir in the pasta and cook, uncovered, for six to eight minutes or until the pasta and vegetables are tender.",
+        "Ladle the soup into bowls. Garnish each bowl with Parmesan cheese."
+      ],
+      "recipe_yield": "11 servings (2-3/4 quarts)",
+      "recipe_timings": {
+        "prepTime": "PT25M",
+        "cookTime": "PT40M",
+        "totalTime": "PT01H05M"
+      }
     },
     {
       "id": "one-skillet-lemon-butter-dijon-chicken-orzo",
@@ -1399,7 +2733,39 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/01/One-Skillet-Lemon-Butter-Dijon-Chicken-and-Orzo-with-Feta-Sauce-1.jpg"
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/01/One-Skillet-Lemon-Butter-Dijon-Chicken-and-Orzo-with-Feta-Sauce-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 tablespoons extra virgin olive oil",
+        "2 tablespoons Dijon mustard",
+        "4 cloves garlic, chopped",
+        "2 small shallots, chopped",
+        "2 tablespoons chopped fresh rosemary",
+        "1 teaspoon smoked paprika",
+        "kosher salt and black pepper",
+        "2 pounds boneless chicken breasts or thighs",
+        "3 tablespoons salted butter",
+        "1 lemon, sliced",
+        "1 1/2 cups orzo pasta",
+        "3 cups low sodium chicken broth",
+        "2 cups chopped kale",
+        "chopped fresh dill, for serving",
+        "4-6 ounces feta cheese",
+        "1/4 cup plain Greek yogurt",
+        "1 clove garlic, grated",
+        "juice from 1 lemon",
+        "1/4 teaspoon smoked paprika",
+        "crushed red pepper flakes"
+      ],
+      "recipe_steps": [
+        "1. Preheat oven to 400° F. 2. In a bowl, mix 2 tablespoons olive oil, Dijon mustard, 3 cloves garlic, 1 shallot, rosemary, paprika, and a pinch each of salt and pepper. Add the chicken and toss well to combine.3. Heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high heat. Add the chicken. Sear on both sides until golden, 3-5 minutes. During the last 2 minutes of cooking, add the butter and lemon slices. Remove everything from the skillet.4. Add the orzo, 1 shallot, and 1 clove of garlic. Cook until the orzo is toasted, about 2 minutes. Add the broth, kale, and 2 tablespoons lemon juice. Season with salt and pepper. Bring to a boil over high heat. Slide the chicken, lemon slices, and any juices left on the pan back into the skillet. Bake, uncovered for 15 minutes or until the chicken is cooked through.5. Meanwhile, make the feta sauce. Combine the feta, yogurt, garlic, and lemon juice in a blender and blend until creamy. Stir in the paprika, and a pinch of red pepper flakes. If desired, thin with additional lemon juice.6. Serve the chicken and orzo topped with the feta sauce and dill."
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT40M",
+        "totalTime": "PT60M"
+      }
     },
     {
       "id": "orechiette-with-italian-sausage-spinach",
@@ -1427,7 +2793,34 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2021/10/orecchiette-sausage-spinach-recipe-1.jpg"
+      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2021/10/orecchiette-sausage-spinach-recipe-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 ounces uncooked orecchiette pasta",
+        "16 ounces Italian sausage (see note)",
+        "1/2 medium onion (chopped)",
+        "4 cloves garlic (minced)",
+        "1/2 teaspoon Dijon mustard",
+        "1/2 cup dry white wine",
+        "3 cups (packed) fresh baby spinach",
+        "2 tablespoons fresh basil (optional)",
+        "Salt &amp; pepper (to taste)",
+        "For serving: freshly grated parmesan cheese (optional, to taste)"
+      ],
+      "recipe_steps": [
+        "Boil a large salted pot of water and cook the pasta al dente according to package directions.",
+        "Meanwhile, add the sausage meat and onion to a skillet, and sauté over medium-high heat for 8-10 minutes or until it's cooked through and nicely browned. If there's more than about 1-2 tablespoons of fat left in the skillet, spoon out the excess, but be sure to leave some since we're not adding any extra butter or oil.",
+        "Reduce the heat to medium, stir in the garlic and Dijon mustard, and cook for about 30 seconds.",
+        "Pour in the wine and cook until reduced by half (about 1-2 minutes).",
+        "Add in the spinach and basil (if using). Toss, using tongs or two large spoons, until the spinach has wilted, then add in the drained pasta and toss again.",
+        "Season with salt & pepper as needed. Serve immediately with freshly grated parmesan cheese over top if desired."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "orzo-pasta-salad",
@@ -1457,7 +2850,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.foodiecrush.com/wp-content/uploads/2023/04/Orzo-Salad-with-Artichokes-and-Asparagus-foodiecrush.com-14.jpg"
+      "image_url": "https://www.foodiecrush.com/wp-content/uploads/2023/04/Orzo-Salad-with-Artichokes-and-Asparagus-foodiecrush.com-14.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 cup dry orzo",
+        "½ pound asparagus (, about ½ a bunch, spears sliced into 2-inch pieces (about 4 pieces per spear))",
+        "3 tablespoons extra-virgin olive oil",
+        "3 tablespoons lemon juice",
+        "1 teaspoon lemon zest",
+        "1 garlic clove (, minced or pressed)",
+        "1 15-ounce can quartered artichoke hearts in water (, drained then sliced in half again)",
+        "1/2 teaspoon kosher salt",
+        "1/2 teaspoon freshly ground black pepper",
+        "2 tablespoons fresh dill (, chopped)",
+        "2 tablespoons fresh mint (, chopped)",
+        "¼ cup roasted (, salted pistachios, chopped)",
+        "1/3 cup crumbled feta"
+      ],
+      "recipe_steps": [
+        "Fill a medium-sized pot with water and bring it to a boil. Once boiling, generously salt the water. Add the orzo and cook for about 8 minutes or until al dente. Add the asparagus and cook for 1 minute more then drain.",
+        "While the orzo is cooking, add the lemon zest, lemon juice, olive oil, garlic, and 1/2 teaspoon salt and freshly ground black pepper to a bowl and whisk to emulsify. Add the chopped artichokes and stir to coat. Once the orzo and asparagus are ready, drain them then add them to the serving bowl. Toss to combine. Wait a few minutes to let everything cool down, then stir in the dill, mint, and feta. Top with chopped pistachios and more feta if you'd like just before serving."
+      ],
+      "recipe_yield": "6 1-cup servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT10M",
+        "totalTime": "PT20M"
+      }
     },
     {
       "id": "pad-see-ew",
@@ -1484,7 +2903,47 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2017/02/pad-see-ew-11-2.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2017/02/pad-see-ew-11-2.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 ounces flank steak ((thinly sliced))",
+        "1 teaspoon Thai black soy sauce ((can also use regular soy sauce or oyster sauce))",
+        "1 teaspoon vegetable oil",
+        "1 teaspoon cornstarch ((or tapioca starch))",
+        "1/8 teaspoon baking soda",
+        "1 tablespoon water",
+        "3 tablespoons water",
+        "1 tablespoon oyster sauce",
+        "½ teaspoon sugar",
+        "1 tablespoon Thai thin soy sauce ((or regular light soy sauce))",
+        "1 tablespoon Thai black soy sauce",
+        "1 teaspoon fish sauce",
+        "Freshly ground white pepper ((to taste))",
+        "1 pound fresh wide rice noodles ((you can also use 8 ounces dried rice noodles))",
+        "4 tablespoons vegetable oil",
+        "3 cloves garlic ((chopped))",
+        "6 ounces Chinese broccoli ((about 3 cups, cut into 2-inch/5 cm pieces))",
+        "2 large eggs ((slightly beaten))"
+      ],
+      "recipe_steps": [
+        "To the flank steak, add the Thai black soy sauce (or regular soy sauce/oyster sauce), vegetable oil, cornstarch, baking soda, and water. Mix until the beef is completely coated. Set aside.",
+        "For the rest of the dish, combine the water, oyster sauce, sugar, Thai thin soy sauce, Thai black soy sauce, fish sauce, and white pepper in a small bowl. Stir to mix well.",
+        "Make sure your fresh rice noodles are at room temperature. If the noodles are really cold and stiff from refrigeration, rinse them quickly under hot tap water when you are ready to stir-fry the dish. This extra step will help you avoid a big homogenous lump of noodles during stir-frying. Be sure to shake off any excess water after rinsing and use them immediately.",
+        "The fresh wide rice noodles really set this dish apart from other noodle dishes, so try your best to find them. Or you can use our recipe for homemade rice noodles to make them at home. If either of these options don’t work, then use dried rice noodles but remember to halve the dried amount - 8 ounces of dried noodles to rehydrate to 16 ounces. Also, if using a dried rice noodle, follow the directions on the package and make sure you undercook the noodles slightly (al dente), since you will be cooking them again in the wok. After you drain the noodles thoroughly, toss the noodles with a tablespoon of oil. This will prevent them from sticking to the wok.",
+        "Heat your wok over high heat until it just starts to smoke, and spread 1 tablespoon of oil around the perimeter of the wok evenly to coat. Sear the beef until it is 80% cooked through, and transfer back to the marinade bowl.",
+        "Add another tablespoon of oil to the wok and stir in the garlic. Immediately add the Chinese broccoli and stir-fry for 20 seconds (stir constantly to prevent the garlic from burning).",
+        "Next, spread the noodles around the wok. Continue to work quickly--your wok should be at the highest heat setting. Spread the sauce mixture over the top of the noodles, and gently mix everything with your wok spatula using a scooping motion for about 20 seconds. Add the beef back to wok.",
+        "Push the mixture to one side to let the empty side of the wok heat for 10 seconds. Add another tablespoon of oil to the wok, and add the beaten eggs. Wait 5 seconds for them to begin to cook. Scramble the eggs for another few seconds, breaking them up into smaller pieces.",
+        "If your wok is not sizzling at this point, it probably means that your burner is not hot enough. Be patient, and the heat should “catch up.” Stir-fry the mixture just enough so the noodles heat up evenly, but don’t break into small pieces. Make sure you use your wok spatula to scrape the bottom of the wok so the noodles don’t stick.",
+        "As the wok heats up, you will notice that the food will stick to it less readily! But if you need to, you can add a little oil to make it easier to stir-fry.",
+        "Continue cooking, stirring less frequently (so the noodles get slightly caramelized, creating that restaurant-style flavor) for another 1 to 2 minutes, or until the noodles are heated through. Serve hot with Homemade Chili Oil or Chiu Chow Sauce on the side!"
+      ],
+      "recipe_yield": "3",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT10M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "peking-duck-westinas-version",
@@ -1506,7 +2965,13 @@
       "private_attachment": false,
       "notes": "",
       "family": "Peking Duck",
-      "variant_label": "Peking Duck (Westina’s version)"
+      "variant_label": "Peking Duck (Westina’s version)",
+      "content_status": "unavailable",
+      "recipe_ingredients": [],
+      "recipe_steps": [],
+      "recipe_yield": "",
+      "recipe_timings": {},
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
     },
     {
       "id": "potato-leek-soup",
@@ -1528,7 +2993,40 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2024/09/potato-leek-soup-recipe.jpg"
+      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2024/09/potato-leek-soup-recipe.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "4 large leeks (about 2½ pounds, white and light green parts only)",
+        "3 tablespoons unsalted butter",
+        "1 teaspoon sea salt",
+        "Freshly ground black pepper",
+        "2 pounds Yukon gold potatoes or yellow potatoes (chopped)",
+        "3 garlic cloves (grated)",
+        "6 cups Leek Top Broth (below) or vegetable broth",
+        "3 fresh thyme sprigs (bundled)",
+        "1 cup milk or heavy cream",
+        "1 tablespoon fresh lemon juice (optional)",
+        "Chopped fresh chives (for garnish)",
+        "4 large leeks (about 2½ pounds, dark green tops only)",
+        "12 cups water",
+        "8 fresh thyme sprigs",
+        "5 garlic cloves (smashed)",
+        "1 tablespoon sea salt",
+        "1 tablespoon black peppercorns"
+      ],
+      "recipe_steps": [
+        "Optional: Make the leek top broth. Cut the dark green tops off the leeks. Wash well and add to a large pot with the water, thyme, garlic, salt, and peppercorns. Bring to a boil over high heat, then reduce the heat and simmer for 30 minutes. Strain and measure 6 cups broth for the soup. Freeze the remaining broth or store it in the refrigerator for another use.",
+        "Make the soup: Chop the white and light green parts of the leeks. Wash well.",
+        "Heat the butter in a large pot or Dutch oven over medium heat. Add the leeks, salt, and several grinds of pepper and cook for 8 to 10 minutes, stirring occasionally, or until the leeks are soft. If the leeks start browning before they soften, reduce the heat.",
+        "Add the potatoes, garlic, broth, and thyme and simmer for 20 minutes, or until the potatoes are very soft. Remove the thyme, then use an immersion blender or transfer the soup to an upright blender to blend until smooth. Return the soup to the pot and stir in the milk. Season to taste, adding the lemon juice, if desired.",
+        "Garnish with chives and serve."
+      ],
+      "recipe_yield": "8",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT30M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "roast-cauliflower-with-lemon-garlic-yogurt-sauce",
@@ -1559,7 +3057,36 @@
       "private_attachment": false,
       "notes": "",
       "family": "Roasted Cauliflower",
-      "variant_label": "Roast cauliflower with lemon garlic yogurt sauce"
+      "variant_label": "Roast cauliflower with lemon garlic yogurt sauce",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 large (800 g) head cauliflower, leaves trimmed",
+        "¼ cup olive oil, plus more for drizzling",
+        "zest and juice of 1 large lemon, divided",
+        "1½ tsp kosher salt, plus more to taste",
+        "½ tsp black pepper, plus more to taste",
+        "2 tsp fresh jalepenos, minced (optional) or to taste ((or use ½ tsp dried red chili flakes))",
+        "¼ cup pomegranate seeds or chopped, dried cranberry or barberries",
+        "¼ cup pine nuts, toasted",
+        "2 tbsp fresh chives, chopped ((or cilantro or parsley))",
+        "¾ cup Greek yogurt or Labaneh",
+        "½ of a small clove of garlic, grated or finely minced",
+        "2 tsp lemon juice",
+        "½ tsp salt"
+      ],
+      "recipe_steps": [
+        "Preheat oven to 450°F (232°C).",
+        "Cut the cauliflower in half through the stem. Cut florets from each half. They may be in varying different sizes. Smaller pieces will turn more dark and golden. The tender parts of the stem may be diced into large dice and used too. Place cauliflower in a large bowl.",
+        "Toss with the olive oil, HALF the lemon zest and juice, salt, pepper and jalepenos (if using). Spread onto a large, rimmed baking sheet in one layer. Roast for 20 minutes or until edges begin to char slightly. Scrape and turn pieces over with a spatula. Roast again until crisp and dark, golden brown, about 10 minutes more.",
+        "While cauliflower is roasting, mix yogurt or labaneh with the garlic, lemon juice and salt. Stir to combine. Set aside in refrigerator.",
+        "Once cauliflower is done roasting, immediately toss with remaining lemon zest, juice and season with a little more salt and pepper to taste.",
+        "To serve, spread yogurt on a medium plate or platter. Top with the roasted cauliflower. Garnish with pine nuts, pomegranate seeds and chives and drizzle with a little extra-virgin olive oil."
+      ],
+      "recipe_yield": "4 as a side",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT30M"
+      }
     },
     {
       "id": "roast-chicken",
@@ -1588,7 +3115,45 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.recipetineats.com/tachyon/2016/05/Roast-Chicken_6a.jpg"
+      "image_url": "https://www.recipetineats.com/tachyon/2016/05/Roast-Chicken_6a.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1.75 - 2 kg / 3.5 - 4lb whole chicken (, patted dry)",
+        "Salt and pepper",
+        "2 tsp olive oil",
+        "1 lemon, quartered",
+        "3 rosemary sprigs",
+        "100 g / 1 stick unsalted butter (, melted)",
+        "3 garlic cloves (, minced)",
+        "1 tbsp sage (, finely chopped (Note 1))",
+        "2 tsp rosemary (, finely chopped (Note 1))",
+        "1 tbsp parsley (, finely chopped (Note 1))",
+        "1/2 tsp each salt and black pepper",
+        "1 cup / 250 ml dry white wine (, or low sodium chicken broth)",
+        "1 onion (, quartered (Note 2))",
+        "1 garlic bulb (, halved horizontally (Note 2))"
+      ],
+      "recipe_steps": [
+        "Take the chicken out of the fridge 30 minutes before cooking.",
+        "Preheat oven to 220C/450F (standard) or 200C/430F (fan/convection). Put shelf in the middle.",
+        "Mix together Butter ingredients. Add juice from 2 wedges of lemon.",
+        "Place chicken in a roasting pan. Use a dessert spoon to loosen skin from chicken (see video). Do the top (the breast) and the drumsticks – not the underside.",
+        "Prop chicken upright, drizzle butter under skin, using most of the garlic/herb sludge, but saving a bit of butter for the skin (Note 3).",
+        "Drizzle / smear remaining butter all over surface of the chicken. Squeeze over juice of 2 lemon wedges.",
+        "Stuff used lemon wedges and rosemary inside chicken.",
+        "Tie drumstick ends with string and tuck wing tips under the chicken.",
+        "Sprinkle all over with salt and pepper.",
+        "Place onion and garlic in the pan, place chicken on top. Pour wine around, drizzle chicken with oil.",
+        "Transfer to oven. Roast for 10 minutes, then turn oven down to 180C/350F (all oven types). Roast for a further 1 hr 15 minutes, or until the internal temperature is 75C/165F or until juices run clear when pierced at the join between the drumstick and the body. Baste twice (30 min then at 1 hr), spooning pan juices over skin.",
+        "Rest for 15 minutes – don’t cover, skin becomes wet.",
+        "Serve with pan juices (see video for how to carve). I discard onion but use the garlic in the pan. See notes for side suggestions & how to use carcass for incredible homemade broth!"
+      ],
+      "recipe_yield": "5",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT90M",
+        "totalTime": "PT105M"
+      }
     },
     {
       "id": "roast-chicken-brine",
@@ -1610,7 +3175,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.recipetineats.com/tachyon/2014/05/Chicken-Brine_3.jpg"
+      "image_url": "https://www.recipetineats.com/tachyon/2014/05/Chicken-Brine_3.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 litres / 2 quarts water (, cold tap water)",
+        "1/3 cup kosher or cooking salt, NOT table salt ((Note 1))",
+        "2 lemons (, quartered)",
+        "10 sprigs parsley (, fresh )",
+        "7 sprigs thyme",
+        "2 sprigs rosemary",
+        "5 bay leaves, fresh ((or 3 dried))",
+        "1/4 cup honey",
+        "6 garlic cloves, (smashed (Note 3))",
+        "1 tbsp black peppercorns",
+        "1.5 - 2 kg / 3-4lb chicken (, whole)",
+        "3 tbsp / 40g butter (, melted)",
+        "Salt and pepper to season"
+      ],
+      "recipe_steps": [
+        "Brining",
+        "Roasting Brined Chicken:"
+      ],
+      "recipe_yield": "5 - 6",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT60M",
+        "totalTime": "PT1515M"
+      }
     },
     {
       "id": "roasted-cauliflower",
@@ -1634,7 +3225,13 @@
       "private_attachment": false,
       "notes": "",
       "family": "Roasted Cauliflower",
-      "variant_label": "Roasted cauliflower"
+      "variant_label": "Roasted cauliflower",
+      "content_status": "unavailable",
+      "recipe_ingredients": [],
+      "recipe_steps": [],
+      "recipe_yield": "",
+      "recipe_timings": {},
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
     },
     {
       "id": "sichuan-fuqi-feipian",
@@ -1664,7 +3261,55 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/07/fuqi-feipian-recipe-8.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/07/fuqi-feipian-recipe-8.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 pounds beef shank ((900g))",
+        "1 1/2 pounds honeycomb beef tripe ((680g))",
+        "5 slices ginger",
+        "3 scallions",
+        "2 teaspoons Sichuan peppercorns ((3g))",
+        "1 teaspoon cumin seeds ((2g))",
+        "1 teaspoon coriander seeds ((2g))",
+        "1 teaspoon black or white peppercorns ((or a mix of both, 3g))",
+        "3 cloves",
+        "3 bay leaves",
+        "1 cinnamon stick",
+        "1/2 dried tangerine peel",
+        "2 star anise",
+        "1 black cardamom pod ((optional))",
+        "2 white cardamom pods ((optional)",
+        "1/3 cup Shaoxing wine",
+        "1/3 cup light soy sauce",
+        "1 tablespoon dark soy sauce ((optional))",
+        "70 g rock sugar",
+        "1/4 cup braising liquid",
+        "1/4 cup chili oil ((preferably homemade; can add more or less to taste))",
+        "2 cloves garlic ((smashed and finely minced))",
+        "1 teaspoon Sichuan peppercorn powder",
+        "1 tablespoon toasted sesame seeds",
+        "2 teaspoons Chinese black vinegar",
+        "1 tablespoon light soy sauce",
+        "1 1/2 teaspoons sugar",
+        "1/4 teaspoon salt ((or to taste))",
+        "1/3 cup Chinese celery ((finely chopped))",
+        "1/4 cup roasted peanuts ((chopped))",
+        "2 tablespoons cilantro ((chopped))"
+      ],
+      "recipe_steps": [
+        "Add beef shank and tripe to a large pot, and add fresh water to cover, along with the ginger. Bring to a boil, and boil for 1 minute. Drain and rinse the beef shank, tripe, and ginger thoroughly in cold water.",
+        "Rinse the pot, and add the meat, tripe, and ginger back to the pot. Cover with fresh water, and add the scallions, along with the rest of the aromatic ingredients (the Sichuan peppercorns through the rock sugar). The braising liquid should taste seasoned, but not briny/overly salty. You have the option to add dark soy sauce, if you would like the meat to have a darker color, but it’s optional.",
+        "Bring to a boil. Turn down the heat to low, cover, and simmer for 45 minutes.",
+        "Turn off the heat and allow the meat to cool completely in the braising liquid before taking it out to cut (about 4 hours). The beef will continue to cook as it cools; it will fall apart if you try to cut it while it’s still hot.",
+        "Make the dressing/sauce while you wait. Combine the braising liquid, chili oil, garlic, Sichuan peppercorn powder, sesame seeds, Chinese black vinegar, light soy sauce, sugar, and salt.",
+        "Slice the beef and tripe very thinly on an angle (to get wider slices), and toss with the Chinese celery and the sauce. Top with the peanuts and cilantro."
+      ],
+      "recipe_yield": "12",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT70M",
+        "totalTime": "PT330M"
+      }
     },
     {
       "id": "spicy-cilantro-beef",
@@ -1691,7 +3336,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/02/A0D575A2-89E5-4F66-BE9C-FE40BB052E6A-scaled.jpg"
+      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/02/A0D575A2-89E5-4F66-BE9C-FE40BB052E6A-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 lb beef (thinly sliced )",
+        "2-3 serrano pepper (sliced)",
+        "2 Thai red chili (sliced)",
+        "8-10 cloves garlic (chopped)",
+        "1 tablespoon Korean red chili flakes",
+        "0.5 tablespoons ground Sichuan peppercorn",
+        "2 tablespoon oyster sauce",
+        "1.5 tablespoons Black Vinegar",
+        "1 handful cilantro (chopped)",
+        "4 tablespoon oil (I am using grapeseed oil today)"
+      ],
+      "recipe_steps": [
+        "Bring a pot to a simmer, and once boiling, add the thinly sliced beef. Cook for 2-3 minutes or until beef is fully cooked; remove and set aside",
+        "In a bowl, add in the beef, and top with serrano pepper, Thai red chili, chopped garlic, Korean red chili flakes, and ground Sichuan peppercorn.",
+        "Heat up 4 tablespoons of oil, and once the oil is hot, pour the oil over the ingredients. You can test the oil by placing a wooden chopstick in the oil; once sizzling, it is ready.",
+        "Season the beef with oyster sauce, black vinegar, and chopped cilantro. Mix till all the beef is coated with the sauce.",
+        "Serve immediately and enjoy!"
+      ],
+      "recipe_yield": "4 People",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT15M",
+        "totalTime": "PT20M"
+      }
     },
     {
       "id": "spicy-cumin-lamb",
@@ -1716,7 +3387,31 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://redhousespice.com/wp-content/uploads/2023/02/stir-fried-lamb-with-cumin-chili-scaled.jpg"
+      "image_url": "https://redhousespice.com/wp-content/uploads/2023/02/stir-fried-lamb-with-cumin-chili-scaled.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 lb lamb ( leg, rump(chump), or loin cuts)",
+        "1 tablespoon cumin powder",
+        "1 tablespoon cornstarch",
+        "1 tablespoon light soy sauce",
+        "1 tablespoon Shaoxing rice wine",
+        "3 tablespoon neutral cooking oil (divided)",
+        "1 tablespoon cumin seeds",
+        "1 tablespoon chili flakes (or to taste (see note 1))",
+        "1 small red onion (sliced)",
+        "¼ teaspoon salt",
+        "1 bunch cilantro ( aka coriander)"
+      ],
+      "recipe_steps": [
+        "Marinate the lamb",
+        "Stir-fry the dish"
+      ],
+      "recipe_yield": "3 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT5M",
+        "totalTime": "PT25M"
+      }
     },
     {
       "id": "spicy-tuscan-chicken-pasta",
@@ -1748,7 +3443,33 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2023/02/Spicy-Tuscan-Chicken-Pasta-1.jpg"
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2023/02/Spicy-Tuscan-Chicken-Pasta-1.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 jar (8 ounce) oil-packed sun-dried tomatoes",
+        "1 pound boneless skinless chicken breasts, cubed",
+        "4 teaspoons Italian seasoning ((see note))",
+        "1 teaspoon paprika or smoked paprika",
+        "red pepper flakes",
+        "kosher salt and black pepper",
+        "1 cup grated parmesan cheese",
+        "2 tablespoons salted butter",
+        "1 medium shallot, chopped",
+        "2 cloves garlic, chopped",
+        "2-3 tablespoons crushed Calabrian chili paste",
+        "1 pound short cut pasta",
+        "1 cup heavy cream",
+        "2 cups fresh baby spinach"
+      ],
+      "recipe_steps": [
+        "1. Drain 3 tablespoons of oil from the sun-dried tomato jar into a large pot or skillet with sides. Chop the sun-dried tomatoes and set aside.2. Set the pot over medium-high heat. Add the chicken, 3 teaspoons Italian seasoning, the paprika, and a pinch each of red pepper flakes, salt, and pepper. Cook until golden brown, 5 minutes. Add 1/4 cup parmesan, cook another minute, then remove the chicken from the pot.3. To the same pot, add a drizzle of oil and the butter. Add the shallot, garlic, Calabrian chili paste, and 1 teaspoon of Italian seasoning. Cook until fragrant, about 3 minutes. Add 3 1/2 cups water. Bring to a boil, add the pasta, and cook, stirring often, until the pasta is al dente, 8 minutes. Stir in the cream, spinach, chopped sun-dried tomatoes, and remaining 3/4 cup parmesan. Slide the chicken in, and any juices left on the plate.4. Serve the pasta topped with fresh parmesan and basil."
+      ],
+      "recipe_yield": "6",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT25M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "sweet-potato-pierogi-w-cheddar-bacon-bits",
@@ -1775,12 +3496,39 @@
       ],
       "tried": false,
       "golden": false,
-      "source_url": "https://www.halfbakedharvest.com/hbh-meal-plan-12-4",
+      "source_url": "https://www.halfbakedharvest.com/sweet-potato-cheddar-pierogi/",
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/11/Sweet-Potato-Cheddar-Pierogi-with-Bacon-Bits-7.jpg"
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/11/Sweet-Potato-Cheddar-Pierogi-with-Bacon-Bits-7.jpg",
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "Flour, egg, salt, butter, and sour cream or Greek yogurt for the dough",
+        "Sweet potatoes",
+        "Cheddar cheese",
+        "Garlic powder",
+        "Bacon",
+        "Butter",
+        "Rosemary",
+        "Chili flakes"
+      ],
+      "recipe_steps": [
+        "Mix flour, salt, butter, yogurt or sour cream, and egg. Knead 2–3 minutes, cover, and rest 30 minutes.",
+        "Bake pierced sweet potatoes at 425°F until tender, about 50–60 minutes. Cool, peel, mash, and mix with cheddar, garlic powder, salt, and pepper.",
+        "Roll dough to about ⅛ inch, cut 3-inch rounds, fill with about 2 tsp filling, wet the edges, fold, and seal.",
+        "Boil pierogi in batches for 2–3 minutes, until they float.",
+        "Cook bacon until crisp and remove. Brown butter with rosemary for 2–3 minutes, remove from heat, and add chili flakes.",
+        "Toss boiled pierogi in the butter sauce. Top with cheddar and bacon bits."
+      ],
+      "recipe_yield": "Serves 8",
+      "recipe_timings": {
+        "prepTime": "30 minutes",
+        "cookTime": "1 hour",
+        "totalTime": "1 hour 30 minutes"
+      },
+      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
+      "content_note": "Recovered from canonical standalone recipe page; condensed for the family card."
     },
     {
       "id": "taiwanese-beef-noodle-soup",
@@ -1814,7 +3562,52 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2018/03/taiwanese-beef-noodle-soup-instant-pot-9.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2018/03/taiwanese-beef-noodle-soup-instant-pot-9.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 pounds beef shank ((1.4 kg, cut into 2-inch chunks))",
+        "2 tablespoons oil",
+        "A 2-inch piece of ginger ((smashed))",
+        "6 cloves garlic ((smashed))",
+        "3 scallions ((cut into 2-inch segments))",
+        "1 onion ((cut into wedges))",
+        "1 tomato ((cut into wedges))",
+        "4 dried chilies ((ripped in half))",
+        "1 tablespoon tomato paste",
+        "2 tablespoons spicy bean paste (douban jiang)",
+        "2 teaspoons sugar",
+        "1/2 cup soy sauce",
+        "1/2 cup Shaoxing wine",
+        "8 cups water ((to make the soup broth))",
+        "1 Chinese aromatic herb packet",
+        "32 ounces fresh wheat (white) noodles ((900g))",
+        "A small handful of bok choy for each serving",
+        "Cilantro ((finely chopped))",
+        "Scallions ((finely chopped))",
+        "Pickled mustard greens ((to taste, also known as snow vegetable or 雪菜; note this is different from Cantonese haam choy))",
+        "1 Chinese cinnamon stick",
+        "3 bay leaves ((optional) )",
+        "1/2 tablespoon fennel seeds",
+        "1/2 tablespoon cumin seeds",
+        "1 teaspoon coriander seeds",
+        "1 tablespoon Sichuan peppercorns ((optional) )",
+        "¼ teaspoon black pepper"
+      ],
+      "recipe_steps": [
+        "Boil enough water in a pot to boil all of your beef. Once the water is boiling, add the beef. Let it come back up to a boil, and boil for 1 minute. Strain in a colander and rinse thoroughly with fresh water to remove any impurities.",
+        "Next, in your instant pot, turn on the saute setting. Add the oil, crushed ginger, garlic, scallions, and onions in that order. Stir to lightly caramelize. Let the onion turn translucent. Add the tomato and dried chilies.",
+        "Next, add the meat to the pot. Then add the tomato paste, spicy bean paste, sugar, soy sauce, and Shaoxing wine, and mix thoroughly.",
+        "Pour 8 cups of water into the instant pot. Add the spice packet. The instant pot should be filled to the 10-cup line; it shouldn’t be more than ⅔ of the way full per safety instructions. Our instant pot is the largest size (8 quarts); if yours is smaller, you can halve the recipe accordingly.",
+        "Close the lid of the instant pot, and make sure you have your vent set so it is not venting. Cook for 100 minutes on the Meat/Stew setting. If you don’t have an instant pot, you can use a regular pot on the stove, but instead, cook the soup on a low simmer for 3-4 hours.",
+        "When the instant pot timer is up, carefully release the pressure valve (wear an oven mitt, so you don’t scald yourself!). Boil some noodles per package instructions, and in the last minute or two of the noodles cooking, throw your bok choy in and blanch until just tender.",
+        "Serve each bowl of Taiwanese beef noodle soup with a serving of noodles, a few stalks of bok choy, and generous sprinklings of finely minced cilantro, scallions, and Chinese pickled mustard greens. Pro tip, buy the pre-seasoned spicy mustard greens and you can use them straight out of the package. If you are using the non-spicy version (from a can, for example), chop and saute with a little oil, a few chopped dried red chilies, and a pinch of sugar."
+      ],
+      "recipe_yield": "10",
+      "recipe_timings": {
+        "prepTime": "PT30M",
+        "cookTime": "PT120M",
+        "totalTime": "PT150M"
+      }
     },
     {
       "id": "turkish-pasta",
@@ -1846,7 +3639,43 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://healthyfitnessmeals.com/wp-content/uploads/2024/12/turkish-pasta-18.jpg"
+      "image_url": "https://healthyfitnessmeals.com/wp-content/uploads/2024/12/turkish-pasta-18.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "8 ounces pasta of choice",
+        "1 pound lean ground beef",
+        "2 tablespoons onion powder",
+        "2 medium yellow onions (diced )",
+        "1 tablespoon tomato paste",
+        "2 teaspoons sweet paprika powder",
+        "Salt and Pepper to taste",
+        "1/4 cup unsalted butter",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried mint (or fresh)",
+        "1 tablespoon sweet paprika (not smoked)",
+        "1 tablespoon mild pepper paste",
+        "1 teaspoon Turkish chili flakes (or regular chili flakes)",
+        "1 cup Greek yogurt (or plain yogurt)",
+        "2-3 small garlic cloves (minced, you can use one for a lighter garlic flavor)",
+        "Salt and pepper",
+        "1/4 cup minced parsley",
+        "1/2 cup Cherry tomatoes (diced)"
+      ],
+      "recipe_steps": [
+        "Cook the 8 ounces pasta of choice according to package directions.",
+        "In a large skillet over medium heat, sear the 1 pound lean ground beef until almost cooked through. about 2-3 minutes. The beef should release its natural oils, and no need to add oil.",
+        "Add in the diced 2 medium yellow onions, Salt and Pepper to taste, 2 teaspoons sweet paprika powder, 2 tablespoons onion powder, and 1 tablespoon tomato paste.",
+        "Mix and sear everything until the onions are translucent and cooked through. About 3 minutes. Remove from heat and set aside.",
+        "To make the butter sauce, melt the 1/4 cup unsalted butter over low heat in a small saucepan. Add the 2 tablespoons olive oil, 1 tablespoon mild pepper paste, 1 teaspoon dried mint, 1 tablespoon sweet paprika, and 1 teaspoon Turkish chili flakes. Mix with a spatula to combine. About 1 minute. Set aside.",
+        "Next, Make the garlic yogurt sauce. In a bowl add the 1 cup Greek yogurt, 2-3 small garlic cloves (minced), Salt and pepper, and a bit of water (about 2-3 tablespoons) to thin it down if it is too thick. Mix well to combine.",
+        "To assemble, place cooked pasta on a deep dish or plate. Then add 1/4 th of the yogurt sauce, top with seasoned beef, drizzle some of the seasoned butter sauce, and garnish with chopped 1/4 cup minced parsley and 1/2 cup Cherry tomatoes (chopped). Enjoy."
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT30M",
+        "totalTime": "PT45M"
+      }
     },
     {
       "id": "vietnamese-lemongrass-chicken-vermicelli-noodles",
@@ -1882,7 +3711,46 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://www.recipetineats.com/tachyon/2017/01/Vietnamese-Noodles-with-Lemongrass-Chicken_7.jpg"
+      "image_url": "https://www.recipetineats.com/tachyon/2017/01/Vietnamese-Noodles-with-Lemongrass-Chicken_7.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "600 - 800g / 1.2 - 1.6lb chicken thigh fillets (, skinless and boneless or breast (or pork, beef or any seafood))",
+        "1 stalk lemongrass (, white part only, bruised them sliced into pieces easy to pick out later (Note 1))",
+        "2 garlic cloves (, finely chopped or minced)",
+        "2 tbsp lime juice",
+        "2 tbsp fish sauce ((Note 2))",
+        "1 tbsp soy sauce ((all purpose or light, NOT dark soy))",
+        "2 tbsp brown sugar",
+        "1 tbsp vegetable oil",
+        "1/4 cup fish sauce ((Note 3))",
+        "4 tbsp rice vinegar",
+        "2 tbsp white sugar",
+        "1/2 cup water",
+        "2 garlic cloves (, finely chopped)",
+        "1 red birds eye chilli (, finely chopped (Note 4))",
+        "3 tbsp lime juice",
+        "1/2 tbsp oil",
+        "200 g / 7 oz vermicelli noodles (, dried)",
+        "2 carrots (, julienned)",
+        "2 cucumbers (, julienned (optional: remove seeds))",
+        "5 cups iceberg lettuce (, finely sliced)",
+        "3 cups bean sprouts",
+        "Handful of mint leaves",
+        "Handful of cilantro/coriander",
+        "Sliced red chilli ((for garnish - optional))",
+        "Lime wedges ((to serve - optional but recommended))"
+      ],
+      "recipe_steps": [
+        "Lemongrass Chicken",
+        "Nuoc Cham Sauce",
+        "Assemble"
+      ],
+      "recipe_yield": "4",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT10M",
+        "totalTime": "PT30M"
+      }
     },
     {
       "id": "wuhan-hot-dry-noodle",
@@ -1903,12 +3771,49 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/02/hot-dry-noodles-11.jpg"
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/02/hot-dry-noodles-11.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "3 tablespoons sesame paste",
+        "2 tablespoons sesame oil",
+        "1 ½ teaspoons dark soy sauce",
+        "1 tablespoon light soy sauce",
+        "1/2 teaspoon sugar",
+        "salt ((to taste))",
+        "240 g about 8 oz. fresh alkaline noodles",
+        "1/4 cup chopped preserved mustard stems, zha cai, 榨菜",
+        "1/4 cup chopped pickled long beans, suan dou jiao, 酸豆角",
+        "1 teaspoon garlic ((minced))",
+        "Chili oil ((to taste))",
+        "1/4 cup cilantro ((chopped))",
+        "2 scallions ((chopped))",
+        "1/2 teaspoon Chinese black vinegar"
+      ],
+      "recipe_steps": [
+        "Start by preparing the sauce. Add 3 tablespoons sesame paste to a bowl, and gradually stir in 2 tablespoons sesame oil to smooth out the paste.",
+        "Then add 1 ½ teaspoons dark soy sauce and 1 tablespoon light soy sauce (or 4 ½ teaspoons of master sauce, if you have it). Add 1 teaspoon sugar, and stir until well combined. If the sauce is still too thick, add in a few drops of warm water or more master sauce to thin it out. Add salt to taste and set aside. You can prepare this sauce ahead of time.",
+        "Boil a pot of water to cook the noodle as per package instructions, undercooking it by 1 minute to ensure they remain chewy and al dente. Drain. Shake off any excess liquid from the noodles, and put them in a large bowl.",
+        "Toss the noodles with the remaining 1 ½ teaspoons sesame oil to prevent noodles from sticking together. Add in the preserved radish, pickled long beans, garlic, chili oil, cilantro, scallions, vinegar, and tahini sauce. Quickly toss the noodles together and serve hot."
+      ],
+      "recipe_yield": "2",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT15M",
+        "totalTime": "PT35M"
+      }
     }
   ],
   "visuals": {
     "thumbnail_strategy": "Open Graph thumbnails from public source pages; cards lazy-load them.",
     "recipes_with_thumbnails": 56,
     "recipes_in_variant_families": 6
+  },
+  "content_import": {
+    "strategy": "JSON-LD recipe fields first, then common recipe-card markup; story text intentionally excluded",
+    "linked_targets": 66,
+    "extracted": 62,
+    "partial": 0,
+    "unavailable": 4,
+    "updated": "2026-08-29"
   }
 }

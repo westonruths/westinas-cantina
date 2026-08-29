@@ -11,9 +11,11 @@ When planning a week, check the live kitchen inventory against this menu first. 
 ## Data provenance
 
 - 69 recipe rows imported from the uploaded Notion export.
-- Duplicate exported rows were consolidated by canonical recipe URL.
+- 62 of 66 public source links have concise in-site ingredient and step cards; four source links remain explicitly marked unavailable because the source is video/social-only or blocked.
+- Duplicate exported rows were consolidated by canonical recipe URL, and conceptual variants such as Focaccia are grouped without deleting their distinct sources.
 - Household golden recipes from the health-profile registry were merged and missing golden entries were added.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.
+- Recipe stories and extra editorial copy are not imported; the extraction script stores ingredients, yield/timing metadata, and cooking steps only.
 
 ## Local development
 
