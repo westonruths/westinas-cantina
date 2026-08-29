@@ -34,9 +34,13 @@ ALIASES = {
     "white pepper": ["standard american kitchen spices"],
     "sugar": ["standard american kitchen spices", "honey", "maple syrup"],
     "oil": ["olive oil", "avocado oil", "grapeseed oil", "coconut oil"],
+    "peanut oil": ["peanut oil"],
+    "vegetable oil": ["vegetable oil"],
     "olive oil": ["olive oil"],
     "lemon": ["lemons"],
     "garlic": ["garlic"],
+    "garlic powder": ["garlic powder"],
+    "onion powder": ["onion powder"],
     "ginger": ["ginger"],
     "scallions": ["green onions"],
     "green onion": ["green onions"],
@@ -47,12 +51,25 @@ ALIASES = {
     "flour": ["flour"],
     "bread": ["keto bread", "bread"],
     "pecorino cheese": ["pecorino", "parmesan"],
+    "feta cheese": ["feta"],
+    "mozzarella cheese": ["mozzarella"],
+    "romano cheese": ["romano"],
+    "cheddar": ["cheddar"],
     "parmesan cheese": ["parmesan"],
     "eggs": ["eggs"],
     "egg": ["eggs"],
     "chicken bouillon": ["chicken bouillon"],
     "chicken stock": ["chicken stock"],
     "chicken broth": ["chicken stock"],
+    "beef broth": ["beef broth"],
+    "beef stock": ["beef stock"],
+    "white wine": ["white wine"],
+    "red wine": ["red wine"],
+    "red wine vinegar": ["red wine vinegar"],
+    "white wine vinegar": ["white wine vinegar"],
+    "rice vinegar": ["rice vinegar"],
+    "black rice vinegar": ["chinkiang black vinegar"],
+    "chinese black vinegar": ["chinkiang black vinegar"],
     "soy sauce": ["regular soy sauce", "dark soy sauce"],
     "light soy sauce": ["regular soy sauce", "dark soy sauce"],
     "dark soy sauce": ["dark soy sauce"],
@@ -80,11 +97,19 @@ ALIASES = {
     "vermicelli": ["rice vermicelli"],
     "rice paper": ["rice paper"],
     "shrimp": ["shrimp"],
+    "dried shrimp": ["dried shrimp"],
+    "shrimp paste": ["shrimp paste"],
     "pork belly": ["pork belly"],
     "ground pork": ["ground pork"],
     "pork": ["pork belly", "ground pork"],
     "chicken thigh": ["chicken thighs"],
     "chicken": ["chicken", "chicken thighs", "chicken breast"],
+    "chicken fat": ["chicken fat"],
+    "whole chicken": ["whole chicken"],
+    "rotisserie chicken": ["rotisserie chicken"],
+    "pork shoulder": ["pork shoulder"],
+    "pork chops": ["pork chops"],
+    "beef shank": ["beef shank"],
     "beef": ["beef", "beef chuck", "ground beef", "flank steak", "karubi"],
     "lamb": ["lamb"],
     "spinach": ["spinach"],
@@ -96,6 +121,7 @@ ALIASES = {
     "mint": ["mint"],
     "basil": ["basil"],
     "herbs": ["basil", "cilantro", "parsley", "thyme", "sage", "rosemary"],
+    "oregano": ["oregano"],
     "cheese": ["manchego cheese", "parmesan", "goat cheese", "cream cheese"],
     "cilantro": ["cilantro"],
     "parsley": ["parsley"],
@@ -103,8 +129,35 @@ ALIASES = {
     "sage": ["sage"],
     "rosemary": ["rosemary"],
     "tomato": ["tomatoes", "cherry tomatoes", "heirloom tomatoes", "slicer tomatoes"],
+    "tomato paste": ["tomato paste"],
+    "sundried tomatoes": ["sundried tomatoes"],
+    "sun dried tomatoes": ["sun dried tomatoes"],
     "cucumber": ["cucumbers"],
+    "peppercorn": ["peppercorns"],
+    "sichuan peppercorn": ["sichuan red peppercorns", "sichuan green peppercorns"],
     "pepper": ["peppers", "facing heaven peppers", "standard american kitchen spices"],
+}
+
+# These requirements must match a complete inventory item, not a substring of
+# a nearby ingredient (for example red wine must not match red wine vinegar).
+EXACT_CANDIDATES = {
+    "beef broth", "beef stock", "white wine", "red wine", "rice vinegar",
+    "black rice vinegar", "chicken fat", "whole chicken", "rotisserie chicken",
+    "pork shoulder", "pork chops", "beef shank", "dried shrimp", "shrimp paste",
+    "sesame seeds", "olives", "yeast", "feta", "mozzarella", "romano",
+    "cumin seeds", "coriander seeds", "cloves", "jalapenos", "pesto", "chimichurri",
+    "peanut oil", "vegetable oil", "garlic powder", "onion powder", "tomato paste",
+    "sundried tomatoes", "sun dried tomatoes",
+}
+
+STRICT_TERMS = {
+    *EXACT_CANDIDATES,
+    "feta cheese", "mozzarella cheese", "romano cheese", "cheddar",
+    "red wine vinegar", "white wine vinegar", "chinese black vinegar",
+    "bean sprouts", "whole chicken", "rotisserie chicken", "pork shoulder",
+    "pork chops", "beef shank", "chicken fat", "dried shrimp", "shrimp paste",
+    "garlic powder", "onion powder", "tomato paste", "sundried tomatoes",
+    "sun dried tomatoes", "peanut oil", "vegetable oil",
 }
 
 
@@ -114,8 +167,7 @@ def normalize(value: str) -> str:
     value = re.sub(
         r"\b(?:oz|ounce|ounces|lb|lbs|pound|pounds|cup|cups|tbsp|tsp|tablespoon|"
         r"tablespoons|teaspoon|teaspoons|clove|cloves|stalk|stalks|bunch|head|"
-        r"heads|piece|pieces|large|medium|small|fresh|whole|dried|about|for|"
-        r"serving|servings|to taste|optional)\b",
+        r"heads|piece|pieces|about|for|serving|servings|to taste|optional)\b",
         " ",
         value,
     )
@@ -133,6 +185,31 @@ def inventory_names(value):
     elif isinstance(value, list):
         for child in value:
             yield from inventory_names(child)
+
+
+def normalized_inventory_items(value):
+    return [normalize(name) for name in inventory_names(value) if normalize(name)]
+
+
+def phrase_in(text, phrase):
+    return bool(re.search(rf"(?<![a-z]){re.escape(phrase)}(?![a-z])", text))
+
+
+def term_matches(text, term):
+    term = normalize(term)
+    variants = [term]
+    if term.endswith("s"):
+        variants.append(term[:-1])
+    else:
+        variants.append(term + "s")
+    return any(phrase_in(text, variant) for variant in variants)
+
+
+def inventory_has(items, candidate, exact=False):
+    candidate = normalize(candidate)
+    if exact:
+        return candidate in items
+    return any(phrase_in(item, candidate) for item in items)
 
 
 def flatten_strings(value):
@@ -165,31 +242,46 @@ def requirements_for(recipe):
     return [], "not enough public ingredient data"
 
 
-def inventory_match(requirement, inventory_blob):
+def inventory_match(requirement, inventory_items_list):
     req = normalize(requirement)
     if not req:
         return False
     # Tap water is not tracked as a kitchen-inventory item.
     if req == "water":
         return True
-    # Offal is identity-sensitive: beef cuts do not satisfy a tripe requirement.
+    # Specific identities short-circuit generic aliases. Keep evaluating only
+    # when the source line explicitly offers an alternative with "or".
+    for strict in sorted(STRICT_TERMS, key=len, reverse=True):
+        if term_matches(req, strict):
+            candidates = ALIASES.get(strict, [strict])
+            matched = any(inventory_has(inventory_items_list, candidate, exact=True) for candidate in candidates)
+            if matched or " or " not in req:
+                return matched
+    # Identity-sensitive checks must happen before broad aliases.
     if "tripe" in req:
-        return bool(re.search(r"\btripe\b", inventory_blob))
+        return inventory_has(inventory_items_list, "tripe")
     if "shishito" in req or "padron" in req:
-        return bool(re.search(r"\b(?:shishito|padron)\b", inventory_blob))
+        return inventory_has(inventory_items_list, "shishito") or inventory_has(inventory_items_list, "padron")
     if "yeast" in req:
-        return bool(re.search(r"\byeast\b", inventory_blob))
+        return inventory_has(inventory_items_list, "yeast")
     for alias, candidates in sorted(ALIASES.items(), key=lambda item: len(item[0]), reverse=True):
-        if alias in req:
-            return any(candidate in inventory_blob for candidate in candidates)
+        if term_matches(req, alias):
+            return any(
+                inventory_has(
+                    inventory_items_list,
+                    candidate,
+                    exact=normalize(candidate) in EXACT_CANDIDATES,
+                )
+                for candidate in candidates
+            )
     # Exact phrase matching is intentionally conservative. A fuzzy token match
     # can mark bean sprouts present merely because bean-thread noodles are stocked.
-    return req in inventory_blob
+    return inventory_has(inventory_items_list, req, exact=True)
 
 
-def status_for_lines(lines, inventory_blob):
+def status_for_lines(lines, inventory_items_list):
     return [
-        {"name": line, "present": inventory_match(line, inventory_blob)}
+        {"name": line, "present": inventory_match(line, inventory_items_list)}
         for line in lines
     ]
 
@@ -197,11 +289,11 @@ def status_for_lines(lines, inventory_blob):
 def main():
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     inventory = json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
-    inventory_blob = " | ".join(normalize(name) for name in inventory_names(inventory))
+    inventory_items_list = normalized_inventory_items(inventory)
     as_of = dt.date.today().isoformat()
     for recipe in data["recipes"]:
         ingredient_lines = public_ingredient_lines(recipe)
-        recipe["ingredient_inventory"] = status_for_lines(ingredient_lines, inventory_blob)
+        recipe["ingredient_inventory"] = status_for_lines(ingredient_lines, inventory_items_list)
         requirements, basis = requirements_for(recipe)
         if not requirements:
             recipe["inventory_fit"] = {
@@ -212,7 +304,7 @@ def main():
                 "basis": "not enough public ingredient data",
             }
             continue
-        matched = sum(inventory_match(item, inventory_blob) for item in requirements)
+        matched = sum(inventory_match(item, inventory_items_list) for item in requirements)
         recipe["inventory_fit"] = {
             "percent": round(100 * matched / len(requirements)),
             "matched": matched,

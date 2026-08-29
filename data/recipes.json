@@ -132,8 +132,8 @@
       },
       "content_note": "Replaced heading-only extraction with the creator’s complete same-author method, matching the linked recipe’s ingredient quantities.",
       "inventory_fit": {
-        "percent": 72,
-        "matched": 13,
+        "percent": 50,
+        "matched": 9,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -145,7 +145,7 @@
         },
         {
           "name": "420ml slightly warm water, just a bit warmer than your body temperature",
-          "present": true
+          "present": false
         },
         {
           "name": "4g 1 teaspoon) instant yeast If using âdry activeâ yeast, you must add 1g (1/4 tsp) extra and mix it with the warm water and honey and let it bloom/become frothy for 5-10 minutes before adding other ingredients",
@@ -157,7 +157,7 @@
         },
         {
           "name": "15ml (1 Tablespoon) extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "10g (2 teaspoons) fine sea salt",
@@ -165,7 +165,7 @@
         },
         {
           "name": "Extra virgin olive oil, for drizzling",
-          "present": true
+          "present": false
         },
         {
           "name": "Flaky sea salt, to finish",
@@ -185,7 +185,7 @@
         },
         {
           "name": "cherry tomatoes",
-          "present": true
+          "present": false
         },
         {
           "name": "herbs",
@@ -360,8 +360,8 @@
         "totalTime": "PT95M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 7,
+        "percent": 86,
+        "matched": 6,
         "total": 7,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -373,7 +373,7 @@
         },
         {
           "name": "Extra-virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "Sea salt and freshly ground black pepper",
@@ -556,8 +556,8 @@
         "totalTime": "PT15M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 7,
+        "percent": 86,
+        "matched": 6,
         "total": 7,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -569,7 +569,7 @@
         },
         {
           "name": "2 cup warm water",
-          "present": true
+          "present": false
         },
         {
           "name": "2 stalk scallions",
@@ -645,8 +645,8 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 9,
+        "percent": 89,
+        "matched": 8,
         "total": 9,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -670,7 +670,7 @@
         },
         {
           "name": "3 tablespoons extra virgin olive oil, more for garnish",
-          "present": true
+          "present": false
         },
         {
           "name": "Freshly squeezed juice of 1 lemon",
@@ -858,7 +858,7 @@
         },
         {
           "name": "1 cinnamon stick",
-          "present": true
+          "present": false
         },
         {
           "name": "2 star anise",
@@ -946,7 +946,7 @@
         },
         {
           "name": "chopped scallion ((optional))",
-          "present": false
+          "present": true
         }
       ]
     },
@@ -1002,8 +1002,8 @@
         "totalTime": "PT15M"
       },
       "inventory_fit": {
-        "percent": 70,
-        "matched": 7,
+        "percent": 80,
+        "matched": 8,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1043,7 +1043,7 @@
         },
         {
           "name": "1 scallion ((chopped))",
-          "present": false
+          "present": true
         },
         {
           "name": "1/4 teaspoon MSG ((increase amount to personal preference))",
@@ -1099,8 +1099,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
+        "percent": 57,
+        "matched": 4,
         "total": 7,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1112,7 +1112,7 @@
         },
         {
           "name": "1 cup butter",
-          "present": true
+          "present": false
         },
         {
           "name": "0.75 pint heavy cream",
@@ -1128,7 +1128,7 @@
         },
         {
           "name": "0.75 cup grated Romano cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "0.5 cup grated Parmesan cheese",
@@ -1195,8 +1195,8 @@
       },
       "content_note": "Recovered from the creator’s TikTok on-screen text/audio and same-author recipe details. Honey quantity follows the same-author published recipe.",
       "inventory_fit": {
-        "percent": 80,
-        "matched": 8,
+        "percent": 40,
+        "matched": 4,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1204,7 +1204,7 @@
       "ingredient_inventory": [
         {
           "name": "420ml slightly warm water",
-          "present": true
+          "present": false
         },
         {
           "name": "4g (1 teaspoon) instant yeast",
@@ -1216,7 +1216,7 @@
         },
         {
           "name": "15ml (1 tablespoon) extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "10g (2 teaspoons) fine sea salt",
@@ -1228,11 +1228,11 @@
         },
         {
           "name": "2–3 tablespoons olive oil, for the tray",
-          "present": true
+          "present": false
         },
         {
           "name": "Extra olive oil, for drizzling",
-          "present": true
+          "present": false
         },
         {
           "name": "Flaky sea salt, to finish",
@@ -1298,8 +1298,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 90,
-        "matched": 9,
+        "percent": 80,
+        "matched": 8,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1331,7 +1331,7 @@
         },
         {
           "name": "2 tablespoons olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tablespoon lemon juice (freshly squeezed)",
@@ -1433,8 +1433,8 @@
         "totalTime": "PT3H"
       },
       "inventory_fit": {
-        "percent": 91,
-        "matched": 29,
+        "percent": 78,
+        "matched": 25,
         "total": 32,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1442,7 +1442,7 @@
       "ingredient_inventory": [
         {
           "name": "3 lb whole chicken, giblets removed",
-          "present": true
+          "present": false
         },
         {
           "name": "¼ cup kosher salt, divided",
@@ -1458,7 +1458,7 @@
         },
         {
           "name": "1 gal cold water, plus more as needed",
-          "present": true
+          "present": false
         },
         {
           "name": "2 tablespoons sesame oil",
@@ -1470,7 +1470,7 @@
         },
         {
           "name": "2 tablespoons chicken fat, chopped",
-          "present": true
+          "present": false
         },
         {
           "name": "2 cloves garlic, minced",
@@ -1534,7 +1534,7 @@
         },
         {
           "name": "3 tablespoons peanut oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tablespoon rice vinegar",
@@ -1624,8 +1624,8 @@
         "totalTime": "PT10M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 11,
+        "percent": 64,
+        "matched": 7,
         "total": 11,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1633,11 +1633,11 @@
       "ingredient_inventory": [
         {
           "name": "1 pound heirloom tomatoes (sliced into 1/2-inch wedges)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 cup colored grape tomatoes (halved)",
-          "present": true
+          "present": false
         },
         {
           "name": "sea salt (or kosher salt, to taste)",
@@ -1653,7 +1653,7 @@
         },
         {
           "name": "2 tablespoons extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "2 to 3 teaspoons balsamic vinegar (or to taste)",
@@ -1665,7 +1665,7 @@
         },
         {
           "name": "⅓ cup crumbled feta cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "2 tablespoons chopped fresh basil",
@@ -1727,8 +1727,8 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
+        "percent": 57,
+        "matched": 4,
         "total": 7,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1752,11 +1752,11 @@
         },
         {
           "name": "1/4 cup beef stock",
-          "present": true
+          "present": false
         },
         {
           "name": "2 Tbsp butter",
-          "present": true
+          "present": false
         },
         {
           "name": "Salt and pepper",
@@ -1831,8 +1831,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 72,
-        "matched": 13,
+        "percent": 61,
+        "matched": 11,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1872,11 +1872,11 @@
         },
         {
           "name": "1 Tbsp olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 Tbsp olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/4 cups chopped carrots",
@@ -1976,8 +1976,8 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 75,
-        "matched": 9,
+        "percent": 67,
+        "matched": 8,
         "total": 12,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -1985,7 +1985,7 @@
       "ingredient_inventory": [
         {
           "name": "1 tablespoon olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 small white onion (peeled and diced)",
@@ -2089,8 +2089,8 @@
         "totalTime": "PT40M"
       },
       "inventory_fit": {
-        "percent": 91,
-        "matched": 10,
+        "percent": 73,
+        "matched": 8,
         "total": 11,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2102,7 +2102,7 @@
         },
         {
           "name": "1 teaspoon garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon paprika",
@@ -2118,7 +2118,7 @@
         },
         {
           "name": "1 tablespoon olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 cup pearl couscous",
@@ -2197,8 +2197,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 91,
-        "matched": 10,
+        "percent": 82,
+        "matched": 9,
         "total": 11,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2246,7 +2246,7 @@
         },
         {
           "name": "3 tablespoons vegetable oil",
-          "present": true
+          "present": false
         }
       ]
     },
@@ -2301,8 +2301,8 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 67,
-        "matched": 8,
+        "percent": 50,
+        "matched": 6,
         "total": 12,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2314,7 +2314,7 @@
         },
         {
           "name": "1 teaspoon onion powder",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon cumin",
@@ -2342,7 +2342,7 @@
         },
         {
           "name": "1 tablespoon olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "4 garlic cloves (sliced)",
@@ -2457,8 +2457,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 11,
+        "percent": 82,
+        "matched": 9,
         "total": 11,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2470,7 +2470,7 @@
         },
         {
           "name": "4 ounces pork shoulder ((115g, julienned))",
-          "present": true
+          "present": false
         },
         {
           "name": "½ teaspoon cornstarch",
@@ -2482,7 +2482,7 @@
         },
         {
           "name": "1 teaspoon vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "7 cups water ((or chicken broth; 1.65 liters))",
@@ -2570,8 +2570,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 92,
-        "matched": 12,
+        "percent": 77,
+        "matched": 10,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2583,7 +2583,7 @@
         },
         {
           "name": "130 g water at room temperature (½ cup+2 tsp (see note 2))",
-          "present": true
+          "present": false
         },
         {
           "name": "½ head Napa cabbage (aka Chinese cabbage) (about 300g)",
@@ -2615,7 +2615,7 @@
         },
         {
           "name": "1 tablespoon dried shrimp (soaked in 2 tbsp water until soft (see note 3))",
-          "present": true
+          "present": false
         },
         {
           "name": "½ tablespoon sesame oil",
@@ -2688,8 +2688,8 @@
         "totalTime": "PT135M"
       },
       "inventory_fit": {
-        "percent": 90,
-        "matched": 9,
+        "percent": 70,
+        "matched": 7,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2697,7 +2697,7 @@
       "ingredient_inventory": [
         {
           "name": "1 rotisserie chicken (, meat removed so you&#39;re only left with bones and skin)",
-          "present": true
+          "present": false
         },
         {
           "name": "2 ribs celery (, with leaves, cut into chunks)",
@@ -2729,7 +2729,7 @@
         },
         {
           "name": "8 cups cold water",
-          "present": true
+          "present": false
         },
         {
           "name": "2 Tablespoons Better than bouillon chicken paste* (, or 6 chicken bouillon cubes )",
@@ -2795,8 +2795,8 @@
         "totalTime": "PT50M"
       },
       "inventory_fit": {
-        "percent": 94,
-        "matched": 16,
+        "percent": 82,
+        "matched": 14,
         "total": 17,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2804,7 +2804,7 @@
       "ingredient_inventory": [
         {
           "name": "1 pound pork shoulder ((sliced about 1/3 inch thick into pieces about 4 to 5 inches across))",
-          "present": true
+          "present": false
         },
         {
           "name": "3 tablespoons water",
@@ -2848,7 +2848,7 @@
         },
         {
           "name": "3 cups peanut oil ((for frying))",
-          "present": true
+          "present": false
         },
         {
           "name": "3 cloves garlic ((thinly sliced))",
@@ -2927,8 +2927,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 78,
-        "matched": 7,
+        "percent": 67,
+        "matched": 6,
         "total": 9,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -2956,7 +2956,7 @@
         },
         {
           "name": "1/2 cup (56g) finely shredded mozzarella cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "Pepper, (to taste)",
@@ -3261,8 +3261,8 @@
         "totalTime": "PT40M"
       },
       "inventory_fit": {
-        "percent": 78,
-        "matched": 14,
+        "percent": 56,
+        "matched": 10,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3278,15 +3278,15 @@
         },
         {
           "name": "1 1/2 cups grated parmesan",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 teaspoon onion powder",
-          "present": true
+          "present": false
         },
         {
           "name": "3 tablespoons extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "kosher salt and black pepper",
@@ -3306,7 +3306,7 @@
         },
         {
           "name": "2 tablespoons salted butter",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/2 cups fresh basil, finely chopped",
@@ -3408,8 +3408,8 @@
         "totalTime": "PT90M"
       },
       "inventory_fit": {
-        "percent": 94,
-        "matched": 16,
+        "percent": 59,
+        "matched": 10,
         "total": 17,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3425,7 +3425,7 @@
         },
         {
           "name": "½ teaspoon garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "½ teaspoon salt",
@@ -3437,7 +3437,7 @@
         },
         {
           "name": "3 tablespoons olive oil (more as needed)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 onion (chopped)",
@@ -3445,11 +3445,11 @@
         },
         {
           "name": "6 cups beef broth",
-          "present": true
+          "present": false
         },
         {
           "name": "½ cup red wine (optional)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 pound potatoes (peeled and cubed)",
@@ -3477,11 +3477,11 @@
         },
         {
           "name": "2 tablespoons water (or as needed)",
-          "present": true
+          "present": false
         },
         {
           "name": "¾ cup peas",
-          "present": true
+          "present": false
         }
       ]
     },
@@ -3547,8 +3547,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 86,
-        "matched": 12,
+        "percent": 79,
+        "matched": 11,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3564,7 +3564,7 @@
         },
         {
           "name": "125 ml water (½ cup+2 tsp (see note 1))",
-          "present": true
+          "present": false
         },
         {
           "name": "cooking oil (for coating the dough)",
@@ -3666,8 +3666,8 @@
       "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
       "content_note": "Recovered from direct page text.",
       "inventory_fit": {
-        "percent": 67,
-        "matched": 6,
+        "percent": 56,
+        "matched": 5,
         "total": 9,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3691,7 +3691,7 @@
         },
         {
           "name": "2 Tbsp extra-virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "Juice of 1 lemon",
@@ -3769,8 +3769,8 @@
         "totalTime": "PT59M"
       },
       "inventory_fit": {
-        "percent": 92,
-        "matched": 12,
+        "percent": 54,
+        "matched": 7,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3778,7 +3778,7 @@
       "ingredient_inventory": [
         {
           "name": "2 pounds beef shanks (appoximately 3 portions)",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 teaspoon salt",
@@ -3794,7 +3794,7 @@
         },
         {
           "name": "3 tablespoons olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 large onion (dliced)",
@@ -3818,15 +3818,15 @@
         },
         {
           "name": "200 mls white wine (or more beef broth)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/2 cups canned tomatoes",
-          "present": true
+          "present": false
         },
         {
           "name": "1 3/4 cups beef broth",
-          "present": true
+          "present": false
         }
       ]
     },
@@ -3887,8 +3887,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 79,
-        "matched": 11,
+        "percent": 57,
+        "matched": 8,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -3928,7 +3928,7 @@
         },
         {
           "name": "1 teaspoon garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "½ teaspoon cracked black pepper",
@@ -3936,11 +3936,11 @@
         },
         {
           "name": "½ teaspoon onion powder",
-          "present": true
+          "present": false
         },
         {
           "name": "½ teaspoon dried oregano (may sub an Italian herb blend or Herbs de Provence)",
-          "present": true
+          "present": false
         },
         {
           "name": "½ teaspoon cayenne pepper",
@@ -4139,8 +4139,8 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 13,
+        "percent": 92,
+        "matched": 12,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4180,7 +4180,7 @@
         },
         {
           "name": "2 tbsp vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tsp salt",
@@ -4258,8 +4258,8 @@
         "totalTime": "PT55M"
       },
       "inventory_fit": {
-        "percent": 67,
-        "matched": 12,
+        "percent": 56,
+        "matched": 10,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4271,7 +4271,7 @@
         },
         {
           "name": "1/4 cup extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/2 pounds boneless skinless chicken breasts or thighs, cubed",
@@ -4315,7 +4315,7 @@
         },
         {
           "name": "8 ounces feta cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "1/4 cup + 1/3 cup plain Greek yogurt",
@@ -4409,8 +4409,8 @@
         "totalTime": "PT60M"
       },
       "inventory_fit": {
-        "percent": 50,
-        "matched": 12,
+        "percent": 46,
+        "matched": 11,
         "total": 24,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4458,7 +4458,7 @@
         },
         {
           "name": "2 tablespoons vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 pound boneless, skinless chicken thighs ((sliced))",
@@ -4595,8 +4595,8 @@
         "totalTime": "PT5M"
       },
       "inventory_fit": {
-        "percent": 80,
-        "matched": 8,
+        "percent": 70,
+        "matched": 7,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4604,7 +4604,7 @@
       "ingredient_inventory": [
         {
           "name": "1/2 cup extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 cup (1 ounce) finely-minced fresh parsley",
@@ -4702,8 +4702,8 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 12,
+        "percent": 93,
+        "matched": 13,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4763,7 +4763,7 @@
         },
         {
           "name": "1 scallion ((chopped))",
-          "present": false
+          "present": true
         }
       ]
     },
@@ -4824,8 +4824,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 71,
-        "matched": 15,
+        "percent": 76,
+        "matched": 16,
         "total": 21,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -4913,7 +4913,7 @@
         },
         {
           "name": "1 tablespoon finely chopped scallion",
-          "present": false
+          "present": true
         }
       ]
     },
@@ -5002,8 +5002,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 78,
-        "matched": 7,
+        "percent": 44,
+        "matched": 4,
         "total": 9,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5023,7 +5023,7 @@
         },
         {
           "name": "1/2 teaspoon garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 teaspoon chili powder",
@@ -5031,7 +5031,7 @@
         },
         {
           "name": "3 cups beef broth",
-          "present": true
+          "present": false
         },
         {
           "name": "1 cup uncooked elbow macaroni",
@@ -5039,7 +5039,7 @@
         },
         {
           "name": "2 cups freshly grated cheddar cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "Salt &amp; pepper (to taste)",
@@ -5180,8 +5180,8 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 91,
-        "matched": 10,
+        "percent": 82,
+        "matched": 9,
         "total": 11,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5197,7 +5197,7 @@
         },
         {
           "name": "3 tablespoons butter",
-          "present": true
+          "present": false
         },
         {
           "name": "3 tablespoons lemon juice",
@@ -5291,8 +5291,8 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 71,
-        "matched": 12,
+        "percent": 47,
+        "matched": 8,
         "total": 17,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5308,11 +5308,11 @@
         },
         {
           "name": "garlic powder, onion powder, salt, and pepper to taste",
-          "present": true
+          "present": false
         },
         {
           "name": "olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "3 cloves garlic, minced",
@@ -5328,7 +5328,7 @@
         },
         {
           "name": "2 tablespoons lemongrass or lemongrass paste",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tablespoon brown sugar",
@@ -5352,7 +5352,7 @@
         },
         {
           "name": "1-2 tablespoons olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "salt and pepper to taste",
@@ -5433,8 +5433,8 @@
         "totalTime": "PT25M"
       },
       "inventory_fit": {
-        "percent": 87,
-        "matched": 13,
+        "percent": 73,
+        "matched": 11,
         "total": 15,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5458,7 +5458,7 @@
         },
         {
           "name": "2 tablespoons olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "2 tablespoons unsalted butter",
@@ -5494,7 +5494,7 @@
         },
         {
           "name": "⅓ cup sundried tomatoes (chopped)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tablespoon fresh basil leaves",
@@ -5565,8 +5565,8 @@
         "totalTime": "PT01H05M"
       },
       "inventory_fit": {
-        "percent": 72,
-        "matched": 13,
+        "percent": 56,
+        "matched": 10,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5586,11 +5586,11 @@
         },
         {
           "name": "1 tablespoon olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 tablespoon butter",
-          "present": true
+          "present": false
         },
         {
           "name": "2 garlic cloves, minced",
@@ -5614,7 +5614,7 @@
         },
         {
           "name": "1 can (14-1/2 ounces) diced tomatoes, undrained",
-          "present": true
+          "present": false
         },
         {
           "name": "1-1/2 cups shredded cabbage",
@@ -5711,8 +5711,8 @@
         "totalTime": "PT60M"
       },
       "inventory_fit": {
-        "percent": 70,
-        "matched": 14,
+        "percent": 55,
+        "matched": 11,
         "total": 20,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5720,7 +5720,7 @@
       "ingredient_inventory": [
         {
           "name": "3 tablespoons extra virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "2 tablespoons Dijon mustard",
@@ -5752,7 +5752,7 @@
         },
         {
           "name": "3 tablespoons salted butter",
-          "present": true
+          "present": false
         },
         {
           "name": "1 lemon, sliced",
@@ -5776,7 +5776,7 @@
         },
         {
           "name": "4-6 ounces feta cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "1/4 cup plain Greek yogurt",
@@ -5855,8 +5855,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 80,
-        "matched": 8,
+        "percent": 70,
+        "matched": 7,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5868,7 +5868,7 @@
         },
         {
           "name": "16 ounces Italian sausage (see note)",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 medium onion (chopped)",
@@ -5960,8 +5960,8 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 62,
-        "matched": 8,
+        "percent": 46,
+        "matched": 6,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -5977,7 +5977,7 @@
         },
         {
           "name": "3 tablespoons extra-virgin olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "3 tablespoons lemon juice",
@@ -6013,7 +6013,7 @@
         },
         {
           "name": "¼ cup roasted (, salted pistachios, chopped)",
-          "present": true
+          "present": false
         },
         {
           "name": "1/3 cup crumbled feta",
@@ -6088,8 +6088,8 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 89,
-        "matched": 16,
+        "percent": 78,
+        "matched": 14,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6105,7 +6105,7 @@
         },
         {
           "name": "1 teaspoon vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon cornstarch ((or tapioca starch))",
@@ -6153,7 +6153,7 @@
         },
         {
           "name": "4 tablespoons vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "3 cloves garlic ((chopped))",
@@ -6222,8 +6222,8 @@
       },
       "content_note": "Recovered from the transcript of the linked original video; transcript-derived wording is condensed into cooking steps.",
       "inventory_fit": {
-        "percent": 67,
-        "matched": 8,
+        "percent": 50,
+        "matched": 6,
         "total": 12,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6239,11 +6239,11 @@
         },
         {
           "name": "2 teaspoons garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon onion powder",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon white pepper",
@@ -6471,8 +6471,8 @@
         "cookTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 62,
-        "matched": 8,
+        "percent": 54,
+        "matched": 7,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6484,7 +6484,7 @@
         },
         {
           "name": "¼ cup olive oil, plus more for drizzling",
-          "present": true
+          "present": false
         },
         {
           "name": "zest and juice of 1 large lemon, divided",
@@ -6599,8 +6599,8 @@
         "totalTime": "PT105M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 14,
+        "percent": 79,
+        "matched": 11,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6608,7 +6608,7 @@
       "ingredient_inventory": [
         {
           "name": "1.75 - 2 kg / 3.5 - 4lb whole chicken (, patted dry)",
-          "present": true
+          "present": false
         },
         {
           "name": "Salt and pepper",
@@ -6616,7 +6616,7 @@
         },
         {
           "name": "2 tsp olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 lemon, quartered",
@@ -6628,7 +6628,7 @@
         },
         {
           "name": "100 g / 1 stick unsalted butter (, melted)",
-          "present": true
+          "present": false
         },
         {
           "name": "3 garlic cloves (, minced)",
@@ -6717,8 +6717,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 85,
-        "matched": 11,
+        "percent": 77,
+        "matched": 10,
         "total": 13,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6726,7 +6726,7 @@
       "ingredient_inventory": [
         {
           "name": "2 litres / 2 quarts water (, cold tap water)",
-          "present": true
+          "present": false
         },
         {
           "name": "1/3 cup kosher or cooking salt, NOT table salt ((Note 1))",
@@ -6894,8 +6894,8 @@
         "totalTime": "PT330M"
       },
       "inventory_fit": {
-        "percent": 65,
-        "matched": 20,
+        "percent": 61,
+        "matched": 19,
         "total": 31,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6903,7 +6903,7 @@
       "ingredient_inventory": [
         {
           "name": "2 pounds beef shank ((900g))",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/2 pounds honeycomb beef tripe ((680g))",
@@ -6943,7 +6943,7 @@
         },
         {
           "name": "1 cinnamon stick",
-          "present": true
+          "present": false
         },
         {
           "name": "1/2 dried tangerine peel",
@@ -6999,7 +6999,7 @@
         },
         {
           "name": "2 teaspoons Chinese black vinegar",
-          "present": false
+          "present": true
         },
         {
           "name": "1 tablespoon light soy sauce",
@@ -7080,8 +7080,8 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 80,
-        "matched": 8,
+        "percent": 70,
+        "matched": 7,
         "total": 10,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7117,7 +7117,7 @@
         },
         {
           "name": "1.5 tablespoons Black Vinegar",
-          "present": true
+          "present": false
         },
         {
           "name": "1 handful cilantro (chopped)",
@@ -7293,8 +7293,8 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 64,
-        "matched": 9,
+        "percent": 50,
+        "matched": 7,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7302,7 +7302,7 @@
       "ingredient_inventory": [
         {
           "name": "1 jar (8 ounce) oil-packed sun-dried tomatoes",
-          "present": true
+          "present": false
         },
         {
           "name": "1 pound boneless skinless chicken breasts, cubed",
@@ -7330,7 +7330,7 @@
         },
         {
           "name": "2 tablespoons salted butter",
-          "present": true
+          "present": false
         },
         {
           "name": "1 medium shallot, chopped",
@@ -7417,8 +7417,8 @@
       "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
       "content_note": "Recovered from canonical standalone recipe page; condensed for the family card.",
       "inventory_fit": {
-        "percent": 88,
-        "matched": 7,
+        "percent": 50,
+        "matched": 4,
         "total": 8,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7434,11 +7434,11 @@
         },
         {
           "name": "Cheddar cheese",
-          "present": true
+          "present": false
         },
         {
           "name": "Garlic powder",
-          "present": true
+          "present": false
         },
         {
           "name": "Bacon",
@@ -7446,7 +7446,7 @@
         },
         {
           "name": "Butter",
-          "present": true
+          "present": false
         },
         {
           "name": "Rosemary",
@@ -7537,8 +7537,8 @@
         "totalTime": "PT150M"
       },
       "inventory_fit": {
-        "percent": 70,
-        "matched": 19,
+        "percent": 63,
+        "matched": 17,
         "total": 27,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7546,7 +7546,7 @@
       "ingredient_inventory": [
         {
           "name": "3 pounds beef shank ((1.4 kg, cut into 2-inch chunks))",
-          "present": true
+          "present": false
         },
         {
           "name": "2 tablespoons oil",
@@ -7598,11 +7598,11 @@
         },
         {
           "name": "8 cups water ((to make the soup broth))",
-          "present": true
+          "present": false
         },
         {
           "name": "1 Chinese aromatic herb packet",
-          "present": false
+          "present": true
         },
         {
           "name": "32 ounces fresh wheat (white) noodles ((900g))",
@@ -7626,7 +7626,7 @@
         },
         {
           "name": "1 Chinese cinnamon stick",
-          "present": true
+          "present": false
         },
         {
           "name": "3 bay leaves ((optional) )",
@@ -7722,8 +7722,8 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 72,
-        "matched": 13,
+        "percent": 56,
+        "matched": 10,
         "total": 18,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7739,7 +7739,7 @@
         },
         {
           "name": "2 tablespoons onion powder",
-          "present": true
+          "present": false
         },
         {
           "name": "2 medium yellow onions (diced )",
@@ -7763,7 +7763,7 @@
         },
         {
           "name": "2 tablespoons olive oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1 teaspoon dried mint (or fresh)",
@@ -7799,7 +7799,7 @@
         },
         {
           "name": "1/2 cup Cherry tomatoes (diced)",
-          "present": true
+          "present": false
         }
       ]
     },
@@ -7881,8 +7881,8 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 68,
-        "matched": 17,
+        "percent": 60,
+        "matched": 15,
         "total": 25,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -7894,7 +7894,7 @@
         },
         {
           "name": "1 stalk lemongrass (, white part only, bruised them sliced into pieces easy to pick out later (Note 1))",
-          "present": true
+          "present": false
         },
         {
           "name": "2 garlic cloves (, finely chopped or minced)",
@@ -7918,7 +7918,7 @@
         },
         {
           "name": "1 tbsp vegetable oil",
-          "present": true
+          "present": false
         },
         {
           "name": "1/4 cup fish sauce ((Note 3))",
@@ -8040,8 +8040,8 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 79,
-        "matched": 11,
+        "percent": 86,
+        "matched": 12,
         "total": 14,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -8101,7 +8101,7 @@
         },
         {
           "name": "1/2 teaspoon Chinese black vinegar",
-          "present": false
+          "present": true
         }
       ]
     }

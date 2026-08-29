@@ -29,6 +29,7 @@ The menu is sorted by current inventory fit within each section. Fit is determin
 python3 -m http.server 8000
 # open http://localhost:8000
 python3 scripts/update_inventory_fit.py
+python3 scripts/audit_inventory_fit.py
 python3 scripts/validate.py
 ```
 
