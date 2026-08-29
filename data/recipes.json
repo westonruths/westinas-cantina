@@ -6894,8 +6894,8 @@
         "totalTime": "PT330M"
       },
       "inventory_fit": {
-        "percent": 68,
-        "matched": 21,
+        "percent": 65,
+        "matched": 20,
         "total": 31,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
@@ -6907,7 +6907,7 @@
         },
         {
           "name": "1 1/2 pounds honeycomb beef tripe ((680g))",
-          "present": true
+          "present": false
         },
         {
           "name": "5 slices ginger",

@@ -172,7 +172,9 @@ def inventory_match(requirement, inventory_blob):
     # Tap water is not tracked as a kitchen-inventory item.
     if req == "water":
         return True
-    # Identity-sensitive checks must happen before broad aliases.
+    # Offal is identity-sensitive: beef cuts do not satisfy a tripe requirement.
+    if "tripe" in req:
+        return bool(re.search(r"\btripe\b", inventory_blob))
     if "shishito" in req or "padron" in req:
         return bool(re.search(r"\b(?:shishito|padron)\b", inventory_blob))
     if "yeast" in req:
