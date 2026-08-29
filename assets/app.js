@@ -1,15 +1,179 @@
-const queryParams=new URLSearchParams(location.search);const state={recipes:[],slot:'dinner',type:queryParams.get('view')==='all'?'all':'featured',query:''};
-const labels={featured:'Featured',all:'Browse all',protein:'Proteins',veggie:'Veggies',carb:'Carbs',soup:'Soups',sauce:'Sauces & Extras',other:'Other'};
-const $=s=>document.querySelector(s);
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function humanTime(value){const s=String(value??'');const m=s.match(/^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/i);if(!m)return s;const out=[];if(m[1])out.push(`${m[1]} hr`);if(m[2])out.push(`${m[2]} min`);if(m[3]&&!m[1]&&!m[2])out.push(`${m[3]} sec`);return out.join(' ')}
-function types(){const set=new Set();state.recipes.filter(r=>r.meal_slots.includes(state.slot)).forEach(r=>r.component_types.forEach(t=>set.add(t)));return ['featured','all',...['protein','veggie','carb','soup','sauce','other'].filter(t=>set.has(t))]}
-function matches(r){const hay=[r.title,r.cuisine,...r.key_ingredients,...(r.recipe_ingredients||[])].join(' ').toLowerCase();const slot=r.meal_slots.includes(state.slot);const type=state.type==='featured'?r.golden:(state.type==='all'||r.component_types.includes(state.type));return slot&&type&&(!state.query||hay.includes(state.query.toLowerCase()))}
-function groupFound(found){const groups=new Map();for(const r of found){const key=r.family?`family:${r.family}`:`recipe:${r.id}`;if(!groups.has(key))groups.set(key,{family:r.family||null,recipes:[]});groups.get(key).recipes.push(r)}return [...groups.values()]}
-function sourceCredit(r){const publisher=r.source_publisher&&r.source_publisher!=='Notion recipe list'?` · Source: ${esc(r.source_publisher)}`:'';return r.content_status==='unavailable'&&r.source_url?`<span class="source-credit">Recipe copy unavailable${publisher} · <a href="${esc(r.source_url)}" target="_blank" rel="noopener">Check source ↗</a></span>`:`<span class="source-credit">In-site recipe copy${publisher}</span>`}
-function recipeBody(r,open=false){const ok=['extracted','extracted_fallback'].includes(r.content_status);if(!ok)return `<div class="recipe-gap"><strong>Recipe copy unavailable.</strong><span>${esc(r.content_error||'The source did not expose usable ingredient and step data.')}</span>${r.source_url?`<a href="${esc(r.source_url)}" target="_blank" rel="noopener">Open source for manual recovery ↗</a>`:''}</div>`;const ingredients=(r.recipe_ingredients||[]).map(x=>`<li>${esc(x)}</li>`).join('');const steps=(r.recipe_steps||[]).map(x=>`<li>${esc(x)}</li>`).join('');const timings=Object.entries(r.recipe_timings||{}).map(([k,v])=>`${esc(k.replace('Time',' time'))}: ${esc(humanTime(v))}`).join(' · ');return `<details class="recipe-details" ${open?'open':''}><summary>Cook from this card</summary>${r.recipe_yield||timings?`<p class="recipe-meta">${r.recipe_yield?`Yield: ${esc(r.recipe_yield)}`:''}${r.recipe_yield&&timings?' · ':''}${timings}</p>`:''}${ingredients?`<h4>Ingredients</h4><ul>${ingredients}</ul>`:''}${steps?`<h4>Steps</h4><ol>${steps}</ol>`:''}</details>`}
-function variantBody(r,open=false){return `<section class="variant-block"><h4>${esc(r.variant_label||r.title)}${r.golden?' · Golden':''}</h4>${recipeBody(r,open)}${sourceCredit(r)}</section>`}
-function card(group){const rs=group.recipes;const first=rs[0];const golden=rs.some(r=>r.golden),tried=rs.some(r=>r.tried);const grouped=Boolean(group.family&&rs.length>1);const title=grouped?group.family:first.title;const cuisine=[...new Set(rs.map(r=>r.cuisine).filter(Boolean))].join(' · ');const tags=[...new Set(rs.flatMap(r=>r.component_types))].map(t=>labels[t]||t).join(' · ');const image=rs.find(r=>r.image_url)?.image_url;const body=grouped?`<div class="variant-list">${rs.map(r=>variantBody(r,state.type==='featured')).join('')}</div>`:recipeBody(first,state.type==='featured');return `<article class="card ${golden?'golden':''}">${image?`<img class="card-image" src="${esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:''}<div class="card-top"><div class="badges">${golden?'<span class="badge gold">Golden</span>':''}${tried?'<span class="badge">Tried</span>':''}${grouped?`<span class="badge family-badge">${rs.length} variants</span>`:''}</div></div><h3>${esc(title)}</h3><p class="meta">${esc(cuisine)} · ${esc(tags)}</p>${grouped?`<p class="family-note">Recipe family; choose a canonical variant below.</p>`:''}${body}</article>`}
-function render(){const fs=types();$('#filters').innerHTML=fs.map(t=>`<button class="filter ${state.type===t?'active':''}" data-type="${t}">${labels[t]}</button>`).join('');const found=state.recipes.filter(matches);const groups=groupFound(found);$('#section-title').textContent=state.query?'Search results':labels[state.type];$('#count').textContent=`${groups.length} ${groups.length===1?'entry':'entries'}`;$('#menu').innerHTML=groups.map(card).join('');$('#empty').hidden=groups.length>0;document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{state.type=b.dataset.type;state.query='';$('#search').value='';render()});}
-async function init(){const r=await fetch('data/recipes.json');const d=await r.json();state.recipes=d.recipes;document.querySelectorAll('.daypart').forEach(b=>b.onclick=()=>{document.querySelectorAll('.daypart').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-selected','false')});b.classList.add('active');b.setAttribute('aria-selected','true');state.slot=b.dataset.slot;state.type='featured';state.query='';$('#search').value='';render()});$('#search').oninput=e=>{state.query=e.target.value;render()};$('#clear').onclick=()=>{$('#search').value='';state.query='';render()};render()}
-init().catch(e=>{$('#menu').innerHTML='<p>Menu data could not be loaded.</p>';console.error(e)});
+const queryParams = new URLSearchParams(location.search);
+const state = {
+  recipes: [],
+  slot: 'dinner',
+  type: queryParams.get('view') === 'all' ? 'all' : 'featured',
+  query: ''
+};
+const labels = {
+  featured: 'Featured',
+  all: 'Browse all',
+  protein: 'Proteins',
+  veggie: 'Veggies',
+  carb: 'Carbs',
+  soup: 'Soups',
+  sauce: 'Sauces & Extras',
+  other: 'Other'
+};
+const $ = (selector) => document.querySelector(selector);
+const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+}[char]));
+
+function humanTime(value) {
+  const text = String(value ?? '');
+  const match = text.match(/^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/i);
+  if (!match) return text;
+  const output = [];
+  if (match[1]) output.push(`${match[1]} hr`);
+  if (match[2]) output.push(`${match[2]} min`);
+  if (match[3] && !match[1] && !match[2]) output.push(`${match[3]} sec`);
+  return output.join(' ');
+}
+
+function types() {
+  const set = new Set();
+  state.recipes
+    .filter((recipe) => recipe.meal_slots.includes(state.slot))
+    .forEach((recipe) => recipe.component_types.forEach((type) => set.add(type)));
+  return ['featured', 'all', ...['protein', 'veggie', 'carb', 'soup', 'sauce', 'other'].filter((type) => set.has(type))];
+}
+
+function matches(recipe) {
+  const haystack = [
+    recipe.title,
+    recipe.cuisine,
+    ...recipe.key_ingredients,
+    ...(recipe.recipe_ingredients || [])
+  ].join(' ').toLowerCase();
+  const slotMatches = recipe.meal_slots.includes(state.slot);
+  const typeMatches = state.type === 'featured'
+    ? recipe.golden
+    : state.type === 'all' || recipe.component_types.includes(state.type);
+  return slotMatches && typeMatches && (!state.query || haystack.includes(state.query.toLowerCase()));
+}
+
+function groupFound(found) {
+  const groups = new Map();
+  for (const recipe of found) {
+    const key = recipe.family ? `family:${recipe.family}` : `recipe:${recipe.id}`;
+    if (!groups.has(key)) groups.set(key, { family: recipe.family || null, recipes: [] });
+    groups.get(key).recipes.push(recipe);
+  }
+  return [...groups.values()];
+}
+
+function sourceCredit(recipe) {
+  const publisher = recipe.source_publisher && recipe.source_publisher !== 'Notion recipe list'
+    ? ` · Source: ${esc(recipe.source_publisher)}`
+    : '';
+  const originalLink = recipe.source_url
+    ? ` · <a href="${esc(recipe.source_url)}" target="_blank" rel="noopener">Original recipe ↗</a>`
+    : '';
+  const status = recipe.content_status === 'unavailable'
+    ? 'Recipe copy unavailable'
+    : 'In-site recipe copy';
+  return `<span class="source-credit">${status}${publisher}${originalLink}</span>`;
+}
+
+function recipeBody(recipe) {
+  const available = ['extracted', 'extracted_fallback'].includes(recipe.content_status);
+  if (!available) {
+    return `<div class="recipe-gap"><strong>Recipe copy unavailable.</strong><span>${esc(recipe.content_error || 'The source did not expose usable ingredient and step data.')}</span></div>`;
+  }
+
+  const ingredients = (recipe.recipe_ingredients || []).map((item) => `<li>${esc(item)}</li>`).join('');
+  const steps = (recipe.recipe_steps || []).map((step) => `<li>${esc(step)}</li>`).join('');
+  const timings = Object.entries(recipe.recipe_timings || {})
+    .map(([key, value]) => `${esc(key.replace('Time', ' time'))}: ${esc(humanTime(value))}`)
+    .join(' · ');
+  const metadata = recipe.recipe_yield || timings
+    ? `<p class="recipe-meta">${recipe.recipe_yield ? `Yield: ${esc(recipe.recipe_yield)}` : ''}${recipe.recipe_yield && timings ? ' · ' : ''}${timings}</p>`
+    : '';
+
+  return `<div class="recipe-copy">${metadata}${ingredients ? `<h4>Ingredients</h4><ul>${ingredients}</ul>` : ''}${steps ? `<h4>Steps</h4><ol>${steps}</ol>` : ''}</div>`;
+}
+
+function variantBody(recipe) {
+  return `<section class="variant-block"><h4>${esc(recipe.variant_label || recipe.title)}${recipe.golden ? ' · Golden' : ''}</h4>${recipeBody(recipe)}${sourceCredit(recipe)}</section>`;
+}
+
+function card(group) {
+  const recipes = group.recipes;
+  const first = recipes[0];
+  const golden = recipes.some((recipe) => recipe.golden);
+  const tried = recipes.some((recipe) => recipe.tried);
+  const grouped = Boolean(group.family && recipes.length > 1);
+  const title = grouped ? group.family : first.title;
+  const cuisine = [...new Set(recipes.map((recipe) => recipe.cuisine).filter(Boolean))].join(' · ');
+  const tags = [...new Set(recipes.flatMap((recipe) => recipe.component_types))]
+    .map((type) => labels[type] || type)
+    .join(' · ');
+  const image = recipes.find((recipe) => recipe.image_url)?.image_url;
+  const preview = `<summary class="card-summary">${image ? `<img class="card-image" src="${esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<div class="card-top"><div class="badges">${golden ? '<span class="badge gold">Golden</span>' : ''}${tried ? '<span class="badge">Tried</span>' : ''}${grouped ? `<span class="badge family-badge">${recipes.length} variants</span>` : ''}</div></div><h3>${esc(title)}</h3><p class="meta">${esc(cuisine)} · ${esc(tags)}</p>${grouped ? '<p class="family-note">Recipe family; choose a canonical variant after opening.</p>' : ''}<span class="card-open-hint">Tap to open recipe${grouped ? 's' : ''} + original link</span></summary>`;
+  const content = grouped
+    ? `<div class="variant-list">${recipes.map(variantBody).join('')}</div>`
+    : `<div class="recipe-content">${recipeBody(first)}</div>${sourceCredit(first)}`;
+  return `<article class="card ${golden ? 'golden' : ''}"><details class="card-details">${preview}<div class="card-content">${content}</div></details></article>`;
+}
+
+function render() {
+  const filterTypes = types();
+  $('#filters').innerHTML = filterTypes
+    .map((type) => `<button class="filter ${state.type === type ? 'active' : ''}" data-type="${type}">${labels[type]}</button>`)
+    .join('');
+  const found = state.recipes.filter(matches);
+  const groups = groupFound(found);
+  $('#section-title').textContent = state.query ? 'Search results' : labels[state.type];
+  $('#count').textContent = `${groups.length} ${groups.length === 1 ? 'entry' : 'entries'}`;
+  $('#menu').innerHTML = groups.map(card).join('');
+  $('#empty').hidden = groups.length > 0;
+  document.querySelectorAll('.filter').forEach((button) => {
+    button.onclick = () => {
+      state.type = button.dataset.type;
+      state.query = '';
+      $('#search').value = '';
+      render();
+    };
+  });
+}
+
+async function init() {
+  const response = await fetch('data/recipes.json');
+  const data = await response.json();
+  state.recipes = data.recipes;
+  document.querySelectorAll('.daypart').forEach((button) => {
+    button.onclick = () => {
+      document.querySelectorAll('.daypart').forEach((item) => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+      state.slot = button.dataset.slot;
+      state.type = 'featured';
+      state.query = '';
+      $('#search').value = '';
+      render();
+    };
+  });
+  $('#search').oninput = (event) => {
+    state.query = event.target.value;
+    render();
+  };
+  $('#clear').onclick = () => {
+    $('#search').value = '';
+    state.query = '';
+    render();
+  };
+  render();
+}
+
+init().catch((error) => {
+  $('#menu').innerHTML = '<p>Menu data could not be loaded.</p>';
+  console.error(error);
+});
