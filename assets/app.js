@@ -61,7 +61,7 @@ function fitWidget(recipe, compact = false) {
     : `Approximate inventory fit: ${percent} percent; ${fit.matched} of ${fit.total} ingredients found; quantities not checked`;
   const classes = `fit-widget${compact ? ' compact' : ''}${percent === null ? ' unknown' : ''}`;
   const style = `--fit: ${percent === null ? 0 : percent}%;`;
-  return `<span class="${classes}" title="${esc(label)}" aria-label="${esc(label)}"><span class="fit-ring" style="${style}"><span>${display}</span></span><span class="fit-copy"><strong>${compact ? 'Fit' : 'Inventory fit'}</strong><small>${percent === null ? 'No public ingredient list' : `${fit.matched} / ${fit.total} found`}</small></span></span>`;
+  return `<span class="${classes}" title="${esc(label)}" aria-label="${esc(label)}"><span class="fit-ring" style="${style}"><span>${display}</span></span><span class="fit-copy"><strong>${compact ? 'Fit' : 'On hand'}</strong><small>${percent === null ? 'No public ingredient list' : `${fit.matched} / ${fit.total} ingredients`}</small></span></span>`;
 }
 
 function types() {
