@@ -7,6 +7,12 @@ data=json.loads((root/'data/recipes.json').read_text())
 assert data['site_name']=="Westina’s Cantina"
 assert data['recipe_count']==len(data['recipes'])
 assert len({r['id'] for r in data['recipes']})==len(data['recipes'])
+assert data.get('inventory_fit', {}).get('private_source') == 'local household inventory; not published'
+for recipe in data['recipes']:
+    fit=recipe.get('inventory_fit', {})
+    assert fit.get('as_of') and fit.get('basis')
+    assert fit.get('total', 0) >= fit.get('matched', 0) >= 0
+    assert fit.get('percent') is None or 0 <= fit['percent'] <= 100
 assert all(r['title'] and r['meal_slots'] and r['component_types'] for r in data['recipes'])
 assert sum(bool(r['golden']) for r in data['recipes']) >= 7
 ci=data.get('content_import',{})
