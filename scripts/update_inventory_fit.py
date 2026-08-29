@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Attach aggregate, non-sensitive inventory-fit scores to public recipe data.
+"""Attach deterministic inventory-fit metadata to public recipe data.
 
 The private inventory is read locally and is never copied into the public site.
-Scores describe ingredient presence only; quantities, freshness, and substitutions
-that would change a recipe's identity are not validated.
+Only aggregate percentages and per-public-ingredient presence flags are emitted.
+Quantities, freshness, and substitutions that would change a recipe's identity
+are not validated.
 """
 from __future__ import annotations
 
@@ -21,36 +22,6 @@ INVENTORY_PATH = Path(os.environ.get(
     "WESTINAS_INVENTORY_PATH",
     "/mnt/storage/hermes-profiles/profiles/health/data/kitchen/inventory.json",
 ))
-
-# Golden entries had no imported key-ingredient metadata, so give them explicit
-# canonical requirements. Toppings/finishes that are genuinely optional are not
-# allowed to distort the base recipe's fit score.
-REQUIREMENT_OVERRIDES = {
-    "Blistered Shishito Peppers": ["shishito peppers", "oil", "lemon", "salt"],
-    "Overnight Focaccia": ["flour", "water", "yeast", "honey", "olive oil", "salt"],
-    "Twice Cooked Pork (Hui Guo Rou, 回锅肉)": [
-        "pork belly", "ginger", "oil", "doubanjiang", "fermented black beans",
-        "garlic", "leek or green garlic", "fresh red chiles", "soy sauce",
-        "Shaoxing wine", "sugar",
-    ],
-    "Hasselback potatoes": [
-        "potatoes", "oil", "salt and pepper", "sage", "garlic butter",
-        "parsley", "red pepper flakes",
-    ],
-    "Korean BBQ Salad": [
-        "leaf lettuce", "garlic", "green onion", "onion", "soy sauce",
-        "fish sauce", "sugar", "white vinegar", "Korean hot pepper flakes",
-        "sesame oil", "sesame seeds",
-    ],
-    "Steamed egg": [
-        "eggs", "water", "scallions", "salt", "chicken bouillon", "oil",
-        "white pepper",
-    ],
-    "Tuscan Kale Salad": [
-        "lacinato kale", "bread", "garlic", "pecorino cheese", "olive oil",
-        "lemon", "salt", "black pepper",
-    ],
-}
 
 # Practical equivalents that are reasonable for an inventory-presence estimate.
 # Exact identity-sensitive ingredients (for example shishito peppers and yeast)
@@ -88,7 +59,9 @@ ALIASES = {
     "shaoxing wine": ["shaoxing wine"],
     "rice wine": ["shaoxing wine"],
     "doubanjiang": ["doubanjiang"],
+    "sichuan chilli bean paste": ["doubanjiang"],
     "fermented black beans": ["douchi"],
+    "leek": ["leek", "green onions"],
     "leek or green garlic": ["leek", "green garlic", "green onions"],
     "fresh red chiles": ["dried red chili peppers", "facing heaven peppers", "peppers"],
     "red pepper flakes": ["chili flakes", "red pepper powder"],
@@ -122,6 +95,8 @@ ALIASES = {
     "artichoke": ["artichoke"],
     "mint": ["mint"],
     "basil": ["basil"],
+    "herbs": ["basil", "cilantro", "parsley", "thyme", "sage", "rosemary"],
+    "cheese": ["manchego cheese", "parmesan", "goat cheese", "cream cheese"],
     "cilantro": ["cilantro"],
     "parsley": ["parsley"],
     "thyme": ["thyme"],
@@ -171,26 +146,32 @@ def flatten_strings(value):
             yield from flatten_strings(child)
 
 
-def requirements_for(recipe):
-    title = recipe["title"]
-    if title in REQUIREMENT_OVERRIDES:
-        return REQUIREMENT_OVERRIDES[title], "canonical key ingredients"
-    keys = [str(x).strip() for x in recipe.get("key_ingredients", []) if str(x).strip()]
-    if keys:
-        return keys, "catalog key ingredients"
+def public_ingredient_lines(recipe):
     lines = []
     for line in flatten_strings(recipe.get("recipe_ingredients", [])):
         line = line.strip()
-        if not line or "optional" in line.lower():
-            continue
-        lines.append(line)
-    return lines, "recipe ingredient lines"
+        if line:
+            lines.append(line)
+    return lines
+
+
+def requirements_for(recipe):
+    lines = public_ingredient_lines(recipe)
+    if lines:
+        return lines, "public recipe ingredient lines"
+    keys = [str(x).strip() for x in recipe.get("key_ingredients", []) if str(x).strip()]
+    if keys:
+        return keys, "catalog key ingredients"
+    return [], "not enough public ingredient data"
 
 
 def inventory_match(requirement, inventory_blob):
     req = normalize(requirement)
     if not req:
         return False
+    # Tap water is not tracked as a kitchen-inventory item.
+    if req == "water":
+        return True
     # Identity-sensitive checks must happen before broad aliases.
     if "shishito" in req or "padron" in req:
         return bool(re.search(r"\b(?:shishito|padron)\b", inventory_blob))
@@ -199,12 +180,16 @@ def inventory_match(requirement, inventory_blob):
     for alias, candidates in sorted(ALIASES.items(), key=lambda item: len(item[0]), reverse=True):
         if alias in req:
             return any(candidate in inventory_blob for candidate in candidates)
-    # Exact phrase first, then a distinctive token for catalog keys.
-    if req in inventory_blob:
-        return True
-    stop = {"fresh", "dried", "ground", "chopped", "sliced", "minced", "recipe", "leaves", "leaf"}
-    tokens = [token for token in req.split() if len(token) >= 4 and token not in stop]
-    return any(re.search(rf"\b{re.escape(token)}\b", inventory_blob) for token in tokens)
+    # Exact phrase matching is intentionally conservative. A fuzzy token match
+    # can mark bean sprouts present merely because bean-thread noodles are stocked.
+    return req in inventory_blob
+
+
+def status_for_lines(lines, inventory_blob):
+    return [
+        {"name": line, "present": inventory_match(line, inventory_blob)}
+        for line in lines
+    ]
 
 
 def main():
@@ -213,6 +198,8 @@ def main():
     inventory_blob = " | ".join(normalize(name) for name in inventory_names(inventory))
     as_of = dt.date.today().isoformat()
     for recipe in data["recipes"]:
+        ingredient_lines = public_ingredient_lines(recipe)
+        recipe["ingredient_inventory"] = status_for_lines(ingredient_lines, inventory_blob)
         requirements, basis = requirements_for(recipe)
         if not requirements:
             recipe["inventory_fit"] = {
@@ -233,7 +220,7 @@ def main():
         }
     data["inventory_fit"] = {
         "updated": as_of,
-        "method": "Approximate ingredient-presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+        "method": "Deterministic ingredient-line presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
         "private_source": "local household inventory; not published",
     }
     text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"

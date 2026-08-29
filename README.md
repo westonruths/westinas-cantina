@@ -16,7 +16,7 @@ When planning a week, check the live kitchen inventory against this menu first. 
 - Household golden recipes from the health-profile registry were merged and missing golden entries were added.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.
 - Recipe stories and extra editorial copy are not imported; the extraction script stores ingredients, yield/timing metadata, and cooking steps only.
-- Every recipe carries an aggregate inventory-fit score generated locally from the private household inventory. Only the percentage, matched-count, and date are published; raw inventory and missing-item lists are not.
+- Every recipe carries deterministic inventory-fit metadata generated locally from the private household inventory. The public data includes the percentage, matched-count, date, and a present/not-present flag for each public ingredient line; raw inventory names, quantities, and missing-item lists are not published.
 
 ## Local development
 

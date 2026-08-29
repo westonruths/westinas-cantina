@@ -109,13 +109,29 @@ function sourceCredit(recipe) {
   return `<span class="source-credit">${status}${publisher}${originalLink}</span>`;
 }
 
+function ingredientMarkup(recipe) {
+  const lines = recipe.recipe_ingredients || [];
+  const statuses = recipe.ingredient_inventory || [];
+  return lines.map((item, index) => {
+    const status = statuses[index];
+    const known = status && typeof status.present === 'boolean';
+    const present = known && status.present;
+    const icon = !known ? '?' : present ? '✓' : '○';
+    const label = !known
+      ? 'Inventory status unavailable'
+      : present ? 'Present in current inventory' : 'Not confirmed in current inventory';
+    const className = !known ? 'unknown' : present ? 'present' : 'missing';
+    return `<li><span class="ingredient-status ${className}" role="img" aria-label="${label}">${icon}</span><span>${esc(item)}</span></li>`;
+  }).join('');
+}
+
 function recipeBody(recipe) {
   const available = ['extracted', 'extracted_fallback'].includes(recipe.content_status);
   if (!available) {
     return `<div class="recipe-gap"><strong>Recipe copy unavailable.</strong><span>${esc(recipe.content_error || 'The source did not expose usable ingredient and step data.')}</span></div>`;
   }
 
-  const ingredients = (recipe.recipe_ingredients || []).map((item) => `<li>${esc(item)}</li>`).join('');
+  const ingredients = ingredientMarkup(recipe);
   const steps = (recipe.recipe_steps || []).flat(Infinity).map((step) => `<li>${esc(step)}</li>`).join('');
   const timings = Object.entries(recipe.recipe_timings || {})
     .map(([key, value]) => `${esc(key.replace('Time', ' time'))}: ${esc(humanTime(value))}`)
@@ -124,7 +140,7 @@ function recipeBody(recipe) {
     ? `<p class="recipe-meta">${recipe.recipe_yield ? `Yield: ${esc(recipe.recipe_yield)}` : ''}${recipe.recipe_yield && timings ? ' · ' : ''}${timings}</p>`
     : '';
 
-  return `<div class="recipe-copy">${metadata}${ingredients ? `<h4>Ingredients</h4><ul>${ingredients}</ul>` : ''}${steps ? `<h4>Steps</h4><ol>${steps}</ol>` : ''}</div>`;
+  return `<div class="recipe-copy">${metadata}${ingredients ? `<h4>Ingredients</h4><ul class="ingredients-list">${ingredients}</ul>` : ''}${steps ? `<h4>Steps</h4><ol>${steps}</ol>` : ''}</div>`;
 }
 
 function variantBody(recipe) {
@@ -172,7 +188,7 @@ function render() {
   $('#section-title').textContent = state.query ? 'Search results' : labels[state.type];
   $('#count').textContent = `${groups.length} ${groups.length === 1 ? 'entry' : 'entries'}`;
   $('#fit-note').hidden = state.type !== 'inventory';
-  $('#fit-note').textContent = 'Sorted by approximate ingredient presence in the current inventory. Quantities, freshness, and exact substitutions are not validated.';
+  $('#fit-note').textContent = 'Ingredient checks use the same calculation as the score: ✓ present in current inventory · ○ not confirmed. Quantities, freshness, and exact substitutions are not validated.';
   $('#menu').innerHTML = groups.map(card).join('');
   $('#empty').hidden = groups.length > 0;
   document.querySelectorAll('.filter').forEach((button) => {

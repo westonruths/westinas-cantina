@@ -48,8 +48,26 @@
         "matched": 3,
         "total": 4,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 ounces (3 heaping cups) shishito peppers",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons extra-virgin olive oil or avocado oil",
+          "present": true
+        },
+        {
+          "name": "Lemon wedge, optional",
+          "present": true
+        },
+        {
+          "name": "Salt, preferably flaky sea salt or kosher salt, to taste",
+          "present": true
+        }
+      ]
     },
     {
       "id": "overnight-focaccia",
@@ -114,12 +132,86 @@
       },
       "content_note": "Replaced heading-only extraction with the creator’s complete same-author method, matching the linked recipe’s ingredient quantities.",
       "inventory_fit": {
-        "percent": 83,
-        "matched": 5,
-        "total": 6,
+        "percent": 72,
+        "matched": 13,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "500g white bread flour (12% protein content or higher, see notes on flour below",
+          "present": true
+        },
+        {
+          "name": "420ml slightly warm water, just a bit warmer than your body temperature",
+          "present": true
+        },
+        {
+          "name": "4g 1 teaspoon) instant yeast If using âdry activeâ yeast, you must add 1g (1/4 tsp) extra and mix it with the warm water and honey and let it bloom/become frothy for 5-10 minutes before adding other ingredients",
+          "present": false
+        },
+        {
+          "name": "5g honey (1 teaspoon) (sub maple syrup or granulated sugar to make vegan)",
+          "present": true
+        },
+        {
+          "name": "15ml (1 Tablespoon) extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "10g (2 teaspoons) fine sea salt",
+          "present": true
+        },
+        {
+          "name": "Extra virgin olive oil, for drizzling",
+          "present": true
+        },
+        {
+          "name": "Flaky sea salt, to finish",
+          "present": true
+        },
+        {
+          "name": "Olives",
+          "present": false
+        },
+        {
+          "name": "Rosemary",
+          "present": true
+        },
+        {
+          "name": "peppers",
+          "present": true
+        },
+        {
+          "name": "cherry tomatoes",
+          "present": true
+        },
+        {
+          "name": "herbs",
+          "present": true
+        },
+        {
+          "name": "cheese",
+          "present": true
+        },
+        {
+          "name": "jalapenos",
+          "present": false
+        },
+        {
+          "name": "onions",
+          "present": true
+        },
+        {
+          "name": "pesto",
+          "present": false
+        },
+        {
+          "name": "chimichurri",
+          "present": false
+        }
+      ]
     },
     {
       "id": "twice-cooked-pork-hui-guo-rou",
@@ -171,12 +263,58 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 91,
-        "matched": 10,
+        "percent": 100,
+        "matched": 11,
         "total": 11,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "300 g pork belly, in one piece (10oz)",
+          "present": true
+        },
+        {
+          "name": "5 slices ginger",
+          "present": true
+        },
+        {
+          "name": "2 teaspoon cooking oil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Sichuan chilli bean paste (see note 1)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fermented black beans (Dou Chi, 豆豉) (see note 2)",
+          "present": true
+        },
+        {
+          "name": "3 cloves garlic, sliced",
+          "present": true
+        },
+        {
+          "name": "1 small leek, cut diagonally (see note 3)",
+          "present": true
+        },
+        {
+          "name": "2 fresh red chili peppers, cut diagonally",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon Shaoxing rice wine",
+          "present": true
+        },
+        {
+          "name": "1 pinch sugar",
+          "present": true
+        }
+      ]
     },
     {
       "id": "hasselback-potatoes",
@@ -226,8 +364,38 @@
         "matched": 7,
         "total": 7,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "6 medium Yukon Gold potatoes",
+          "present": true
+        },
+        {
+          "name": "Extra-virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "Sea salt and freshly ground black pepper",
+          "present": true
+        },
+        {
+          "name": "Fresh sage leaves",
+          "present": true
+        },
+        {
+          "name": "1 recipe Garlic Butter (melted)",
+          "present": true
+        },
+        {
+          "name": "Fresh parsley (for serving)",
+          "present": true
+        },
+        {
+          "name": "Red pepper flakes (for serving)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "korean-bbq-salad",
@@ -290,8 +458,54 @@
         "matched": 10,
         "total": 11,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 bunch green or red leaf lettuce (about 8–9 oz)",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves, minced",
+          "present": true
+        },
+        {
+          "name": "1 green onion, chopped",
+          "present": true
+        },
+        {
+          "name": "¼ cup onion, thinly sliced",
+          "present": true
+        },
+        {
+          "name": "2 Tbsp soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tsp fish sauce or salt",
+          "present": true
+        },
+        {
+          "name": "1 tsp sugar",
+          "present": true
+        },
+        {
+          "name": "1 Tbsp white vinegar",
+          "present": true
+        },
+        {
+          "name": "2 Tbsp Korean hot pepper flakes",
+          "present": true
+        },
+        {
+          "name": "1 Tbsp toasted sesame oil",
+          "present": true
+        },
+        {
+          "name": "1 Tbsp toasted sesame seeds",
+          "present": false
+        }
+      ]
     },
     {
       "id": "steamed-egg",
@@ -346,8 +560,38 @@
         "matched": 7,
         "total": 7,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 egg",
+          "present": true
+        },
+        {
+          "name": "2 cup warm water",
+          "present": true
+        },
+        {
+          "name": "2 stalk scallions",
+          "present": true
+        },
+        {
+          "name": "0.5 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "0.5 teaspoon chicken bouillon",
+          "present": true
+        },
+        {
+          "name": "1 tbsp oil",
+          "present": true
+        },
+        {
+          "name": "1 dash white pepper",
+          "present": true
+        }
+      ]
     },
     {
       "id": "tuscan-kale-salad",
@@ -402,11 +646,49 @@
       },
       "inventory_fit": {
         "percent": 100,
-        "matched": 8,
-        "total": 8,
+        "matched": 9,
+        "total": 9,
         "as_of": "2026-08-29",
-        "basis": "canonical key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 bunch Tuscan kale (also known as black or lacinato kale)",
+          "present": true
+        },
+        {
+          "name": "1 thin slice country bread (part whole-wheat or rye is nice), or ¼ cup homemade bread crumbs (coarse)",
+          "present": true
+        },
+        {
+          "name": "½ garlic clove, finely chopped",
+          "present": true
+        },
+        {
+          "name": "¼ cup finely grated pecorino cheese, more for garnish",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons extra virgin olive oil, more for garnish",
+          "present": true
+        },
+        {
+          "name": "Freshly squeezed juice of 1 lemon",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon kosher salt",
+          "present": true
+        },
+        {
+          "name": "⅛ teaspoon red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "Freshly ground black pepper, to taste",
+          "present": true
+        }
+      ]
     },
     {
       "id": "baby-bok-choy",
@@ -452,12 +734,46 @@
         "totalTime": "PT15M"
       },
       "inventory_fit": {
-        "percent": 0,
-        "matched": 0,
-        "total": 1,
+        "percent": 88,
+        "matched": 7,
+        "total": 8,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 tablespoons neutral cooking oil, like canola",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves, peeled and minced",
+          "present": true
+        },
+        {
+          "name": "1 ½-inch piece ginger root, peeled and minced",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon red-pepper flakes, or to taste",
+          "present": true
+        },
+        {
+          "name": "4 bunches of baby bok choy, approximately 1½ pounds, cleaned, with the ends trimmed",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon chicken stock or water",
+          "present": true
+        },
+        {
+          "name": "Toasted sesame oil for drizzling",
+          "present": true
+        }
+      ]
     },
     {
       "id": "dan-dan-noodles",
@@ -529,12 +845,110 @@
         "totalTime": "PT90M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 6,
-        "total": 6,
+        "percent": 67,
+        "matched": 16,
+        "total": 24,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 tablespoons Sichuan peppercorns",
+          "present": true
+        },
+        {
+          "name": "1 cinnamon stick",
+          "present": true
+        },
+        {
+          "name": "2 star anise",
+          "present": true
+        },
+        {
+          "name": "1 cup oil",
+          "present": true
+        },
+        {
+          "name": "1/4 cup crushed red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "3 teaspoons oil",
+          "present": true
+        },
+        {
+          "name": "8 oz. ground pork",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons sweet bean sauce or hoisin sauce",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dark soy sauce",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon five spice powder",
+          "present": false
+        },
+        {
+          "name": "1/3 cup sui mi ya cai",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons sesame paste (tahini)",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons soy sauce",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons sugar",
+          "present": true
+        },
+        {
+          "name": "1/4 teaspoon five spice powder",
+          "present": false
+        },
+        {
+          "name": "1/2 teaspoon Sichuan peppercorn powder ((we ground whole Sichuan peppercorns in a mortar and pestle))",
+          "present": true
+        },
+        {
+          "name": "1/2 cup of your prepared chili oil ((scary, but yes!))",
+          "present": true
+        },
+        {
+          "name": "2 cloves garlic ((very finely minced))",
+          "present": true
+        },
+        {
+          "name": "¼ cup hot cooking water from the noodles",
+          "present": true
+        },
+        {
+          "name": "1 pound fresh or dried white noodles ((medium thickness))",
+          "present": true
+        },
+        {
+          "name": "1 small bunch leafy greens ((spinach, bok choy, or choy sum))",
+          "present": false
+        },
+        {
+          "name": "chopped peanuts",
+          "present": false
+        },
+        {
+          "name": "chopped scallion ((optional))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "egg-drop-soup",
@@ -588,12 +1002,54 @@
         "totalTime": "PT15M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 2,
-        "total": 2,
+        "percent": 70,
+        "matched": 7,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 cups chicken stock ((about 1 liter, organic or homemade preferred!))",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon sesame oil",
+          "present": true
+        },
+        {
+          "name": "3/4 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon sugar",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon white pepper",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon turmeric",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons cornstarch ((mixed with 1/3 cup water))",
+          "present": true
+        },
+        {
+          "name": "3 eggs ((lightly beaten))",
+          "present": true
+        },
+        {
+          "name": "1 scallion ((chopped))",
+          "present": false
+        },
+        {
+          "name": "1/4 teaspoon MSG ((increase amount to personal preference))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "fettuccine-alfredo",
@@ -643,12 +1099,42 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 4,
-        "total": 4,
+        "percent": 86,
+        "matched": 6,
+        "total": 7,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "24 ounces dry fettuccine pasta",
+          "present": true
+        },
+        {
+          "name": "1 cup butter",
+          "present": true
+        },
+        {
+          "name": "0.75 pint heavy cream",
+          "present": false
+        },
+        {
+          "name": "1 dash garlic salt",
+          "present": true
+        },
+        {
+          "name": "salt and pepper to taste",
+          "present": true
+        },
+        {
+          "name": "0.75 cup grated Romano cheese",
+          "present": true
+        },
+        {
+          "name": "0.5 cup grated Parmesan cheese",
+          "present": true
+        }
+      ]
     },
     {
       "id": "foccacia-bread",
@@ -709,12 +1195,54 @@
       },
       "content_note": "Recovered from the creator’s TikTok on-screen text/audio and same-author recipe details. Honey quantity follows the same-author published recipe.",
       "inventory_fit": {
-        "percent": 60,
-        "matched": 3,
-        "total": 5,
+        "percent": 80,
+        "matched": 8,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "420ml slightly warm water",
+          "present": true
+        },
+        {
+          "name": "4g (1 teaspoon) instant yeast",
+          "present": false
+        },
+        {
+          "name": "5g (1 teaspoon) honey",
+          "present": false
+        },
+        {
+          "name": "15ml (1 tablespoon) extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "10g (2 teaspoons) fine sea salt",
+          "present": true
+        },
+        {
+          "name": "500g white bread flour (12% protein or higher)",
+          "present": true
+        },
+        {
+          "name": "2–3 tablespoons olive oil, for the tray",
+          "present": true
+        },
+        {
+          "name": "Extra olive oil, for drizzling",
+          "present": true
+        },
+        {
+          "name": "Flaky sea salt, to finish",
+          "present": true
+        },
+        {
+          "name": "Olives and rosemary, or other toppings of choice",
+          "present": true
+        }
+      ]
     },
     {
       "id": "grilled-artichokes",
@@ -770,12 +1298,54 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 80,
-        "matched": 4,
-        "total": 5,
+        "percent": 90,
+        "matched": 9,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1/2 cup mayonnaise",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons lemon juice (freshly squeezed)",
+          "present": true
+        },
+        {
+          "name": "2 large garlic cloves (1 teaspoon, minced)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fresh parsley (minced)",
+          "present": true
+        },
+        {
+          "name": "salt &amp; pepper (to taste)",
+          "present": true
+        },
+        {
+          "name": "4 artichokes (fresh)",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons olive oil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon lemon juice (freshly squeezed)",
+          "present": true
+        },
+        {
+          "name": "pinch of salt",
+          "present": true
+        },
+        {
+          "name": "pepper (freshly ground)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "hainanese-chicken-rice",
@@ -863,12 +1433,142 @@
         "totalTime": "PT3H"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 4,
-        "total": 4,
+        "percent": 91,
+        "matched": 29,
+        "total": 32,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 lb whole chicken, giblets removed",
+          "present": true
+        },
+        {
+          "name": "¼ cup kosher salt, divided",
+          "present": true
+        },
+        {
+          "name": "4 inch pieces fresh ginger, peeled and cut into ¼-inch (6 mm) slices",
+          "present": true
+        },
+        {
+          "name": "1 bunch fresh scallion",
+          "present": true
+        },
+        {
+          "name": "1 gal cold water, plus more as needed",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons sesame oil",
+          "present": true
+        },
+        {
+          "name": "¼ cup sesame oil",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chicken fat, chopped",
+          "present": true
+        },
+        {
+          "name": "2 cloves garlic, minced",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fresh ginger, minced",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon kosher salt",
+          "present": true
+        },
+        {
+          "name": "2 cups long grain rice, rinsed and drained",
+          "present": true
+        },
+        {
+          "name": "2 cups reserved chicken poaching broth",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons sambal",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons sriracha",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons sugar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon garlic, minced",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fresh ginger, minced",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon lime juice",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons reserved chicken poaching broth",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons fresh ginger, grated",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons garlic, finely minced",
+          "present": true
+        },
+        {
+          "name": "kosher salt, to taste",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons peanut oil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon rice vinegar",
+          "present": true
+        },
+        {
+          "name": "reserved fried garlic and ginger",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon oyster sauce",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons dark sweet soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons reserved chicken poaching broth",
+          "present": true
+        },
+        {
+          "name": "2 cucumbers, thinly sliced, for serving",
+          "present": true
+        },
+        {
+          "name": "1 bunch fresh cilantro, for serving",
+          "present": true
+        }
+      ]
     },
     {
       "id": "heirloom-tomato-salad",
@@ -925,11 +1625,57 @@
       },
       "inventory_fit": {
         "percent": 100,
-        "matched": 5,
-        "total": 5,
+        "matched": 11,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 pound heirloom tomatoes (sliced into 1/2-inch wedges)",
+          "present": true
+        },
+        {
+          "name": "1 cup colored grape tomatoes (halved)",
+          "present": true
+        },
+        {
+          "name": "sea salt (or kosher salt, to taste)",
+          "present": true
+        },
+        {
+          "name": "fresh ground black pepper (to taste)",
+          "present": true
+        },
+        {
+          "name": "½ cup thinly sliced red onions",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "2 to 3 teaspoons balsamic vinegar (or to taste)",
+          "present": true
+        },
+        {
+          "name": "1 clove garlic (minced )",
+          "present": true
+        },
+        {
+          "name": "⅓ cup crumbled feta cheese",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chopped fresh basil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon chopped fresh parsley",
+          "present": true
+        }
+      ]
     },
     {
       "id": "herb-roasted-rack-of-lamb",
@@ -981,12 +1727,42 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 0,
-        "matched": 0,
-        "total": 1,
+        "percent": 86,
+        "matched": 6,
+        "total": 7,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 rack of lamb, at room temperature",
+          "present": false
+        },
+        {
+          "name": "3 tbsp grape seed oil",
+          "present": true
+        },
+        {
+          "name": "1 tbsp rosemary leaves, de-stemmed and finely chopped (about 3 sprigs)",
+          "present": true
+        },
+        {
+          "name": "1 tbsp thyme leaves, de-stemmed and finely chopped (about 6 sprigs)",
+          "present": true
+        },
+        {
+          "name": "1/4 cup beef stock",
+          "present": true
+        },
+        {
+          "name": "2 Tbsp butter",
+          "present": true
+        },
+        {
+          "name": "Salt and pepper",
+          "present": true
+        }
+      ]
     },
     {
       "id": "italian-wedding-soup",
@@ -1055,12 +1831,86 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
-        "total": 7,
+        "percent": 72,
+        "matched": 13,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 oz. lean ground beef",
+          "present": true
+        },
+        {
+          "name": "8 oz. ground pork",
+          "present": true
+        },
+        {
+          "name": "1/2 cup fresh white bread crumbs* ((from fresh bread not dried))",
+          "present": true
+        },
+        {
+          "name": "1/4 cup chopped fresh parsley",
+          "present": true
+        },
+        {
+          "name": "1 1/2 tsp minced fresh oregano ((or 3/4 tsp dried))",
+          "present": false
+        },
+        {
+          "name": "1/2 cup finely shredded parmesan",
+          "present": false
+        },
+        {
+          "name": "1 large egg",
+          "present": true
+        },
+        {
+          "name": "Salt and freshly ground black pepper",
+          "present": true
+        },
+        {
+          "name": "1 Tbsp olive oil",
+          "present": true
+        },
+        {
+          "name": "1 Tbsp olive oil",
+          "present": true
+        },
+        {
+          "name": "1 1/4 cups chopped carrots",
+          "present": true
+        },
+        {
+          "name": "1 1/4 cups chopped yellow onion",
+          "present": true
+        },
+        {
+          "name": "3/4 cup chopped celery",
+          "present": false
+        },
+        {
+          "name": "4 cloves garlic, (minced (1 1/2 Tbsp))",
+          "present": true
+        },
+        {
+          "name": "5 (14.5 oz) cans low-sodium chicken broth",
+          "present": true
+        },
+        {
+          "name": "1 cup dry acini di pepe ( or orzo pasta**)",
+          "present": true
+        },
+        {
+          "name": "6 oz fresh baby spinach, (roughly chopped )",
+          "present": false
+        },
+        {
+          "name": "Finely shredded parmesan, (for serving)",
+          "present": false
+        }
+      ]
     },
     {
       "id": "lemon-orzo-chickpea-soup",
@@ -1126,12 +1976,62 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 89,
-        "matched": 8,
-        "total": 9,
+        "percent": 75,
+        "matched": 9,
+        "total": 12,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 tablespoon olive oil",
+          "present": true
+        },
+        {
+          "name": "1 small white onion (peeled and diced)",
+          "present": true
+        },
+        {
+          "name": "3 medium carrots (diced)",
+          "present": true
+        },
+        {
+          "name": "5 cloves garlic (minced)",
+          "present": true
+        },
+        {
+          "name": "10 cups vegetable stock",
+          "present": false
+        },
+        {
+          "name": "2 (15-ounce) cans chickpeas (rinsed and drained)",
+          "present": true
+        },
+        {
+          "name": "1 cup orzo*",
+          "present": true
+        },
+        {
+          "name": "4 eggs",
+          "present": true
+        },
+        {
+          "name": "1/2 cup freshly-squeezed lemon juice (plus extra lemon slices for serving)",
+          "present": true
+        },
+        {
+          "name": "2 large handfuls fresh baby spinach",
+          "present": false
+        },
+        {
+          "name": "1-3 tablespoons chopped fresh dill*",
+          "present": false
+        },
+        {
+          "name": "sea salt and freshly-cracked black pepper",
+          "present": true
+        }
+      ]
     },
     {
       "id": "one-skillet-chicken-and-couscous",
@@ -1189,12 +2089,58 @@
         "totalTime": "PT40M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 6,
-        "total": 6,
+        "percent": 91,
+        "matched": 10,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 ¼ pound boneless skinless chicken thighs (4-6 pieces)",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon garlic powder",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon paprika",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon black pepper",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon olive oil",
+          "present": true
+        },
+        {
+          "name": "1 cup pearl couscous",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves (minced)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fresh thyme leaves",
+          "present": true
+        },
+        {
+          "name": "2 cups chicken broth",
+          "present": true
+        },
+        {
+          "name": "½ lemon (sliced)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "pan-fried-noodles",
@@ -1251,12 +2197,58 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 3,
-        "total": 3,
+        "percent": 91,
+        "matched": 10,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 1/2 cups bean sprouts",
+          "present": false
+        },
+        {
+          "name": "2 scallions",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dark soy sauce",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon sesame oil",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon sugar",
+          "present": true
+        },
+        {
+          "name": "½ tablespoon shaoxing rice wine",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon white pepper",
+          "present": true
+        },
+        {
+          "name": "8 oz. fresh thin Hong Kong Style Egg Noodles",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons vegetable oil",
+          "present": true
+        }
+      ]
     },
     {
       "id": "pan-seared-chicken-thighs",
@@ -1309,12 +2301,62 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 1,
-        "total": 1,
+        "percent": 67,
+        "matched": 8,
+        "total": 12,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 ½ pounds chicken thighs boneless (skinless, about 4 pieces)",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon onion powder",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon cumin",
+          "present": false
+        },
+        {
+          "name": "½ teaspoon coriander",
+          "present": false
+        },
+        {
+          "name": "½ teaspoon paprika",
+          "present": false
+        },
+        {
+          "name": "½ teaspoon turmeric",
+          "present": false
+        },
+        {
+          "name": "¾ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon black pepper",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon olive oil",
+          "present": true
+        },
+        {
+          "name": "4 garlic cloves (sliced)",
+          "present": true
+        },
+        {
+          "name": "½ cup chicken broth",
+          "present": true
+        },
+        {
+          "name": "Chopped parsley for garnish",
+          "present": true
+        }
+      ]
     },
     {
       "id": "peking-duck-mas-version",
@@ -1348,12 +2390,13 @@
       "recipe_ingredients": [],
       "recipe_steps": [],
       "inventory_fit": {
-        "percent": 80,
-        "matched": 4,
+        "percent": 60,
+        "matched": 3,
         "total": 5,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
-      }
+      },
+      "ingredient_inventory": []
     },
     {
       "id": "pi-dan-shou-rou-zhou-congee",
@@ -1415,11 +2458,57 @@
       },
       "inventory_fit": {
         "percent": 100,
-        "matched": 5,
-        "total": 5,
+        "matched": 11,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "¾ cup white rice",
+          "present": true
+        },
+        {
+          "name": "4 ounces pork shoulder ((115g, julienned))",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon cornstarch",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon oyster sauce",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon vegetable oil",
+          "present": true
+        },
+        {
+          "name": "7 cups water ((or chicken broth; 1.65 liters))",
+          "present": true
+        },
+        {
+          "name": "2 thousand year-old eggs",
+          "present": true
+        },
+        {
+          "name": "3 slices ginger",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon ground white pepper",
+          "present": true
+        },
+        {
+          "name": "Salt ((to taste))",
+          "present": true
+        },
+        {
+          "name": "Chopped scallion and cilantro ((to garnish))",
+          "present": true
+        }
+      ]
     },
     {
       "id": "pork-dumplings-with-napa-cabbage",
@@ -1481,12 +2570,66 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 40,
-        "matched": 2,
-        "total": 5,
+        "percent": 92,
+        "matched": 12,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "250 g all-purpose flour/plain flour (about 2 cups (see note 1))",
+          "present": true
+        },
+        {
+          "name": "130 g water at room temperature (½ cup+2 tsp (see note 2))",
+          "present": true
+        },
+        {
+          "name": "½ head Napa cabbage (aka Chinese cabbage) (about 300g)",
+          "present": false
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "250 g minced pork (about 9oz)",
+          "present": true
+        },
+        {
+          "name": "2 stalk scallions (finely chopped)",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon minced ginger",
+          "present": true
+        },
+        {
+          "name": "2 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 pinch ground Sichuan pepper (or five-spice powder)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon dried shrimp (soaked in 2 tbsp water until soft (see note 3))",
+          "present": true
+        },
+        {
+          "name": "½ tablespoon sesame oil",
+          "present": true
+        },
+        {
+          "name": "Homemade chili oil",
+          "present": true
+        },
+        {
+          "name": "Black rice vinegar",
+          "present": true
+        }
+      ]
     },
     {
       "id": "rotisserie-chicken-stock",
@@ -1545,12 +2688,54 @@
         "totalTime": "PT135M"
       },
       "inventory_fit": {
-        "percent": 89,
-        "matched": 8,
-        "total": 9,
+        "percent": 90,
+        "matched": 9,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 rotisserie chicken (, meat removed so you&#39;re only left with bones and skin)",
+          "present": true
+        },
+        {
+          "name": "2 ribs celery (, with leaves, cut into chunks)",
+          "present": false
+        },
+        {
+          "name": "2 medium carrots (, cut into chunks)",
+          "present": true
+        },
+        {
+          "name": "2 medium onions (, cut into chunks)",
+          "present": true
+        },
+        {
+          "name": "2 bay leaves",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon dried rosemary",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon dried thyme",
+          "present": true
+        },
+        {
+          "name": "10 whole peppercorns",
+          "present": true
+        },
+        {
+          "name": "8 cups cold water",
+          "present": true
+        },
+        {
+          "name": "2 Tablespoons Better than bouillon chicken paste* (, or 6 chicken bouillon cubes )",
+          "present": true
+        }
+      ]
     },
     {
       "id": "salt-pepper-pork-chops",
@@ -1610,12 +2795,82 @@
         "totalTime": "PT50M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 2,
-        "total": 2,
+        "percent": 94,
+        "matched": 16,
+        "total": 17,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 pound pork shoulder ((sliced about 1/3 inch thick into pieces about 4 to 5 inches across))",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons water",
+          "present": true
+        },
+        {
+          "name": "1 ½ tablespoons Shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon sesame oil",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon five spice powder ((optional))",
+          "present": false
+        },
+        {
+          "name": "¼ cup all purpose flour",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons cornstarch",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon white pepper",
+          "present": true
+        },
+        {
+          "name": "1 1/2 tablespoons oil",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons water",
+          "present": true
+        },
+        {
+          "name": "3 cups peanut oil ((for frying))",
+          "present": true
+        },
+        {
+          "name": "3 cloves garlic ((thinly sliced))",
+          "present": true
+        },
+        {
+          "name": "3 long hot green peppers ((sliced crosswise into thin rounds))",
+          "present": true
+        },
+        {
+          "name": "1 long hot red pepper ((sliced crosswise into thin rounds))",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon coarse sea salt",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon coarsely ground white pepper",
+          "present": true
+        }
+      ]
     },
     {
       "id": "spinach-artichoke-dip",
@@ -1672,12 +2927,50 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 75,
-        "matched": 6,
-        "total": 8,
+        "percent": 78,
+        "matched": 7,
+        "total": 9,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 oz. cream cheese, (well softened)",
+          "present": true
+        },
+        {
+          "name": "1/4 cup sour cream",
+          "present": true
+        },
+        {
+          "name": "1/4 cup mayonnaise",
+          "present": true
+        },
+        {
+          "name": "1 garlic clove, (minced (1 tsp))",
+          "present": true
+        },
+        {
+          "name": "2/3 cup (76g) finely shredded parmesan cheese",
+          "present": true
+        },
+        {
+          "name": "1/2 cup (56g) finely shredded mozzarella cheese",
+          "present": true
+        },
+        {
+          "name": "Pepper, (to taste)",
+          "present": true
+        },
+        {
+          "name": "1 (14 oz) can quartered artichoke hearts, (can liquid drained, squeeze artichokes to drain excess liquid, chopped)",
+          "present": false
+        },
+        {
+          "name": "6 oz. frozen spinach, (thawed, squeezed to drain excess liquid)",
+          "present": false
+        }
+      ]
     },
     {
       "id": "vietnamese-spring-rolls",
@@ -1743,12 +3036,74 @@
         "totalTime": "PT50M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
-        "total": 7,
+        "percent": 73,
+        "matched": 11,
+        "total": 15,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 ounces rice vermicelli",
+          "present": true
+        },
+        {
+          "name": "8 rice wrappers (8.5 inch diameter)",
+          "present": true
+        },
+        {
+          "name": "8 large cooked shrimp - peeled, deveined and cut in half",
+          "present": true
+        },
+        {
+          "name": "2 leaves lettuce, chopped",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons chopped fresh mint leaves",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons chopped fresh cilantro",
+          "present": true
+        },
+        {
+          "name": "1.3333333730698 tablespoons chopped fresh Thai basil",
+          "present": true
+        },
+        {
+          "name": "0.25 cup water",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons fresh lime juice",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons white sugar",
+          "present": true
+        },
+        {
+          "name": "4 teaspoons fish sauce",
+          "present": true
+        },
+        {
+          "name": "1 clove garlic, minced",
+          "present": true
+        },
+        {
+          "name": "0.5 teaspoon garlic chili sauce",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons hoisin sauce",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon finely chopped peanuts",
+          "present": false
+        }
+      ]
     },
     {
       "id": "10-minute-homemade-ramen",
@@ -1801,12 +3156,46 @@
         "totalTime": "PT10M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 5,
-        "total": 5,
+        "percent": 88,
+        "matched": 7,
+        "total": 8,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 serving noodles",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons green onion (chopped)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons cilantro (chopped)",
+          "present": true
+        },
+        {
+          "name": "1/2 tsp white pepper",
+          "present": true
+        },
+        {
+          "name": "1 tsp dashi powder",
+          "present": false
+        },
+        {
+          "name": "1.5 tablespoon Soy Sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Sesame Oil",
+          "present": true
+        },
+        {
+          "name": "2 cups noodle water",
+          "present": true
+        }
+      ]
     },
     {
       "id": "basil-parmesan-pasta-with-crispy-chicken",
@@ -1872,12 +3261,86 @@
         "totalTime": "PT40M"
       },
       "inventory_fit": {
-        "percent": 82,
-        "matched": 9,
-        "total": 11,
+        "percent": 78,
+        "matched": 14,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 pound chicken cutlets or tenders",
+          "present": true
+        },
+        {
+          "name": "1 cup Panko bread crumbs",
+          "present": true
+        },
+        {
+          "name": "1 1/2 cups grated parmesan",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon onion powder",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "kosher salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "1 pound spaghetti",
+          "present": false
+        },
+        {
+          "name": "3 cloves garlic, finely chopped or grated",
+          "present": true
+        },
+        {
+          "name": "crushed red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons salted butter",
+          "present": true
+        },
+        {
+          "name": "1 1/2 cups fresh basil, finely chopped",
+          "present": true
+        },
+        {
+          "name": "2 cups low sodium chicken broth",
+          "present": true
+        },
+        {
+          "name": "3/4 cup heavy cream or canned coconut milk",
+          "present": false
+        },
+        {
+          "name": "2 ounces cream cheese, at room temperature",
+          "present": true
+        },
+        {
+          "name": "3 ounces thinly sliced prosciutto",
+          "present": false
+        },
+        {
+          "name": "2 cups baby arugula",
+          "present": false
+        },
+        {
+          "name": "juice from 1 lemon",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chopped fresh parsley",
+          "present": true
+        }
+      ]
     },
     {
       "id": "beef-stew",
@@ -1945,12 +3408,82 @@
         "totalTime": "PT90M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
-        "total": 7,
+        "percent": 94,
+        "matched": 16,
+        "total": 17,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 pounds stewing beef (trimmed and cubed)",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons all-purpose flour",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon garlic powder",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon black pepper",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons olive oil (more as needed)",
+          "present": true
+        },
+        {
+          "name": "1 onion (chopped)",
+          "present": true
+        },
+        {
+          "name": "6 cups beef broth",
+          "present": true
+        },
+        {
+          "name": "½ cup red wine (optional)",
+          "present": true
+        },
+        {
+          "name": "1 pound potatoes (peeled and cubed)",
+          "present": true
+        },
+        {
+          "name": "4 carrots (cut into 1 inch pieces)",
+          "present": true
+        },
+        {
+          "name": "4 ribs celery (cut into 1 inch pieces)",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons tomato paste",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dried rosemary (or 1 sprig fresh)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons cornstarch (or as needed)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons water (or as needed)",
+          "present": true
+        },
+        {
+          "name": "¾ cup peas",
+          "present": true
+        }
+      ]
     },
     {
       "id": "biang-biang-noodles",
@@ -2014,12 +3547,70 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 100,
-        "matched": 7,
-        "total": 7,
+        "percent": 86,
+        "matched": 12,
+        "total": 14,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "250 g all-purpose flour (about 2 cups)",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "125 ml water (½ cup+2 tsp (see note 1))",
+          "present": true
+        },
+        {
+          "name": "cooking oil (for coating the dough)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon scallions (finely chopped)",
+          "present": true
+        },
+        {
+          "name": "2 teaspoon garlic (minced)",
+          "present": true
+        },
+        {
+          "name": "Chili flakes (to taste)",
+          "present": true
+        },
+        {
+          "name": "Chili powder (to taste)",
+          "present": false
+        },
+        {
+          "name": "¼ teaspoon ground Sichuan pepper",
+          "present": true
+        },
+        {
+          "name": "Salt (to taste)",
+          "present": true
+        },
+        {
+          "name": "3 tablespoon cooking oil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon black rice vinegar",
+          "present": true
+        },
+        {
+          "name": "1 head bok choy (or other green leafy vegetables)",
+          "present": false
+        }
+      ]
     },
     {
       "id": "bone-marrow-parsley-salad",
@@ -2075,12 +3666,50 @@
       "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
       "content_note": "Recovered from direct page text.",
       "inventory_fit": {
-        "percent": 50,
-        "matched": 3,
-        "total": 6,
+        "percent": 67,
+        "matched": 6,
+        "total": 9,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "12 marrowbone pieces, about 3 in / 7½ cm each",
+          "present": false
+        },
+        {
+          "name": "1 bunch flat-leaf parsley, leaves picked",
+          "present": true
+        },
+        {
+          "name": "2 shallots, very thinly sliced",
+          "present": false
+        },
+        {
+          "name": "2 Tbsp capers",
+          "present": false
+        },
+        {
+          "name": "2 Tbsp extra-virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "Juice of 1 lemon",
+          "present": true
+        },
+        {
+          "name": "Coarse salt",
+          "present": true
+        },
+        {
+          "name": "Black pepper",
+          "present": true
+        },
+        {
+          "name": "Toasted bread",
+          "present": true
+        }
+      ]
     },
     {
       "id": "braised-beef-shank",
@@ -2140,12 +3769,66 @@
         "totalTime": "PT59M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
-        "total": 7,
+        "percent": 92,
+        "matched": 12,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 pounds beef shanks (appoximately 3 portions)",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon pepper",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons all purpose flour",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons olive oil",
+          "present": true
+        },
+        {
+          "name": "1 large onion (dliced)",
+          "present": true
+        },
+        {
+          "name": "1 cup carrots (diced)",
+          "present": true
+        },
+        {
+          "name": "1 cup celery (chopped)",
+          "present": false
+        },
+        {
+          "name": "3 sprigs thyme",
+          "present": true
+        },
+        {
+          "name": "3 bay leaves",
+          "present": true
+        },
+        {
+          "name": "200 mls white wine (or more beef broth)",
+          "present": true
+        },
+        {
+          "name": "1 1/2 cups canned tomatoes",
+          "present": true
+        },
+        {
+          "name": "1 3/4 cups beef broth",
+          "present": true
+        }
+      ]
     },
     {
       "id": "cajun-shrimp-rice",
@@ -2204,12 +3887,70 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 5,
-        "total": 5,
+        "percent": 79,
+        "matched": 11,
+        "total": 14,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 ⅓ cups uncooked long grain white rice",
+          "present": true
+        },
+        {
+          "name": "2 ⅔ cup chicken broth",
+          "present": true
+        },
+        {
+          "name": "1 pound large or jumbo shrimp (peeled and de-veined )",
+          "present": true
+        },
+        {
+          "name": "4 tablespoons butter (melted, divided)",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon minced garlic",
+          "present": true
+        },
+        {
+          "name": "cajun seasoning (see below)",
+          "present": false
+        },
+        {
+          "name": "1 ½ teaspoons paprika",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon garlic powder",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon cracked black pepper",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon onion powder",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon dried oregano (may sub an Italian herb blend or Herbs de Provence)",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon cayenne pepper",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon crushed red pepper flakes",
+          "present": true
+        }
+      ]
     },
     {
       "id": "chicken-wild-rice",
@@ -2273,12 +4014,66 @@
       },
       "content_note": "Recovered from the canonical Food & Wine recipe page after the original importer received a 403 response.",
       "inventory_fit": {
-        "percent": 89,
-        "matched": 8,
-        "total": 9,
+        "percent": 92,
+        "matched": 12,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 tablespoons unsalted butter",
+          "present": true
+        },
+        {
+          "name": "3 celery ribs, cut into ½-inch pieces",
+          "present": false
+        },
+        {
+          "name": "2 carrots, cut into ½-inch pieces",
+          "present": true
+        },
+        {
+          "name": "1 medium onion, chopped",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves, minced",
+          "present": true
+        },
+        {
+          "name": "1½ teaspoons finely chopped thyme",
+          "present": true
+        },
+        {
+          "name": "Kosher salt and freshly ground black pepper",
+          "present": true
+        },
+        {
+          "name": "¼ cup all-purpose flour",
+          "present": true
+        },
+        {
+          "name": "1 cup (5 ounces) wild rice blend",
+          "present": true
+        },
+        {
+          "name": "2 quarts chicken stock or low-sodium broth",
+          "present": true
+        },
+        {
+          "name": "2 cups water",
+          "present": true
+        },
+        {
+          "name": "4 cups roasted chicken or turkey, in bite-size pieces",
+          "present": true
+        },
+        {
+          "name": "1 cup heavy cream",
+          "present": true
+        }
+      ]
     },
     {
       "id": "chicken-congee",
@@ -2345,11 +4140,65 @@
       },
       "inventory_fit": {
         "percent": 100,
-        "matched": 6,
-        "total": 6,
+        "matched": 13,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 rice cup white rice",
+          "present": true
+        },
+        {
+          "name": "8 cup water",
+          "present": true
+        },
+        {
+          "name": "0.5 oz ginger",
+          "present": true
+        },
+        {
+          "name": "12 oz chicken",
+          "present": true
+        },
+        {
+          "name": "2 tsp cornstarch",
+          "present": true
+        },
+        {
+          "name": "1 tbsp oyster sauce",
+          "present": true
+        },
+        {
+          "name": "2 tbsp water",
+          "present": true
+        },
+        {
+          "name": "0.5 tsp chicken bouillon",
+          "present": true
+        },
+        {
+          "name": "2 tbsp vegetable oil",
+          "present": true
+        },
+        {
+          "name": "1 tsp salt",
+          "present": true
+        },
+        {
+          "name": "1 tsp chicken bouillon",
+          "present": true
+        },
+        {
+          "name": "2 pieces green onion",
+          "present": true
+        },
+        {
+          "name": "1 piece cilantro",
+          "present": true
+        }
+      ]
     },
     {
       "id": "chicken-gyros-with-feta-tzatziki",
@@ -2410,11 +4259,85 @@
       },
       "inventory_fit": {
         "percent": 67,
-        "matched": 4,
-        "total": 6,
+        "matched": 12,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1/3 cup full-fat plain Greek yogurt",
+          "present": false
+        },
+        {
+          "name": "1/4 cup extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "1 1/2 pounds boneless skinless chicken breasts or thighs, cubed",
+          "present": true
+        },
+        {
+          "name": "1/4 cup fresh lemon juice",
+          "present": true
+        },
+        {
+          "name": "6 garlic cloves, chopped",
+          "present": true
+        },
+        {
+          "name": "2 shallots, chopped",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon smoked paprika",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon chopped fresh oregano",
+          "present": false
+        },
+        {
+          "name": "red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "Kosher salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "6 fresh pitas or naan warmed,",
+          "present": false
+        },
+        {
+          "name": "pickled red onion, lettuce, dill, and parsley for serving",
+          "present": true
+        },
+        {
+          "name": "8 ounces feta cheese",
+          "present": true
+        },
+        {
+          "name": "1/4 cup + 1/3 cup plain Greek yogurt",
+          "present": false
+        },
+        {
+          "name": "2 cloves garlic grated",
+          "present": true
+        },
+        {
+          "name": "juice from 1 lemon",
+          "present": true
+        },
+        {
+          "name": "1-2 Persian cucumbers, shredded",
+          "present": true
+        },
+        {
+          "name": "kosher salt",
+          "present": true
+        }
+      ]
     },
     {
       "id": "chicken-khao-soi-noodles",
@@ -2486,12 +4409,110 @@
         "totalTime": "PT60M"
       },
       "inventory_fit": {
-        "percent": 71,
-        "matched": 5,
-        "total": 7,
+        "percent": 50,
+        "matched": 12,
+        "total": 24,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 Thai bird&#x27;s eye chilies",
+          "present": false
+        },
+        {
+          "name": "2 medium shallots",
+          "present": false
+        },
+        {
+          "name": "6 cloves garlic",
+          "present": true
+        },
+        {
+          "name": "1-inch piece ginger ((peeled and sliced))",
+          "present": true
+        },
+        {
+          "name": "1/4 cup cilantro ((stems and leaves, rinsed))",
+          "present": true
+        },
+        {
+          "name": "zest of 1 lime",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons ground turmeric",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons ground coriander",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon curry powder",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons shrimp paste",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons vegetable oil",
+          "present": true
+        },
+        {
+          "name": "1 pound boneless, skinless chicken thighs ((sliced))",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons Thai red curry paste",
+          "present": false
+        },
+        {
+          "name": "4 cups low sodium chicken stock",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons brown sugar",
+          "present": true
+        },
+        {
+          "name": "14 ounces unsweetened coconut milk",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons fish sauce ((or to taste))",
+          "present": true
+        },
+        {
+          "name": "1 pound fresh Chinese egg noodles ((thick wonton noodles work well))",
+          "present": true
+        },
+        {
+          "name": "thinly sliced shallots",
+          "present": false
+        },
+        {
+          "name": "lime wedges",
+          "present": false
+        },
+        {
+          "name": "pickled mustard stems/greens",
+          "present": false
+        },
+        {
+          "name": "crispy noodles",
+          "present": true
+        },
+        {
+          "name": "chopped cilantro",
+          "present": true
+        },
+        {
+          "name": "Thai chili paste ((Nam Prik Pao))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "chimchurri-steak-marinade",
@@ -2522,7 +4543,8 @@
         "total": 0,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
-      }
+      },
+      "ingredient_inventory": []
     },
     {
       "id": "chinchurri-sauce",
@@ -2573,12 +4595,54 @@
         "totalTime": "PT5M"
       },
       "inventory_fit": {
-        "percent": 75,
-        "matched": 3,
-        "total": 4,
+        "percent": 80,
+        "matched": 8,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1/2 cup extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "1/2 cup (1 ounce) finely-minced fresh parsley",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons red wine vinegar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon lemon juice",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dried oregano",
+          "present": false
+        },
+        {
+          "name": "1/2 teaspoon fine sea salt",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon crushed red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "1/4 teaspoon freshly-ground black pepper",
+          "present": true
+        },
+        {
+          "name": "3 to 4 large garlic cloves (minced or grated)",
+          "present": true
+        },
+        {
+          "name": "1 small shallot (finely minced (about 1/4 cup))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "chongqing-chicken",
@@ -2638,12 +4702,70 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 5,
-        "total": 5,
+        "percent": 86,
+        "matched": 12,
+        "total": 14,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 boneless skinless chicken thighs",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon cornstarch",
+          "present": true
+        },
+        {
+          "name": "3/4 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon oil",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons Shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dark soy sauce",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons oil",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons Sichuan peppercorns",
+          "present": true
+        },
+        {
+          "name": "2 slices ginger ((julienned))",
+          "present": true
+        },
+        {
+          "name": "5 cloves garlic ((sliced))",
+          "present": true
+        },
+        {
+          "name": "1 cup whole dried red chilies ((see note!))",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon Shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon sugar",
+          "present": true
+        },
+        {
+          "name": "1 scallion ((chopped))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "chongqing-xiao-mian",
@@ -2702,12 +4824,98 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 86,
-        "matched": 18,
+        "percent": 71,
+        "matched": 15,
         "total": 21,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 tablespoon cooking oil",
+          "present": true
+        },
+        {
+          "name": "3.5 oz ground pork (or beef)",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon minced ginger",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon minced Ya Cai (or Zha Cai (see note 1))",
+          "present": false
+        },
+        {
+          "name": "1 pinch dried chilli flakes",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon Shaoxing rice wine",
+          "present": true
+        },
+        {
+          "name": "2 teaspoon sweet bean sauce (aka Tian Mian Jiang (see note 2))",
+          "present": false
+        },
+        {
+          "name": "7 oz dried noodles (see note 3)",
+          "present": true
+        },
+        {
+          "name": "1 handful leafy green (eg. bok choy, water spinach, choy sum, etc.)",
+          "present": false
+        },
+        {
+          "name": "1¼ cup chicken/beef/vegetable stock (see note 4)",
+          "present": true
+        },
+        {
+          "name": "3.5 oz canned chickpeas, drained (see note 5)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "2 teaspoon black rice vinegar",
+          "present": true
+        },
+        {
+          "name": "2 tablespoon Chinese chilli oil (or to taste)",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon ground Sichuan pepper (or to taste)",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon minced garlic",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon minced ginger",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon sesame oil",
+          "present": true
+        },
+        {
+          "name": "1 pinch sugar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon roasted peanuts/cashews (crushed)",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon finely chopped scallion",
+          "present": false
+        }
+      ]
     },
     {
       "id": "fresh-homemade-pasta",
@@ -2737,7 +4945,8 @@
         "total": 0,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
-      }
+      },
+      "ingredient_inventory": []
     },
     {
       "id": "hamburger-helper",
@@ -2793,12 +5002,50 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 83,
-        "matched": 5,
-        "total": 6,
+        "percent": 78,
+        "matched": 7,
+        "total": 9,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 pound lean ground beef",
+          "present": true
+        },
+        {
+          "name": "1/2 medium onion (chopped)",
+          "present": true
+        },
+        {
+          "name": "2 heaping tablespoons tomato paste",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon garlic powder",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon chili powder",
+          "present": false
+        },
+        {
+          "name": "3 cups beef broth",
+          "present": true
+        },
+        {
+          "name": "1 cup uncooked elbow macaroni",
+          "present": false
+        },
+        {
+          "name": "2 cups freshly grated cheddar cheese",
+          "present": true
+        },
+        {
+          "name": "Salt &amp; pepper (to taste)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "korean-spinach-banchan",
@@ -2844,12 +5091,42 @@
       "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
       "content_note": "Recovered from direct Maangchi recipe text.",
       "inventory_fit": {
-        "percent": 67,
-        "matched": 4,
-        "total": 6,
+        "percent": 71,
+        "matched": 5,
+        "total": 7,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 oz spinach, cleaned and washed",
+          "present": false
+        },
+        {
+          "name": "1 garlic clove, minced",
+          "present": true
+        },
+        {
+          "name": "1 green onion, chopped",
+          "present": true
+        },
+        {
+          "name": "1½ tsp soy sauce",
+          "present": true
+        },
+        {
+          "name": "1½ tsp toasted sesame oil",
+          "present": true
+        },
+        {
+          "name": "2 tsp toasted sesame seeds",
+          "present": false
+        },
+        {
+          "name": "Korean dried shredded red pepper, optional",
+          "present": true
+        }
+      ]
     },
     {
       "id": "lemon-rosemary-chicken",
@@ -2903,12 +5180,58 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 3,
-        "total": 3,
+        "percent": 91,
+        "matched": 10,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 boneless, skinless chicken breasts (1 ¼ pounds total)",
+          "present": true
+        },
+        {
+          "name": "1¼ teaspoon lemon pepper seasoning",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons butter",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons lemon juice",
+          "present": true
+        },
+        {
+          "name": "5 garlic cloves (minced or pressed)",
+          "present": true
+        },
+        {
+          "name": "⅓ cup chicken broth",
+          "present": true
+        },
+        {
+          "name": "1¼ teaspoon fresh rosemary (chopped)",
+          "present": true
+        },
+        {
+          "name": "1¼ teaspoon fresh parsley (chopped)",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon red pepper flakes (more or less to taste)",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons honey (or maple syrup)",
+          "present": false
+        },
+        {
+          "name": "additional lemon slices (for garnish)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "lemongrass-chicken-with-rice-and-zucchini",
@@ -2968,12 +5291,82 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 3,
-        "total": 3,
+        "percent": 71,
+        "matched": 12,
+        "total": 17,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 1/2 pounds boneless skinless chicken thighs",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon paprika",
+          "present": false
+        },
+        {
+          "name": "garlic powder, onion powder, salt, and pepper to taste",
+          "present": true
+        },
+        {
+          "name": "olive oil",
+          "present": true
+        },
+        {
+          "name": "3 cloves garlic, minced",
+          "present": true
+        },
+        {
+          "name": "1 jalapeño, ribs and seeds removed (optional), minced",
+          "present": false
+        },
+        {
+          "name": "one 1-inch knob of ginger, grated or minced",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons lemongrass or lemongrass paste",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon brown sugar",
+          "present": true
+        },
+        {
+          "name": "one 14-ounce can unsweetened coconut cream (important: NOT cream of coconut)",
+          "present": false
+        },
+        {
+          "name": "juice and zest of one lime",
+          "present": false
+        },
+        {
+          "name": "salt to taste",
+          "present": true
+        },
+        {
+          "name": "2 zucchinis",
+          "present": false
+        },
+        {
+          "name": "1-2 tablespoons olive oil",
+          "present": true
+        },
+        {
+          "name": "salt and pepper to taste",
+          "present": true
+        },
+        {
+          "name": "cilantro and/or basil, chopped",
+          "present": true
+        },
+        {
+          "name": "rice",
+          "present": true
+        }
+      ]
     },
     {
       "id": "marry-me-chicken",
@@ -3040,12 +5433,74 @@
         "totalTime": "PT25M"
       },
       "inventory_fit": {
-        "percent": 88,
-        "matched": 7,
-        "total": 8,
+        "percent": 87,
+        "matched": 13,
+        "total": 15,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 large chicken breasts (boneless and skinless, sliced lengthwise into thin cutlets)",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon ground black pepper",
+          "present": true
+        },
+        {
+          "name": "6 tablespoons all-purpose flour",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons olive oil",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons unsalted butter",
+          "present": true
+        },
+        {
+          "name": "3 cloves garlic (minced)",
+          "present": true
+        },
+        {
+          "name": "1 cup chicken stock",
+          "present": true
+        },
+        {
+          "name": "1 cup heavy cream ((double cream in the UK))",
+          "present": false
+        },
+        {
+          "name": "½ cup grated parmesan cheese",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon chili flakes",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon oregano",
+          "present": false
+        },
+        {
+          "name": "¼ teaspoon thyme",
+          "present": true
+        },
+        {
+          "name": "⅓ cup sundried tomatoes (chopped)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon fresh basil leaves",
+          "present": true
+        }
+      ]
     },
     {
       "id": "minestrone-soup",
@@ -3110,12 +5565,86 @@
         "totalTime": "PT01H05M"
       },
       "inventory_fit": {
-        "percent": 62,
-        "matched": 5,
-        "total": 8,
+        "percent": 72,
+        "matched": 13,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 large carrots, diced",
+          "present": true
+        },
+        {
+          "name": "2 celery ribs, chopped",
+          "present": false
+        },
+        {
+          "name": "1 medium onion, chopped",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon olive oil",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon butter",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves, minced",
+          "present": true
+        },
+        {
+          "name": "2 cans (14-1/2 ounces each) reduced-sodium chicken broth",
+          "present": true
+        },
+        {
+          "name": "2 cans (8 ounces each) no-salt-added tomato sauce",
+          "present": true
+        },
+        {
+          "name": "1 can (16 ounces) kidney beans, rinsed and drained",
+          "present": false
+        },
+        {
+          "name": "1 can (15 ounces) garbanzo beans or chickpeas, rinsed and drained",
+          "present": true
+        },
+        {
+          "name": "1 can (14-1/2 ounces) diced tomatoes, undrained",
+          "present": true
+        },
+        {
+          "name": "1-1/2 cups shredded cabbage",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon dried basil",
+          "present": true
+        },
+        {
+          "name": "1-1/2 teaspoons dried parsley flakes",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dried oregano",
+          "present": false
+        },
+        {
+          "name": "1/2 teaspoon pepper",
+          "present": true
+        },
+        {
+          "name": "1 cup uncooked whole wheat elbow macaroni",
+          "present": false
+        },
+        {
+          "name": "11 teaspoons grated Parmesan cheese",
+          "present": true
+        }
+      ]
     },
     {
       "id": "one-skillet-lemon-butter-dijon-chicken-orzo",
@@ -3182,12 +5711,94 @@
         "totalTime": "PT60M"
       },
       "inventory_fit": {
-        "percent": 80,
-        "matched": 8,
-        "total": 10,
+        "percent": 70,
+        "matched": 14,
+        "total": 20,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 tablespoons extra virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons Dijon mustard",
+          "present": true
+        },
+        {
+          "name": "4 cloves garlic, chopped",
+          "present": true
+        },
+        {
+          "name": "2 small shallots, chopped",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons chopped fresh rosemary",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon smoked paprika",
+          "present": false
+        },
+        {
+          "name": "kosher salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "2 pounds boneless chicken breasts or thighs",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons salted butter",
+          "present": true
+        },
+        {
+          "name": "1 lemon, sliced",
+          "present": true
+        },
+        {
+          "name": "1 1/2 cups orzo pasta",
+          "present": true
+        },
+        {
+          "name": "3 cups low sodium chicken broth",
+          "present": true
+        },
+        {
+          "name": "2 cups chopped kale",
+          "present": false
+        },
+        {
+          "name": "chopped fresh dill, for serving",
+          "present": false
+        },
+        {
+          "name": "4-6 ounces feta cheese",
+          "present": true
+        },
+        {
+          "name": "1/4 cup plain Greek yogurt",
+          "present": false
+        },
+        {
+          "name": "1 clove garlic, grated",
+          "present": true
+        },
+        {
+          "name": "juice from 1 lemon",
+          "present": true
+        },
+        {
+          "name": "1/4 teaspoon smoked paprika",
+          "present": false
+        },
+        {
+          "name": "crushed red pepper flakes",
+          "present": true
+        }
+      ]
     },
     {
       "id": "orechiette-with-italian-sausage-spinach",
@@ -3244,12 +5855,54 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 75,
-        "matched": 3,
-        "total": 4,
+        "percent": 80,
+        "matched": 8,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 ounces uncooked orecchiette pasta",
+          "present": true
+        },
+        {
+          "name": "16 ounces Italian sausage (see note)",
+          "present": true
+        },
+        {
+          "name": "1/2 medium onion (chopped)",
+          "present": true
+        },
+        {
+          "name": "4 cloves garlic (minced)",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon Dijon mustard",
+          "present": true
+        },
+        {
+          "name": "1/2 cup dry white wine",
+          "present": false
+        },
+        {
+          "name": "3 cups (packed) fresh baby spinach",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons fresh basil (optional)",
+          "present": true
+        },
+        {
+          "name": "Salt &amp; pepper (to taste)",
+          "present": true
+        },
+        {
+          "name": "For serving: freshly grated parmesan cheese (optional, to taste)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "orzo-pasta-salad",
@@ -3307,12 +5960,66 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 43,
-        "matched": 3,
-        "total": 7,
+        "percent": 62,
+        "matched": 8,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 cup dry orzo",
+          "present": true
+        },
+        {
+          "name": "½ pound asparagus (, about ½ a bunch, spears sliced into 2-inch pieces (about 4 pieces per spear))",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons extra-virgin olive oil",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons lemon juice",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon lemon zest",
+          "present": true
+        },
+        {
+          "name": "1 garlic clove (, minced or pressed)",
+          "present": true
+        },
+        {
+          "name": "1 15-ounce can quartered artichoke hearts in water (, drained then sliced in half again)",
+          "present": false
+        },
+        {
+          "name": "1/2 teaspoon kosher salt",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon freshly ground black pepper",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons fresh dill (, chopped)",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons fresh mint (, chopped)",
+          "present": false
+        },
+        {
+          "name": "¼ cup roasted (, salted pistachios, chopped)",
+          "present": true
+        },
+        {
+          "name": "1/3 cup crumbled feta",
+          "present": false
+        }
+      ]
     },
     {
       "id": "pad-see-ew",
@@ -3381,12 +6088,86 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 3,
-        "total": 3,
+        "percent": 89,
+        "matched": 16,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 ounces flank steak ((thinly sliced))",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon Thai black soy sauce ((can also use regular soy sauce or oyster sauce))",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon vegetable oil",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon cornstarch ((or tapioca starch))",
+          "present": true
+        },
+        {
+          "name": "1/8 teaspoon baking soda",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon water",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons water",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon oyster sauce",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon sugar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Thai thin soy sauce ((or regular light soy sauce))",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Thai black soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon fish sauce",
+          "present": true
+        },
+        {
+          "name": "Freshly ground white pepper ((to taste))",
+          "present": true
+        },
+        {
+          "name": "1 pound fresh wide rice noodles ((you can also use 8 ounces dried rice noodles))",
+          "present": true
+        },
+        {
+          "name": "4 tablespoons vegetable oil",
+          "present": true
+        },
+        {
+          "name": "3 cloves garlic ((chopped))",
+          "present": true
+        },
+        {
+          "name": "6 ounces Chinese broccoli ((about 3 cups, cut into 2-inch/5 cm pieces))",
+          "present": true
+        },
+        {
+          "name": "2 large eggs ((slightly beaten))",
+          "present": true
+        }
+      ]
     },
     {
       "id": "peking-duck-westinas-version",
@@ -3441,12 +6222,62 @@
       },
       "content_note": "Recovered from the transcript of the linked original video; transcript-derived wording is condensed into cooking steps.",
       "inventory_fit": {
-        "percent": 83,
-        "matched": 10,
+        "percent": 67,
+        "matched": 8,
         "total": 12,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 duck, about 3½ lb",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons five-spice powder",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons garlic powder",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon onion powder",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon white pepper",
+          "present": true
+        },
+        {
+          "name": "1½ tablespoons sugar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon salt",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons hoisin sauce",
+          "present": true
+        },
+        {
+          "name": "2½ cups water",
+          "present": true
+        },
+        {
+          "name": "70g Chinese red vinegar",
+          "present": false
+        },
+        {
+          "name": "100g maltose",
+          "present": false
+        },
+        {
+          "name": "Hoisin sauce, cucumber, scallions, carrots, and wrappers, for serving",
+          "present": true
+        }
+      ]
     },
     {
       "id": "potato-leek-soup",
@@ -3504,11 +6335,81 @@
       },
       "inventory_fit": {
         "percent": 88,
-        "matched": 14,
-        "total": 16,
+        "matched": 15,
+        "total": 17,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 large leeks (about 2½ pounds, white and light green parts only)",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons unsalted butter",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon sea salt",
+          "present": true
+        },
+        {
+          "name": "Freshly ground black pepper",
+          "present": true
+        },
+        {
+          "name": "2 pounds Yukon gold potatoes or yellow potatoes (chopped)",
+          "present": true
+        },
+        {
+          "name": "3 garlic cloves (grated)",
+          "present": true
+        },
+        {
+          "name": "6 cups Leek Top Broth (below) or vegetable broth",
+          "present": true
+        },
+        {
+          "name": "3 fresh thyme sprigs (bundled)",
+          "present": true
+        },
+        {
+          "name": "1 cup milk or heavy cream",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon fresh lemon juice (optional)",
+          "present": true
+        },
+        {
+          "name": "Chopped fresh chives (for garnish)",
+          "present": false
+        },
+        {
+          "name": "4 large leeks (about 2½ pounds, dark green tops only)",
+          "present": true
+        },
+        {
+          "name": "12 cups water",
+          "present": true
+        },
+        {
+          "name": "8 fresh thyme sprigs",
+          "present": true
+        },
+        {
+          "name": "5 garlic cloves (smashed)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon sea salt",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon black peppercorns",
+          "present": true
+        }
+      ]
     },
     {
       "id": "roast-cauliflower-with-lemon-garlic-yogurt-sauce",
@@ -3570,12 +6471,66 @@
         "cookTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": 43,
-        "matched": 3,
-        "total": 7,
+        "percent": 62,
+        "matched": 8,
+        "total": 13,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 large (800 g) head cauliflower, leaves trimmed",
+          "present": false
+        },
+        {
+          "name": "¼ cup olive oil, plus more for drizzling",
+          "present": true
+        },
+        {
+          "name": "zest and juice of 1 large lemon, divided",
+          "present": true
+        },
+        {
+          "name": "1½ tsp kosher salt, plus more to taste",
+          "present": true
+        },
+        {
+          "name": "½ tsp black pepper, plus more to taste",
+          "present": true
+        },
+        {
+          "name": "2 tsp fresh jalepenos, minced (optional) or to taste ((or use ½ tsp dried red chili flakes))",
+          "present": false
+        },
+        {
+          "name": "¼ cup pomegranate seeds or chopped, dried cranberry or barberries",
+          "present": false
+        },
+        {
+          "name": "¼ cup pine nuts, toasted",
+          "present": false
+        },
+        {
+          "name": "2 tbsp fresh chives, chopped ((or cilantro or parsley))",
+          "present": true
+        },
+        {
+          "name": "¾ cup Greek yogurt or Labaneh",
+          "present": false
+        },
+        {
+          "name": "½ of a small clove of garlic, grated or finely minced",
+          "present": true
+        },
+        {
+          "name": "2 tsp lemon juice",
+          "present": true
+        },
+        {
+          "name": "½ tsp salt",
+          "present": true
+        }
+      ]
     },
     {
       "id": "roast-chicken",
@@ -3645,11 +6600,69 @@
       },
       "inventory_fit": {
         "percent": 100,
-        "matched": 7,
-        "total": 7,
+        "matched": 14,
+        "total": 14,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1.75 - 2 kg / 3.5 - 4lb whole chicken (, patted dry)",
+          "present": true
+        },
+        {
+          "name": "Salt and pepper",
+          "present": true
+        },
+        {
+          "name": "2 tsp olive oil",
+          "present": true
+        },
+        {
+          "name": "1 lemon, quartered",
+          "present": true
+        },
+        {
+          "name": "3 rosemary sprigs",
+          "present": true
+        },
+        {
+          "name": "100 g / 1 stick unsalted butter (, melted)",
+          "present": true
+        },
+        {
+          "name": "3 garlic cloves (, minced)",
+          "present": true
+        },
+        {
+          "name": "1 tbsp sage (, finely chopped (Note 1))",
+          "present": true
+        },
+        {
+          "name": "2 tsp rosemary (, finely chopped (Note 1))",
+          "present": true
+        },
+        {
+          "name": "1 tbsp parsley (, finely chopped (Note 1))",
+          "present": true
+        },
+        {
+          "name": "1/2 tsp each salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "1 cup / 250 ml dry white wine (, or low sodium chicken broth)",
+          "present": true
+        },
+        {
+          "name": "1 onion (, quartered (Note 2))",
+          "present": true
+        },
+        {
+          "name": "1 garlic bulb (, halved horizontally (Note 2))",
+          "present": true
+        }
+      ]
     },
     {
       "id": "roast-chicken-brine",
@@ -3704,12 +6717,66 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 92,
-        "matched": 12,
+        "percent": 85,
+        "matched": 11,
         "total": 13,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 litres / 2 quarts water (, cold tap water)",
+          "present": true
+        },
+        {
+          "name": "1/3 cup kosher or cooking salt, NOT table salt ((Note 1))",
+          "present": true
+        },
+        {
+          "name": "2 lemons (, quartered)",
+          "present": true
+        },
+        {
+          "name": "10 sprigs parsley (, fresh )",
+          "present": true
+        },
+        {
+          "name": "7 sprigs thyme",
+          "present": true
+        },
+        {
+          "name": "2 sprigs rosemary",
+          "present": true
+        },
+        {
+          "name": "5 bay leaves, fresh ((or 3 dried))",
+          "present": false
+        },
+        {
+          "name": "1/4 cup honey",
+          "present": true
+        },
+        {
+          "name": "6 garlic cloves, (smashed (Note 3))",
+          "present": true
+        },
+        {
+          "name": "1 tbsp black peppercorns",
+          "present": true
+        },
+        {
+          "name": "1.5 - 2 kg / 3-4lb chicken (, whole)",
+          "present": true
+        },
+        {
+          "name": "3 tbsp / 40g butter (, melted)",
+          "present": false
+        },
+        {
+          "name": "Salt and pepper to season",
+          "present": true
+        }
+      ]
     },
     {
       "id": "roasted-cauliflower",
@@ -3746,7 +6813,8 @@
         "total": 1,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
-      }
+      },
+      "ingredient_inventory": []
     },
     {
       "id": "sichuan-fuqi-feipian",
@@ -3826,12 +6894,138 @@
         "totalTime": "PT330M"
       },
       "inventory_fit": {
-        "percent": 86,
-        "matched": 6,
-        "total": 7,
+        "percent": 68,
+        "matched": 21,
+        "total": 31,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 pounds beef shank ((900g))",
+          "present": true
+        },
+        {
+          "name": "1 1/2 pounds honeycomb beef tripe ((680g))",
+          "present": true
+        },
+        {
+          "name": "5 slices ginger",
+          "present": true
+        },
+        {
+          "name": "3 scallions",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons Sichuan peppercorns ((3g))",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon cumin seeds ((2g))",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon coriander seeds ((2g))",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon black or white peppercorns ((or a mix of both, 3g))",
+          "present": true
+        },
+        {
+          "name": "3 cloves",
+          "present": false
+        },
+        {
+          "name": "3 bay leaves",
+          "present": true
+        },
+        {
+          "name": "1 cinnamon stick",
+          "present": true
+        },
+        {
+          "name": "1/2 dried tangerine peel",
+          "present": true
+        },
+        {
+          "name": "2 star anise",
+          "present": true
+        },
+        {
+          "name": "1 black cardamom pod ((optional))",
+          "present": false
+        },
+        {
+          "name": "2 white cardamom pods ((optional)",
+          "present": false
+        },
+        {
+          "name": "1/3 cup Shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "1/3 cup light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon dark soy sauce ((optional))",
+          "present": true
+        },
+        {
+          "name": "70 g rock sugar",
+          "present": true
+        },
+        {
+          "name": "1/4 cup braising liquid",
+          "present": false
+        },
+        {
+          "name": "1/4 cup chili oil ((preferably homemade; can add more or less to taste))",
+          "present": true
+        },
+        {
+          "name": "2 cloves garlic ((smashed and finely minced))",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon Sichuan peppercorn powder",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon toasted sesame seeds",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons Chinese black vinegar",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 1/2 teaspoons sugar",
+          "present": true
+        },
+        {
+          "name": "1/4 teaspoon salt ((or to taste))",
+          "present": true
+        },
+        {
+          "name": "1/3 cup Chinese celery ((finely chopped))",
+          "present": false
+        },
+        {
+          "name": "1/4 cup roasted peanuts ((chopped))",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons cilantro ((chopped))",
+          "present": true
+        }
+      ]
     },
     {
       "id": "spicy-cilantro-beef",
@@ -3886,12 +7080,54 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 4,
-        "total": 4,
+        "percent": 80,
+        "matched": 8,
+        "total": 10,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 lb beef (thinly sliced )",
+          "present": true
+        },
+        {
+          "name": "2-3 serrano pepper (sliced)",
+          "present": true
+        },
+        {
+          "name": "2 Thai red chili (sliced)",
+          "present": false
+        },
+        {
+          "name": "8-10 cloves garlic (chopped)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Korean red chili flakes",
+          "present": false
+        },
+        {
+          "name": "0.5 tablespoons ground Sichuan peppercorn",
+          "present": true
+        },
+        {
+          "name": "2 tablespoon oyster sauce",
+          "present": true
+        },
+        {
+          "name": "1.5 tablespoons Black Vinegar",
+          "present": true
+        },
+        {
+          "name": "1 handful cilantro (chopped)",
+          "present": true
+        },
+        {
+          "name": "4 tablespoon oil (I am using grapeseed oil today)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "spicy-cumin-lamb",
@@ -3946,12 +7182,58 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 67,
-        "matched": 2,
-        "total": 3,
+        "percent": 64,
+        "matched": 7,
+        "total": 11,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 lb lamb ( leg, rump(chump), or loin cuts)",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon cumin powder",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon cornstarch",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon Shaoxing rice wine",
+          "present": true
+        },
+        {
+          "name": "3 tablespoon neutral cooking oil (divided)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon cumin seeds",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon chili flakes (or to taste (see note 1))",
+          "present": false
+        },
+        {
+          "name": "1 small red onion (sliced)",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "1 bunch cilantro ( aka coriander)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "spicy-tuscan-chicken-pasta",
@@ -4011,12 +7293,70 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 75,
-        "matched": 6,
-        "total": 8,
+        "percent": 64,
+        "matched": 9,
+        "total": 14,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 jar (8 ounce) oil-packed sun-dried tomatoes",
+          "present": true
+        },
+        {
+          "name": "1 pound boneless skinless chicken breasts, cubed",
+          "present": true
+        },
+        {
+          "name": "4 teaspoons Italian seasoning ((see note))",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon paprika or smoked paprika",
+          "present": false
+        },
+        {
+          "name": "red pepper flakes",
+          "present": true
+        },
+        {
+          "name": "kosher salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "1 cup grated parmesan cheese",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons salted butter",
+          "present": true
+        },
+        {
+          "name": "1 medium shallot, chopped",
+          "present": false
+        },
+        {
+          "name": "2 cloves garlic, chopped",
+          "present": true
+        },
+        {
+          "name": "2-3 tablespoons crushed Calabrian chili paste",
+          "present": false
+        },
+        {
+          "name": "1 pound short cut pasta",
+          "present": true
+        },
+        {
+          "name": "1 cup heavy cream",
+          "present": true
+        },
+        {
+          "name": "2 cups fresh baby spinach",
+          "present": false
+        }
+      ]
     },
     {
       "id": "sweet-potato-pierogi-w-cheddar-bacon-bits",
@@ -4077,12 +7417,46 @@
       "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup",
       "content_note": "Recovered from canonical standalone recipe page; condensed for the family card.",
       "inventory_fit": {
-        "percent": 75,
-        "matched": 6,
+        "percent": 88,
+        "matched": 7,
         "total": 8,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "Flour, egg, salt, butter, and sour cream or Greek yogurt for the dough",
+          "present": true
+        },
+        {
+          "name": "Sweet potatoes",
+          "present": true
+        },
+        {
+          "name": "Cheddar cheese",
+          "present": true
+        },
+        {
+          "name": "Garlic powder",
+          "present": true
+        },
+        {
+          "name": "Bacon",
+          "present": false
+        },
+        {
+          "name": "Butter",
+          "present": true
+        },
+        {
+          "name": "Rosemary",
+          "present": true
+        },
+        {
+          "name": "Chili flakes",
+          "present": true
+        }
+      ]
     },
     {
       "id": "taiwanese-beef-noodle-soup",
@@ -4163,12 +7537,122 @@
         "totalTime": "PT150M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 9,
-        "total": 9,
+        "percent": 70,
+        "matched": 19,
+        "total": 27,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 pounds beef shank ((1.4 kg, cut into 2-inch chunks))",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons oil",
+          "present": true
+        },
+        {
+          "name": "A 2-inch piece of ginger ((smashed))",
+          "present": true
+        },
+        {
+          "name": "6 cloves garlic ((smashed))",
+          "present": true
+        },
+        {
+          "name": "3 scallions ((cut into 2-inch segments))",
+          "present": true
+        },
+        {
+          "name": "1 onion ((cut into wedges))",
+          "present": true
+        },
+        {
+          "name": "1 tomato ((cut into wedges))",
+          "present": true
+        },
+        {
+          "name": "4 dried chilies ((ripped in half))",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon tomato paste",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons spicy bean paste (douban jiang)",
+          "present": false
+        },
+        {
+          "name": "2 teaspoons sugar",
+          "present": true
+        },
+        {
+          "name": "1/2 cup soy sauce",
+          "present": true
+        },
+        {
+          "name": "1/2 cup Shaoxing wine",
+          "present": true
+        },
+        {
+          "name": "8 cups water ((to make the soup broth))",
+          "present": true
+        },
+        {
+          "name": "1 Chinese aromatic herb packet",
+          "present": false
+        },
+        {
+          "name": "32 ounces fresh wheat (white) noodles ((900g))",
+          "present": true
+        },
+        {
+          "name": "A small handful of bok choy for each serving",
+          "present": false
+        },
+        {
+          "name": "Cilantro ((finely chopped))",
+          "present": true
+        },
+        {
+          "name": "Scallions ((finely chopped))",
+          "present": true
+        },
+        {
+          "name": "Pickled mustard greens ((to taste, also known as snow vegetable or 雪菜; note this is different from Cantonese haam choy))",
+          "present": false
+        },
+        {
+          "name": "1 Chinese cinnamon stick",
+          "present": true
+        },
+        {
+          "name": "3 bay leaves ((optional) )",
+          "present": true
+        },
+        {
+          "name": "1/2 tablespoon fennel seeds",
+          "present": false
+        },
+        {
+          "name": "1/2 tablespoon cumin seeds",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon coriander seeds",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon Sichuan peppercorns ((optional) )",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon black pepper",
+          "present": true
+        }
+      ]
     },
     {
       "id": "turkish-pasta",
@@ -4238,12 +7722,86 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 78,
-        "matched": 7,
-        "total": 9,
+        "percent": 72,
+        "matched": 13,
+        "total": 18,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "8 ounces pasta of choice",
+          "present": true
+        },
+        {
+          "name": "1 pound lean ground beef",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons onion powder",
+          "present": true
+        },
+        {
+          "name": "2 medium yellow onions (diced )",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon tomato paste",
+          "present": true
+        },
+        {
+          "name": "2 teaspoons sweet paprika powder",
+          "present": false
+        },
+        {
+          "name": "Salt and Pepper to taste",
+          "present": true
+        },
+        {
+          "name": "1/4 cup unsalted butter",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons olive oil",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon dried mint (or fresh)",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon sweet paprika (not smoked)",
+          "present": false
+        },
+        {
+          "name": "1 tablespoon mild pepper paste",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon Turkish chili flakes (or regular chili flakes)",
+          "present": false
+        },
+        {
+          "name": "1 cup Greek yogurt (or plain yogurt)",
+          "present": false
+        },
+        {
+          "name": "2-3 small garlic cloves (minced, you can use one for a lighter garlic flavor)",
+          "present": true
+        },
+        {
+          "name": "Salt and pepper",
+          "present": true
+        },
+        {
+          "name": "1/4 cup minced parsley",
+          "present": true
+        },
+        {
+          "name": "1/2 cup Cherry tomatoes (diced)",
+          "present": true
+        }
+      ]
     },
     {
       "id": "vietnamese-lemongrass-chicken-vermicelli-noodles",
@@ -4323,12 +7881,114 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 91,
-        "matched": 10,
-        "total": 11,
+        "percent": 68,
+        "matched": 17,
+        "total": 25,
         "as_of": "2026-08-29",
-        "basis": "catalog key ingredients"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "600 - 800g / 1.2 - 1.6lb chicken thigh fillets (, skinless and boneless or breast (or pork, beef or any seafood))",
+          "present": true
+        },
+        {
+          "name": "1 stalk lemongrass (, white part only, bruised them sliced into pieces easy to pick out later (Note 1))",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves (, finely chopped or minced)",
+          "present": true
+        },
+        {
+          "name": "2 tbsp lime juice",
+          "present": false
+        },
+        {
+          "name": "2 tbsp fish sauce ((Note 2))",
+          "present": true
+        },
+        {
+          "name": "1 tbsp soy sauce ((all purpose or light, NOT dark soy))",
+          "present": true
+        },
+        {
+          "name": "2 tbsp brown sugar",
+          "present": true
+        },
+        {
+          "name": "1 tbsp vegetable oil",
+          "present": true
+        },
+        {
+          "name": "1/4 cup fish sauce ((Note 3))",
+          "present": true
+        },
+        {
+          "name": "4 tbsp rice vinegar",
+          "present": true
+        },
+        {
+          "name": "2 tbsp white sugar",
+          "present": true
+        },
+        {
+          "name": "1/2 cup water",
+          "present": true
+        },
+        {
+          "name": "2 garlic cloves (, finely chopped)",
+          "present": true
+        },
+        {
+          "name": "1 red birds eye chilli (, finely chopped (Note 4))",
+          "present": false
+        },
+        {
+          "name": "3 tbsp lime juice",
+          "present": false
+        },
+        {
+          "name": "1/2 tbsp oil",
+          "present": true
+        },
+        {
+          "name": "200 g / 7 oz vermicelli noodles (, dried)",
+          "present": true
+        },
+        {
+          "name": "2 carrots (, julienned)",
+          "present": true
+        },
+        {
+          "name": "2 cucumbers (, julienned (optional: remove seeds))",
+          "present": true
+        },
+        {
+          "name": "5 cups iceberg lettuce (, finely sliced)",
+          "present": false
+        },
+        {
+          "name": "3 cups bean sprouts",
+          "present": false
+        },
+        {
+          "name": "Handful of mint leaves",
+          "present": false
+        },
+        {
+          "name": "Handful of cilantro/coriander",
+          "present": true
+        },
+        {
+          "name": "Sliced red chilli ((for garnish - optional))",
+          "present": false
+        },
+        {
+          "name": "Lime wedges ((to serve - optional but recommended))",
+          "present": false
+        }
+      ]
     },
     {
       "id": "wuhan-hot-dry-noodle",
@@ -4380,12 +8040,70 @@
         "totalTime": "PT35M"
       },
       "inventory_fit": {
-        "percent": 100,
-        "matched": 14,
+        "percent": 79,
+        "matched": 11,
         "total": 14,
         "as_of": "2026-08-29",
-        "basis": "recipe ingredient lines"
-      }
+        "basis": "public recipe ingredient lines"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 tablespoons sesame paste",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons sesame oil",
+          "present": true
+        },
+        {
+          "name": "1 ½ teaspoons dark soy sauce",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon light soy sauce",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon sugar",
+          "present": true
+        },
+        {
+          "name": "salt ((to taste))",
+          "present": true
+        },
+        {
+          "name": "240 g about 8 oz. fresh alkaline noodles",
+          "present": true
+        },
+        {
+          "name": "1/4 cup chopped preserved mustard stems, zha cai, 榨菜",
+          "present": false
+        },
+        {
+          "name": "1/4 cup chopped pickled long beans, suan dou jiao, 酸豆角",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon garlic ((minced))",
+          "present": true
+        },
+        {
+          "name": "Chili oil ((to taste))",
+          "present": true
+        },
+        {
+          "name": "1/4 cup cilantro ((chopped))",
+          "present": true
+        },
+        {
+          "name": "2 scallions ((chopped))",
+          "present": true
+        },
+        {
+          "name": "1/2 teaspoon Chinese black vinegar",
+          "present": false
+        }
+      ]
     }
   ],
   "visuals": {
@@ -4403,7 +8121,7 @@
   },
   "inventory_fit": {
     "updated": "2026-08-29",
-    "method": "Approximate ingredient-presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+    "method": "Deterministic ingredient-line presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
     "private_source": "local household inventory; not published"
   }
 }
