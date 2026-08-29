@@ -2,7 +2,7 @@
   "site_name": "Westina’s Cantina",
   "updated": "2026-08-28",
   "source": "Notion export + household golden-recipe registry",
-  "recipe_count": 69,
+  "recipe_count": 72,
   "recipes": [
     {
       "id": "blistered-shishito-peppers",
@@ -3903,6 +3903,162 @@
         "cookTime": "PT15M",
         "totalTime": "PT35M"
       }
+    },
+    {
+      "id": "mahi-mahi-lemon-garlic-sauce",
+      "title": "Mahi Mahi with Lemon Garlic Sauce",
+      "cuisine": "American seafood",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Mahi mahi",
+        "Lemon",
+        "Garlic",
+        "Butter",
+        "Parsley"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://theforkedspoon.com/mahi-mahi-recipe/",
+      "source_publisher": "The Forked Spoon",
+      "source_entries": 0,
+      "private_attachment": false,
+      "notes": "Added from the user-provided source.",
+      "image_url": "https://theforkedspoon.com/wp-content/uploads/2020/07/Mahi-Mahi-Recipe-with-Garlic-Butter-Sauce-4.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "4 (4–6 ounce) mahi mahi fillets",
+        "Salt, to season",
+        "Lemon pepper, to season",
+        "1 lemon, thinly sliced",
+        "1 lemon, juiced (about 4 tablespoons juice)",
+        "5 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "4 tablespoons salted butter",
+        "2 tablespoons capers, drained (optional)",
+        "2 tablespoons fresh parsley, minced"
+      ],
+      "recipe_steps": [
+        "Pat each mahi mahi fillet dry with paper towels and generously season both sides with salt and lemon pepper. Set aside.",
+        "Thinly slice one lemon and juice the other into a small bowl. Mince the garlic so everything is ready before cooking.",
+        "Heat the olive oil in a large skillet over medium-high heat. Add the fillets and sear undisturbed until golden and cooked just past halfway up the sides, about 4 minutes depending on thickness. Flip and cook 2–4 minutes more, until just cooked through and the fish reaches 137°F. Transfer to a serving plate.",
+        "In the same skillet, heat the butter, lemon juice, and lemon slices over medium heat until the butter melts and begins to bubble. Stir in the garlic, reduce heat to low, and cook 1 minute, until lightly golden. Stir in parsley and optional capers.",
+        "Spoon the lemon garlic butter sauce over the mahi mahi and serve immediately."
+      ],
+      "recipe_yield": "4 people",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT20M",
+        "totalTime": "PT30M"
+      }
+    },
+    {
+      "id": "homemade-tzatziki",
+      "title": "Homemade Tzatziki",
+      "cuisine": "Greek",
+      "component_types": [
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Greek yogurt",
+        "Cucumber",
+        "Dill",
+        "Lemon",
+        "Garlic"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.delish.com/cooking/recipe-ideas/a30715622/authentic-tzatziki-recipe/",
+      "source_publisher": "Delish",
+      "source_entries": 0,
+      "private_attachment": false,
+      "notes": "Added from the user-provided source.",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "1 cup whole-fat Greek yogurt",
+        "1 tablespoon extra-virgin olive oil",
+        "½ lemon, juiced",
+        "½ cup finely chopped cucumber",
+        "2 cloves garlic, finely chopped",
+        "1 tablespoon chopped fresh dill",
+        "Kosher salt",
+        "Freshly ground black pepper",
+        "Pinch of crushed red pepper flakes",
+        "Pita and vegetables, for serving (optional)"
+      ],
+      "recipe_steps": [
+        "In a medium bowl, combine the yogurt, olive oil, and lemon juice. Add the cucumber, garlic, and dill; season with salt, black pepper, and red pepper flakes.",
+        "Serve with pita and vegetables, if using.",
+        "Make ahead: transfer to an airtight container and refrigerate for up to 4 days."
+      ],
+      "recipe_yield": "1 serving",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "totalTime": "PT20M"
+      }
+    },
+    {
+      "id": "epic-baba-ganoush",
+      "title": "Epic Baba Ganoush",
+      "cuisine": "Lebanese / Mediterranean",
+      "component_types": [
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Eggplant",
+        "Tahini",
+        "Lemon",
+        "Garlic",
+        "Parsley"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://cookieandkate.com/epic-baba-ganoush-recipe/",
+      "source_publisher": "Cookie and Kate",
+      "source_entries": 0,
+      "private_attachment": false,
+      "notes": "Added from the user-provided source.",
+      "image_url": "https://cookieandkate.com/images/2017/10/best-baba-ganoush-recipe.jpg",
+      "content_status": "extracted",
+      "recipe_ingredients": [
+        "2 pounds Italian eggplants (about 2 small-to-medium eggplants)",
+        "2 medium cloves garlic, pressed or minced",
+        "2 tablespoons lemon juice, plus more if necessary",
+        "¼ cup tahini",
+        "⅓ cup extra-virgin olive oil, plus more for brushing and garnish",
+        "2 tablespoons chopped fresh flat-leaf parsley, plus extra for garnish",
+        "¾ teaspoon salt, to taste",
+        "¼ teaspoon ground cumin",
+        "Pinch of smoked paprika, for garnish",
+        "Warmed or toasted pita wedges and raw vegetables, for serving"
+      ],
+      "recipe_steps": [
+        "Preheat the oven to 450°F with a rack in the upper third. Line a large rimmed baking sheet with parchment. Halve the eggplants lengthwise, brush the cut sides lightly with olive oil, and place them cut-side down on the pan.",
+        "Roast until the interior is very tender and the skin is collapsing, about 35–40 minutes. Cool for a few minutes, flip the eggplants, and scoop out the flesh, leaving the skin behind.",
+        "Place the flesh in a mesh strainer over a bowl. Discard the skins and any stray skin pieces. Let the eggplant drain for a few minutes, shaking or stirring it to release more moisture.",
+        "Discard the drippings, wipe out the bowl, and return the eggplant to it. Add garlic and lemon juice and stir vigorously with a fork until the eggplant breaks down. Stir in tahini, then slowly drizzle in the olive oil while stirring until pale and creamy.",
+        "Stir in parsley, salt, and cumin. Season with more salt and lemon juice to taste.",
+        "Transfer to a serving bowl. Drizzle with olive oil and garnish with parsley and smoked paprika. Serve with pita or vegetables."
+      ],
+      "recipe_yield": "6 servings (about 1¾ cups)",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT35M",
+        "totalTime": "PT55M"
+      }
     }
   ],
   "visuals": {
@@ -3912,8 +4068,8 @@
   },
   "content_import": {
     "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
-    "linked_targets": 66,
-    "extracted": 65,
+    "linked_targets": 69,
+    "extracted": 68,
     "partial": 0,
     "unavailable": 1,
     "updated": "2026-08-29"
