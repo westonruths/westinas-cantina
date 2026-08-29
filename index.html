@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Westina’s Cantina — a family recipe component menu for building meals from trusted recipes.">
+  <title>Westina’s Cantina</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Ruths Family Recipe House</div>
+      <h1>Westina’s Cantina</h1>
+      <p class="lede">A permanent menu of trusted components for building breakfast, lunch, and dinner in whatever permutation the day needs.</p>
+      <div class="rule"></div>
+      <p class="howto"><strong>How to use the menu:</strong> start with the current inventory, choose the daypart, then assemble from the component shelves. Golden recipes are canonical; core substitutions should be called out.</p>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="controls" aria-label="Menu controls">
+      <div class="dayparts" role="tablist" aria-label="Daypart">
+        <button class="daypart active" data-slot="dinner" role="tab" aria-selected="true">Dinner</button>
+        <button class="daypart" data-slot="lunch" role="tab" aria-selected="false">Lunch</button>
+        <button class="daypart" data-slot="breakfast" role="tab" aria-selected="false">Breakfast</button>
+      </div>
+      <div class="tools"><label class="search"><span>Search menu</span><input id="search" type="search" placeholder="Try kale, noodles, chicken…"></label><button id="clear" class="clear" type="button">Clear</button></div>
+    </section>
+    <section class="menu-intro"><div><span class="section-kicker">Dinner</span><h2 id="section-title">Choose your components</h2></div><p id="count" class="count"></p></section>
+    <nav id="filters" class="filters" aria-label="Component type"></nav>
+    <section id="menu" class="menu-grid" aria-live="polite"></section>
+    <section id="empty" class="empty" hidden><h2>No dishes found</h2><p>Try another search or switch the component filter.</p></section>
+  </main>
+  <footer class="footer"><div><strong>Westina’s Cantina</strong><span>Built from the exported Westina’s Recipes list and the household golden-recipe registry.</span></div><a href="https://github.com/westonruths/westinas-cantina">View the source on GitHub</a></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

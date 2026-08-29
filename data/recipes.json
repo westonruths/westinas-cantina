@@ -1,0 +1,1841 @@
+{
+  "site_name": "Westina’s Cantina",
+  "updated": "2026-08-28",
+  "source": "Notion export + household golden-recipe registry",
+  "recipe_count": 69,
+  "recipes": [
+    {
+      "id": "blistered-shishito-peppers",
+      "title": "Blistered Shishito Peppers",
+      "cuisine": "Spanish-style vegetable tapa",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": true,
+      "golden": true,
+      "source_url": "https://cookieandkate.com/blistered-shishito-peppers-recipe",
+      "source_publisher": "Cookie and Kate",
+      "source_entries": 0,
+      "private_attachment": false,
+      "golden_note": "Golden CSA pepper side/appetizer when shishito or Padrón peppers are available.",
+      "notes": "Added from the household golden-recipe registry."
+    },
+    {
+      "id": "overnight-focaccia",
+      "title": "Overnight Focaccia",
+      "cuisine": "Italian-style bread",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": true,
+      "golden": true,
+      "source_url": "https://app.samsungfood.com/recipes/10772d67b8670bc48558f1a0e85e9f160b0",
+      "source_publisher": "Samsung Food",
+      "source_entries": 0,
+      "private_attachment": false,
+      "golden_note": "Impressive bring-to-a-party side dish.",
+      "notes": "Added from the household golden-recipe registry."
+    },
+    {
+      "id": "twice-cooked-pork-hui-guo-rou",
+      "title": "Twice Cooked Pork (Hui Guo Rou, 回锅肉)",
+      "cuisine": "Sichuan Chinese",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": true,
+      "golden": true,
+      "source_url": "https://redhousespice.com/twice-cooked-pork-fast-version",
+      "source_publisher": "Red House Spice",
+      "source_entries": 0,
+      "private_attachment": false,
+      "golden_note": "Intentional richer Sichuan pork-belly dinner.",
+      "notes": "Added from the household golden-recipe registry."
+    },
+    {
+      "id": "hasselback-potatoes",
+      "title": "Hasselback potatoes",
+      "cuisine": "Unspecified",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": true,
+      "source_url": "https://www.loveandlemons.com/hasselback-potatoes",
+      "source_publisher": "Love and Lemons",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": "",
+      "golden_note": "Special-occasion or elevated potato side dish."
+    },
+    {
+      "id": "korean-bbq-salad",
+      "title": "Korean BBQ Salad",
+      "cuisine": "Korean",
+      "component_types": [
+        "sauce",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Fish sauce",
+        "Garlic",
+        "Lettuce",
+        "Onions",
+        "Scallions",
+        "Sesame Oil",
+        "Soy Sauce",
+        "White vinegar"
+      ],
+      "tried": false,
+      "golden": true,
+      "source_url": "https://www.maangchi.com/recipe/sangchu-geotjeori",
+      "source_publisher": "Maangchi",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": "",
+      "golden_note": "Korean BBQ lettuce salad standard."
+    },
+    {
+      "id": "steamed-egg",
+      "title": "Steamed egg",
+      "cuisine": "Chinese",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "breakfast",
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": true,
+      "source_url": "https://www.madewithlau.com/recipes/steamed-egg",
+      "source_publisher": "Made With Lau",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": "",
+      "golden_note": "Silky steamed-egg reference recipe."
+    },
+    {
+      "id": "tuscan-kale-salad",
+      "title": "Tuscan Kale Salad",
+      "cuisine": "American",
+      "component_types": [
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bacon",
+        "Garlic",
+        "Lemon",
+        "Parmesan Cheese",
+        "Parmesan Crisps",
+        "Tuscan Kale"
+      ],
+      "tried": false,
+      "golden": true,
+      "source_url": "https://cooking.nytimes.com/recipes/11746-tuscan-kale-salad",
+      "source_publisher": "The New York Times Cooking",
+      "source_entries": 2,
+      "private_attachment": false,
+      "notes": "",
+      "golden_note": "Golden CSA lacinato-kale salad reference."
+    },
+    {
+      "id": "baby-bok-choy",
+      "title": "Baby Bok Choy",
+      "cuisine": "Chinese",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bok Choy"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://cooking.nytimes.com/recipes/1013418-sauteed-baby-bok-choy",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "dan-dan-noodles",
+      "title": "Dan Dan Noodles",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chili Oil",
+        "Garlic",
+        "Noodles",
+        "Pork",
+        "Scallions",
+        "Soy Sauce"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/dan-dan-noodles",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "egg-drop-soup",
+      "title": "Egg Drop Soup",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "soup",
+        "veggie"
+      ],
+      "meal_slots": [
+        "breakfast",
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken Stock",
+        "Egg"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/egg-drop-soup",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "fettuccine-alfredo",
+      "title": "Fettuccine Alfredo",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Heavy Cream",
+        "Parmesan Cheese",
+        "Pasta"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "foccacia-bread",
+      "title": "Foccacia Bread",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Flour",
+        "Honey",
+        "Olives",
+        "Rosemary",
+        "Yeast"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.tiktok.com/@_lacebakes_/video/7201221292576607494?_r=1&_t=8batoxm54op",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "grilled-artichokes",
+      "title": "Grilled Artichokes",
+      "cuisine": "American",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Artichoke",
+        "Garlic",
+        "Lemon",
+        "Mayonnaise",
+        "Parsley"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://homecookedharvest.com/grilled-artichoke-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "hainanese-chicken-rice",
+      "title": "Hainanese Chicken Rice",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Ginger",
+        "Rice",
+        "Scallions"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://tasty.co/recipe/hainanese-chicken-rice",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "heirloom-tomato-salad",
+      "title": "Heirloom tomato salad",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Balsamic vinegar",
+        "Basil",
+        "Feta Cheese",
+        "Red onion",
+        "Tomatoes"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://diethood.com/heirloom-tomato-salad",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "herb-roasted-rack-of-lamb",
+      "title": "Herb Roasted Rack of Lamb",
+      "cuisine": "American",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Lamb"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://coupleinthekitchen.com/herb-roasted-rack-of-lamb-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "italian-wedding-soup",
+      "title": "Italian Wedding Soup",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Carrots",
+        "Celery",
+        "Garlic",
+        "Onions",
+        "Orzo",
+        "Pork"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.cookingclassy.com/italian-wedding-soup",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "lemon-orzo-chickpea-soup",
+      "title": "Lemon Orzo Chickpea Soup",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Carrots",
+        "Chicken Stock",
+        "Chickpeas",
+        "Dill",
+        "Egg",
+        "Garlic",
+        "Lemon",
+        "Onions",
+        "Orzo"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.gimmesomeoven.com/lemony-orzo-chickpea-soup",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 2,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "one-skillet-chicken-and-couscous",
+      "title": "One Skillet Chicken and Couscous",
+      "cuisine": "Greek",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Chicken Stock",
+        "Couscous",
+        "Garlic",
+        "Lemon",
+        "Thyme"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/skillet-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "pan-fried-noodles",
+      "title": "Pan Fried Noodles",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Noodles",
+        "Pork",
+        "Scallions"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/cantonese-soy-sauce-pan-fried-noodles",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "pan-seared-chicken-thighs",
+      "title": "Pan-seared chicken thighs",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/pan-seared-chicken-thighs",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "peking-duck-mas-version",
+      "title": "Peking Duck (Ma’s version)",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cooking Wine",
+        "Duck",
+        "Ginger",
+        "Scallions",
+        "Soy Sauce"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": null,
+      "source_publisher": "Household entry",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": "Private household recipe details were not published."
+    },
+    {
+      "id": "pi-dan-shou-rou-zhou-congee",
+      "title": "Pi Dan Shou Rou Zhou (Congee)",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup",
+        "veggie"
+      ],
+      "meal_slots": [
+        "breakfast",
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Egg",
+        "Ginger",
+        "Pork",
+        "Rice",
+        "Scallions"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/20-minute-congee-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "pork-dumplings-with-napa-cabbage",
+      "title": "Pork Dumplings with Napa Cabbage",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cabbage",
+        "Dill",
+        "Dumpling Skins",
+        "Pork",
+        "Scallions"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://redhousespice.com/pork-cabbage-dumpling",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "rotisserie-chicken-stock",
+      "title": "Rotisserie chicken stock",
+      "cuisine": "American",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bay leaves",
+        "Carrots",
+        "Celery",
+        "Chicken",
+        "Chicken Boullion",
+        "Garlic",
+        "Onions",
+        "Rosemary",
+        "Thyme"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://tastesbetterfromscratch.com/homemade-chicken-broth-how-to-get-the-most-from-your-rotisserie-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "salt-pepper-pork-chops",
+      "title": "Salt & Pepper Pork Chops",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Peppers"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/cantonese-salt-pepper-pork-chops",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "spinach-artichoke-dip",
+      "title": "Spinach Artichoke Dip",
+      "cuisine": "Italian",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Artichoke",
+        "Basil",
+        "Cream Cheese",
+        "Mayonnaise",
+        "Mozzarella Cheese",
+        "Parmesan Cheese",
+        "Sour Cream",
+        "Spinach"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.cookingclassy.com/spinach-artichoke-dip",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "vietnamese-spring-rolls",
+      "title": "Vietnamese Spring Rolls",
+      "cuisine": "Vietnamese",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cilantro",
+        "Lettuce",
+        "Mint",
+        "Rice Paper",
+        "Shrimp",
+        "Thai Basil",
+        "Vermicelli"
+      ],
+      "tried": true,
+      "golden": false,
+      "source_url": "https://www.allrecipes.com/recipe/24239/vietnamese-fresh-spring-rolls",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "10-minute-homemade-ramen",
+      "title": "10-minute Homemade Ramen",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cilantro",
+        "Noodles",
+        "Scallions",
+        "Sesame Oil",
+        "Soy Sauce"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://tiffycooks.com/easy-noodle-soup-10-minutes",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "basil-parmesan-pasta-with-crispy-chicken",
+      "title": "Basil Parmesan Pasta with Crispy Chicken",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Arugula",
+        "Basil",
+        "Bread Crumbs",
+        "Butter",
+        "Chicken",
+        "Cream Cheese",
+        "Heavy Cream",
+        "Parmesan Cheese",
+        "Parsley",
+        "Pasta",
+        "Prosciutto"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.halfbakedharvest.com/basil-parmesan-pasta-with-crispy-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "beef-stew",
+      "title": "Beef Stew",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Beef broth",
+        "Carrots",
+        "Celery",
+        "Flour",
+        "Potato",
+        "Rosemary"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.spendwithpennies.com/beef-stew-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "biang-biang-noodles",
+      "title": "Biang Biang Noodles",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "sauce",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chili Oil",
+        "Garlic",
+        "Noodles",
+        "Peppers",
+        "Scallions",
+        "Sesame Oil",
+        "Soy Sauce"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://redhousespice.com/biang-biang-noodles",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "bone-marrow-parsley-salad",
+      "title": "Bone Marrow & Parsley Salad",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bone marrow",
+        "Bread Crumbs",
+        "Capers",
+        "Lemon",
+        "Parsley",
+        "Shallots"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.mylastsupper.com/recipes/2017/7/anthony-bourdains-roast-bone-marrow-and-parsley-salad",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "braised-beef-shank",
+      "title": "Braised beef shank",
+      "cuisine": "American",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bay leaves",
+        "Beef",
+        "Carrots",
+        "Celery",
+        "Garlic",
+        "Onions",
+        "Tomatoes"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thebigmansworld.com/beef-shank-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "cajun-shrimp-rice",
+      "title": "Cajun shrimp & rice",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Chicken Stock",
+        "Garlic",
+        "Rice",
+        "Shrimp"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.lecremedelacrumb.com/cajun-shrimp-and-rice-skillet",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chicken-wild-rice",
+      "title": "Chicken & Wild Rice",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Carrots",
+        "Celery",
+        "Chicken",
+        "Chicken Stock",
+        "Garlic",
+        "Heavy Cream",
+        "Onions",
+        "Thyme",
+        "Wild rice"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.foodandwine.com/recipes/chicken-and-wild-rice-soup",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chicken-congee",
+      "title": "Chicken congee",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup"
+      ],
+      "meal_slots": [
+        "breakfast",
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Chili Oil",
+        "Cilantro",
+        "Ginger",
+        "Rice",
+        "Scallions"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.madewithlau.com/recipes/chicken-congee",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chicken-gyros-with-feta-tzatziki",
+      "title": "Chicken Gyros with Feta Tzatziki",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Feta Cheese",
+        "Garlic",
+        "Greek Yogurt",
+        "Lemon",
+        "Shallots"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.halfbakedharvest.com/chicken-gyros-with-feta-tzatziki",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chicken-khao-soi-noodles",
+      "title": "Chicken Khao Soi Noodles",
+      "cuisine": "Thai",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Chicken Stock",
+        "Coconut Milk",
+        "Curry",
+        "Garlic",
+        "Ginger",
+        "Shallots"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/chicken-khao-soi",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chimchurri-steak-marinade",
+      "title": "Chimchurri steak marinade",
+      "cuisine": "Argentine",
+      "component_types": [
+        "protein",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": null,
+      "source_publisher": "Household entry",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": "Private household recipe details were not published."
+    },
+    {
+      "id": "chinchurri-sauce",
+      "title": "Chinchurri sauce",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Garlic",
+        "Lemon",
+        "Parsley",
+        "Shallots"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.gimmesomeoven.com/chimichurri-sauce",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 2,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chongqing-chicken",
+      "title": "Chongqing Chicken",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Garlic",
+        "Ginger",
+        "Peppers",
+        "Scallions"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/chongqing-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "chongqing-xiao-mian",
+      "title": "Chongqing Xiao Mian",
+      "cuisine": "Chinese",
+      "component_types": [
+        "other"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://redhousespice.com/chongqing-noodles",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "fresh-homemade-pasta",
+      "title": "Fresh Homemade Pasta",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": null,
+      "source_publisher": "Household entry",
+      "source_entries": 1,
+      "private_attachment": true,
+      "notes": "Private household recipe details were not published."
+    },
+    {
+      "id": "hamburger-helper",
+      "title": "Hamburger helper",
+      "cuisine": "American",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef broth",
+        "Cheddar Cheese",
+        "Ground beef",
+        "Macaroni",
+        "Onions",
+        "Tomato paste"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.saltandlavender.com/homemade-hamburger-helper-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "korean-spinach-banchan",
+      "title": "Korean spinach banchan",
+      "cuisine": "Unspecified",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.maangchi.com/recipe/sigumchi-namul",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "lemon-rosemary-chicken",
+      "title": "Lemon Rosemary Chicken",
+      "cuisine": "American",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Lemon",
+        "Rosemary"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://littlespicejar.com/easy-lemon-rosemary-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "lemongrass-chicken-with-rice-and-zucchini",
+      "title": "Lemongrass Chicken with Rice and Zucchini",
+      "cuisine": "Thai",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Ginger",
+        "Lemongrass"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://pinchofyum.com/lemongrass-chicken-with-rice-and-zucchini",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "marry-me-chicken",
+      "title": "Marry me chicken",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Chicken",
+        "Chicken Stock",
+        "Heavy Cream",
+        "Parmesan Cheese",
+        "Pasta",
+        "Spinach",
+        "Sun-dried tomatoes"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://littlesunnykitchen.com/marry-me-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "minestrone-soup",
+      "title": "Minestrone Soup",
+      "cuisine": "American",
+      "component_types": [
+        "soup"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beans",
+        "Cabbage",
+        "Carrots",
+        "Celery",
+        "Garlic",
+        "Macaroni",
+        "Onions",
+        "Tomato"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.tasteofhome.com/recipes/contest-winning-easy-minestrone",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "one-skillet-lemon-butter-dijon-chicken-orzo",
+      "title": "One Skillet Lemon Butter Dijon Chicken & Orzo",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Chicken",
+        "Feta Cheese",
+        "Garlic",
+        "Greek Yogurt",
+        "Lemon",
+        "Mustard",
+        "Orzo",
+        "Rosemary",
+        "Shallots"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.halfbakedharvest.com/lemon-butter-dijon-chicken-and-orzo",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "orechiette-with-italian-sausage-spinach",
+      "title": "Orechiette with Italian Sausage & Spinach",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Italian sausage",
+        "Parmesan Cheese",
+        "Pasta",
+        "Spinach"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.saltandlavender.com/orecchiette-with-sausage-and-spinach",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "orzo-pasta-salad",
+      "title": "Orzo pasta salad",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "carb",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Artichoke",
+        "Asparagus",
+        "Dill",
+        "Feta Cheese",
+        "Lemon",
+        "Mint",
+        "Orzo"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.foodiecrush.com/orzo-salad-asparagus-artichoke-feta",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "pad-see-ew",
+      "title": "Pad See Ew",
+      "cuisine": "Thai",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Broccoli",
+        "Rice Noodles"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/pad-see-ew",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "peking-duck-westinas-version",
+      "title": "Peking Duck (Westina’s version)",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://youtu.be/knj3abxjgme?si=mpcqqvgyrrvg-mfk",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "potato-leek-soup",
+      "title": "Potato Leek soup",
+      "cuisine": "Unspecified",
+      "component_types": [
+        "carb",
+        "soup"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.loveandlemons.com/potato-leek-soup",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "roast-cauliflower-with-lemon-garlic-yogurt-sauce",
+      "title": "Roast cauliflower with lemon garlic yogurt sauce",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "sauce",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cauliflower",
+        "Garlic",
+        "Greek Yogurt",
+        "Lemon",
+        "Parsley",
+        "Pine nuts",
+        "Pomegranate"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://cookbooksonrepeat.com/lemon-roasted-cauliflower",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "roast-chicken",
+      "title": "Roast chicken",
+      "cuisine": "Unspecified",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Chicken",
+        "Garlic",
+        "Lemon",
+        "Rosemary",
+        "Sage",
+        "Thyme"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.recipetineats.com/roast-chicken",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "roast-chicken-brine",
+      "title": "Roast chicken brine",
+      "cuisine": "Unspecified",
+      "component_types": [
+        "protein",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.recipetineats.com/chicken-brine-recipe",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "roasted-cauliflower",
+      "title": "Roasted cauliflower",
+      "cuisine": "American",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cauliflower"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.tiktok.com/t/zp81cdk5c",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "sichuan-fuqi-feipian",
+      "title": "Sichuan Fuqi Feipian",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Chili Oil",
+        "Chinese Celery",
+        "Cilantro",
+        "Ginger",
+        "Scallions",
+        "Soy Sauce"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/fuqi-feipian-sichuan",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "spicy-cilantro-beef",
+      "title": "Spicy Cilantro Beef",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Cilantro",
+        "Garlic",
+        "Peppers"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://tiffycooks.com/spicy-cilantro-beef-20-minute-recipes",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "spicy-cumin-lamb",
+      "title": "Spicy cumin lamb",
+      "cuisine": "Chinese",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Cilantro",
+        "Lamb",
+        "Red onion"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://redhousespice.com/spicy-cumin-lamb-stir-fry",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "spicy-tuscan-chicken-pasta",
+      "title": "Spicy Tuscan Chicken Pasta",
+      "cuisine": "Italian",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Chili Paste",
+        "Garlic",
+        "Heavy Cream",
+        "Parmesan Cheese",
+        "Shallots",
+        "Spinach",
+        "Tomato"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.halfbakedharvest.com/tuscan-chicken-pasta",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "sweet-potato-pierogi-w-cheddar-bacon-bits",
+      "title": "Sweet Potato Pierogi w/ Cheddar & Bacon Bits",
+      "cuisine": "American",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Bacon",
+        "Butter",
+        "Cheddar Cheese",
+        "Egg",
+        "Flour",
+        "Greek Yogurt",
+        "Rosemary",
+        "Sweet Potato"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.halfbakedharvest.com/hbh-meal-plan-12-4",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "taiwanese-beef-noodle-soup",
+      "title": "Taiwanese Beef Noodle Soup",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb",
+        "protein",
+        "soup",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Beef",
+        "Cilantro",
+        "Cooking Wine",
+        "Garlic",
+        "Ginger",
+        "Onions",
+        "Peppers",
+        "Scallions",
+        "Tomato"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/taiwanese-beef-noodle-soup-instant-pot",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "turkish-pasta",
+      "title": "Turkish Pasta",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "carb",
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Butter",
+        "Garlic",
+        "Greek Yogurt",
+        "Ground beef",
+        "Mint",
+        "Onions",
+        "Parsley",
+        "Pasta",
+        "Tomato"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://healthyfitnessmeals.com/turkish-pasta",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "vietnamese-lemongrass-chicken-vermicelli-noodles",
+      "title": "Vietnamese lemongrass chicken vermicelli noodles",
+      "cuisine": "Vietnamese",
+      "component_types": [
+        "carb",
+        "protein",
+        "sauce",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Chili Paste",
+        "Cilantro",
+        "Fish sauce",
+        "Garlic",
+        "Lemongrass",
+        "Lettuce",
+        "Mint",
+        "Rice vinegar",
+        "Thai Basil",
+        "Vermicelli"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.recipetineats.com/vietnamese-chicken-noodle-bowl",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    },
+    {
+      "id": "wuhan-hot-dry-noodle",
+      "title": "Wuhan Hot Dry Noodle",
+      "cuisine": "Chinese",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner",
+        "lunch"
+      ],
+      "key_ingredients": [],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://thewoksoflife.com/hot-dry-noodles-re-gan-mian",
+      "source_publisher": "Notion recipe list",
+      "source_entries": 1,
+      "private_attachment": false,
+      "notes": ""
+    }
+  ]
+}
