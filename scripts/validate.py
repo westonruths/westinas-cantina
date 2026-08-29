@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+import re
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'data/recipes.json').read_text())
@@ -17,6 +18,13 @@ assert ci.get('extracted')+ci.get('unavailable')==linked, (ci.get('extracted'),c
 for r in data['recipes']:
     if r.get('content_status') in ('extracted','extracted_fallback'):
         assert r.get('recipe_ingredients') or r.get('recipe_steps'), r['title']
+        steps=[]
+        def flatten(value):
+            if isinstance(value,list):
+                for child in value: flatten(child)
+            elif value: steps.append(str(value))
+        flatten(r.get('recipe_steps',[]))
+        assert any(len(step.split()) >= 6 for step in steps), f"steps look heading-only: {r['title']}"
 for f in ['index.html','assets/styles.css','assets/app.js']:
     assert (root/f).exists(), f
 print(f"valid: {len(data['recipes'])} recipes; {sum(bool(r['golden']) for r in data['recipes'])} golden")

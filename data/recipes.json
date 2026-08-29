@@ -67,7 +67,7 @@
       "family": "Focaccia",
       "variant_label": "Overnight Focaccia",
       "image_url": "https://art.whisk.com/image/upload/fl_progressive,h_630,w_1200,c_fill/v1662722214/v3/user-recipes/be4a05c555d30f4915c4ffa1722af706.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "500g white bread flour (12% protein content or higher, see notes on flour below",
         "420ml slightly warm water, just a bit warmer than your body temperature",
@@ -89,23 +89,23 @@
         "chimichurri"
       ],
       "recipe_steps": [
-        [
-          "Please see the notes below the recipe about the importance of using bread flour for this recipe and how to adapt the recipe for plain/all purpose flour if bread flour isnât available."
-        ],
-        "Day One - Dough Mixing Day",
-        "Day Two - Baking Day",
-        "Dimpling, Topping + Baking Your Focaccia",
-        "NOTES ON FREEZING FOCACCIA",
-        "NOTES ON FLOUR",
-        "NOTES ON EQUIPMENT",
-        "NOTES ON YEAST"
+        "Whisk together the slightly warm water, instant yeast, honey, olive oil, and fine sea salt. Add the bread flour and stir until completely hydrated; scrape down the sides. The dough will be sticky.",
+        "Cover the bowl and let the dough rest for 10 minutes.",
+        "Wet your hands and complete one series of stretch-and-folds around the dough.",
+        "Cover again, rest for 10 minutes, then complete a second series of stretch-and-folds to build structure.",
+        "Set the dough smooth-side up, coat it with a little olive oil, cover with plastic wrap, and refrigerate overnight. It can be baked the next day or after another day.",
+        "Line a 9-by-13-inch metal tray with parchment and add about 2–3 tablespoons olive oil. With oiled hands, fold the dough into a burrito-like shape, place it lengthwise in the tray, and flip it so the smooth side faces up.",
+        "Cover and proof for about 2 hours. If the dough has not spread across the tray, oil your hands and gently stretch it out. Drizzle with olive oil and dimple the dough.",
+        "Add toppings of choice. If using rosemary, coat it with oil so it does not burn; finish with flaky sea salt.",
+        "Bake on the lowest oven rack at 220°C/430°F for 18–22 minutes. Let cool before cutting."
       ],
       "recipe_yield": "12",
       "recipe_timings": {
         "prepTime": "PT20M",
         "cookTime": "PT20M",
         "totalTime": "PT40M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the creator’s complete same-author method, matching the linked recipe’s ingredient quantities."
     },
     {
       "id": "twice-cooked-pork-hui-guo-rou",
@@ -128,7 +128,7 @@
       "golden_note": "Intentional richer Sichuan pork-belly dinner.",
       "notes": "Added from the household golden-recipe registry.",
       "image_url": "https://redhousespice.com/wp-content/uploads/2017/06/Twice-cooked-pork-5-scaled.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "300 g pork belly, in one piece (10oz)",
         "5 slices ginger",
@@ -143,15 +143,19 @@
         "1 pinch sugar"
       ],
       "recipe_steps": [
-        "Precook the pork",
-        "Stir-fry the dish"
+        "Place the pork belly and ginger in a pan. Add enough water to cover, bring to a full boil, then reduce the heat and simmer for 30 minutes. The meat should be cooked but still offer slight resistance to a chopstick.",
+        "Drain the pork and cool it in cold water. Slice it crosswise into thin pieces, about 4mm thick, then pat the slices thoroughly dry.",
+        "Heat a wok over high heat until smoking. Add the oil and pork; stir constantly until the meat is lightly browned. Transfer it to a plate, leaving the oil in the wok.",
+        "Turn the heat to low. Add the Sichuan chili bean paste, fermented black beans, and garlic. Sizzle for about 30 seconds without burning them.",
+        "Return the pork over high heat. Add the leek, fresh chili, Shaoxing rice wine, soy sauce, and sugar. Stir-fry until the vegetables begin to wilt but remain slightly crunchy. Serve immediately."
       ],
       "recipe_yield": "2 servings",
       "recipe_timings": {
         "prepTime": "PT10M",
         "cookTime": "PT35M",
         "totalTime": "PT45M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "hasselback-potatoes",
@@ -590,18 +594,43 @@
       "tried": true,
       "golden": false,
       "source_url": "https://www.tiktok.com/@_lacebakes_/video/7201221292576607494?_r=1&_t=8batoxm54op",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Lace Bakes",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "family": "Focaccia",
       "variant_label": "Foccacia Bread",
-      "content_status": "unavailable",
-      "recipe_ingredients": [],
-      "recipe_steps": [],
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "420ml slightly warm water",
+        "4g (1 teaspoon) instant yeast",
+        "5g (1 teaspoon) honey",
+        "15ml (1 tablespoon) extra virgin olive oil",
+        "10g (2 teaspoons) fine sea salt",
+        "500g white bread flour (12% protein or higher)",
+        "2–3 tablespoons olive oil, for the tray",
+        "Extra olive oil, for drizzling",
+        "Flaky sea salt, to finish",
+        "Olives and rosemary, or other toppings of choice"
+      ],
+      "recipe_steps": [
+        "Whisk together the slightly warm water, instant yeast, honey, olive oil, and fine sea salt. Add the bread flour and stir until completely hydrated; scrape down the sides. The dough will be sticky.",
+        "Cover the bowl and let the dough rest for 10 minutes.",
+        "Wet your hands and complete one series of stretch-and-folds around the dough.",
+        "Cover again, rest for 10 minutes, then complete a second series of stretch-and-folds to build structure.",
+        "Set the dough smooth-side up, coat it with a little olive oil, cover with plastic wrap, and refrigerate overnight. It can be baked the next day or after another day.",
+        "Line a 9-by-13-inch metal tray with parchment and add about 2–3 tablespoons olive oil. With oiled hands, fold the dough into a burrito-like shape, place it lengthwise in the tray, and flip it so the smooth side faces up.",
+        "Cover and proof for about 2 hours. If the dough has not spread across the tray, oil your hands and gently stretch it out. Drizzle with olive oil and dimple the dough.",
+        "Add toppings of choice. If using rosemary, coat it with oil so it does not burn; finish with flaky sea salt.",
+        "Bake on the lowest oven rack at 220°C/430°F for 18–22 minutes. Let cool before cutting."
+      ],
       "recipe_yield": "",
-      "recipe_timings": {},
-      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT22M",
+        "restTime": "overnight plus 2 hr proof"
+      },
+      "content_note": "Recovered from the creator’s TikTok on-screen text/audio and same-author recipe details. Honey quantity follows the same-author published recipe."
     },
     {
       "id": "grilled-artichokes",
@@ -624,12 +653,12 @@
       "tried": true,
       "golden": false,
       "source_url": "https://homecookedharvest.com/grilled-artichoke-recipe",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Home Cooked Harvest",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://homecookedharvest.com/wp-content/uploads/2021/04/Grilled-Artichoke-Recipe-C.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "1/2 cup mayonnaise",
         "2 tablespoons lemon juice (freshly squeezed)",
@@ -643,15 +672,19 @@
         "pepper (freshly ground)"
       ],
       "recipe_steps": [
-        "Easy Lemon Aioli",
-        "Grilled Artichokes"
+        "Whisk together the mayonnaise, lemon juice, garlic, and parsley. Season with salt and pepper, then refrigerate for at least 30 minutes so the flavors meld.",
+        "Rinse the artichokes. Remove loose bottom leaves, trim the stems, and cut about 1 inch from the tops. Boil in well-salted water until a leaf pulls away easily, then drain upside down and pat dry.",
+        "Preheat the propane grill. Halve the artichokes lengthwise and gently scoop out the fuzzy choke. Mix the olive oil, lemon juice, salt, and pepper, then brush it over the cut sides.",
+        "Grill cut-side down with the lid closed for about 10 minutes. Flip and grill 5 minutes more.",
+        "Serve with the lemon aioli."
       ],
       "recipe_yield": "4",
       "recipe_timings": {
         "prepTime": "PT15M",
         "cookTime": "PT45M",
         "totalTime": "PT60M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "hainanese-chicken-rice",
@@ -868,12 +901,12 @@
       "tried": true,
       "golden": false,
       "source_url": "https://www.cookingclassy.com/italian-wedding-soup",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Cooking Classy",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://www.cookingclassy.com/wp-content/uploads/2025/03/italian-wedding-soup-04.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "8 oz. lean ground beef",
         "8 oz. ground pork",
@@ -895,15 +928,20 @@
         "Finely shredded parmesan, (for serving)"
       ],
       "recipe_steps": [
-        "For the meatballs:",
-        "For the soup:"
+        "Combine the beef, pork, bread crumbs, parsley, oregano, Parmesan, egg, salt, and pepper. Mix gently, shape into ¾–1-inch meatballs, and place on a plate.",
+        "Heat 1 tablespoon olive oil in a nonstick skillet over medium-high heat. Brown half the meatballs, turning occasionally, about 4 minutes total. Transfer to a paper-towel-lined plate and repeat with the rest; they will finish cooking in the soup.",
+        "While the meatballs brown, heat 1 tablespoon olive oil in a large pot. Sauté the carrots, onion, and celery for 6–8 minutes. Add the garlic and sauté 1 minute longer.",
+        "Pour in the chicken broth, season with salt and pepper, and bring to a boil. Add the pasta and meatballs, then reduce the heat to medium-low.",
+        "Cover and simmer, stirring occasionally, until the pasta is tender and meatballs are cooked through, about 10 minutes. Add the spinach during the last minute.",
+        "Serve warm with finely shredded Parmesan."
       ],
       "recipe_yield": "6",
       "recipe_timings": {
         "prepTime": "PT25M",
         "cookTime": "PT25M",
         "totalTime": "PT50M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "lemon-orzo-chickpea-soup",
@@ -1243,12 +1281,12 @@
       "tried": true,
       "golden": false,
       "source_url": "https://redhousespice.com/pork-cabbage-dumpling",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Red House Spice",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://redhousespice.com/wp-content/uploads/2021/04/a-half-eaten-dumpling-scaled.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "250 g all-purpose flour/plain flour (about 2 cups (see note 1))",
         "130 g water at room temperature (½ cup+2 tsp (see note 2))",
@@ -1265,21 +1303,22 @@
         "Black rice vinegar"
       ],
       "recipe_steps": [
-        "Make the dough",
-        "Mix the filling",
-        "Roll the wrappers",
-        "Assemble the dumplings",
-        "Boil the dumplings",
-        "Serve the dumplings",
-        "Freeze uncooked dumplings",
-        "Cook frozen dumplings"
+        "Add water gradually to the flour and mix until no loose flour remains. Knead into a dough; rest covered for 10 minutes, knead again until smooth, then cover and rest 30–60 minutes. A stand mixer can knead the dough on low for about 8 minutes.",
+        "Cut the Napa cabbage into tiny pieces, mix with salt, and rest about 10 minutes. Mix pork, scallions, ginger, soy sauce, Sichuan pepper, and the rehydrated dried shrimp with its soaking water until absorbed. Squeeze the cabbage dry, add it with sesame oil, and mix.",
+        "Divide the dough into three parts. Roll one part into a rope and cut it into 10 pieces, keeping the remaining dough covered. Flatten each piece into a disc and roll into a thin wrapper, dusting with flour if needed.",
+        "Place a spoonful of filling in the center of each wrapper and seal the edge well, using the folding technique you prefer.",
+        "Bring a large pot of water to a full boil and slide in the dumplings. Push them gently with the back of a spoon to prevent sticking and cover the pot.",
+        "When the water returns to a boil, add about ½ cup cold water and cover. Repeat this boil-and-cold-water cycle two more times, then drain. Rinse briefly under drinkable tap water if desired to reduce surface starch.",
+        "Serve with black rice vinegar and chili oil.",
+        "To freeze, arrange uncooked dumplings in a single layer on a floured or parchment-lined tray. Freeze solid, transfer to airtight bags, and boil from frozen without thawing."
       ],
       "recipe_yield": "30 dumplings",
       "recipe_timings": {
         "prepTime": "PT50M",
         "cookTime": "PT10M",
         "totalTime": "PT90M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "rotisserie-chicken-stock",
@@ -1721,12 +1760,12 @@
       "tried": false,
       "golden": false,
       "source_url": "https://redhousespice.com/biang-biang-noodles",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Red House Spice",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://redhousespice.com/wp-content/uploads/2018/11/Xian-biang-biang-noodles-landscape.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "250 g all-purpose flour (about 2 cups)",
         "¼ teaspoon salt",
@@ -1744,18 +1783,19 @@
         "1 head bok choy (or other green leafy vegetables)"
       ],
       "recipe_steps": [
-        "Make the dough",
-        "Shape the dough",
-        "Pull the noodles (please refer to the video in the post above)",
-        "Cook the noodles",
-        "Season the noodles"
+        "For the dough, mix flour and salt. Add water gradually while mixing, knead into a rough dough, rest 10 minutes, then knead again until medium-firm and smooth. A stand mixer can knead on low for about 8 minutes.",
+        "Divide the dough into 8 pieces, knead each, and roll into a short gherkin shape. Coat thoroughly with oil, cover, and rest for 1 hour.",
+        "Bring a pot of water to a boil. Flatten each dough piece into a rectangle. Press a lengthwise indentation with a rolling pin or chopstick, then gently pull from both ends to the desired thickness. Tear along the indentation to form a loop-shaped noodle.",
+        "Immediately drop each pulled noodle into the boiling water. Cook the noodles in batches; blanch the bok choy or other greens for about 20 seconds near the end, then drain.",
+        "Divide the noodles and greens between bowls. Top with scallions, garlic, chili flakes, chili powder, Sichuan pepper, and salt. Heat the oil until it starts to smoke, pour it over the aromatics, then add soy sauce and black rice vinegar and toss."
       ],
       "recipe_yield": "2 servings",
       "recipe_timings": {
         "prepTime": "PT20M",
         "cookTime": "PT10M",
         "totalTime": "PT100M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "bone-marrow-parsley-salad",
@@ -1953,16 +1993,40 @@
       "tried": false,
       "golden": false,
       "source_url": "https://www.foodandwine.com/recipes/chicken-and-wild-rice-soup",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Food & Wine",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "content_status": "unavailable",
-      "recipe_ingredients": [],
-      "recipe_steps": [],
-      "recipe_yield": "",
-      "recipe_timings": {},
-      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "4 tablespoons unsalted butter",
+        "3 celery ribs, cut into ½-inch pieces",
+        "2 carrots, cut into ½-inch pieces",
+        "1 medium onion, chopped",
+        "2 garlic cloves, minced",
+        "1½ teaspoons finely chopped thyme",
+        "Kosher salt and freshly ground black pepper",
+        "¼ cup all-purpose flour",
+        "1 cup (5 ounces) wild rice blend",
+        "2 quarts chicken stock or low-sodium broth",
+        "2 cups water",
+        "4 cups roasted chicken or turkey, in bite-size pieces",
+        "1 cup heavy cream"
+      ],
+      "recipe_steps": [
+        "Melt the butter in a large saucepan. Add celery, carrots, onion, garlic, thyme, and a generous pinch each of salt and pepper. Cook over moderate heat, stirring occasionally, until the vegetables just begin to soften, about 10 minutes.",
+        "Sprinkle the flour over the vegetables and cook, stirring, until evenly coated and lightly browned, about 3 minutes.",
+        "Add the wild rice and gradually stir in the stock and water. Bring to a boil, then simmer over moderately low heat, stirring occasionally, until the vegetables are tender, about 30 minutes.",
+        "Add the chicken and simmer, stirring occasionally, until the wild rice is tender, 10–15 minutes longer.",
+        "Stir in the cream. Season with salt and pepper, ladle into bowls, and serve."
+      ],
+      "recipe_yield": "8 servings",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "cookTime": "PT55M",
+        "totalTime": "PT1H15M"
+      },
+      "content_note": "Recovered from the canonical Food & Wine recipe page after the original importer received a 403 response."
     },
     {
       "id": "chicken-congee",
@@ -2301,12 +2365,12 @@
       "tried": false,
       "golden": false,
       "source_url": "https://redhousespice.com/chongqing-noodles",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Red House Spice",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://redhousespice.com/wp-content/uploads/2019/12/chongqing-noodles-Red-House-Spice-6-scaled.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "1 tablespoon cooking oil",
         "3.5 oz ground pork (or beef)",
@@ -2331,17 +2395,18 @@
         "1 tablespoon finely chopped scallion"
       ],
       "recipe_steps": [
-        "Cook the meat topping",
-        "Boil the noodles & vegetable",
-        "Prepare the broth",
-        "Assemble the dish"
+        "Heat oil in a wok over high heat. Stir in the minced meat and ginger, loosening the meat. When it turns pale, add Ya Cai or Zha Cai, chili flakes, and Shaoxing rice wine. Add sweet bean sauce when the meat becomes dry, fry about 30 seconds, then set aside.",
+        "Bring a pot of water to a full boil and cook the noodles according to the package. Add the leafy vegetable for a quick blanch, then drain.",
+        "While the noodles cook, heat the stock with the chickpeas. Mix the soy sauce, black rice vinegar, chili oil, Sichuan pepper, garlic, ginger, sesame oil, and sugar; divide this seasoning between the serving bowls.",
+        "Place noodles and vegetables in the bowls. Add the hot stock, chickpeas, and cooked minced meat. Sprinkle with roasted peanuts and scallions."
       ],
       "recipe_yield": "2 bowls",
       "recipe_timings": {
         "prepTime": "PT10M",
         "cookTime": "PT20M",
         "totalTime": "PT30M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "fresh-homemade-pasta",
@@ -2960,18 +3025,43 @@
       "tried": false,
       "golden": false,
       "source_url": "https://youtu.be/knj3abxjgme?si=mpcqqvgyrrvg-mfk",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "YouTube — A Guide To Homemade Peking Duck",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "family": "Peking Duck",
       "variant_label": "Peking Duck (Westina’s version)",
-      "content_status": "unavailable",
-      "recipe_ingredients": [],
-      "recipe_steps": [],
+      "content_status": "extracted_fallback",
+      "recipe_ingredients": [
+        "1 duck, about 3½ lb",
+        "2 teaspoons five-spice powder",
+        "2 teaspoons garlic powder",
+        "1 teaspoon onion powder",
+        "1 teaspoon white pepper",
+        "1½ tablespoons sugar",
+        "1 tablespoon salt",
+        "3 tablespoons hoisin sauce",
+        "2½ cups water",
+        "70g Chinese red vinegar",
+        "100g maltose",
+        "Hoisin sauce, cucumber, scallions, carrots, and wrappers, for serving"
+      ],
+      "recipe_steps": [
+        "Rinse the duck and remove any remaining feathers. Mix the five-spice powder, garlic powder, onion powder, white pepper, sugar, salt, and hoisin sauce into a paste. Rub it thoroughly over the inside of the duck.",
+        "Sew or otherwise seal the cavity. Insert a bicycle-pump valve under the skin at the neck and pump until the skin separates visibly from the meat, pressing with a paper towel to limit leaks.",
+        "Heat the water, Chinese red vinegar, and maltose in a saucepan until the maltose dissolves. Hang the duck by a double meat hook through the wing pits. Pour boiling water over the skin, then pour the maltose-vinegar mixture over the whole duck.",
+        "Hang the duck uncovered in the refrigerator for 24–48 hours, until the skin is visibly dry. Remove the feet if needed to fit the refrigerator and oven setup.",
+        "Place the duck on a rack over a drip pan. Roast at 375°F for 5 minutes, then reduce to 325°F. Rotate after 30 minutes and roast about 30 minutes more, for about 1 hour total, or until deeply golden and crisp.",
+        "Hang the duck to rest for about 15 minutes. Carve at an angle so pieces include skin and meat.",
+        "Warm wrappers if needed, then serve with hoisin sauce, cucumber, scallions, and optional carrots."
+      ],
       "recipe_yield": "",
-      "recipe_timings": {},
-      "content_error": "No recipe ingredients/instructions found in structured data or common recipe markup"
+      "recipe_timings": {
+        "restTime": "24–48 hr",
+        "cookTime": "PT1H",
+        "restAfterCooking": "15 min"
+      },
+      "content_note": "Recovered from the transcript of the linked original video; transcript-derived wording is condensed into cooking steps."
     },
     {
       "id": "potato-leek-soup",
@@ -3171,12 +3261,12 @@
       "tried": false,
       "golden": false,
       "source_url": "https://www.recipetineats.com/chicken-brine-recipe",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "RecipeTin Eats",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://www.recipetineats.com/tachyon/2014/05/Chicken-Brine_3.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "2 litres / 2 quarts water (, cold tap water)",
         "1/3 cup kosher or cooking salt, NOT table salt ((Note 1))",
@@ -3193,15 +3283,20 @@
         "Salt and pepper to season"
       ],
       "recipe_steps": [
-        "Brining",
-        "Roasting Brined Chicken:"
+        "Pour about one-third of the water into a large pot with the remaining brine ingredients. Bring to a boil for 1 minute, stirring to dissolve the salt.",
+        "Remove from the heat and pour in the remaining water. Cool completely, then refrigerate until fully chilled; never add the chicken to warm brine.",
+        "Submerge the chicken breast-side down, cover, and refrigerate for 12–24 hours. Remove it from the brine and pat very dry.",
+        "Tie the legs if desired and tuck the wings under. Brush with most of the melted butter, sprinkle with pepper and only the tiniest pinch of salt, and rest at room temperature for 20 minutes.",
+        "Preheat a fan-forced oven to 220°C/430°F. Put in the chicken, turn the oven down to 180°C/350°F, and roast 50–60 minutes, checking for 75°C/165°F at the joint between leg and thigh or clear juices.",
+        "Check at 45 minutes, rotate if browning unevenly, and brush with the remaining butter. Rest loosely covered with foil for 10–15 minutes before carving."
       ],
       "recipe_yield": "5 - 6",
       "recipe_timings": {
         "prepTime": "PT15M",
         "cookTime": "PT60M",
         "totalTime": "PT1515M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "roasted-cauliflower",
@@ -3383,12 +3478,12 @@
       "tried": false,
       "golden": false,
       "source_url": "https://redhousespice.com/spicy-cumin-lamb-stir-fry",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "Red House Spice",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://redhousespice.com/wp-content/uploads/2023/02/stir-fried-lamb-with-cumin-chili-scaled.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "1 lb lamb ( leg, rump(chump), or loin cuts)",
         "1 tablespoon cumin powder",
@@ -3403,15 +3498,19 @@
         "1 bunch cilantro ( aka coriander)"
       ],
       "recipe_steps": [
-        "Marinate the lamb",
-        "Stir-fry the dish"
+        "Cut the lamb into even ¾-inch/2cm cubes. Mix with cumin powder, cornstarch, soy sauce, and Shaoxing rice wine. Rub to coat, add 1 tablespoon oil, and rest about 10 minutes.",
+        "Heat a wok or skillet until very hot. Add the remaining oil and sear the lamb over high heat, tossing until the surface loses its pinkness. Transfer the lamb out, leaving the oil in the pan.",
+        "Turn the heat to low and briefly toast the cumin seeds and chili flakes in the oil, taking care not to burn them.",
+        "Return the lamb with the sliced onion, turn the heat high, and stir-fry about 30–60 seconds, until the lamb is just cooked and the onion remains crunchy.",
+        "Sprinkle with salt and add cilantro. Toss briefly and serve immediately with steamed rice."
       ],
       "recipe_yield": "3 servings",
       "recipe_timings": {
         "prepTime": "PT10M",
         "cookTime": "PT5M",
         "totalTime": "PT25M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "spicy-tuscan-chicken-pasta",
@@ -3707,12 +3806,12 @@
       "tried": false,
       "golden": false,
       "source_url": "https://www.recipetineats.com/vietnamese-chicken-noodle-bowl",
-      "source_publisher": "Notion recipe list",
+      "source_publisher": "RecipeTin Eats",
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
       "image_url": "https://www.recipetineats.com/tachyon/2017/01/Vietnamese-Noodles-with-Lemongrass-Chicken_7.jpg",
-      "content_status": "extracted",
+      "content_status": "extracted_fallback",
       "recipe_ingredients": [
         "600 - 800g / 1.2 - 1.6lb chicken thigh fillets (, skinless and boneless or breast (or pork, beef or any seafood))",
         "1 stalk lemongrass (, white part only, bruised them sliced into pieces easy to pick out later (Note 1))",
@@ -3741,16 +3840,19 @@
         "Lime wedges ((to serve - optional but recommended))"
       ],
       "recipe_steps": [
-        "Lemongrass Chicken",
-        "Nuoc Cham Sauce",
-        "Assemble"
+        "Combine the chicken and marinade ingredients. Marinate for at least 1 hour and up to 24 hours.",
+        "Heat ½ tablespoon oil in a skillet over medium heat or heat a barbecue. Remove large lemongrass pieces, add the chicken, and cook each side until dark golden and just cooked through, about 6–8 minutes total. Rest 5 minutes, then slice thinly.",
+        "Combine the Nuoc Cham ingredients and mix until the sugar dissolves. Rest at least 20 minutes, then adjust the lime, sweetness, and chili to taste.",
+        "Cook the vermicelli noodles according to the package directions, rinse under cold water, and drain well. Prepare the vegetables and herbs.",
+        "Divide noodles, vegetables, herbs, and sliced chicken among bowls. Drizzle with Nuoc Cham and serve."
       ],
       "recipe_yield": "4",
       "recipe_timings": {
         "prepTime": "PT20M",
         "cookTime": "PT10M",
         "totalTime": "PT30M"
-      }
+      },
+      "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions."
     },
     {
       "id": "wuhan-hot-dry-noodle",
@@ -3809,11 +3911,11 @@
     "recipes_in_variant_families": 6
   },
   "content_import": {
-    "strategy": "JSON-LD recipe fields first, then common recipe-card markup; story text intentionally excluded",
+    "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
     "linked_targets": 66,
-    "extracted": 62,
+    "extracted": 65,
     "partial": 0,
-    "unavailable": 4,
+    "unavailable": 1,
     "updated": "2026-08-29"
   }
 }
