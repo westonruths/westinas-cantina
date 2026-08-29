@@ -161,8 +161,8 @@ function render() {
   const groups = groupFound(found);
   if (state.type === 'inventory') {
     groups.sort((a, b) => {
-      const aFit = bestFit(a);
-      const bFit = bestFit(b);
+      const aFit = bestFit(a.recipes);
+      const bFit = bestFit(b.recipes);
       if (!aFit && !bFit) return a.recipes[0].title.localeCompare(b.recipes[0].title);
       if (!aFit) return 1;
       if (!bFit) return -1;
