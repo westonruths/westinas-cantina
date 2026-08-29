@@ -67,11 +67,17 @@ button, select { cursor: pointer; }
 .fit-widget.unknown .fit-ring > span { color: var(--muted); }
 
 .menu-drawer { margin-top: 22px; border-top: 1px solid var(--line-dark); }
-.menu-drawer > summary { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 16px 0 13px; color: var(--ink); font: 700 1.5rem / 1 'Playfair Display', Georgia, serif; cursor: pointer; list-style: none; }
+.menu-drawer > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 15px; color: var(--ink); border: 1px solid var(--line-dark); border-radius: 10px; background: var(--paper); box-shadow: 0 5px 16px rgba(44, 59, 47, .06); font: 700 1.5rem / 1 'Playfair Display', Georgia, serif; cursor: pointer; list-style: none; transition: border-color .15s ease, background .15s ease, box-shadow .15s ease; }
 .menu-drawer > summary::-webkit-details-marker { display: none; }
-.menu-drawer > summary::after { content: '+'; color: var(--sage-dark); font: 500 1.3rem / 1 'DM Sans', sans-serif; }
+.menu-drawer > summary::after { content: '+'; color: var(--sage-dark); font: 500 1.4rem / 1 'DM Sans', sans-serif; }
+.menu-drawer > summary:hover { border-color: var(--sage-dark); box-shadow: 0 7px 20px rgba(44, 59, 47, .1); }
+.menu-drawer[open] > summary { border-color: var(--sage-dark); background: #edf4ee; box-shadow: none; }
 .menu-drawer[open] > summary::after { content: '−'; }
+.menu-toggle-label { display: flex; align-items: center; gap: 9px; }
+.menu-toggle-icon { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 7px; color: #fff; background: var(--sage-dark); font: 600 .9rem / 1 'DM Sans', sans-serif; }
 .menu-drawer > summary small { margin-left: auto; color: var(--muted); font: 600 .67rem / 1.3 'DM Sans', sans-serif; }
+.menu-drawer[open] > summary .menu-toggle-hint { font-size: 0; }
+.menu-drawer[open] > summary .menu-toggle-hint::after { content: 'Close menu'; font-size: .67rem; }
 .menu-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 0 0 14px; border-bottom: 1px solid var(--line); }
 .dayparts, .view-switcher { display: flex; gap: 3px; padding: 3px; border-radius: 9px; background: #e9e2d6; }
 .daypart, .view-button { border: 0; border-radius: 7px; padding: 8px 10px; color: var(--muted); background: transparent; font-size: .7rem; font-weight: 700; }
