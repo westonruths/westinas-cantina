@@ -23,7 +23,8 @@
       "source_entries": 0,
       "private_attachment": false,
       "golden_note": "Golden CSA pepper side/appetizer when shishito or Padrón peppers are available.",
-      "notes": "Added from the household golden-recipe registry."
+      "notes": "Added from the household golden-recipe registry.",
+      "image_url": "https://cookieandkate.com/images/2019/08/charred-shishito-peppers-recipe-3.jpg"
     },
     {
       "id": "overnight-focaccia",
@@ -44,7 +45,10 @@
       "source_entries": 0,
       "private_attachment": false,
       "golden_note": "Impressive bring-to-a-party side dish.",
-      "notes": "Added from the household golden-recipe registry."
+      "notes": "Added from the household golden-recipe registry.",
+      "family": "Focaccia",
+      "variant_label": "Overnight Focaccia",
+      "image_url": "https://art.whisk.com/image/upload/fl_progressive,h_630,w_1200,c_fill/v1662722214/v3/user-recipes/be4a05c555d30f4915c4ffa1722af706.jpg"
     },
     {
       "id": "twice-cooked-pork-hui-guo-rou",
@@ -65,7 +69,8 @@
       "source_entries": 0,
       "private_attachment": false,
       "golden_note": "Intentional richer Sichuan pork-belly dinner.",
-      "notes": "Added from the household golden-recipe registry."
+      "notes": "Added from the household golden-recipe registry.",
+      "image_url": "https://redhousespice.com/wp-content/uploads/2017/06/Twice-cooked-pork-5-scaled.jpg"
     },
     {
       "id": "hasselback-potatoes",
@@ -86,7 +91,8 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "golden_note": "Special-occasion or elevated potato side dish."
+      "golden_note": "Special-occasion or elevated potato side dish.",
+      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/opengraph/2022/12/hasselback-potatoes-1.jpg"
     },
     {
       "id": "korean-bbq-salad",
@@ -139,7 +145,8 @@
       "source_entries": 1,
       "private_attachment": false,
       "notes": "",
-      "golden_note": "Silky steamed-egg reference recipe."
+      "golden_note": "Silky steamed-egg reference recipe.",
+      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/c8a76c5ab9896ab1d10be90a72a1f3ca5565b6d8-6000x3375.jpg"
     },
     {
       "id": "tuscan-kale-salad",
@@ -168,7 +175,8 @@
       "source_entries": 2,
       "private_attachment": false,
       "notes": "",
-      "golden_note": "Golden CSA lacinato-kale salad reference."
+      "golden_note": "Golden CSA lacinato-kale salad reference.",
+      "image_url": "https://static01.nyt.com/images/2014/02/20/dining/recipes-kalewithpecorino/recipes-kalewithpecorino-facebookJumbo-v2.jpg"
     },
     {
       "id": "baby-bok-choy",
@@ -190,7 +198,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://static01.nyt.com/images/2023/12/14/multimedia/SS-Sauteed-Bok-Choy-fhjz/SS-Sauteed-Bok-Choy-fhjz-facebookJumbo.jpg"
     },
     {
       "id": "dan-dan-noodles",
@@ -219,7 +228,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2014/11/dan-dan-noodles-12.jpg"
     },
     {
       "id": "egg-drop-soup",
@@ -245,7 +255,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/egg-drop-soup-4.jpg"
     },
     {
       "id": "fettuccine-alfredo",
@@ -296,7 +307,9 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "family": "Focaccia",
+      "variant_label": "Foccacia Bread"
     },
     {
       "id": "grilled-artichokes",
@@ -322,7 +335,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://homecookedharvest.com/wp-content/uploads/2021/04/Grilled-Artichoke-Recipe-C.jpg"
     },
     {
       "id": "hainanese-chicken-rice",
@@ -348,7 +362,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/154660.jpg"
     },
     {
       "id": "heirloom-tomato-salad",
@@ -374,7 +389,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://diethood.com/wp-content/uploads/2020/07/Heirloom-Tomatoes-Salad-5.jpg"
     },
     {
       "id": "herb-roasted-rack-of-lamb",
@@ -396,7 +412,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://coupleinthekitchen.com/wp-content/uploads/2022/08/Herb-Roasted-Rack-of-Lamb-Recipe-12.jpg"
     },
     {
       "id": "italian-wedding-soup",
@@ -426,7 +443,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2025/03/italian-wedding-soup-04.jpg"
     },
     {
       "id": "lemon-orzo-chickpea-soup",
@@ -459,7 +477,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 2,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2019/04/Avgolemono-Greek-Lemon-Orzo-Chickpea-Soup-Recipe-6.jpg"
     },
     {
       "id": "one-skillet-chicken-and-couscous",
@@ -487,7 +506,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2024/01/Skillet-Chicken-with-Couscous-09.jpg"
     },
     {
       "id": "pan-fried-noodles",
@@ -512,7 +532,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/05/cantonese-soy-sauce-pan-fried-noodles-10.jpg"
     },
     {
       "id": "pan-seared-chicken-thighs",
@@ -534,7 +555,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2020/01/Pan-Seared-Chicken-Thighs-07.jpg"
     },
     {
       "id": "peking-duck-mas-version",
@@ -561,7 +583,9 @@
       "source_publisher": "Household entry",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": "Private household recipe details were not published."
+      "notes": "Private household recipe details were not published.",
+      "family": "Peking Duck",
+      "variant_label": "Peking Duck (Ma’s version)"
     },
     {
       "id": "pi-dan-shou-rou-zhou-congee",
@@ -591,7 +615,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2016/10/congee-recipe-2.jpg"
     },
     {
       "id": "pork-dumplings-with-napa-cabbage",
@@ -617,7 +642,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://redhousespice.com/wp-content/uploads/2021/04/a-half-eaten-dumpling-scaled.jpg"
     },
     {
       "id": "rotisserie-chicken-stock",
@@ -671,7 +697,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2023/08/salt-pepper-pork-chops.jpg"
     },
     {
       "id": "spinach-artichoke-dip",
@@ -700,7 +727,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.cookingclassy.com/wp-content/uploads/2018/12/spinach-artichoke-dip-16.jpg"
     },
     {
       "id": "vietnamese-spring-rolls",
@@ -757,7 +785,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/01/E79D3D00-FE91-47A8-9B33-0903C49C0479-scaled.jpg"
     },
     {
       "id": "basil-parmesan-pasta-with-crispy-chicken",
@@ -790,7 +819,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2021/03/Basil-Parmesan-Pasta-with-Crispy-Chicken-Prosciutto-and-Arugula-1.jpg"
     },
     {
       "id": "beef-stew",
@@ -820,7 +850,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.spendwithpennies.com/wp-content/uploads/2018/09/SpendWithPennies-Homemade-Beef-Stew-24.jpg"
     },
     {
       "id": "biang-biang-noodles",
@@ -850,7 +881,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://redhousespice.com/wp-content/uploads/2018/11/Xian-biang-biang-noodles-landscape.jpg"
     },
     {
       "id": "bone-marrow-parsley-salad",
@@ -879,7 +911,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "http://static1.squarespace.com/static/584f1070197aea4b234f3707/58a4a66dbe6594f08a041c57/5967d84ca5790a40de64adbc/1641933690540/IMG_2161-1022x1024.jpg?format=1500w"
     },
     {
       "id": "braised-beef-shank",
@@ -907,7 +940,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thebigmansworld.com/wp-content/uploads/2022/11/beef-shanks-recipe.jpg"
     },
     {
       "id": "cajun-shrimp-rice",
@@ -934,7 +968,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.lecremedelacrumb.com/wp-content/uploads/2019/05/one-pan-spanish-shrimp-rice-1.jpg"
     },
     {
       "id": "chicken-wild-rice",
@@ -996,7 +1031,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://cdn.sanity.io/images/2r0kdewr/production/2dc817d65a2cb6d512081097046fd66606ec9fb2-1000x563.jpg"
     },
     {
       "id": "chicken-gyros-with-feta-tzatziki",
@@ -1023,7 +1059,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/02/Quick-Sheet-Pan-Chicken-Gyros-with-Feta-Tzatziki-1.jpg"
     },
     {
       "id": "chicken-khao-soi-noodles",
@@ -1052,7 +1089,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/03/khao-soi-9.jpg"
     },
     {
       "id": "chimchurri-steak-marinade",
@@ -1098,7 +1136,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 2,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.gimmesomeoven.com/wp-content/uploads/2012/04/Chimichurri-Sauce-Recipe-6.jpg"
     },
     {
       "id": "chongqing-chicken",
@@ -1125,7 +1164,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2015/04/chongqing-chicken-7.jpg"
     },
     {
       "id": "chongqing-xiao-mian",
@@ -1144,7 +1184,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://redhousespice.com/wp-content/uploads/2019/12/chongqing-noodles-Red-House-Spice-6-scaled.jpg"
     },
     {
       "id": "fresh-homemade-pasta",
@@ -1191,7 +1232,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2022/08/hamburger-helper-recipe-1.jpg"
     },
     {
       "id": "korean-spinach-banchan",
@@ -1235,7 +1277,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.littlespicejar.com/wp-content/uploads/2019/04/Easy-Lemon-Rosemary-Chicken-4.jpg"
     },
     {
       "id": "lemongrass-chicken-with-rice-and-zucchini",
@@ -1260,7 +1303,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://pinchofyum.com/tachyon/Lemongrass-Chicken-2.jpg"
     },
     {
       "id": "marry-me-chicken",
@@ -1291,7 +1335,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://littlesunnykitchen.com/wp-content/uploads/Marry-Me-Chicken-22.jpg"
     },
     {
       "id": "minestrone-soup",
@@ -1320,7 +1365,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.tasteofhome.com/wp-content/uploads/2024/10/Contest-Winning-Easy-Minestrone_EXPS_TOHVP24_119788_LC_09_26_2.jpg"
     },
     {
       "id": "one-skillet-lemon-butter-dijon-chicken-orzo",
@@ -1352,7 +1398,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/01/One-Skillet-Lemon-Butter-Dijon-Chicken-and-Orzo-with-Feta-Sauce-1.jpg"
     },
     {
       "id": "orechiette-with-italian-sausage-spinach",
@@ -1379,7 +1426,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.saltandlavender.com/wp-content/uploads/2021/10/orecchiette-sausage-spinach-recipe-1.jpg"
     },
     {
       "id": "orzo-pasta-salad",
@@ -1408,7 +1456,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.foodiecrush.com/wp-content/uploads/2023/04/Orzo-Salad-with-Artichokes-and-Asparagus-foodiecrush.com-14.jpg"
     },
     {
       "id": "pad-see-ew",
@@ -1434,7 +1483,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2017/02/pad-see-ew-11-2.jpg"
     },
     {
       "id": "peking-duck-westinas-version",
@@ -1454,7 +1504,9 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "family": "Peking Duck",
+      "variant_label": "Peking Duck (Westina’s version)"
     },
     {
       "id": "potato-leek-soup",
@@ -1475,7 +1527,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://cdn.loveandlemons.com/wp-content/uploads/2024/09/potato-leek-soup-recipe.jpg"
     },
     {
       "id": "roast-cauliflower-with-lemon-garlic-yogurt-sauce",
@@ -1504,7 +1557,9 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "family": "Roasted Cauliflower",
+      "variant_label": "Roast cauliflower with lemon garlic yogurt sauce"
     },
     {
       "id": "roast-chicken",
@@ -1532,7 +1587,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.recipetineats.com/tachyon/2016/05/Roast-Chicken_6a.jpg"
     },
     {
       "id": "roast-chicken-brine",
@@ -1553,7 +1609,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.recipetineats.com/tachyon/2014/05/Chicken-Brine_3.jpg"
     },
     {
       "id": "roasted-cauliflower",
@@ -1575,7 +1632,9 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "family": "Roasted Cauliflower",
+      "variant_label": "Roasted cauliflower"
     },
     {
       "id": "sichuan-fuqi-feipian",
@@ -1604,7 +1663,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2020/07/fuqi-feipian-recipe-8.jpg"
     },
     {
       "id": "spicy-cilantro-beef",
@@ -1630,7 +1690,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://tiffycooks.com/wp-content/uploads/2023/02/A0D575A2-89E5-4F66-BE9C-FE40BB052E6A-scaled.jpg"
     },
     {
       "id": "spicy-cumin-lamb",
@@ -1654,7 +1715,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://redhousespice.com/wp-content/uploads/2023/02/stir-fried-lamb-with-cumin-chili-scaled.jpg"
     },
     {
       "id": "spicy-tuscan-chicken-pasta",
@@ -1685,7 +1747,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2023/02/Spicy-Tuscan-Chicken-Pasta-1.jpg"
     },
     {
       "id": "sweet-potato-pierogi-w-cheddar-bacon-bits",
@@ -1716,7 +1779,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.halfbakedharvest.com/wp-content/uploads/2022/11/Sweet-Potato-Cheddar-Pierogi-with-Bacon-Bits-7.jpg"
     },
     {
       "id": "taiwanese-beef-noodle-soup",
@@ -1749,7 +1813,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2018/03/taiwanese-beef-noodle-soup-instant-pot-9.jpg"
     },
     {
       "id": "turkish-pasta",
@@ -1780,7 +1845,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://healthyfitnessmeals.com/wp-content/uploads/2024/12/turkish-pasta-18.jpg"
     },
     {
       "id": "vietnamese-lemongrass-chicken-vermicelli-noodles",
@@ -1815,7 +1881,8 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://www.recipetineats.com/tachyon/2017/01/Vietnamese-Noodles-with-Lemongrass-Chicken_7.jpg"
     },
     {
       "id": "wuhan-hot-dry-noodle",
@@ -1835,7 +1902,13 @@
       "source_publisher": "Notion recipe list",
       "source_entries": 1,
       "private_attachment": false,
-      "notes": ""
+      "notes": "",
+      "image_url": "https://thewoksoflife.com/wp-content/uploads/2019/02/hot-dry-noodles-11.jpg"
     }
-  ]
+  ],
+  "visuals": {
+    "thumbnail_strategy": "Open Graph thumbnails from public source pages; cards lazy-load them.",
+    "recipes_with_thumbnails": 56,
+    "recipes_in_variant_families": 6
+  }
 }
