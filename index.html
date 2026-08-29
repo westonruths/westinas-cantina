@@ -8,62 +8,61 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Westina’s Cantina</h1>
-  </header>
+  <header class="hero"><h1>Westina’s Cantina</h1></header>
 
   <main class="shell">
-    <section class="toolbar" aria-label="Menu controls">
-      <div class="dayparts" role="tablist" aria-label="Daypart">
-        <button class="daypart active" data-slot="dinner" role="tab" aria-selected="true">Dinner</button>
-        <button class="daypart" data-slot="lunch" role="tab" aria-selected="false">Lunch</button>
-        <button class="daypart" data-slot="breakfast" role="tab" aria-selected="false">Breakfast</button>
+    <section class="planner-intro" aria-labelledby="planner-heading">
+      <div>
+        <span class="section-kicker">Sunday planning</span>
+        <h2 id="planner-heading">This week</h2>
+        <p class="planner-lede">Start with a proposed week, then drag dishes between days and meals until it feels right.</p>
       </div>
-      <div class="view-switcher" role="tablist" aria-label="Menu organization">
-        <button class="view-button active" data-view="dishes" role="tab" aria-selected="true">Dishes</button>
-        <button class="view-button" data-view="components" role="tab" aria-selected="false">Components / Sides</button>
+      <div class="planner-actions">
+        <button id="propose-week" class="primary-button" type="button">Propose a week</button>
+        <button id="clear-plan" class="clear" type="button">Clear</button>
       </div>
-      <label class="search"><span>Find a recipe</span><input id="search" type="search" placeholder="Try kale, noodles, chicken…"></label>
-      <button id="clear" class="clear" type="button">Clear</button>
     </section>
+    <p id="planner-status" class="planner-status" aria-live="polite"></p>
 
-    <div class="planning-layout">
-      <section class="menu-column" aria-labelledby="menu-heading">
-        <div class="menu-heading">
-          <div>
-            <span class="section-kicker">Dinner menu</span>
-            <h2 id="menu-heading">Dishes</h2>
-          </div>
-          <p id="count" class="count"></p>
+    <section id="week-calendar" class="week-calendar" aria-label="Weekly meal plan"></section>
+
+    <details id="menu-drawer" class="menu-drawer">
+      <summary><span>Browse menu</span><small>Drag a dish into any calendar slot</small></summary>
+      <section class="menu-tools" aria-label="Menu controls">
+        <div class="dayparts" role="tablist" aria-label="Daypart">
+          <button class="daypart active" data-slot="dinner" role="tab" aria-selected="true">Dinner</button>
+          <button class="daypart" data-slot="lunch" role="tab" aria-selected="false">Lunch</button>
+          <button class="daypart" data-slot="breakfast" role="tab" aria-selected="false">Breakfast</button>
         </div>
-        <p id="menu-note" class="menu-note">Choose a dish or component below, then drag it onto a day in your weekly plan.</p>
-        <div id="menu" class="menu-sections" aria-live="polite"></div>
-        <section id="empty" class="empty" hidden>
-          <h2>No dishes found</h2>
-          <p>Try another search, switch the menu organization, or choose another daypart.</p>
-        </section>
+        <div class="view-switcher" role="tablist" aria-label="Menu organization">
+          <button class="view-button active" data-view="dishes" role="tab" aria-selected="true">Dishes</button>
+          <button class="view-button" data-view="components" role="tab" aria-selected="false">Components / Sides</button>
+        </div>
+        <label class="search"><span>Find a recipe</span><input id="search" type="search" placeholder="Try kale, noodles, chicken…"></label>
+        <button id="clear-search" class="clear" type="button">Clear</button>
       </section>
-
-      <aside class="planner-panel" aria-labelledby="planner-heading">
-        <div class="planner-heading">
-          <div>
-            <span class="section-kicker">Sunday planning</span>
-            <h2 id="planner-heading">This week</h2>
-          </div>
-          <button id="clear-plan" class="clear clear-plan" type="button">Clear plan</button>
-        </div>
-        <p class="planner-note">Drag recipes here, or use <strong>Add</strong> on a menu item. Plans stay saved in this browser.</p>
-        <p id="planner-status" class="planner-status" aria-live="polite"></p>
-        <div id="week-board" class="week-board"></div>
-      </aside>
-    </div>
+      <div class="menu-heading">
+        <div><span class="section-kicker">Recipe menu</span><h2 id="menu-heading">Dishes</h2></div>
+        <p id="count" class="count"></p>
+      </div>
+      <p id="menu-note" class="menu-note"></p>
+      <div id="menu" class="menu-sections" aria-live="polite"></div>
+      <section id="empty" class="empty" hidden><h2>No recipes found</h2><p>Try another search, menu organization, or daypart.</p></section>
+    </details>
   </main>
 
-  <footer class="footer">
-    <strong>Westina’s Cantina</strong>
-    <span>Built from the exported Westina’s Recipes list and household inventory-fit checks.</span>
-    <a href="https://github.com/westonruths/westinas-cantina">View source on GitHub</a>
-  </footer>
+  <dialog id="add-dialog" class="add-dialog">
+    <form method="dialog" id="add-form">
+      <h2>Add to the week</h2>
+      <p id="add-recipe-name"></p>
+      <input id="add-recipe-id" type="hidden">
+      <label>Day<select id="add-day"></select></label>
+      <label>Meal<select id="add-meal"><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner" selected>Dinner</option></select></label>
+      <div class="dialog-actions"><button class="clear" value="cancel">Cancel</button><button class="primary-button" value="add">Add to plan</button></div>
+    </form>
+  </dialog>
+
+  <footer class="footer"><strong>Westina’s Cantina</strong><span>Built from the exported Westina’s Recipes list and household inventory-fit checks.</span><a href="https://github.com/westonruths/westinas-cantina">View source on GitHub</a></footer>
   <script src="assets/app.js"></script>
 </body>
 </html>

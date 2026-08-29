@@ -7,7 +7,12 @@ const DAYS = [
   ['saturday', 'Saturday'],
   ['sunday', 'Sunday']
 ];
-const PLAN_KEY = 'westinas-cantina-week-plan-v2';
+const MEALS = [
+  ['breakfast', 'Breakfast'],
+  ['lunch', 'Lunch'],
+  ['dinner', 'Dinner']
+];
+const PLAN_KEY = 'westinas-cantina-calendar-plan-v3';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
@@ -33,15 +38,22 @@ const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
   "'": '&#39;'
 }[char]));
 
+function blankPlan() {
+  return Object.fromEntries(DAYS.map(([day]) => [day, Object.fromEntries(MEALS.map(([meal]) => [meal, null]))]));
+}
+
 function loadPlan() {
-  const blank = Object.fromEntries(DAYS.map(([key]) => [key, []]));
+  const blank = blankPlan();
   try {
     const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || '{}');
-    for (const [key] of DAYS) {
-      if (Array.isArray(saved[key])) blank[key] = [...new Set(saved[key].filter((id) => typeof id === 'string'))];
+    for (const [day] of DAYS) {
+      for (const [meal] of MEALS) {
+        const value = saved?.[day]?.[meal];
+        if (typeof value === 'string') blank[day][meal] = value;
+      }
     }
   } catch (error) {
-    console.warn('Could not load the saved weekly plan', error);
+    console.warn('Could not load the saved calendar plan', error);
   }
   return blank;
 }
@@ -50,7 +62,7 @@ function savePlan() {
   try {
     localStorage.setItem(PLAN_KEY, JSON.stringify(state.plan));
   } catch (error) {
-    console.warn('Could not save the weekly plan', error);
+    console.warn('Could not save the calendar plan', error);
   }
 }
 
@@ -88,7 +100,7 @@ function fitWidget(recipe, compact = false) {
     : `Approximate inventory fit: ${percent} percent; ${fit.matched} of ${fit.total} ingredients present; quantities not checked`;
   const classes = `fit-widget${compact ? ' compact' : ''}${percent === null ? ' unknown' : ''}`;
   const style = `--fit: ${percent === null ? 0 : percent}%;`;
-  return `<span class="${classes}" title="${esc(label)}" aria-label="${esc(label)}"><span class="fit-ring" style="${style}"><span>${display}</span></span><span class="fit-copy"><strong>${compact ? 'Fit' : 'On hand'}</strong><small>${percent === null ? 'No public ingredient list' : `${fit.matched} / ${fit.total} ingredients`}</small></span></span>`;
+  return `<span class="${classes}" title="${esc(label)}" aria-label="${esc(label)}"><span class="fit-ring" style="${style}"><span>${display}</span></span><span class="fit-copy"><strong>${compact ? 'Fit' : 'On hand'}</strong><small>${percent === null ? 'No public ingredient list' : `${fit.matched} / ${fit.total}`}</small></span></span>`;
 }
 
 function ingredientMarkup(recipe) {
@@ -138,10 +150,9 @@ function recipeBody(recipe) {
 
 function isMainCourse(recipe) {
   const types = recipe.component_types || [];
-  if (types.includes('soup')) return false;
-  if (!types.includes('protein')) return false;
+  if (types.includes('soup') || !types.includes('protein')) return false;
   if (types.includes('carb')) return true;
-  return /pasta|noodle|rice|stew|congee|dumpling|gyros|khao|pierogi|pasta|couscous/i.test(recipe.title);
+  return /pasta|noodle|rice|stew|congee|dumpling|gyros|khao|pierogi|couscous/i.test(recipe.title);
 }
 
 function isAppetizer(recipe) {
@@ -158,14 +169,11 @@ function dishSection(recipe) {
 
 function componentSection(recipe) {
   const types = recipe.component_types || [];
-  // Full protein-plus-carb dishes belong in the Dishes menu; Components is for
-  // standalone building blocks that can be added alongside another dish.
   if (isMainCourse(recipe)) return null;
   if (types.includes('soup')) return 'soups';
   if (types.includes('protein')) return 'proteins';
   if (types.includes('veggie')) return 'vegetables';
   if (types.includes('carb')) return 'carbs';
-  if (types.includes('sauce') || types.includes('other')) return 'extras';
   return 'extras';
 }
 
@@ -176,7 +184,7 @@ function menuSections() {
       ['vegetables', 'Vegetables & salads', 'Fresh, cooked, and composed vegetable sides.'],
       ['carbs', 'Carbs & grains', 'Rice, noodles, pasta, potatoes, and breads.'],
       ['soups', 'Soups', 'Complete bowls for lighter or one-dish meals.'],
-      ['extras', 'Sauces & extras', 'Finishing sauces, toppings, dips, and other small additions.']
+      ['extras', 'Sauces & extras', 'Finishing sauces, toppings, dips, and other additions.']
     ];
   }
   return [
@@ -191,12 +199,8 @@ function menuSections() {
 function recipeMatches(recipe) {
   if (!recipe.meal_slots.includes(state.slot)) return false;
   if (!state.query) return true;
-  const haystack = [
-    recipe.title,
-    recipe.cuisine,
-    ...recipe.key_ingredients,
-    ...(recipe.recipe_ingredients || [])
-  ].join(' ').toLowerCase();
+  const haystack = [recipe.title, recipe.cuisine, ...recipe.key_ingredients, ...(recipe.recipe_ingredients || [])]
+    .join(' ').toLowerCase();
   return haystack.includes(state.query.toLowerCase());
 }
 
@@ -211,15 +215,24 @@ function sortedRecipes(recipes) {
   });
 }
 
-function addControls(recipe) {
-  const options = DAYS.map(([key, label]) => `<option value="${key}">${label}</option>`).join('');
-  return `<div class="add-controls"><select data-day-select aria-label="Choose a day for ${esc(recipe.title)}"><option value="">Add to…</option>${options}</select><button class="add-button" type="button" data-add-id="${esc(recipe.id)}" disabled>Add</button></div>`;
+function addDialogOptions() {
+  $('#add-day').innerHTML = DAYS.map(([key, label]) => `<option value="${key}">${label}</option>`).join('');
+}
+
+function openAddDialog(recipeId) {
+  const recipe = state.recipes.find((item) => item.id === recipeId);
+  if (!recipe) return;
+  $('#add-recipe-id').value = recipe.id;
+  $('#add-recipe-name').textContent = recipe.title;
+  $('#add-meal').value = recipe.meal_slots.includes(state.slot) ? state.slot : 'dinner';
+  const dialog = $('#add-dialog');
+  if (typeof dialog.showModal === 'function') dialog.showModal();
 }
 
 function menuEntry(recipe) {
   const tags = [...new Set((recipe.component_types || []).map((type) => labels[type] || type))].join(' · ');
   const badges = `${recipe.golden ? '<span class="badge gold">Golden</span>' : ''}${recipe.tried ? '<span class="badge">Tried</span>' : ''}`;
-  return `<article class="menu-entry" draggable="true" data-recipe-id="${esc(recipe.id)}"><div class="menu-entry-row"><div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}${addControls(recipe)}</div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
+  return `<article class="menu-entry" draggable="true" data-recipe-id="${esc(recipe.id)}"><div class="menu-entry-row"><div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
 }
 
 function renderMenu() {
@@ -234,72 +247,105 @@ function renderMenu() {
   }).join('');
   $('#count').textContent = `${visible} ${visible === 1 ? 'recipe' : 'recipes'}`;
   $('#menu-heading').textContent = state.view === 'components' ? 'Components / Sides' : 'Dishes';
-  $('.section-kicker').textContent = `${state.slot[0].toUpperCase()}${state.slot.slice(1)} menu`;
   $('#menu-note').textContent = state.view === 'components'
-    ? 'Build a meal from standalone proteins, vegetables, carbs, and extras—or switch to Dishes for complete plates.'
-    : 'Browse the menu like a restaurant: complete plates first, then proteins, soups, small plates, and sides.';
+    ? 'Standalone building blocks for adding a protein, vegetable, carb, soup, or finishing extra to the week.'
+    : 'Complete plates first, then proteins, soups, small plates, and sides—organized like a restaurant menu.';
   $('#empty').hidden = visible > 0;
   bindMenuInteractions();
 }
 
-function renderPlanner() {
+function plannedItem(recipe, day, meal) {
+  return `<div class="planned-item" draggable="true" data-plan-day="${day}" data-plan-meal="${meal}"><span class="planned-title">${esc(recipe.title)}</span>${fitWidget(recipe, true)}<button type="button" data-remove-day="${day}" data-remove-meal="${meal}" aria-label="Remove ${esc(recipe.title)} from ${day} ${meal}; another option will be suggested">×</button></div>`;
+}
+
+function renderCalendar() {
   const byId = new Map(state.recipes.map((recipe) => [recipe.id, recipe]));
-  $('#week-board').innerHTML = DAYS.map(([key, label]) => {
-    const ids = state.plan[key] || [];
-    const items = ids.map((id) => byId.get(id)).filter(Boolean);
-    return `<section class="day-slot" data-day="${key}" aria-label="${label} meal plan"><div class="day-slot-heading"><h3>${label}</h3><span>${items.length ? `${items.length} item${items.length === 1 ? '' : 's'}` : 'Open'}</span></div><div class="day-items">${items.length ? items.map((recipe) => `<div class="planned-item"><span>${esc(recipe.title)}</span><button type="button" data-remove-day="${key}" data-remove-id="${esc(recipe.id)}" aria-label="Remove ${esc(recipe.title)} from ${label}">×</button></div>`).join('') : '<p class="drop-hint">Drop a recipe here</p>'}</div></section>`;
+  $('#week-calendar').innerHTML = DAYS.map(([day, dayLabel]) => {
+    const slots = MEALS.map(([meal, mealLabel]) => {
+      const recipe = byId.get(state.plan[day][meal]);
+      return `<section class="meal-slot" data-day="${day}" data-meal="${meal}" aria-label="${dayLabel} ${mealLabel}"><div class="meal-slot-label"><strong>${mealLabel}</strong><small>${recipe ? 'Suggested' : 'Open'}</small></div><div class="meal-slot-content">${recipe ? plannedItem(recipe, day, meal) : `<p class="slot-empty">Drop a recipe here</p><button class="fill-slot" type="button" data-fill-day="${day}" data-fill-meal="${meal}">Suggest one</button>`}</div></section>`;
+    }).join('');
+    return `<article class="day-card"><div class="day-card-heading"><h3>${dayLabel}</h3><span>${day === 'saturday' || day === 'sunday' ? 'Weekend' : 'Weekday'}</span></div>${slots}</article>`;
   }).join('');
-  bindPlannerInteractions();
+  bindCalendarInteractions();
 }
 
-function addToPlan(day, recipeId) {
-  if (!day || !recipeId) return;
-  if (!state.plan[day].includes(recipeId)) {
-    state.plan[day].push(recipeId);
-    savePlan();
-    renderPlanner();
-    announce(`${state.recipes.find((recipe) => recipe.id === recipeId)?.title || 'Recipe'} added to ${day}.`);
-  } else {
-    announce('That recipe is already on that day.');
+function candidatePool(meal, excluded = []) {
+  const blocked = new Set(excluded);
+  return sortedRecipes(state.recipes.filter((recipe) => recipe.meal_slots.includes(meal) && !blocked.has(recipe.id)));
+}
+
+function allPlannedIds() {
+  return DAYS.flatMap(([day]) => MEALS.map(([meal]) => state.plan[day][meal])).filter(Boolean);
+}
+
+function chooseSuggestion(day, meal, extraExcluded = []) {
+  const excluded = [...allPlannedIds(), ...extraExcluded];
+  const pool = candidatePool(meal, excluded);
+  if (pool.length) return pool[0];
+  return candidatePool(meal, extraExcluded)[0] || null;
+}
+
+function proposeWeek() {
+  state.plan = blankPlan();
+  for (const [day] of DAYS) {
+    for (const [meal] of MEALS) {
+      const shouldSuggest = meal === 'breakfast' || meal === 'dinner' || (meal === 'lunch' && (day === 'saturday' || day === 'sunday'));
+      if (shouldSuggest) {
+        const recipe = chooseSuggestion(day, meal);
+        if (recipe) state.plan[day][meal] = recipe.id;
+      }
+    }
   }
+  savePlan();
+  renderCalendar();
+  announce('A suggested week is ready. Drag recipes between slots to edit it.');
 }
 
-function removeFromPlan(day, recipeId) {
-  state.plan[day] = state.plan[day].filter((id) => id !== recipeId);
+function replaceSlot(day, meal, removedId = null) {
+  const replacement = chooseSuggestion(day, meal, removedId ? [removedId] : []);
+  state.plan[day][meal] = replacement ? replacement.id : null;
   savePlan();
-  renderPlanner();
-  announce('Recipe removed from the weekly plan.');
+  renderCalendar();
+  announce(replacement ? `Suggested replacement: ${replacement.title}.` : 'No replacement was available for that meal.');
+}
+
+function putInSlot(day, meal, recipeId) {
+  const recipe = state.recipes.find((item) => item.id === recipeId);
+  if (!recipe) return;
+  state.plan[day][meal] = recipe.id;
+  savePlan();
+  renderCalendar();
+  announce(`${recipe.title} added to ${day} ${meal}.`);
+}
+
+function movePlanItem(sourceDay, sourceMeal, destinationDay, destinationMeal) {
+  if (sourceDay === destinationDay && sourceMeal === destinationMeal) return;
+  const moving = state.plan[sourceDay][sourceMeal];
+  const displaced = state.plan[destinationDay][destinationMeal];
+  state.plan[destinationDay][destinationMeal] = moving;
+  state.plan[sourceDay][sourceMeal] = displaced || null;
+  savePlan();
+  renderCalendar();
+  announce('Meal moved to the new calendar slot.');
 }
 
 function bindMenuInteractions() {
   document.querySelectorAll('.menu-entry').forEach((entry) => {
     entry.addEventListener('dragstart', (event) => {
-      event.dataTransfer.setData('text/plain', entry.dataset.recipeId);
+      event.dataTransfer.setData('text/plain', `recipe|${entry.dataset.recipeId}`);
       event.dataTransfer.effectAllowed = 'copy';
       entry.classList.add('dragging');
     });
     entry.addEventListener('dragend', () => entry.classList.remove('dragging'));
   });
-  document.querySelectorAll('[data-day-select]').forEach((select) => {
-    select.addEventListener('change', () => {
-      const button = select.parentElement.querySelector('.add-button');
-      button.disabled = !select.value;
-      button.dataset.day = select.value;
-    });
-  });
   document.querySelectorAll('[data-add-id]').forEach((button) => {
-    button.addEventListener('click', () => {
-      addToPlan(button.dataset.day, button.dataset.addId);
-      const select = button.parentElement.querySelector('[data-day-select]');
-      select.value = '';
-      button.disabled = true;
-      delete button.dataset.day;
-    });
+    button.addEventListener('click', () => openAddDialog(button.dataset.addId));
   });
 }
 
-function bindPlannerInteractions() {
-  document.querySelectorAll('.day-slot').forEach((slot) => {
+function bindCalendarInteractions() {
+  document.querySelectorAll('.meal-slot').forEach((slot) => {
     slot.addEventListener('dragover', (event) => {
       event.preventDefault();
       event.dataTransfer.dropEffect = 'copy';
@@ -309,11 +355,22 @@ function bindPlannerInteractions() {
     slot.addEventListener('drop', (event) => {
       event.preventDefault();
       slot.classList.remove('drag-over');
-      addToPlan(slot.dataset.day, event.dataTransfer.getData('text/plain'));
+      const payload = event.dataTransfer.getData('text/plain').split('|');
+      if (payload[0] === 'recipe') putInSlot(slot.dataset.day, slot.dataset.meal, payload[1]);
+      if (payload[0] === 'plan') movePlanItem(payload[1], payload[2], slot.dataset.day, slot.dataset.meal);
+    });
+  });
+  document.querySelectorAll('.planned-item').forEach((item) => {
+    item.addEventListener('dragstart', (event) => {
+      event.dataTransfer.setData('text/plain', `plan|${item.dataset.planDay}|${item.dataset.planMeal}`);
+      event.dataTransfer.effectAllowed = 'move';
     });
   });
   document.querySelectorAll('[data-remove-day]').forEach((button) => {
-    button.addEventListener('click', () => removeFromPlan(button.dataset.removeDay, button.dataset.removeId));
+    button.addEventListener('click', () => replaceSlot(button.dataset.removeDay, button.dataset.removeMeal, state.plan[button.dataset.removeDay][button.dataset.removeMeal]));
+  });
+  document.querySelectorAll('[data-fill-day]').forEach((button) => {
+    button.addEventListener('click', () => replaceSlot(button.dataset.fillDay, button.dataset.fillMeal));
   });
 }
 
@@ -328,20 +385,23 @@ function render() {
     button.classList.toggle('active', active);
     button.setAttribute('aria-selected', String(active));
   });
+  renderCalendar();
   renderMenu();
-  renderPlanner();
 }
 
 async function init() {
+  addDialogOptions();
   const response = await fetch('data/recipes.json');
   const data = await response.json();
   state.recipes = data.recipes;
+  const saved = localStorage.getItem(PLAN_KEY);
+  if (!saved) proposeWeek();
   document.querySelectorAll('.daypart').forEach((button) => {
     button.addEventListener('click', () => {
       state.slot = button.dataset.slot;
       state.query = '';
       $('#search').value = '';
-      render();
+      renderMenu();
     });
   });
   document.querySelectorAll('.view-button').forEach((button) => {
@@ -349,28 +409,36 @@ async function init() {
       state.view = button.dataset.view;
       state.query = '';
       $('#search').value = '';
-      render();
+      renderMenu();
     });
   });
   $('#search').addEventListener('input', (event) => {
     state.query = event.target.value;
     renderMenu();
   });
-  $('#clear').addEventListener('click', () => {
+  $('#clear-search').addEventListener('click', () => {
     $('#search').value = '';
     state.query = '';
     renderMenu();
   });
+  $('#propose-week').addEventListener('click', proposeWeek);
   $('#clear-plan').addEventListener('click', () => {
-    state.plan = Object.fromEntries(DAYS.map(([key]) => [key, []]));
+    state.plan = blankPlan();
     savePlan();
-    renderPlanner();
-    announce('Weekly plan cleared.');
+    renderCalendar();
+    announce('Calendar cleared.');
+  });
+  $('#add-form').addEventListener('submit', (event) => {
+    if (event.submitter?.value !== 'add') return;
+    event.preventDefault();
+    putInSlot($('#add-day').value, $('#add-meal').value, $('#add-recipe-id').value);
+    $('#add-dialog').close();
   });
   render();
 }
 
 init().catch((error) => {
-  $('#menu').innerHTML = '<p>Menu data could not be loaded.</p>';
+  $('#week-calendar').innerHTML = '<p>Meal plan could not be loaded.</p>';
+  $('#menu').innerHTML = '<p>Recipe menu could not be loaded.</p>';
   console.error(error);
 });
