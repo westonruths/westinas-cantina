@@ -144,8 +144,8 @@ function card(group) {
     .join(' · ');
   const image = recipes.find((recipe) => recipe.image_url)?.image_url;
   const best = bestFit(recipes);
-  const fit = best ? fitWidget(best.recipe) : fitWidget(first);
-  const preview = `<summary class="card-summary">${image ? `<img class="card-image" src="${esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<div class="card-top"><div class="badges">${golden ? '<span class="badge gold">Golden</span>' : ''}${tried ? '<span class="badge">Tried</span>' : ''}${grouped ? `<span class="badge family-badge">${recipes.length} variants</span>` : ''}</div>${fit}</div><h3>${esc(title)}</h3><p class="meta">${esc(cuisine)} · ${esc(tags)}</p>${grouped ? '<p class="family-note">Recipe family; choose a variant below. The card shows the best variant fit.</p>' : ''}<span class="card-open-hint">Tap to open recipe${grouped ? 's' : ''} + original link</span></summary>`;
+  const fit = best ? fitWidget(best.recipe, true) : fitWidget(first, true);
+  const preview = `<summary class="card-summary">${image ? `<img class="card-image" src="${esc(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ''}<div class="card-top"><div class="badges">${golden ? '<span class="badge gold">Golden</span>' : ''}${tried ? '<span class="badge">Tried</span>' : ''}${grouped ? `<span class="badge family-badge">${recipes.length} variants</span>` : ''}</div></div><div class="card-title-row"><h3>${esc(title)}</h3>${fit}</div><p class="meta">${esc(cuisine)} · ${esc(tags)}</p>${grouped ? '<p class="family-note">Recipe family; choose a variant below. The card shows the best variant fit.</p>' : ''}<span class="card-open-hint">Tap to open recipe${grouped ? 's' : ''} + original link</span></summary>`;
   const content = grouped
     ? `<div class="variant-list">${recipes.map(variantBody).join('')}</div>`
     : `<div class="recipe-content">${recipeBody(first)}</div>${sourceCredit(first)}`;
