@@ -4,9 +4,14 @@ A public, component-based family recipe menu for building meals from the Ruths h
 
 ## Menu model
 
-The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—then filters recipes by reusable component type. Dinner is intentionally organized into **Proteins**, **Veggies**, **Carbs**, **Soups**, and **Sauces & Extras**, rather than restaurant-style “mains” and “appetizers.”
+The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—with two restaurant-style browsing modes:
 
-When planning a week, check the live kitchen inventory against this menu first. Explore new recipes only when the existing menu has less than roughly 50% ingredient overlap, as directed by the family workflow.
+- **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
+- **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
+
+Every menu item can be dragged into a **seven-day calendar** with Breakfast, Lunch, and Dinner slots, or added through the calendar dialog for touch/mobile use. The first visit proposes weekday breakfasts and dinners plus weekend lunches; weekday lunches remain open by default for this household. Deleting a planned item automatically selects another recipe for that same day/meal. The plan stores only in the browser’s local storage; it is not published.
+
+The menu is sorted by current inventory fit within each section. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
 ## Data provenance
 
@@ -16,12 +21,15 @@ When planning a week, check the live kitchen inventory against this menu first. 
 - Household golden recipes from the health-profile registry were merged and missing golden entries were added.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.
 - Recipe stories and extra editorial copy are not imported; the extraction script stores ingredients, yield/timing metadata, and cooking steps only.
+- Every recipe carries deterministic inventory-fit metadata generated locally from the private household inventory. The public data includes the percentage, matched-count, date, and a present/not-present flag for each public ingredient line; raw inventory names, quantities, and missing-item lists are not published.
 
 ## Local development
 
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000
+python3 scripts/update_inventory_fit.py
+python3 scripts/audit_inventory_fit.py
 python3 scripts/validate.py
 ```
 
