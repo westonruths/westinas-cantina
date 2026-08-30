@@ -176,6 +176,17 @@ button, select { cursor: pointer; }
 .add-dialog label { display: grid; gap: 5px; margin-top: 11px; color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .add-dialog select { padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: #fff; font-size: .8rem; }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 7px; margin-top: 19px; }
+.recipe-dialog { width: min(720px, calc(100vw - 28px)); max-height: min(820px, calc(100vh - 28px)); overflow: auto; padding: 0 22px 24px; border: 1px solid var(--line-dark); border-radius: 14px; color: var(--ink); background: var(--paper); box-shadow: 0 24px 80px rgba(44, 59, 47, .25); }
+.recipe-dialog::backdrop { background: rgba(36, 50, 43, .42); }
+.recipe-dialog-head { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 14px; margin: 0 -22px 16px; padding: 18px 22px 14px; border-bottom: 1px solid var(--line); background: rgba(255, 253, 248, .96); }
+.recipe-dialog-head h2 { margin: 0; font: 700 1.65rem / 1.1 'Playfair Display', Georgia, serif; }
+.dialog-close { width: 34px; height: 34px; padding: 0; border: 1px solid var(--line); border-radius: 50%; color: var(--muted); background: var(--paper); font-size: 1.25rem; line-height: 1; }
+.dialog-close:hover { color: var(--danger); border-color: var(--danger); }
+.recipe-dialog .recipe-copy h4 { margin-top: 18px; }
+.recipe-dialog .recipe-copy ul, .recipe-dialog .recipe-copy ol { font-size: .82rem; }
+.menu-entry { cursor: pointer; }
+.menu-entry:focus-visible { outline: 3px solid rgba(72, 100, 85, .35); outline-offset: 3px; }
+.menu-entry.is-open { background: rgba(255, 253, 248, .72); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }

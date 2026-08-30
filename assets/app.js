@@ -248,13 +248,22 @@ function openAddDialog(recipeId) {
   if (typeof dialog.showModal === 'function') dialog.showModal();
 }
 
+function openRecipeDialog(recipeId) {
+  const recipe = state.recipes.find((item) => item.id === recipeId);
+  if (!recipe) return;
+  $('#recipe-dialog-title').textContent = recipe.title;
+  $('#recipe-dialog-content').innerHTML = `${recipeBody(recipe)}${sourceCredit(recipe)}`;
+  const dialog = $('#recipe-dialog');
+  if (typeof dialog.showModal === 'function') dialog.showModal();
+}
+
 function menuEntry(recipe) {
   const tags = [...new Set((recipe.component_types || []).map((type) => labels[type] || type))].join(' · ');
   const badges = `${recipe.golden ? '<span class="badge gold">Golden</span>' : ''}${recipe.tried ? '<span class="badge">Tried</span>' : ''}`;
   const photo = recipe.image_url
     ? `<img class="menu-thumb" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
     : '';
-  return `<article class="menu-entry" draggable="true" data-recipe-id="${esc(recipe.id)}"><div class="menu-entry-row">${photo}<div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}${ratingMarkup(recipe)}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
+  return `<article class="menu-entry" draggable="true" tabindex="0" data-recipe-id="${esc(recipe.id)}" aria-label="Open ${esc(recipe.title)} recipe"><div class="menu-entry-row">${photo}<div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}${ratingMarkup(recipe)}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
 }
 
 function renderMenu() {
@@ -279,7 +288,7 @@ function renderMenu() {
 function plannedItem(recipe, day, component) {
   const photo = recipe.image_url ? `<img class="planned-thumb" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '';
   const label = COMPONENTS.find(([key]) => key === component)?.[1] || component;
-  return `<div class="planned-item" draggable="true" data-plan-day="${day}" data-plan-component="${component}">${photo}<span class="planned-title">${esc(recipe.title)}</span>${fitWidget(recipe, true)}<button type="button" data-remove-day="${day}" data-remove-component="${component}" aria-label="Remove ${esc(recipe.title)} from ${day} ${label}; another option will be suggested">×</button></div>`;
+  return `<div class="planned-item" draggable="true" data-plan-day="${day}" data-plan-component="${component}" data-plan-recipe="${esc(recipe.id)}">${photo}<span class="planned-title">${esc(recipe.title)}</span>${fitWidget(recipe, true)}<button type="button" data-remove-day="${day}" data-remove-component="${component}" aria-label="Remove ${esc(recipe.title)} from ${day} ${label}; another option will be suggested">×</button></div>`;
 }
 
 function renderCalendar() {
@@ -375,6 +384,22 @@ function movePlanItem(sourceDay, sourceComponent, destinationDay, destinationCom
 
 function bindMenuInteractions() {
   document.querySelectorAll('.menu-entry').forEach((entry) => {
+    const details = entry.querySelector('.recipe-details');
+    const toggleRecipe = () => {
+      details.open = !details.open;
+      entry.classList.toggle('is-open', details.open);
+    };
+    details.addEventListener('toggle', () => entry.classList.toggle('is-open', details.open));
+    entry.addEventListener('click', (event) => {
+      if (event.target.closest('button, a, summary, .drag-handle')) return;
+      toggleRecipe();
+    });
+    entry.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      if (event.target !== entry) return;
+      event.preventDefault();
+      toggleRecipe();
+    });
     entry.addEventListener('dragstart', (event) => {
       event.dataTransfer.setData('text/plain', `recipe|${entry.dataset.recipeId}`);
       event.dataTransfer.effectAllowed = 'copy';
@@ -404,6 +429,10 @@ function bindCalendarInteractions() {
     });
   });
   document.querySelectorAll('.planned-item').forEach((item) => {
+    item.addEventListener('click', (event) => {
+      if (event.target.closest('button')) return;
+      openRecipeDialog(item.dataset.planRecipe);
+    });
     item.addEventListener('dragstart', (event) => {
       event.dataTransfer.setData('text/plain', `plan|${item.dataset.planDay}|${item.dataset.planComponent}`);
       event.dataTransfer.effectAllowed = 'move';
@@ -464,6 +493,7 @@ async function init() {
     putInSlot($('#add-day').value, $('#add-component').value, $('#add-recipe-id').value);
     $('#add-dialog').close();
   });
+  $('#close-recipe-dialog').addEventListener('click', () => $('#recipe-dialog').close());
   render();
 }
 
