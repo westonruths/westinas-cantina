@@ -266,8 +266,16 @@ function openRecipeDialog(recipeId) {
   if (typeof dialog.showModal === 'function') dialog.showModal();
 }
 
+function displayTypes(recipe) {
+  const types = [...(recipe.component_types || [])];
+  if (isAppetizer(recipe) && types.includes('veggie')) {
+    return types.filter((type) => type !== 'protein' && type !== 'carb');
+  }
+  return types;
+}
+
 function menuEntry(recipe) {
-  const tags = [...new Set((recipe.component_types || []).map((type) => labels[type] || type))].join(' · ');
+  const tags = displayTypes(recipe).map((type) => labels[type] || type).join(' · ');
   const badges = `${recipe.golden ? '<span class="badge gold">Golden</span>' : ''}${recipe.tried ? '<span class="badge">Tried</span>' : ''}`;
   const photo = recipe.image_url
     ? `<img class="menu-thumb" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">`

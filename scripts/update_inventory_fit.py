@@ -84,6 +84,10 @@ ALIASES = {
     "leek": ["leek", "green onions"],
     "leek or green garlic": ["leek", "green garlic", "green onions"],
     "fresh red chiles": ["dried red chili peppers", "facing heaven peppers", "peppers"],
+    "long hot green peppers": ["long hot green peppers"],
+    "long hot red pepper": ["long hot red pepper"],
+    "red bell peppers": ["red bell peppers"],
+    "green bell pepper": ["green bell peppers"],
     "red pepper flakes": ["chili flakes", "red pepper powder"],
     "korean hot pepper flakes": ["red pepper powder", "chili flakes", "gochujang"],
     "sesame oil": ["sesame oil"],
@@ -151,7 +155,8 @@ EXACT_CANDIDATES = {
     "sesame seeds", "olives", "yeast", "feta", "mozzarella", "romano",
     "cumin seeds", "coriander seeds", "cloves", "jalapenos", "pesto", "chimichurri",
     "peanut oil", "vegetable oil", "garlic powder", "onion powder", "tomato paste",
-    "sundried tomatoes", "sun dried tomatoes",
+    "sundried tomatoes", "sun dried tomatoes", "long hot green peppers",
+    "long hot red pepper", "red bell peppers", "green bell pepper",
 }
 
 STRICT_TERMS = {
@@ -284,6 +289,19 @@ def infer_primary_ingredients(recipe):
     """Return one identity-bearing ingredient for the recipe's main food."""
     title = normalize(recipe.get("title", ""))
     types = set(recipe.get("component_types", []))
+    ingredient_text = " ".join(normalize(line) for line in public_ingredient_lines(recipe))
+    primary_cut_rules = [
+        ("honeycomb beef tripe", "tripe"),
+        ("pork shoulder", "pork shoulder"),
+        ("pork belly", "pork belly"),
+        ("whole chicken", "whole chicken"),
+        ("rotisserie chicken", "rotisserie chicken"),
+        ("beef shank", "beef shank"),
+        ("rack of lamb", "lamb"),
+    ]
+    for phrase, canonical in primary_cut_rules:
+        if phrase in ingredient_text:
+            return [canonical]
     # Produce-led salads, dips, and vegetable dishes should not inherit a
     # secondary protein tag as their primary ingredient.
     if re.search(r"salad|dip|banchan|shishito|artichoke|kale|broccoli|cauliflower|bok choy|spinach|eggplant|cucumber|tomato|beet|leek|potato|lettuce", title):
