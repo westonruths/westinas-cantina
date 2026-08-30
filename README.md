@@ -9,7 +9,7 @@ The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—with two res
 - **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
 - **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
 
-Every menu item can be dragged into a **seven-day calendar** with Breakfast, Lunch, and Dinner slots, or added through the calendar dialog for touch/mobile use. The first visit proposes weekday breakfasts and dinners plus weekend lunches; weekday lunches remain open by default for this household. Deleting a planned item automatically selects another recipe for that same day/meal. The plan stores only in the browser’s local storage; it is not published.
+Every menu item can be dragged into a **seven-day dinner calendar**, or added through the day-only calendar dialog for touch/mobile use. The first visit proposes one dinner for each day; deleting a planned item automatically selects another dinner for that day. The plan stores only in the browser’s local storage; it is not published.
 
 The menu is sorted by current inventory fit within each section. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 

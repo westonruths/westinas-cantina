@@ -10,7 +10,7 @@ const DAYS = [
 const MEALS = [
   ['dinner', 'Dinner']
 ];
-const PLAN_KEY = 'westinas-cantina-calendar-plan-v3';
+const PLAN_KEY = 'westinas-cantina-dinner-plan-v4';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
@@ -382,11 +382,6 @@ function render() {
     button.classList.toggle('active', active);
     button.setAttribute('aria-selected', String(active));
   });
-  document.querySelectorAll('.daypart').forEach((button) => {
-    const active = button.dataset.slot === state.slot;
-    button.classList.toggle('active', active);
-    button.setAttribute('aria-selected', String(active));
-  });
   renderCalendar();
   renderMenu();
 }
@@ -398,14 +393,6 @@ async function init() {
   state.recipes = data.recipes;
   const saved = localStorage.getItem(PLAN_KEY);
   if (!saved) proposeWeek();
-  document.querySelectorAll('.daypart').forEach((button) => {
-    button.addEventListener('click', () => {
-      state.slot = button.dataset.slot;
-      state.query = '';
-      $('#search').value = '';
-      renderMenu();
-    });
-  });
   document.querySelectorAll('.view-button').forEach((button) => {
     button.addEventListener('click', () => {
       state.view = button.dataset.view;
