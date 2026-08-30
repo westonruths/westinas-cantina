@@ -103,6 +103,10 @@ function useFirstMatches(recipe) {
   return Number(fitData(recipe).use_first_matches) || 0;
 }
 
+function useFirstScore(recipe) {
+  return Number(fitData(recipe).use_first_score) || 0;
+}
+
 function fitWidget(recipe, compact = false) {
   const fit = fitData(recipe);
   const percent = fitPercent(recipe);
@@ -189,9 +193,9 @@ function componentSection(recipe) {
   const types = recipe.component_types || [];
   if (isMainCourse(recipe)) return null;
   if (types.includes('soup')) return 'soups';
-  if (types.includes('veggie') && (isAppetizer(recipe) || !types.includes('protein'))) return 'vegetables';
+  if (types.includes('veggie') && isAppetizer(recipe)) return 'vegetables';
   if (types.includes('protein')) return 'proteins';
-  if (types.includes('veggie')) return 'vegetables';
+  if (types.includes('veggie') && !types.includes('carb')) return 'vegetables';
   if (types.includes('carb')) return 'carbs';
   return 'extras';
 }
@@ -225,8 +229,8 @@ function recipeMatches(recipe) {
 
 function sortedRecipes(recipes) {
   return [...recipes].sort((a, b) => {
-    const aUrgency = useFirstMatches(a);
-    const bUrgency = useFirstMatches(b);
+    const aUrgency = useFirstScore(a);
+    const bUrgency = useFirstScore(b);
     if (aUrgency !== bUrgency) return bUrgency - aUrgency;
     const aFit = fitPercent(a);
     const bFit = fitPercent(b);
@@ -312,7 +316,12 @@ function candidatePool(component, excluded = []) {
   const blocked = new Set(excluded);
   return sortedRecipes(state.recipes.filter((recipe) => {
     const types = recipe.component_types || [];
-    return recipe.meal_slots.includes('dinner') && primaryAvailable(recipe) && types.includes(component) && !types.includes('soup') && !isMainCourse(recipe) && !blocked.has(recipe.id);
+    const roleMatches = component === 'protein'
+      ? types.includes('protein') && !types.includes('carb') && !isAppetizer(recipe) && !/brine|stock|marinade|sauce/i.test(recipe.title)
+      : component === 'carb'
+        ? types.includes('carb') && !types.includes('protein') && !types.includes('soup')
+        : types.includes('veggie') && !types.includes('protein') && !types.includes('carb') && !types.includes('soup');
+    return recipe.meal_slots.includes('dinner') && primaryAvailable(recipe) && roleMatches && !blocked.has(recipe.id);
   }));
 }
 

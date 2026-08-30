@@ -364,6 +364,16 @@ def status_for_lines(lines, inventory_items_list):
     ]
 
 
+def use_first_score(requirements, use_first_items):
+    score = 0
+    for requirement in requirements:
+        for index, item in enumerate(use_first_items):
+            if inventory_match(requirement, [item]):
+                score += len(use_first_items) - index
+                break
+    return score
+
+
 def main():
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     inventory = json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
@@ -383,6 +393,7 @@ def main():
                 "matched": 0,
                 "total": 0,
                 "use_first_matches": 0,
+                "use_first_score": 0,
                 "primary_ingredients": primary,
                 "primary_matched": sum(primary_flags),
                 "primary_total": len(primary),
@@ -398,6 +409,7 @@ def main():
             "matched": matched,
             "total": len(requirements),
             "use_first_matches": use_first_matches,
+            "use_first_score": use_first_score(requirements, use_first_items),
             "primary_ingredients": primary,
             "primary_matched": sum(primary_flags),
             "primary_total": len(primary),
@@ -407,7 +419,7 @@ def main():
         }
     data["inventory_fit"] = {
         "updated": as_of,
-        "method": "Deterministic ingredient-line presence coverage plus count of matched current use-first ingredients; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+        "method": "Deterministic ingredient-line presence coverage plus ordered use-first priority score; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
         "private_source": "local household inventory; not published",
     }
     text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"

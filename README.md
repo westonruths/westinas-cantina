@@ -15,10 +15,10 @@ The menu is sorted by current use-first urgency, then inventory fit. Recipes who
 
 ## Data provenance
 
-- 75 recipe rows are currently published: the existing Notion/registry catalog plus three source-verified additions selected for current inventory gaps.
-- 72 linked source rows have concise in-site ingredient and step cards; one source remains explicitly unavailable because it is video/social-only or blocked, and two private/household rows have no public source link.
-- The three added candidates—How to Cook Broccoli, Lebanese Rice, and Grilled Lemon Chicken—each display a 5.0 rating with at least 10 ratings, the canonical source URL, and a source photo.
-- 63 of 75 recipes have verified public source thumbnails; private, blocked, video-only, and otherwise unresolved sources remain image-less rather than receiving guessed images.
+- 79 recipe rows are currently published: the existing Notion/registry catalog plus seven source-verified additions selected for current inventory gaps.
+- 76 linked source rows have concise in-site ingredient and step cards; one source remains explicitly unavailable because it is video/social-only or blocked, and two private/household rows have no public source link.
+- The seven added candidates—How to Cook Broccoli, Lebanese Rice, Grilled Lemon Chicken, Creamy Cucumber Salad, Shirazi Salad, Tomato Cucumber Avocado Salad, and Classic Greek Salad—each display a 5.0 rating with at least 10 ratings, the canonical source URL, and a source photo.
+- 67 of 79 recipes have verified public source thumbnails; private, blocked, video-only, and otherwise unresolved sources remain image-less rather than receiving guessed images.
 - Duplicate exported rows were consolidated by canonical recipe URL, and conceptual variants such as Focaccia are grouped without deleting their distinct sources.
 - Household golden recipes from the health-profile registry were merged and missing golden entries were added.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.

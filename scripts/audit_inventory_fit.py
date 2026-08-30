@@ -40,6 +40,7 @@ def main() -> int:
             "matched": 0,
             "total": 0,
             "use_first_matches": 0,
+            "use_first_score": 0,
             "primary_ingredients": primary,
             "primary_matched": sum(primary_flags),
             "primary_total": len(primary),
@@ -55,6 +56,7 @@ def main() -> int:
                 "matched": matched,
                 "total": len(requirements),
                 "use_first_matches": use_first_matches,
+                "use_first_score": fit.use_first_score(requirements, use_first_items),
                 "basis": basis,
             })
         actual_status = recipe.get("ingredient_inventory", [])

@@ -1,8 +1,8 @@
 {
   "site_name": "Westina’s Cantina",
-  "updated": "2026-08-29",
+  "updated": "2026-08-30",
   "source": "Notion export + household golden-recipe registry",
-  "recipe_count": 75,
+  "recipe_count": 79,
   "recipes": [
     {
       "id": "blistered-shishito-peppers",
@@ -48,13 +48,14 @@
         "matched": 3,
         "total": 4,
         "use_first_matches": 1,
+        "use_first_score": 16,
         "primary_ingredients": [
           "shishito"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -143,13 +144,14 @@
         "matched": 9,
         "total": 18,
         "use_first_matches": 1,
+        "use_first_score": 19,
         "primary_ingredients": [
           "flour"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -281,13 +283,14 @@
         "matched": 11,
         "total": 11,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "pork"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -385,13 +388,14 @@
         "matched": 6,
         "total": 7,
         "use_first_matches": 2,
+        "use_first_score": 31,
         "primary_ingredients": [
           "potatoes"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -486,13 +490,14 @@
         "matched": 10,
         "total": 11,
         "use_first_matches": 2,
+        "use_first_score": 28,
         "primary_ingredients": [
           "leaf lettuce"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -547,7 +552,7 @@
       "title": "Steamed egg",
       "cuisine": "Chinese",
       "component_types": [
-        "veggie"
+        "other"
       ],
       "meal_slots": [
         "breakfast",
@@ -595,11 +600,12 @@
         "matched": 6,
         "total": 7,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [],
         "primary_matched": 0,
         "primary_total": 0,
         "primary_present": null,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -689,13 +695,14 @@
         "matched": 8,
         "total": 9,
         "use_first_matches": 3,
+        "use_first_score": 46,
         "primary_ingredients": [
           "lacinato kale"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -785,13 +792,14 @@
         "matched": 7,
         "total": 8,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "bok choy"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -903,13 +911,14 @@
         "matched": 16,
         "total": 24,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "noodles"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1067,13 +1076,14 @@
         "matched": 8,
         "total": 10,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1171,13 +1181,14 @@
         "matched": 4,
         "total": 7,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "pasta"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1274,13 +1285,14 @@
         "matched": 4,
         "total": 10,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "bread"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1384,13 +1396,14 @@
         "matched": 8,
         "total": 10,
         "use_first_matches": 3,
+        "use_first_score": 51,
         "primary_ingredients": [
           "artichoke"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1526,13 +1539,14 @@
         "matched": 25,
         "total": 32,
         "use_first_matches": 3,
+        "use_first_score": 39,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1724,13 +1738,14 @@
         "matched": 7,
         "total": 11,
         "use_first_matches": 2,
+        "use_first_score": 34,
         "primary_ingredients": [
           "tomato"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1834,13 +1849,14 @@
         "matched": 4,
         "total": 7,
         "use_first_matches": 1,
+        "use_first_score": 13,
         "primary_ingredients": [
           "lamb"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -1945,13 +1961,14 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 2,
+        "use_first_score": 39,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2097,13 +2114,14 @@
         "matched": 7,
         "total": 12,
         "use_first_matches": 1,
+        "use_first_score": 16,
         "primary_ingredients": [
           "orzo"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2217,13 +2235,14 @@
         "matched": 8,
         "total": 11,
         "use_first_matches": 2,
+        "use_first_score": 29,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2332,13 +2351,14 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "noodles"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2443,13 +2463,14 @@
         "matched": 6,
         "total": 12,
         "use_first_matches": 1,
+        "use_first_score": 19,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2539,13 +2560,14 @@
         "matched": 3,
         "total": 5,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "duck"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "catalog key ingredients"
       },
       "ingredient_inventory": []
@@ -2613,13 +2635,14 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "pork"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2733,13 +2756,14 @@
         "matched": 10,
         "total": 13,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "pork"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2858,13 +2882,14 @@
         "matched": 6,
         "total": 10,
         "use_first_matches": 1,
+        "use_first_score": 13,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -2973,13 +2998,14 @@
         "matched": 14,
         "total": 17,
         "use_first_matches": 2,
+        "use_first_score": 56,
         "primary_ingredients": [
           "pork"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3112,13 +3138,14 @@
         "matched": 6,
         "total": 9,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "artichoke"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3228,13 +3255,14 @@
         "matched": 12,
         "total": 15,
         "use_first_matches": 4,
+        "use_first_score": 72,
         "primary_ingredients": [
           "shrimp"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3355,13 +3383,14 @@
         "matched": 7,
         "total": 8,
         "use_first_matches": 2,
+        "use_first_score": 35,
         "primary_ingredients": [
           "noodles"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3467,13 +3496,14 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 4,
+        "use_first_score": 70,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3621,13 +3651,14 @@
         "matched": 9,
         "total": 17,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3767,13 +3798,14 @@
         "matched": 11,
         "total": 14,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "noodles"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -3893,13 +3925,14 @@
         "matched": 5,
         "total": 9,
         "use_first_matches": 3,
+        "use_first_score": 55,
         "primary_ingredients": [
           "bread"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4003,13 +4036,14 @@
         "matched": 6,
         "total": 13,
         "use_first_matches": 1,
+        "use_first_score": 13,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4128,13 +4162,14 @@
         "matched": 8,
         "total": 14,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "shrimp"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4262,13 +4297,14 @@
         "matched": 11,
         "total": 13,
         "use_first_matches": 2,
+        "use_first_score": 41,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4394,13 +4430,14 @@
         "matched": 12,
         "total": 13,
         "use_first_matches": 4,
+        "use_first_score": 91,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4520,13 +4557,14 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 4,
+        "use_first_score": 47,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4678,13 +4716,14 @@
         "matched": 11,
         "total": 24,
         "use_first_matches": 2,
+        "use_first_score": 36,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4814,11 +4853,12 @@
         "matched": 0,
         "total": 0,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [],
         "primary_matched": 0,
         "primary_total": 0,
         "primary_present": null,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "not enough public ingredient data"
       },
       "ingredient_inventory": []
@@ -4876,11 +4916,12 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 2,
+        "use_first_score": 35,
         "primary_ingredients": [],
         "primary_matched": 0,
         "primary_total": 0,
         "primary_present": null,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -4988,13 +5029,14 @@
         "matched": 13,
         "total": 14,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5117,11 +5159,12 @@
         "matched": 16,
         "total": 21,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [],
         "primary_matched": 0,
         "primary_total": 0,
         "primary_present": null,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5238,13 +5281,14 @@
         "matched": 0,
         "total": 0,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "pasta"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "not enough public ingredient data"
       },
       "ingredient_inventory": []
@@ -5307,13 +5351,14 @@
         "matched": 4,
         "total": 9,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5403,13 +5448,14 @@
         "matched": 5,
         "total": 7,
         "use_first_matches": 1,
+        "use_first_score": 17,
         "primary_ingredients": [
           "spinach"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5499,13 +5545,14 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 3,
+        "use_first_score": 51,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5617,13 +5664,14 @@
         "matched": 8,
         "total": 17,
         "use_first_matches": 1,
+        "use_first_score": 18,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5766,13 +5814,14 @@
         "matched": 11,
         "total": 15,
         "use_first_matches": 2,
+        "use_first_score": 28,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -5905,13 +5954,14 @@
         "matched": 9,
         "total": 18,
         "use_first_matches": 3,
+        "use_first_score": 43,
         "primary_ingredients": [
           "carrots"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6058,13 +6108,14 @@
         "matched": 12,
         "total": 20,
         "use_first_matches": 3,
+        "use_first_score": 42,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6209,13 +6260,14 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 1,
+        "use_first_score": 15,
         "primary_ingredients": [
           "spinach"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6321,13 +6373,14 @@
         "matched": 6,
         "total": 13,
         "use_first_matches": 2,
+        "use_first_score": 32,
         "primary_ingredients": [
           "pasta"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6456,13 +6509,14 @@
         "matched": 14,
         "total": 18,
         "use_first_matches": 3,
+        "use_first_score": 79,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6597,13 +6651,14 @@
         "matched": 6,
         "total": 12,
         "use_first_matches": 2,
+        "use_first_score": 45,
         "primary_ingredients": [
           "duck"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6716,13 +6771,14 @@
         "matched": 15,
         "total": 17,
         "use_first_matches": 7,
+        "use_first_score": 121,
         "primary_ingredients": [
           "leek"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6860,13 +6916,14 @@
         "matched": 7,
         "total": 13,
         "use_first_matches": 3,
+        "use_first_score": 50,
         "primary_ingredients": [
           "cauliflower"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -6995,13 +7052,14 @@
         "matched": 11,
         "total": 14,
         "use_first_matches": 3,
+        "use_first_score": 47,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7120,13 +7178,14 @@
         "matched": 10,
         "total": 13,
         "use_first_matches": 3,
+        "use_first_score": 48,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7218,13 +7277,14 @@
         "matched": 0,
         "total": 1,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "cauliflower"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "catalog key ingredients"
       },
       "ingredient_inventory": []
@@ -7311,13 +7371,14 @@
         "matched": 19,
         "total": 31,
         "use_first_matches": 2,
+        "use_first_score": 35,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7504,13 +7565,14 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 1,
+        "use_first_score": 18,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7613,13 +7675,14 @@
         "matched": 7,
         "total": 11,
         "use_first_matches": 1,
+        "use_first_score": 18,
         "primary_ingredients": [
           "lamb"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7731,13 +7794,14 @@
         "matched": 7,
         "total": 14,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7862,13 +7926,14 @@
         "matched": 4,
         "total": 8,
         "use_first_matches": 0,
+        "use_first_score": 0,
         "primary_ingredients": [
           "potatoes"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -7989,13 +8054,14 @@
         "matched": 17,
         "total": 27,
         "use_first_matches": 5,
+        "use_first_score": 80,
         "primary_ingredients": [
           "beef"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8181,13 +8247,14 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 1,
+        "use_first_score": 19,
         "primary_ingredients": [
           "pasta"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8347,13 +8414,14 @@
         "matched": 15,
         "total": 25,
         "use_first_matches": 4,
+        "use_first_score": 61,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8513,13 +8581,14 @@
         "matched": 12,
         "total": 14,
         "use_first_matches": 2,
+        "use_first_score": 35,
         "primary_ingredients": [
           "noodles"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8638,13 +8707,14 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 3,
+        "use_first_score": 51,
         "primary_ingredients": [
           "mahi mahi"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8743,13 +8813,14 @@
         "matched": 6,
         "total": 10,
         "use_first_matches": 2,
+        "use_first_score": 20,
         "primary_ingredients": [
           "cucumber"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8854,13 +8925,14 @@
         "matched": 4,
         "total": 10,
         "use_first_matches": 2,
+        "use_first_score": 35,
         "primary_ingredients": [
           "eggplant"
         ],
         "primary_matched": 0,
         "primary_total": 1,
         "primary_present": false,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
@@ -8988,13 +9060,14 @@
         "matched": 5,
         "total": 6,
         "use_first_matches": 2,
+        "use_first_score": 51,
         "primary_ingredients": [
           "broccoli"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       }
     },
@@ -9080,13 +9153,14 @@
         "matched": 4,
         "total": 6,
         "use_first_matches": 1,
+        "use_first_score": 19,
         "primary_ingredients": [
           "rice"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       }
     },
@@ -9186,33 +9260,473 @@
         "matched": 7,
         "total": 9,
         "use_first_matches": 3,
+        "use_first_score": 51,
         "primary_ingredients": [
           "chicken"
         ],
         "primary_matched": 1,
         "primary_total": 1,
         "primary_present": true,
-        "as_of": "2026-08-29",
+        "as_of": "2026-08-30",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-creamy-cucumber-salad",
+      "title": "Creamy Cucumber Salad",
+      "cuisine": "American",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Cucumber",
+        "Sour cream",
+        "Dill"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/creamy-cucumber-salad/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 786,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2024/04/Creamy-Cucumber-Salad-TIMG.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "½ cup sour cream",
+        "3 tablespoons red wine vinegar",
+        "1 tablespoon chopped fresh dill",
+        "1 teaspoon granulated sugar (optional)",
+        "¼ teaspoon garlic powder",
+        "Salt and pepper",
+        "2 large English cucumbers (thinly sliced)",
+        "¼ red onion (thinly sliced)"
+      ],
+      "recipe_steps": [
+        "In a medium bowl, mix the sour cream, vinegar, dill, sugar, and garlic powder until well combined. Taste and season with salt and pepper.",
+        "Add the sliced cucumbers and red onions on top of the sour cream dressing and stir to coat.",
+        "Serve immediately at room temperature or refrigerate for 1 hour before serving."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "totalTime": "PT5M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "½ cup sour cream",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons red wine vinegar",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon chopped fresh dill",
+          "present": false
+        },
+        {
+          "name": "1 teaspoon granulated sugar (optional)",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon garlic powder",
+          "present": false
+        },
+        {
+          "name": "Salt and pepper",
+          "present": true
+        },
+        {
+          "name": "2 large English cucumbers (thinly sliced)",
+          "present": true
+        },
+        {
+          "name": "¼ red onion (thinly sliced)",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 75,
+        "matched": 6,
+        "total": 8,
+        "use_first_matches": 1,
+        "use_first_score": 4,
+        "primary_ingredients": [
+          "cucumber"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-08-30",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-shirazi-salad",
+      "title": "Shirazi Salad",
+      "cuisine": "Persian",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Cucumber",
+        "Tomatoes",
+        "Red onion",
+        "Cilantro",
+        "Parsley"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/shirazi-salad/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 157,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2020/08/Shirazi-Salad-08-1.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "3 Persian cucumbers (finely chopped)",
+        "3 Roma tomatoes (finely chopped)",
+        "½ small red onion (finely chopped)",
+        "½ small green bell pepper (optional)",
+        "2 tablespoons chopped fresh cilantro",
+        "2 tablespoons chopped fresh parsley",
+        "2 tablespoons chopped fresh mint",
+        "3 tablespoons extra-virgin olive oil",
+        "3 tablespoons fresh lime juice",
+        "½ teaspoon salt",
+        "¼ teaspoon black pepper"
+      ],
+      "recipe_steps": [
+        "In a large bowl, whisk together the olive oil, lime juice, salt, and pepper until well combined.",
+        "Add the cucumbers, tomatoes, red onion, green pepper, cilantro, parsley, and mint on top of the dressing.",
+        "Toss gently to combine the dressing with the vegetables and herbs. Serve immediately."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT20M",
+        "totalTime": "PT20M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 Persian cucumbers (finely chopped)",
+          "present": true
+        },
+        {
+          "name": "3 Roma tomatoes (finely chopped)",
+          "present": false
+        },
+        {
+          "name": "½ small red onion (finely chopped)",
+          "present": true
+        },
+        {
+          "name": "½ small green bell pepper (optional)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chopped fresh cilantro",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chopped fresh parsley",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons chopped fresh mint",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons extra-virgin olive oil",
+          "present": false
+        },
+        {
+          "name": "3 tablespoons fresh lime juice",
+          "present": false
+        },
+        {
+          "name": "½ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon black pepper",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 64,
+        "matched": 7,
+        "total": 11,
+        "use_first_matches": 3,
+        "use_first_score": 41,
+        "primary_ingredients": [
+          "cucumber"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-08-30",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-tomato-cucumber-avocado-salad",
+      "title": "Tomato Cucumber Avocado Salad",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Tomatoes",
+        "Cucumber",
+        "Avocado",
+        "Dill",
+        "Lemon"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/tomato-avocado-cucumber-salad/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 50,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2025/03/Tomato-Cucumber-Avocado-Salad-12.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "2 tablespoons extra virgin olive oil",
+        "2 tablespoons fresh lemon juice",
+        "1 teaspoon salt",
+        "½ teaspoon black pepper",
+        "1 pound Roma tomatoes (chopped)",
+        "1 English cucumber (chopped)",
+        "2 avocados (chopped)",
+        "½ medium red onion (sliced)",
+        "2 tablespoons fresh dill"
+      ],
+      "recipe_steps": [
+        "In a large serving bowl, whisk together the olive oil, lemon juice, salt, and pepper until well combined and emulsified.",
+        "Add the tomatoes, cucumber, avocado, red onion, and dill on top and toss gently to combine evenly. Serve immediately."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "totalTime": "PT10M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 tablespoons extra virgin olive oil",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons fresh lemon juice",
+          "present": true
+        },
+        {
+          "name": "1 teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon black pepper",
+          "present": true
+        },
+        {
+          "name": "1 pound Roma tomatoes (chopped)",
+          "present": false
+        },
+        {
+          "name": "1 English cucumber (chopped)",
+          "present": true
+        },
+        {
+          "name": "2 avocados (chopped)",
+          "present": false
+        },
+        {
+          "name": "½ medium red onion (sliced)",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons fresh dill",
+          "present": false
+        }
+      ],
+      "inventory_fit": {
+        "percent": 56,
+        "matched": 5,
+        "total": 9,
+        "use_first_matches": 2,
+        "use_first_score": 20,
+        "primary_ingredients": [
+          "cucumber"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-08-30",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-classic-greek-salad",
+      "title": "Classic Greek Salad",
+      "cuisine": "Greek",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Tomatoes",
+        "Cucumber",
+        "Red onion",
+        "Bell pepper"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/greek-salad/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 46,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2020/05/Greek-Salad-TIMG.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "3 ripe tomatoes (chopped)",
+        "1 English cucumber (peeled and chopped)",
+        "½ small red onion (chopped)",
+        "½ green pepper (chopped)",
+        "4 ounces Kalamata olives",
+        "1 (8-ounce) block feta cheese (cut into cubes)",
+        "4 tablespoons extra virgin olive oil",
+        "2 tablespoons red wine vinegar",
+        "½ teaspoon oregano",
+        "¼ teaspoon salt",
+        "¼ teaspoon black pepper"
+      ],
+      "recipe_steps": [
+        "Place the tomatoes, cucumbers, red onions, green peppers, and olives in a large serving bowl. Stir to combine.",
+        "Mix the salad dressing ingredients together in a small bowl and drizzle over the salad. Add the feta cheese on top.",
+        "Lightly toss to combine, being careful not to over-mix or break up the feta cheese."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "totalTime": "PT15M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "3 ripe tomatoes (chopped)",
+          "present": false
+        },
+        {
+          "name": "1 English cucumber (peeled and chopped)",
+          "present": true
+        },
+        {
+          "name": "½ small red onion (chopped)",
+          "present": true
+        },
+        {
+          "name": "½ green pepper (chopped)",
+          "present": true
+        },
+        {
+          "name": "4 ounces Kalamata olives",
+          "present": false
+        },
+        {
+          "name": "1 (8-ounce) block feta cheese (cut into cubes)",
+          "present": false
+        },
+        {
+          "name": "4 tablespoons extra virgin olive oil",
+          "present": false
+        },
+        {
+          "name": "2 tablespoons red wine vinegar",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon oregano",
+          "present": false
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon black pepper",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 55,
+        "matched": 6,
+        "total": 11,
+        "use_first_matches": 1,
+        "use_first_score": 4,
+        "primary_ingredients": [
+          "tomato"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       }
     }
   ],
   "visuals": {
     "thumbnail_strategy": "Open Graph thumbnails from public source pages; cards lazy-load them.",
-    "recipes_with_thumbnails": 63,
+    "recipes_with_thumbnails": 67,
     "recipes_in_variant_families": 6
   },
   "content_import": {
     "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
-    "linked_targets": 72,
-    "extracted": 71,
+    "linked_targets": 76,
+    "extracted": 75,
     "partial": 0,
     "unavailable": 1,
-    "updated": "2026-08-29"
+    "updated": "2026-08-30"
   },
   "inventory_fit": {
-    "updated": "2026-08-29",
-    "method": "Deterministic ingredient-line presence coverage plus count of matched current use-first ingredients; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+    "updated": "2026-08-30",
+    "method": "Deterministic ingredient-line presence coverage plus ordered use-first priority score; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
     "private_source": "local household inventory; not published"
   }
 }
