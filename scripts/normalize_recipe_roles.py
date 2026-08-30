@@ -12,6 +12,8 @@ DATA_PATH = ROOT / "data" / "recipes.json"
 ROLE_OVERRIDES = {
     # Eggs are a protein/side preparation, not a vegetable recipe.
     "Steamed egg": ["other"],
+    # Bacon is an ingredient, but this is a composed kale salad/vegetable side.
+    "Tuscan Kale Salad": ["veggie"],
 }
 
 
