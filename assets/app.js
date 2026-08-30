@@ -8,8 +8,6 @@ const DAYS = [
   ['sunday', 'Sunday']
 ];
 const MEALS = [
-  ['breakfast', 'Breakfast'],
-  ['lunch', 'Lunch'],
   ['dinner', 'Dinner']
 ];
 const PLAN_KEY = 'westinas-cantina-calendar-plan-v3';
@@ -44,12 +42,14 @@ function blankPlan() {
 
 function loadPlan() {
   const blank = blankPlan();
+  const used = new Set();
   try {
     const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || '{}');
     for (const [day] of DAYS) {
-      for (const [meal] of MEALS) {
-        const value = saved?.[day]?.[meal];
-        if (typeof value === 'string') blank[day][meal] = value;
+      const value = saved?.[day]?.dinner;
+      if (typeof value === 'string' && !used.has(value)) {
+        blank[day].dinner = value;
+        used.add(value);
       }
     }
   } catch (error) {
@@ -224,7 +224,6 @@ function openAddDialog(recipeId) {
   if (!recipe) return;
   $('#add-recipe-id').value = recipe.id;
   $('#add-recipe-name').textContent = recipe.title;
-  $('#add-meal').value = recipe.meal_slots.includes(state.slot) ? state.slot : 'dinner';
   const dialog = $('#add-dialog');
   if (typeof dialog.showModal === 'function') dialog.showModal();
 }
@@ -232,7 +231,8 @@ function openAddDialog(recipeId) {
 function menuEntry(recipe) {
   const tags = [...new Set((recipe.component_types || []).map((type) => labels[type] || type))].join(' · ');
   const badges = `${recipe.golden ? '<span class="badge gold">Golden</span>' : ''}${recipe.tried ? '<span class="badge">Tried</span>' : ''}`;
-  return `<article class="menu-entry" draggable="true" data-recipe-id="${esc(recipe.id)}"><div class="menu-entry-row"><div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
+  const image = recipe.image_url ? `<img class="menu-entry-image" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '';
+  return `<article class="menu-entry" draggable="true" data-recipe-id="${esc(recipe.id)}"><div class="menu-entry-row"><div class="menu-entry-copy">${image}<span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
 }
 
 function renderMenu() {
@@ -255,7 +255,8 @@ function renderMenu() {
 }
 
 function plannedItem(recipe, day, meal) {
-  return `<div class="planned-item" draggable="true" data-plan-day="${day}" data-plan-meal="${meal}"><span class="planned-title">${esc(recipe.title)}</span>${fitWidget(recipe, true)}<button type="button" data-remove-day="${day}" data-remove-meal="${meal}" aria-label="Remove ${esc(recipe.title)} from ${day} ${meal}; another option will be suggested">×</button></div>`;
+  const image = recipe.image_url ? `<img class="planned-image" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '';
+  return `<div class="planned-item" draggable="true" data-plan-day="${day}" data-plan-meal="${meal}">${image}<span class="planned-title">${esc(recipe.title)}</span>${fitWidget(recipe, true)}<button type="button" data-remove-day="${day}" data-remove-meal="${meal}" aria-label="Remove ${esc(recipe.title)} from ${day} ${meal}; another option will be suggested">×</button></div>`;
 }
 
 function renderCalendar() {
@@ -275,31 +276,27 @@ function candidatePool(meal, excluded = []) {
   return sortedRecipes(state.recipes.filter((recipe) => recipe.meal_slots.includes(meal) && !blocked.has(recipe.id)));
 }
 
-function allPlannedIds() {
-  return DAYS.flatMap(([day]) => MEALS.map(([meal]) => state.plan[day][meal])).filter(Boolean);
+function allPlannedIds(excludedSlot = null) {
+  return DAYS.flatMap(([day]) => MEALS.map(([meal]) => {
+    if (excludedSlot && day === excludedSlot[0] && meal === excludedSlot[1]) return null;
+    return state.plan[day][meal];
+  })).filter(Boolean);
 }
 
 function chooseSuggestion(day, meal, extraExcluded = []) {
-  const excluded = [...allPlannedIds(), ...extraExcluded];
-  const pool = candidatePool(meal, excluded);
-  if (pool.length) return pool[0];
-  return candidatePool(meal, extraExcluded)[0] || null;
+  const excluded = new Set([...allPlannedIds([day, meal]), ...extraExcluded]);
+  return candidatePool(meal, [...excluded])[0] || null;
 }
 
 function proposeWeek() {
   state.plan = blankPlan();
   for (const [day] of DAYS) {
-    for (const [meal] of MEALS) {
-      const shouldSuggest = meal === 'breakfast' || meal === 'dinner' || (meal === 'lunch' && (day === 'saturday' || day === 'sunday'));
-      if (shouldSuggest) {
-        const recipe = chooseSuggestion(day, meal);
-        if (recipe) state.plan[day][meal] = recipe.id;
-      }
-    }
+    const recipe = chooseSuggestion(day, 'dinner');
+    if (recipe) state.plan[day].dinner = recipe.id;
   }
   savePlan();
   renderCalendar();
-  announce('A suggested week is ready. Drag recipes between slots to edit it.');
+  announce('A suggested dinner week is ready. Each dish appears only once.');
 }
 
 function replaceSlot(day, meal, removedId = null) {
@@ -312,11 +309,16 @@ function replaceSlot(day, meal, removedId = null) {
 
 function putInSlot(day, meal, recipeId) {
   const recipe = state.recipes.find((item) => item.id === recipeId);
-  if (!recipe) return;
-  state.plan[day][meal] = recipe.id;
+  if (!recipe || meal !== 'dinner') return;
+  const alreadyPlanned = DAYS.some(([otherDay]) => otherDay !== day && state.plan[otherDay].dinner === recipe.id);
+  if (alreadyPlanned) {
+    announce(`${recipe.title} is already planned on another day this week.`);
+    return;
+  }
+  state.plan[day].dinner = recipe.id;
   savePlan();
   renderCalendar();
-  announce(`${recipe.title} added to ${day} ${meal}.`);
+  announce(`${recipe.title} added to ${day} dinner.`);
 }
 
 function movePlanItem(sourceDay, sourceMeal, destinationDay, destinationMeal) {
@@ -431,7 +433,7 @@ async function init() {
   $('#add-form').addEventListener('submit', (event) => {
     if (event.submitter?.value !== 'add') return;
     event.preventDefault();
-    putInSlot($('#add-day').value, $('#add-meal').value, $('#add-recipe-id').value);
+    putInSlot($('#add-day').value, 'dinner', $('#add-recipe-id').value);
     $('#add-dialog').close();
   });
   render();

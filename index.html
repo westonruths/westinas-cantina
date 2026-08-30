@@ -15,7 +15,7 @@
       <div>
         <span class="section-kicker">Sunday planning</span>
         <h2 id="planner-heading">This week</h2>
-        <p class="planner-lede">Start with a proposed week, then drag dishes between days and meals until it feels right.</p>
+        <p class="planner-lede">Start with a proposed dinner week, then drag dishes between days until it feels right.</p>
       </div>
       <div class="planner-actions">
         <button id="propose-week" class="primary-button" type="button">Propose a week</button>
@@ -24,16 +24,11 @@
     </section>
     <p id="planner-status" class="planner-status" aria-live="polite"></p>
 
-    <section id="week-calendar" class="week-calendar" aria-label="Weekly meal plan"></section>
+    <section id="week-calendar" class="week-calendar" aria-label="Weekly dinner plan"></section>
 
     <details id="menu-drawer" class="menu-drawer">
       <summary class="menu-toggle"><span class="menu-toggle-label">Browse menu</span><small class="menu-toggle-hint">Open menu</small></summary>
       <section class="menu-tools" aria-label="Menu controls">
-        <div class="dayparts" role="tablist" aria-label="Daypart">
-          <button class="daypart active" data-slot="dinner" role="tab" aria-selected="true">Dinner</button>
-          <button class="daypart" data-slot="lunch" role="tab" aria-selected="false">Lunch</button>
-          <button class="daypart" data-slot="breakfast" role="tab" aria-selected="false">Breakfast</button>
-        </div>
         <div class="view-switcher" role="tablist" aria-label="Menu organization">
           <button class="view-button active" data-view="dishes" role="tab" aria-selected="true">Dishes</button>
           <button class="view-button" data-view="components" role="tab" aria-selected="false">Components / Sides</button>
@@ -47,7 +42,7 @@
       </div>
       <p id="menu-note" class="menu-note"></p>
       <div id="menu" class="menu-sections" aria-live="polite"></div>
-      <section id="empty" class="empty" hidden><h2>No recipes found</h2><p>Try another search, menu organization, or daypart.</p></section>
+      <section id="empty" class="empty" hidden><h2>No recipes found</h2><p>Try another search or menu organization.</p></section>
     </details>
   </main>
 
@@ -57,7 +52,6 @@
       <p id="add-recipe-name"></p>
       <input id="add-recipe-id" type="hidden">
       <label>Day<select id="add-day"></select></label>
-      <label>Meal<select id="add-meal"><option value="breakfast">Breakfast</option><option value="lunch">Lunch</option><option value="dinner" selected>Dinner</option></select></label>
       <div class="dialog-actions"><button class="clear" value="cancel">Cancel</button><button class="primary-button" value="add">Add to plan</button></div>
     </form>
   </dialog>
