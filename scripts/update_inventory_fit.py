@@ -45,8 +45,11 @@ ALIASES = {
     "scallions": ["green onions"],
     "green onion": ["green onions"],
     "onion": ["yellow onion", "large yellow onion"],
-    "leaf lettuce": ["romaine lettuce", "leaf lettuce", "lettuce"],
+    "kale": ["lacinato kale", "kale"],
     "lacinato kale": ["lacinato kale", "kale"],
+    "lettuce": ["romaine lettuce", "lettuce"],
+    "leaf lettuce": ["romaine lettuce", "leaf lettuce", "lettuce"],
+    "carrot": ["carrots"],
     "potatoes": ["golden potatoes", "hash brown potatoes"],
     "flour": ["flour"],
     "bread": ["keto bread", "bread"],
@@ -97,6 +100,7 @@ ALIASES = {
     "vermicelli": ["rice vermicelli"],
     "rice paper": ["rice paper"],
     "shrimp": ["shrimp"],
+    "mahi mahi": ["mahi mahi"],
     "dried shrimp": ["dried shrimp"],
     "shrimp paste": ["shrimp paste"],
     "pork belly": ["pork belly"],
@@ -242,6 +246,80 @@ def requirements_for(recipe):
     return [], "not enough public ingredient data"
 
 
+PRIMARY_PRODUCE = [
+    "shishito", "artichoke", "kale", "broccoli", "cauliflower", "bok choy",
+    "spinach", "eggplant", "cucumber", "tomato", "beet", "leek", "potato",
+    "lettuce", "zucchini", "carrot", "celery", "chickpea", "egg",
+]
+PRIMARY_PROTEINS = [
+    "chicken", "pork", "beef", "lamb", "shrimp", "salmon", "mahi mahi",
+    "duck", "tofu", "sausage", "turkey", "fish",
+]
+PRIMARY_CARBS = [
+    "rice", "noodle", "pasta", "orzo", "couscous", "focaccia", "fettuccine", "bread",
+    "dumpling", "pierogi", "quinoa", "millet",
+]
+PRIMARY_CANONICAL = {
+    "kale": "lacinato kale",
+    "potato": "potatoes",
+    "lettuce": "leaf lettuce",
+    "carrot": "carrots",
+    "egg": "eggs",
+    "focaccia": "flour",
+    "fettuccine": "pasta",
+    "noodle": "noodles",
+    "pasta": "pasta",
+    "orzo": "orzo",
+    "couscous": "couscous",
+    "rice": "rice",
+    "bread": "bread",
+}
+
+
+def canonical_primary(term):
+    return PRIMARY_CANONICAL.get(term, term)
+
+
+def infer_primary_ingredients(recipe):
+    """Return one identity-bearing ingredient for the recipe's main food."""
+    title = normalize(recipe.get("title", ""))
+    types = set(recipe.get("component_types", []))
+    # Produce-led salads, dips, and vegetable dishes should not inherit a
+    # secondary protein tag as their primary ingredient.
+    if re.search(r"salad|dip|banchan|shishito|artichoke|kale|broccoli|cauliflower|bok choy|spinach|eggplant|cucumber|tomato|beet|leek|potato|lettuce", title):
+        for term in PRIMARY_PRODUCE:
+            if term in title:
+                return [canonical_primary(term)]
+    if "protein" in types:
+        for term in PRIMARY_PROTEINS:
+            if term in title:
+                return [canonical_primary(term)]
+    if "carb" in types:
+        for term in PRIMARY_CARBS:
+            if term in title:
+                return [canonical_primary(term)]
+    keys = [str(x).strip() for x in recipe.get("key_ingredients", []) if str(x).strip()]
+    preferred_groups = []
+    if "protein" in types:
+        preferred_groups.append(PRIMARY_PROTEINS)
+    if "veggie" in types:
+        preferred_groups.append(PRIMARY_PRODUCE)
+    if "carb" in types:
+        preferred_groups.append(PRIMARY_CARBS)
+    for group in preferred_groups:
+        for key in keys:
+            key_normalized = normalize(key)
+            for term in group:
+                if term in key_normalized:
+                    return [canonical_primary(term)]
+    for key in keys:
+        key_normalized = normalize(key)
+        for term in PRIMARY_PRODUCE + PRIMARY_PROTEINS + PRIMARY_CARBS:
+            if term in key_normalized:
+                return [canonical_primary(term)]
+    return []
+
+
 def inventory_match(requirement, inventory_items_list):
     req = normalize(requirement)
     if not req:
@@ -295,6 +373,9 @@ def main():
     for recipe in data["recipes"]:
         ingredient_lines = public_ingredient_lines(recipe)
         recipe["ingredient_inventory"] = status_for_lines(ingredient_lines, inventory_items_list)
+        primary = infer_primary_ingredients(recipe)
+        primary_flags = [inventory_match(item, inventory_items_list) for item in primary]
+        primary_present = None if not primary else all(primary_flags)
         requirements, basis = requirements_for(recipe)
         if not requirements:
             recipe["inventory_fit"] = {
@@ -302,6 +383,10 @@ def main():
                 "matched": 0,
                 "total": 0,
                 "use_first_matches": 0,
+                "primary_ingredients": primary,
+                "primary_matched": sum(primary_flags),
+                "primary_total": len(primary),
+                "primary_present": primary_present,
                 "as_of": as_of,
                 "basis": "not enough public ingredient data",
             }
@@ -313,6 +398,10 @@ def main():
             "matched": matched,
             "total": len(requirements),
             "use_first_matches": use_first_matches,
+            "primary_ingredients": primary,
+            "primary_matched": sum(primary_flags),
+            "primary_total": len(primary),
+            "primary_present": primary_present,
             "as_of": as_of,
             "basis": basis,
         }

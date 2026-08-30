@@ -48,6 +48,12 @@
         "matched": 3,
         "total": 4,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "shishito"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -137,6 +143,12 @@
         "matched": 9,
         "total": 18,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "flour"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -269,6 +281,12 @@
         "matched": 11,
         "total": 11,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "pork"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -367,6 +385,12 @@
         "matched": 6,
         "total": 7,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "potatoes"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -462,6 +486,12 @@
         "matched": 10,
         "total": 11,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "leaf lettuce"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -565,6 +595,10 @@
         "matched": 6,
         "total": 7,
         "use_first_matches": 1,
+        "primary_ingredients": [],
+        "primary_matched": 0,
+        "primary_total": 0,
+        "primary_present": null,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -655,6 +689,12 @@
         "matched": 8,
         "total": 9,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "lacinato kale"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -745,6 +785,12 @@
         "matched": 7,
         "total": 8,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "bok choy"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -857,6 +903,12 @@
         "matched": 16,
         "total": 24,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "noodles"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1015,6 +1067,12 @@
         "matched": 8,
         "total": 10,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1113,6 +1171,12 @@
         "matched": 4,
         "total": 7,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "pasta"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1210,6 +1274,12 @@
         "matched": 4,
         "total": 10,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "bread"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1314,6 +1384,12 @@
         "matched": 8,
         "total": 10,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "artichoke"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1450,6 +1526,12 @@
         "matched": 25,
         "total": 32,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1642,6 +1724,12 @@
         "matched": 7,
         "total": 11,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "tomato"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1746,6 +1834,12 @@
         "matched": 4,
         "total": 7,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "lamb"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1851,6 +1945,12 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1997,6 +2097,12 @@
         "matched": 7,
         "total": 12,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "orzo"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2111,6 +2217,12 @@
         "matched": 8,
         "total": 11,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2220,6 +2332,12 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "noodles"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2325,6 +2443,12 @@
         "matched": 6,
         "total": 12,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2415,6 +2539,12 @@
         "matched": 3,
         "total": 5,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "duck"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
       },
@@ -2483,6 +2613,12 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "pork"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2597,6 +2733,12 @@
         "matched": 10,
         "total": 13,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "pork"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2716,6 +2858,12 @@
         "matched": 6,
         "total": 10,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2825,6 +2973,12 @@
         "matched": 14,
         "total": 17,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "pork"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2958,6 +3112,12 @@
         "matched": 6,
         "total": 9,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "artichoke"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3064,10 +3224,16 @@
         "totalTime": "PT50M"
       },
       "inventory_fit": {
-        "percent": 73,
-        "matched": 11,
+        "percent": 80,
+        "matched": 12,
         "total": 15,
-        "use_first_matches": 3,
+        "use_first_matches": 4,
+        "primary_ingredients": [
+          "shrimp"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3086,7 +3252,7 @@
         },
         {
           "name": "2 leaves lettuce, chopped",
-          "present": false
+          "present": true
         },
         {
           "name": "3 tablespoons chopped fresh mint leaves",
@@ -3189,6 +3355,12 @@
         "matched": 7,
         "total": 8,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "noodles"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3295,6 +3467,12 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 4,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3443,6 +3621,12 @@
         "matched": 9,
         "total": 17,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3583,6 +3767,12 @@
         "matched": 11,
         "total": 14,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "noodles"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3703,6 +3893,12 @@
         "matched": 5,
         "total": 9,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "bread"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3807,6 +4003,12 @@
         "matched": 6,
         "total": 13,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3926,6 +4128,12 @@
         "matched": 8,
         "total": 14,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "shrimp"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4054,6 +4262,12 @@
         "matched": 11,
         "total": 13,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4180,6 +4394,12 @@
         "matched": 12,
         "total": 13,
         "use_first_matches": 4,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4300,6 +4520,12 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 4,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4452,6 +4678,12 @@
         "matched": 11,
         "total": 24,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4582,6 +4814,10 @@
         "matched": 0,
         "total": 0,
         "use_first_matches": 0,
+        "primary_ingredients": [],
+        "primary_matched": 0,
+        "primary_total": 0,
+        "primary_present": null,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
       },
@@ -4640,6 +4876,10 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 2,
+        "primary_ingredients": [],
+        "primary_matched": 0,
+        "primary_total": 0,
+        "primary_present": null,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4748,6 +4988,12 @@
         "matched": 13,
         "total": 14,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4871,6 +5117,10 @@
         "matched": 16,
         "total": 21,
         "use_first_matches": 1,
+        "primary_ingredients": [],
+        "primary_matched": 0,
+        "primary_total": 0,
+        "primary_present": null,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4988,6 +5238,12 @@
         "matched": 0,
         "total": 0,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "pasta"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
       },
@@ -5051,6 +5307,12 @@
         "matched": 4,
         "total": 9,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5141,6 +5403,12 @@
         "matched": 5,
         "total": 7,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "spinach"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5231,6 +5499,12 @@
         "matched": 9,
         "total": 11,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5343,6 +5617,12 @@
         "matched": 8,
         "total": 17,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5486,6 +5766,12 @@
         "matched": 11,
         "total": 15,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5619,6 +5905,12 @@
         "matched": 9,
         "total": 18,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "carrots"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5762,10 +6054,16 @@
         "totalTime": "PT60M"
       },
       "inventory_fit": {
-        "percent": 55,
-        "matched": 11,
+        "percent": 60,
+        "matched": 12,
         "total": 20,
-        "use_first_matches": 2,
+        "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5820,7 +6118,7 @@
         },
         {
           "name": "2 cups chopped kale",
-          "present": false
+          "present": true
         },
         {
           "name": "chopped fresh dill, for serving",
@@ -5911,6 +6209,12 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "spinach"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6017,6 +6321,12 @@
         "matched": 6,
         "total": 13,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "pasta"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6146,6 +6456,12 @@
         "matched": 14,
         "total": 18,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6281,6 +6597,12 @@
         "matched": 6,
         "total": 12,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "duck"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6394,6 +6716,12 @@
         "matched": 15,
         "total": 17,
         "use_first_matches": 7,
+        "primary_ingredients": [
+          "leek"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6532,6 +6860,12 @@
         "matched": 7,
         "total": 13,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "cauliflower"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6661,6 +6995,12 @@
         "matched": 11,
         "total": 14,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6780,6 +7120,12 @@
         "matched": 10,
         "total": 13,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6872,6 +7218,12 @@
         "matched": 0,
         "total": 1,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "cauliflower"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
       },
@@ -6959,6 +7311,12 @@
         "matched": 19,
         "total": 31,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7146,6 +7504,12 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7249,6 +7613,12 @@
         "matched": 7,
         "total": 11,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "lamb"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7361,6 +7731,12 @@
         "matched": 7,
         "total": 14,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7486,6 +7862,12 @@
         "matched": 4,
         "total": 8,
         "use_first_matches": 0,
+        "primary_ingredients": [
+          "potatoes"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7607,6 +7989,12 @@
         "matched": 17,
         "total": 27,
         "use_first_matches": 5,
+        "primary_ingredients": [
+          "beef"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7793,6 +8181,12 @@
         "matched": 10,
         "total": 18,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "pasta"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7949,10 +8343,16 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 56,
-        "matched": 14,
+        "percent": 60,
+        "matched": 15,
         "total": 25,
-        "use_first_matches": 3,
+        "use_first_matches": 4,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8035,7 +8435,7 @@
         },
         {
           "name": "5 cups iceberg lettuce (, finely sliced)",
-          "present": false
+          "present": true
         },
         {
           "name": "3 cups bean sprouts",
@@ -8113,6 +8513,12 @@
         "matched": 12,
         "total": 14,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "noodles"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8232,6 +8638,12 @@
         "matched": 7,
         "total": 10,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "mahi mahi"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8331,6 +8743,12 @@
         "matched": 6,
         "total": 10,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "cucumber"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8436,6 +8854,12 @@
         "matched": 4,
         "total": 10,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "eggplant"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8564,6 +8988,12 @@
         "matched": 5,
         "total": 6,
         "use_first_matches": 2,
+        "primary_ingredients": [
+          "broccoli"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       }
@@ -8650,6 +9080,12 @@
         "matched": 4,
         "total": 6,
         "use_first_matches": 1,
+        "primary_ingredients": [
+          "rice"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       }
@@ -8750,6 +9186,12 @@
         "matched": 7,
         "total": 9,
         "use_first_matches": 3,
+        "primary_ingredients": [
+          "chicken"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       }

@@ -95,6 +95,10 @@ function fitPercent(recipe) {
   return Number.isFinite(value) ? value : null;
 }
 
+function primaryAvailable(recipe) {
+  return fitData(recipe).primary_present !== false;
+}
+
 function useFirstMatches(recipe) {
   return Number(fitData(recipe).use_first_matches) || 0;
 }
@@ -185,6 +189,7 @@ function componentSection(recipe) {
   const types = recipe.component_types || [];
   if (isMainCourse(recipe)) return null;
   if (types.includes('soup')) return 'soups';
+  if (types.includes('veggie') && (isAppetizer(recipe) || !types.includes('protein'))) return 'vegetables';
   if (types.includes('protein')) return 'proteins';
   if (types.includes('veggie')) return 'vegetables';
   if (types.includes('carb')) return 'carbs';
@@ -211,7 +216,7 @@ function menuSections() {
 }
 
 function recipeMatches(recipe) {
-  if (!recipe.meal_slots.includes('dinner')) return false;
+  if (!recipe.meal_slots.includes('dinner') || !primaryAvailable(recipe)) return false;
   if (!state.query) return true;
   const haystack = [recipe.title, recipe.cuisine, ...recipe.key_ingredients, ...(recipe.recipe_ingredients || [])]
     .join(' ').toLowerCase();
@@ -307,7 +312,7 @@ function candidatePool(component, excluded = []) {
   const blocked = new Set(excluded);
   return sortedRecipes(state.recipes.filter((recipe) => {
     const types = recipe.component_types || [];
-    return recipe.meal_slots.includes('dinner') && types.includes(component) && !types.includes('soup') && !isMainCourse(recipe) && !blocked.has(recipe.id);
+    return recipe.meal_slots.includes('dinner') && primaryAvailable(recipe) && types.includes(component) && !types.includes('soup') && !isMainCourse(recipe) && !blocked.has(recipe.id);
   }));
 }
 
@@ -321,6 +326,32 @@ function allPlannedIds(excludedSlot = null) {
 function chooseSuggestion(day, component, extraExcluded = []) {
   const excluded = new Set([...allPlannedIds([day, component]), ...extraExcluded]);
   return candidatePool(component, [...excluded])[0] || candidatePool(component, extraExcluded)[0] || null;
+}
+
+function sanitizePlan() {
+  let changed = false;
+  for (const [day] of DAYS) {
+    for (const [component] of COMPONENTS) {
+      const recipeId = state.plan[day][component];
+      const recipe = state.recipes.find((item) => item.id === recipeId);
+      if (recipeId && (!recipe || !primaryAvailable(recipe) || !(recipe.component_types || []).includes(component))) {
+        state.plan[day][component] = null;
+        changed = true;
+      }
+    }
+  }
+  return changed;
+}
+
+function fillOpenSlots() {
+  for (const [day] of DAYS) {
+    for (const [component] of COMPONENTS) {
+      if (!state.plan[day][component]) {
+        const recipe = chooseSuggestion(day, component);
+        if (recipe) state.plan[day][component] = recipe.id;
+      }
+    }
+  }
 }
 
 function proposeWeek() {
@@ -346,7 +377,7 @@ function replaceSlot(day, component, removedId = null) {
 
 function putInSlot(day, component, recipeId) {
   const recipe = state.recipes.find((item) => item.id === recipeId);
-  if (!recipe || !COMPONENTS.some(([key]) => key === component) || !(recipe.component_types || []).includes(component)) {
+  if (!recipe || !primaryAvailable(recipe) || !COMPONENTS.some(([key]) => key === component) || !(recipe.component_types || []).includes(component)) {
     announce('That recipe does not belong in this component slot.');
     return;
   }
@@ -462,7 +493,12 @@ async function init() {
   const data = await response.json();
   state.recipes = data.recipes;
   const saved = localStorage.getItem(PLAN_KEY);
+  const invalidPlan = sanitizePlan();
   if (!saved) proposeWeek();
+  else if (invalidPlan) {
+    fillOpenSlots();
+    savePlan();
+  }
   document.querySelectorAll('.view-button').forEach((button) => {
     button.addEventListener('click', () => {
       state.view = button.dataset.view;

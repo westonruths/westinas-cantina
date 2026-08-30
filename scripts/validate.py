@@ -13,6 +13,10 @@ for recipe in data['recipes']:
     assert fit.get('as_of') and fit.get('basis')
     assert fit.get('total', 0) >= fit.get('matched', 0) >= 0
     assert fit.get('use_first_matches', 0) >= 0
+    assert isinstance(fit.get('primary_ingredients'), list)
+    assert fit.get('primary_total', 0) == len(fit.get('primary_ingredients', []))
+    assert fit.get('primary_matched', 0) <= fit.get('primary_total', 0)
+    assert fit.get('primary_present') is None or isinstance(fit.get('primary_present'), bool)
     assert fit.get('percent') is None or 0 <= fit['percent'] <= 100
     statuses=recipe.get('ingredient_inventory', [])
     assert isinstance(statuses, list)

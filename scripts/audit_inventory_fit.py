@@ -33,11 +33,17 @@ def main() -> int:
         lines = fit.public_ingredient_lines(recipe)
         expected_status = fit.status_for_lines(lines, inventory_items)
         requirements, basis = fit.requirements_for(recipe)
+        primary = fit.infer_primary_ingredients(recipe)
+        primary_flags = [fit.inventory_match(item, inventory_items) for item in primary]
         expected_fit = {
             "percent": None,
             "matched": 0,
             "total": 0,
             "use_first_matches": 0,
+            "primary_ingredients": primary,
+            "primary_matched": sum(primary_flags),
+            "primary_total": len(primary),
+            "primary_present": None if not primary else all(primary_flags),
             "as_of": recipe.get("inventory_fit", {}).get("as_of"),
             "basis": "not enough public ingredient data",
         }
