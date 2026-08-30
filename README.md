@@ -4,19 +4,21 @@ A public, component-based family recipe menu for building meals from the Ruths h
 
 ## Menu model
 
-The site uses dayparts—**Breakfast**, **Lunch**, and **Dinner**—with two restaurant-style browsing modes:
+The site is a dinner planner with two restaurant-style browsing modes:
 
 - **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
 - **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
 
-Every menu item can be dragged into a **seven-day dinner calendar**, or added through the day-only calendar dialog for touch/mobile use. The first visit proposes one dinner for each day; deleting a planned item automatically selects another dinner for that day. The plan stores only in the browser’s local storage; it is not published.
+Each day in the seven-day dinner calendar has three explicit slots—**Protein**, **Carb**, and **Vegetable**. The first visit proposes one distinct component for every slot, and deleting a planned component automatically selects another option for that slot. The plan stores only in the browser’s local storage; it is not published.
 
-The menu is sorted by current inventory fit within each section. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
+The menu is sorted by current use-first urgency, then inventory fit. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
 ## Data provenance
 
-- 69 recipe rows imported from the uploaded Notion export.
-- 62 of 66 public source links have concise in-site ingredient and step cards; four source links remain explicitly marked unavailable because the source is video/social-only or blocked.
+- 75 recipe rows are currently published: the existing Notion/registry catalog plus three source-verified additions selected for current inventory gaps.
+- 72 linked source rows have concise in-site ingredient and step cards; one source remains explicitly unavailable because it is video/social-only or blocked, and two private/household rows have no public source link.
+- The three added candidates—How to Cook Broccoli, Lebanese Rice, and Grilled Lemon Chicken—each display a 5.0 rating with at least 10 ratings, the canonical source URL, and a source photo.
+- 63 of 75 recipes have verified public source thumbnails; private, blocked, video-only, and otherwise unresolved sources remain image-less rather than receiving guessed images.
 - Duplicate exported rows were consolidated by canonical recipe URL, and conceptual variants such as Focaccia are grouped without deleting their distinct sources.
 - Household golden recipes from the health-profile registry were merged and missing golden entries were added.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.
@@ -28,6 +30,8 @@ The menu is sorted by current inventory fit within each section. Fit is determin
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000
+python3 scripts/add_trusted_candidates.py
+python3 scripts/refresh_recipe_photos.py
 python3 scripts/update_inventory_fit.py
 python3 scripts/audit_inventory_fit.py
 python3 scripts/validate.py

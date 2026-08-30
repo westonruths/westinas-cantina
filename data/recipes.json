@@ -1,8 +1,8 @@
 {
   "site_name": "Westina’s Cantina",
-  "updated": "2026-08-28",
+  "updated": "2026-08-29",
   "source": "Notion export + household golden-recipe registry",
-  "recipe_count": 72,
+  "recipe_count": 75,
   "recipes": [
     {
       "id": "blistered-shishito-peppers",
@@ -47,6 +47,7 @@
         "percent": 75,
         "matched": 3,
         "total": 4,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -135,6 +136,7 @@
         "percent": 50,
         "matched": 9,
         "total": 18,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -266,6 +268,7 @@
         "percent": 100,
         "matched": 11,
         "total": 11,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -363,6 +366,7 @@
         "percent": 86,
         "matched": 6,
         "total": 7,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -457,6 +461,7 @@
         "percent": 91,
         "matched": 10,
         "total": 11,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -559,6 +564,7 @@
         "percent": 86,
         "matched": 6,
         "total": 7,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -648,6 +654,7 @@
         "percent": 89,
         "matched": 8,
         "total": 9,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -737,6 +744,7 @@
         "percent": 88,
         "matched": 7,
         "total": 8,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -848,6 +856,7 @@
         "percent": 67,
         "matched": 16,
         "total": 24,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1005,6 +1014,7 @@
         "percent": 80,
         "matched": 8,
         "total": 10,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1102,6 +1112,7 @@
         "percent": 57,
         "matched": 4,
         "total": 7,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1198,6 +1209,7 @@
         "percent": 40,
         "matched": 4,
         "total": 10,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1301,6 +1313,7 @@
         "percent": 80,
         "matched": 8,
         "total": 10,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1436,6 +1449,7 @@
         "percent": 78,
         "matched": 25,
         "total": 32,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1627,6 +1641,7 @@
         "percent": 64,
         "matched": 7,
         "total": 11,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1730,6 +1745,7 @@
         "percent": 57,
         "matched": 4,
         "total": 7,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1831,9 +1847,10 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 61,
-        "matched": 11,
+        "percent": 56,
+        "matched": 10,
         "total": 18,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1880,7 +1897,7 @@
         },
         {
           "name": "1 1/4 cups chopped carrots",
-          "present": true
+          "present": false
         },
         {
           "name": "1 1/4 cups chopped yellow onion",
@@ -1976,9 +1993,10 @@
         "totalTime": "PT45M"
       },
       "inventory_fit": {
-        "percent": 67,
-        "matched": 8,
+        "percent": 58,
+        "matched": 7,
         "total": 12,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -1993,7 +2011,7 @@
         },
         {
           "name": "3 medium carrots (diced)",
-          "present": true
+          "present": false
         },
         {
           "name": "5 cloves garlic (minced)",
@@ -2092,6 +2110,7 @@
         "percent": 73,
         "matched": 8,
         "total": 11,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2200,6 +2219,7 @@
         "percent": 82,
         "matched": 9,
         "total": 11,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2304,6 +2324,7 @@
         "percent": 50,
         "matched": 6,
         "total": 12,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2393,6 +2414,7 @@
         "percent": 60,
         "matched": 3,
         "total": 5,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
       },
@@ -2460,6 +2482,7 @@
         "percent": 82,
         "matched": 9,
         "total": 11,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2573,6 +2596,7 @@
         "percent": 77,
         "matched": 10,
         "total": 13,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2688,9 +2712,10 @@
         "totalTime": "PT135M"
       },
       "inventory_fit": {
-        "percent": 70,
-        "matched": 7,
+        "percent": 60,
+        "matched": 6,
         "total": 10,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2705,7 +2730,7 @@
         },
         {
           "name": "2 medium carrots (, cut into chunks)",
-          "present": true
+          "present": false
         },
         {
           "name": "2 medium onions (, cut into chunks)",
@@ -2735,7 +2760,8 @@
           "name": "2 Tablespoons Better than bouillon chicken paste* (, or 6 chicken bouillon cubes )",
           "present": true
         }
-      ]
+      ],
+      "image_url": "https://tastesbetterfromscratch.com/wp-content/uploads/2019/04/Chicken-Stock-Web-6.jpg"
     },
     {
       "id": "salt-pepper-pork-chops",
@@ -2798,6 +2824,7 @@
         "percent": 82,
         "matched": 14,
         "total": 17,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -2930,6 +2957,7 @@
         "percent": 67,
         "matched": 6,
         "total": 9,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3039,6 +3067,7 @@
         "percent": 73,
         "matched": 11,
         "total": 15,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3159,6 +3188,7 @@
         "percent": 88,
         "matched": 7,
         "total": 8,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3264,6 +3294,7 @@
         "percent": 56,
         "matched": 10,
         "total": 18,
+        "use_first_matches": 4,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3408,9 +3439,10 @@
         "totalTime": "PT90M"
       },
       "inventory_fit": {
-        "percent": 59,
-        "matched": 10,
+        "percent": 53,
+        "matched": 9,
         "total": 17,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3457,7 +3489,7 @@
         },
         {
           "name": "4 carrots (cut into 1 inch pieces)",
-          "present": true
+          "present": false
         },
         {
           "name": "4 ribs celery (cut into 1 inch pieces)",
@@ -3550,6 +3582,7 @@
         "percent": 79,
         "matched": 11,
         "total": 14,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3669,6 +3702,7 @@
         "percent": 56,
         "matched": 5,
         "total": 9,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3769,9 +3803,10 @@
         "totalTime": "PT59M"
       },
       "inventory_fit": {
-        "percent": 54,
-        "matched": 7,
+        "percent": 46,
+        "matched": 6,
         "total": 13,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -3802,7 +3837,7 @@
         },
         {
           "name": "1 cup carrots (diced)",
-          "present": true
+          "present": false
         },
         {
           "name": "1 cup celery (chopped)",
@@ -3890,6 +3925,7 @@
         "percent": 57,
         "matched": 8,
         "total": 14,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4014,9 +4050,10 @@
       },
       "content_note": "Recovered from the canonical Food & Wine recipe page after the original importer received a 403 response.",
       "inventory_fit": {
-        "percent": 92,
-        "matched": 12,
+        "percent": 85,
+        "matched": 11,
         "total": 13,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4031,7 +4068,7 @@
         },
         {
           "name": "2 carrots, cut into ½-inch pieces",
-          "present": true
+          "present": false
         },
         {
           "name": "1 medium onion, chopped",
@@ -4142,6 +4179,7 @@
         "percent": 92,
         "matched": 12,
         "total": 13,
+        "use_first_matches": 4,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4261,6 +4299,7 @@
         "percent": 56,
         "matched": 10,
         "total": 18,
+        "use_first_matches": 4,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4412,6 +4451,7 @@
         "percent": 46,
         "matched": 11,
         "total": 24,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4541,6 +4581,7 @@
         "percent": null,
         "matched": 0,
         "total": 0,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
       },
@@ -4598,6 +4639,7 @@
         "percent": 70,
         "matched": 7,
         "total": 10,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4705,6 +4747,7 @@
         "percent": 93,
         "matched": 13,
         "total": 14,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4827,6 +4870,7 @@
         "percent": 76,
         "matched": 16,
         "total": 21,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -4943,6 +4987,7 @@
         "percent": null,
         "matched": 0,
         "total": 0,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "not enough public ingredient data"
       },
@@ -5005,6 +5050,7 @@
         "percent": 44,
         "matched": 4,
         "total": 9,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5094,6 +5140,7 @@
         "percent": 71,
         "matched": 5,
         "total": 7,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5183,6 +5230,7 @@
         "percent": 82,
         "matched": 9,
         "total": 11,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5294,6 +5342,7 @@
         "percent": 47,
         "matched": 8,
         "total": 17,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5436,6 +5485,7 @@
         "percent": 73,
         "matched": 11,
         "total": 15,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5565,16 +5615,17 @@
         "totalTime": "PT01H05M"
       },
       "inventory_fit": {
-        "percent": 56,
-        "matched": 10,
+        "percent": 50,
+        "matched": 9,
         "total": 18,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
         {
           "name": "2 large carrots, diced",
-          "present": true
+          "present": false
         },
         {
           "name": "2 celery ribs, chopped",
@@ -5714,6 +5765,7 @@
         "percent": 55,
         "matched": 11,
         "total": 20,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5858,6 +5910,7 @@
         "percent": 70,
         "matched": 7,
         "total": 10,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -5963,6 +6016,7 @@
         "percent": 46,
         "matched": 6,
         "total": 13,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6091,6 +6145,7 @@
         "percent": 78,
         "matched": 14,
         "total": 18,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6225,6 +6280,7 @@
         "percent": 50,
         "matched": 6,
         "total": 12,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6337,6 +6393,7 @@
         "percent": 88,
         "matched": 15,
         "total": 17,
+        "use_first_matches": 7,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6474,6 +6531,7 @@
         "percent": 54,
         "matched": 7,
         "total": 13,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6602,6 +6660,7 @@
         "percent": 79,
         "matched": 11,
         "total": 14,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6720,6 +6779,7 @@
         "percent": 77,
         "matched": 10,
         "total": 13,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -6811,6 +6871,7 @@
         "percent": 0,
         "matched": 0,
         "total": 1,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "catalog key ingredients"
       },
@@ -6897,6 +6958,7 @@
         "percent": 61,
         "matched": 19,
         "total": 31,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7083,6 +7145,7 @@
         "percent": 70,
         "matched": 7,
         "total": 10,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7185,6 +7248,7 @@
         "percent": 64,
         "matched": 7,
         "total": 11,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7296,6 +7360,7 @@
         "percent": 50,
         "matched": 7,
         "total": 14,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7420,6 +7485,7 @@
         "percent": 50,
         "matched": 4,
         "total": 8,
+        "use_first_matches": 0,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7540,6 +7606,7 @@
         "percent": 63,
         "matched": 17,
         "total": 27,
+        "use_first_matches": 5,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7725,6 +7792,7 @@
         "percent": 56,
         "matched": 10,
         "total": 18,
+        "use_first_matches": 1,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7881,9 +7949,10 @@
       },
       "content_note": "Replaced heading-only extraction with the complete linked recipe-card instructions.",
       "inventory_fit": {
-        "percent": 60,
-        "matched": 15,
+        "percent": 56,
+        "matched": 14,
         "total": 25,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -7958,7 +8027,7 @@
         },
         {
           "name": "2 carrots (, julienned)",
-          "present": true
+          "present": false
         },
         {
           "name": "2 cucumbers (, julienned (optional: remove seeds))",
@@ -8043,6 +8112,7 @@
         "percent": 86,
         "matched": 12,
         "total": 14,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
         "basis": "public recipe ingredient lines"
       },
@@ -8158,42 +8228,53 @@
         "totalTime": "PT30M"
       },
       "inventory_fit": {
-        "percent": null,
-        "matched": 0,
+        "percent": 70,
+        "matched": 7,
         "total": 10,
+        "use_first_matches": 3,
         "as_of": "2026-08-29",
-        "basis": "not yet audited"
+        "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
         {
-          "name": "4 (4–6 ounce) mahi mahi fillets"
+          "name": "4 (4–6 ounce) mahi mahi fillets",
+          "present": true
         },
         {
-          "name": "Salt, to season"
+          "name": "Salt, to season",
+          "present": true
         },
         {
-          "name": "Lemon pepper, to season"
+          "name": "Lemon pepper, to season",
+          "present": true
         },
         {
-          "name": "1 lemon, thinly sliced"
+          "name": "1 lemon, thinly sliced",
+          "present": true
         },
         {
-          "name": "1 lemon, juiced (about 4 tablespoons juice)"
+          "name": "1 lemon, juiced (about 4 tablespoons juice)",
+          "present": true
         },
         {
-          "name": "5 cloves garlic, minced"
+          "name": "5 cloves garlic, minced",
+          "present": true
         },
         {
-          "name": "1 tablespoon olive oil"
+          "name": "1 tablespoon olive oil",
+          "present": false
         },
         {
-          "name": "4 tablespoons salted butter"
+          "name": "4 tablespoons salted butter",
+          "present": false
         },
         {
-          "name": "2 tablespoons capers, drained (optional)"
+          "name": "2 tablespoons capers, drained (optional)",
+          "present": false
         },
         {
-          "name": "2 tablespoons fresh parsley, minced"
+          "name": "2 tablespoons fresh parsley, minced",
+          "present": true
         }
       ]
     },
@@ -8246,44 +8327,56 @@
         "totalTime": "PT20M"
       },
       "inventory_fit": {
-        "percent": null,
-        "matched": 0,
+        "percent": 60,
+        "matched": 6,
         "total": 10,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
-        "basis": "not yet audited"
+        "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
         {
-          "name": "1 cup whole-fat Greek yogurt"
+          "name": "1 cup whole-fat Greek yogurt",
+          "present": false
         },
         {
-          "name": "1 tablespoon extra-virgin olive oil"
+          "name": "1 tablespoon extra-virgin olive oil",
+          "present": false
         },
         {
-          "name": "½ lemon, juiced"
+          "name": "½ lemon, juiced",
+          "present": true
         },
         {
-          "name": "½ cup finely chopped cucumber"
+          "name": "½ cup finely chopped cucumber",
+          "present": true
         },
         {
-          "name": "2 cloves garlic, finely chopped"
+          "name": "2 cloves garlic, finely chopped",
+          "present": true
         },
         {
-          "name": "1 tablespoon chopped fresh dill"
+          "name": "1 tablespoon chopped fresh dill",
+          "present": false
         },
         {
-          "name": "Kosher salt"
+          "name": "Kosher salt",
+          "present": true
         },
         {
-          "name": "Freshly ground black pepper"
+          "name": "Freshly ground black pepper",
+          "present": true
         },
         {
-          "name": "Pinch of crushed red pepper flakes"
+          "name": "Pinch of crushed red pepper flakes",
+          "present": true
         },
         {
-          "name": "Pita and vegetables, for serving (optional)"
+          "name": "Pita and vegetables, for serving (optional)",
+          "present": false
         }
-      ]
+      ],
+      "image_url": "https://hips.hearstapps.com/hmg-prod/images/tzatziki-index-6464f8fadaaff.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
     },
     {
       "id": "epic-baba-ganoush",
@@ -8339,62 +8432,345 @@
         "totalTime": "PT55M"
       },
       "inventory_fit": {
-        "percent": null,
-        "matched": 0,
+        "percent": 40,
+        "matched": 4,
         "total": 10,
+        "use_first_matches": 2,
         "as_of": "2026-08-29",
-        "basis": "not yet audited"
+        "basis": "public recipe ingredient lines"
       },
       "ingredient_inventory": [
         {
-          "name": "2 pounds Italian eggplants (about 2 small-to-medium eggplants)"
+          "name": "2 pounds Italian eggplants (about 2 small-to-medium eggplants)",
+          "present": false
         },
         {
-          "name": "2 medium cloves garlic, pressed or minced"
+          "name": "2 medium cloves garlic, pressed or minced",
+          "present": true
         },
         {
-          "name": "2 tablespoons lemon juice, plus more if necessary"
+          "name": "2 tablespoons lemon juice, plus more if necessary",
+          "present": true
         },
         {
-          "name": "¼ cup tahini"
+          "name": "¼ cup tahini",
+          "present": false
         },
         {
-          "name": "⅓ cup extra-virgin olive oil, plus more for brushing and garnish"
+          "name": "⅓ cup extra-virgin olive oil, plus more for brushing and garnish",
+          "present": false
         },
         {
-          "name": "2 tablespoons chopped fresh flat-leaf parsley, plus extra for garnish"
+          "name": "2 tablespoons chopped fresh flat-leaf parsley, plus extra for garnish",
+          "present": true
         },
         {
-          "name": "¾ teaspoon salt, to taste"
+          "name": "¾ teaspoon salt, to taste",
+          "present": true
         },
         {
-          "name": "¼ teaspoon ground cumin"
+          "name": "¼ teaspoon ground cumin",
+          "present": false
         },
         {
-          "name": "Pinch of smoked paprika, for garnish"
+          "name": "Pinch of smoked paprika, for garnish",
+          "present": false
         },
         {
-          "name": "Warmed or toasted pita wedges and raw vegetables, for serving"
+          "name": "Warmed or toasted pita wedges and raw vegetables, for serving",
+          "present": false
         }
       ]
+    },
+    {
+      "id": "feel-good-foodie-how-to-cook-broccoli",
+      "title": "How to Cook Broccoli",
+      "cuisine": "American",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Broccoli"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/how-to-cook-broccoli/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 768,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2021/04/how-to-cook-broccoli-4.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, methods, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "1 head broccoli (cut into florets)",
+        "8 cups water",
+        "2 tablespoons salt",
+        "3 tablespoons olive oil",
+        "¼ teaspoon salt",
+        "¼ teaspoon black pepper"
+      ],
+      "recipe_steps": [
+        "Bring a pot of water and salt to a boil.",
+        "Carefully place the broccoli in the boiling water and simmer for 2–3 minutes or until tender.",
+        "Once tender, carefully remove or strain the broccoli.",
+        "Preheat oven to 425°F and line a baking sheet with parchment paper, if desired.",
+        "Toss broccoli in the olive oil, salt, and black pepper.",
+        "Place the broccoli on a roasting pan and roast until tender and slightly colored, about 7–10 minutes.",
+        "Serve immediately."
+      ],
+      "recipe_yield": "2 servings",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT10M",
+        "totalTime": "PT15M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1 head broccoli (cut into florets)",
+          "present": true
+        },
+        {
+          "name": "8 cups water",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons salt",
+          "present": true
+        },
+        {
+          "name": "3 tablespoons olive oil",
+          "present": false
+        },
+        {
+          "name": "¼ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "¼ teaspoon black pepper",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 83,
+        "matched": 5,
+        "total": 6,
+        "use_first_matches": 2,
+        "as_of": "2026-08-29",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-lebanese-rice",
+      "title": "Lebanese Rice",
+      "cuisine": "Lebanese",
+      "component_types": [
+        "carb"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Rice",
+        "Vermicelli",
+        "Olive oil"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/lebanese-rice/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 964,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2018/12/Lebanese-Rice-8-1.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "2 cups long grain white rice",
+        "½ cup dried rice vermicelli noodles",
+        "2 tablespoons extra virgin olive oil",
+        "½ teaspoon salt",
+        "dash cinnamon (optional)",
+        "parsley (optional, for garnish)"
+      ],
+      "recipe_steps": [
+        "Rinse the rice with cold water until the water runs clear. Drain well and set aside.",
+        "In a medium non-stick pot, heat the olive oil on medium heat. Add the vermicelli and cook, stirring frequently, until deep golden brown.",
+        "Transfer the rice over the cooked vermicelli and stir to combine. Season with salt and cinnamon, if desired.",
+        "Add 4 cups water and bring the mixture to a boil. Reduce the heat to low, cover, and cook for 15 minutes.",
+        "Remove from the heat and allow the rice to steam for 5 minutes. Uncover and fluff with a fork.",
+        "Serve warm with fresh parsley and toasted nuts, if desired."
+      ],
+      "recipe_yield": "8 servings",
+      "recipe_timings": {
+        "cookTime": "PT15M",
+        "totalTime": "PT15M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 cups long grain white rice",
+          "present": true
+        },
+        {
+          "name": "½ cup dried rice vermicelli noodles",
+          "present": true
+        },
+        {
+          "name": "2 tablespoons extra virgin olive oil",
+          "present": false
+        },
+        {
+          "name": "½ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "dash cinnamon (optional)",
+          "present": false
+        },
+        {
+          "name": "parsley (optional, for garnish)",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 67,
+        "matched": 4,
+        "total": 6,
+        "use_first_matches": 1,
+        "as_of": "2026-08-29",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "feel-good-foodie-grilled-lemon-chicken",
+      "title": "Grilled Lemon Chicken",
+      "cuisine": "Mediterranean",
+      "component_types": [
+        "protein"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Chicken",
+        "Garlic",
+        "Lemon",
+        "Parsley"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://feelgoodfoodie.net/recipe/grilled-lemon-chicken/",
+      "source_publisher": "Feel Good Foodie",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 1064,
+        "observed": "2026-08-29"
+      },
+      "private_attachment": false,
+      "notes": "Added from canonical page after verifying the displayed rating and recipe card.",
+      "image_url": "https://feelgoodfoodie.net/wp-content/uploads/2019/07/Grilled-Lemon-Chicken-08.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "4 (6-ounce) boneless skinless chicken breasts",
+        "¼ cup olive oil",
+        "1 large lemon (zest and juice)",
+        "4 garlic cloves (minced)",
+        "1 tablespoon oregano",
+        "¾ teaspoon salt",
+        "½ teaspoon black pepper",
+        "Chopped parsley (for serving)",
+        "Lemon wedges (for serving)"
+      ],
+      "recipe_steps": [
+        "Pat chicken dry and pound any thick parts so the pieces are even. Combine olive oil, lemon juice and zest, garlic, oregano, salt, and pepper in a bowl. Add chicken and toss well. Cover and marinate for 30 minutes to 2 hours.",
+        "Preheat the grill or grill pan to medium-high heat. Grill the chicken for 5–7 minutes per side, or until cooked through.",
+        "Remove chicken from the grill. Sprinkle with parsley and serve with lemon wedges, if desired."
+      ],
+      "recipe_yield": "4 servings",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT15M",
+        "totalTime": "PT55M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 (6-ounce) boneless skinless chicken breasts",
+          "present": true
+        },
+        {
+          "name": "¼ cup olive oil",
+          "present": false
+        },
+        {
+          "name": "1 large lemon (zest and juice)",
+          "present": true
+        },
+        {
+          "name": "4 garlic cloves (minced)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon oregano",
+          "present": false
+        },
+        {
+          "name": "¾ teaspoon salt",
+          "present": true
+        },
+        {
+          "name": "½ teaspoon black pepper",
+          "present": true
+        },
+        {
+          "name": "Chopped parsley (for serving)",
+          "present": true
+        },
+        {
+          "name": "Lemon wedges (for serving)",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 78,
+        "matched": 7,
+        "total": 9,
+        "use_first_matches": 3,
+        "as_of": "2026-08-29",
+        "basis": "public recipe ingredient lines"
+      }
     }
   ],
   "visuals": {
     "thumbnail_strategy": "Open Graph thumbnails from public source pages; cards lazy-load them.",
-    "recipes_with_thumbnails": 56,
+    "recipes_with_thumbnails": 63,
     "recipes_in_variant_families": 6
   },
   "content_import": {
     "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
-    "linked_targets": 69,
-    "extracted": 68,
+    "linked_targets": 72,
+    "extracted": 71,
     "partial": 0,
     "unavailable": 1,
     "updated": "2026-08-29"
   },
   "inventory_fit": {
     "updated": "2026-08-29",
-    "method": "Deterministic ingredient-line presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+    "method": "Deterministic ingredient-line presence coverage plus count of matched current use-first ingredients; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
     "private_source": "local household inventory; not published"
   }
 }

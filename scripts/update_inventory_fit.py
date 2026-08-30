@@ -290,6 +290,7 @@ def main():
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     inventory = json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
     inventory_items_list = normalized_inventory_items(inventory)
+    use_first_items = normalized_inventory_items(inventory.get("inventory", {}).get("use_first", []))
     as_of = dt.date.today().isoformat()
     for recipe in data["recipes"]:
         ingredient_lines = public_ingredient_lines(recipe)
@@ -300,21 +301,24 @@ def main():
                 "percent": None,
                 "matched": 0,
                 "total": 0,
+                "use_first_matches": 0,
                 "as_of": as_of,
                 "basis": "not enough public ingredient data",
             }
             continue
         matched = sum(inventory_match(item, inventory_items_list) for item in requirements)
+        use_first_matches = sum(inventory_match(item, use_first_items) for item in requirements)
         recipe["inventory_fit"] = {
             "percent": round(100 * matched / len(requirements)),
             "matched": matched,
             "total": len(requirements),
+            "use_first_matches": use_first_matches,
             "as_of": as_of,
             "basis": basis,
         }
     data["inventory_fit"] = {
         "updated": as_of,
-        "method": "Deterministic ingredient-line presence coverage; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
+        "method": "Deterministic ingredient-line presence coverage plus count of matched current use-first ingredients; practical equivalents accepted; quantities, freshness, and exact recipe identity are not validated.",
         "private_source": "local household inventory; not published",
     }
     text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"

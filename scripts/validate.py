@@ -12,6 +12,7 @@ for recipe in data['recipes']:
     fit=recipe.get('inventory_fit', {})
     assert fit.get('as_of') and fit.get('basis')
     assert fit.get('total', 0) >= fit.get('matched', 0) >= 0
+    assert fit.get('use_first_matches', 0) >= 0
     assert fit.get('percent') is None or 0 <= fit['percent'] <= 100
     statuses=recipe.get('ingredient_inventory', [])
     assert isinstance(statuses, list)
@@ -21,6 +22,11 @@ for recipe in data['recipes']:
     if fit.get('basis') == 'public recipe ingredient lines':
         assert fit['total'] == len(statuses), recipe['title']
         assert fit['matched'] == sum(item['present'] for item in statuses), recipe['title']
+    rating=recipe.get('source_rating')
+    if rating:
+        assert float(rating['rating']) >= 5.0
+        assert int(rating['rating_count']) >= 10
+        assert recipe.get('image_url')
 assert all(r['title'] and r['meal_slots'] and r['component_types'] for r in data['recipes'])
 assert sum(bool(r['golden']) for r in data['recipes']) >= 7
 ci=data.get('content_import',{})

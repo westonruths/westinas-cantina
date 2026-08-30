@@ -29,6 +29,7 @@ button, select { cursor: pointer; }
 .section-kicker { color: var(--sage-dark); font-size: .66rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .planner-intro h2 { margin: 6px 0 0; font: 700 2.25rem / 1 'Playfair Display', Georgia, serif; }
 .planner-lede { max-width: 540px; margin: 9px 0 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.planner-structure { margin: 7px 0 0; color: var(--sage-dark); font-size: .72rem; letter-spacing: .02em; }
 .planner-actions { display: flex; gap: 7px; flex: 0 0 auto; }
 .primary-button, .clear { border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; color: var(--muted); background: var(--paper); font-size: .76rem; font-weight: 700; }
 .primary-button { border-color: var(--sage-dark); color: #fff; background: var(--sage-dark); }
@@ -52,6 +53,7 @@ button, select { cursor: pointer; }
 .fill-slot { justify-self: start; padding: 4px 6px; border: 1px solid var(--line); border-radius: 5px; color: var(--sage-dark); background: var(--paper); font-size: .62rem; font-weight: 700; }
 .planned-item { display: flex; align-items: center; gap: 5px; min-width: 0; padding: 5px 5px 5px 7px; border-radius: 6px; background: var(--paper); box-shadow: 0 2px 7px rgba(44, 59, 47, .06); cursor: grab; }
 .planned-image { width: 34px; height: 34px; flex: 0 0 34px; border-radius: 5px; object-fit: cover; background: #e8e2d7; }
+.planned-thumb { width: 28px; height: 28px; flex: 0 0 28px; object-fit: cover; border-radius: 4px; }
 .planned-title { min-width: 0; flex: 1; color: var(--ink-soft); font-size: .66rem; line-height: 1.2; }
 .planned-item > .fit-widget { flex: 0 0 auto; }
 .planned-item > button { width: 23px; height: 23px; flex: 0 0 23px; padding: 0; border: 0; border-radius: 50%; color: var(--muted); background: transparent; font-size: 1rem; line-height: 1; }
@@ -99,8 +101,9 @@ button, select { cursor: pointer; }
 .menu-entry:last-child { border-bottom: 0; }
 .menu-entry:hover { background: rgba(255, 253, 248, .64); }
 .menu-entry.dragging { opacity: .5; }
-.menu-entry-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
-.menu-entry-copy { display: flex; align-items: flex-start; gap: 8px; min-width: 0; }
+.menu-entry-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.menu-thumb { width: 58px; height: 58px; flex: 0 0 58px; object-fit: cover; border-radius: 7px; background: #e8e2d7; }
+.menu-entry-copy { display: flex; align-items: flex-start; gap: 8px; min-width: 0; flex: 1; }
 .menu-entry-image { width: 72px; height: 72px; flex: 0 0 72px; border-radius: 8px; object-fit: cover; background: #e8e2d7; }
 .drag-handle { padding-top: 2px; color: #b6ad9d; font-size: .85rem; letter-spacing: -3px; user-select: none; cursor: grab; }
 .menu-entry h3 { margin: 2px 0 4px; font: 700 1rem / 1.15 'Playfair Display', Georgia, serif; text-wrap: pretty; }
@@ -166,6 +169,13 @@ button, select { cursor: pointer; }
   .menu-entry-actions .fit-widget .fit-ring::before { inset: 4px; }
   .footer { align-items: center; flex-direction: column; text-align: center; }
 }
+.add-dialog { width: min(360px, calc(100vw - 32px)); padding: 20px; border: 1px solid var(--line-dark); border-radius: 12px; color: var(--ink); background: var(--paper); box-shadow: 0 20px 70px rgba(44, 59, 47, .2); }
+.add-dialog::backdrop { background: rgba(36, 50, 43, .35); }
+.add-dialog h2 { margin: 0 0 5px; font: 700 1.45rem / 1 'Playfair Display', Georgia, serif; }
+.add-dialog p { margin: 0 0 16px; color: var(--muted); font-size: .78rem; }
+.add-dialog label { display: grid; gap: 5px; margin-top: 11px; color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.add-dialog select { padding: 9px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: #fff; font-size: .8rem; }
+.dialog-actions { display: flex; justify-content: flex-end; gap: 7px; margin-top: 19px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }

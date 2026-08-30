@@ -25,6 +25,7 @@ def main() -> int:
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     inventory = json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
     inventory_items = fit.normalized_inventory_items(inventory)
+    use_first_items = fit.normalized_inventory_items(inventory.get("inventory", {}).get("use_first", []))
     mismatches = []
     positive = 0
     status_rows = 0
@@ -36,15 +37,18 @@ def main() -> int:
             "percent": None,
             "matched": 0,
             "total": 0,
+            "use_first_matches": 0,
             "as_of": recipe.get("inventory_fit", {}).get("as_of"),
             "basis": "not enough public ingredient data",
         }
         if requirements:
             matched = sum(fit.inventory_match(item, inventory_items) for item in requirements)
+            use_first_matches = sum(fit.inventory_match(item, use_first_items) for item in requirements)
             expected_fit.update({
                 "percent": round(100 * matched / len(requirements)),
                 "matched": matched,
                 "total": len(requirements),
+                "use_first_matches": use_first_matches,
                 "basis": basis,
             })
         actual_status = recipe.get("ingredient_inventory", [])
