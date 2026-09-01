@@ -1,8 +1,8 @@
 {
   "site_name": "Westina’s Cantina",
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "source": "Notion export + household golden-recipe registry",
-  "recipe_count": 79,
+  "recipe_count": 80,
   "recipes": [
     {
       "id": "blistered-shishito-peppers",
@@ -9708,20 +9708,116 @@
         "as_of": "2026-08-30",
         "basis": "public recipe ingredient lines"
       }
+    },
+    {
+      "id": "culinary-hill-basil-walnut-pesto",
+      "title": "Basil Walnut Pesto",
+      "cuisine": "Italian",
+      "component_types": [
+        "sauce"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Basil",
+        "Garlic",
+        "Olive oil",
+        "Parmesan cheese",
+        "Parsley",
+        "Walnuts"
+      ],
+      "tried": false,
+      "golden": false,
+      "source_url": "https://www.culinaryhill.com/basil-walnut-pesto/",
+      "source_publisher": "Culinary Hill",
+      "source_entries": 0,
+      "source_rating": {
+        "rating": 5.0,
+        "rating_count": 150,
+        "observed": "2026-08-31"
+      },
+      "private_attachment": false,
+      "notes": "Added from the canonical Culinary Hill recipe page at Weston’s request.",
+      "image_url": "https://www.culinaryhill.com/wp-content/uploads/2021/04/Basil-Walnut-Pesto-Culinary-Hill-1200x800-1.jpg",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, yield/timings, rating, and image extracted from the canonical recipe page JSON-LD.",
+      "recipe_ingredients": [
+        "2 cups fresh basil leaves (packed)",
+        "1 cup fresh parsley (packed)",
+        "1/4 cup freshly grated Parmesan cheese (about 1 ounce)",
+        "1/4 cup walnuts (about 1 ounce)",
+        "3 cloves garlic",
+        "1/2 cup olive oil",
+        "Salt and freshly ground black pepper"
+      ],
+      "recipe_steps": [
+        "In a food processor or blender, add basil, parsley, Parmesan cheese, walnuts, and garlic. Pulse until coarsely chopped, about 10 pulses.",
+        "With the motor running, slowly drizzle in the olive oil and process until smooth. Season to taste with salt and pepper."
+      ],
+      "recipe_yield": "8 servings (2 tablespoons each)",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT5M",
+        "totalTime": "PT10M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "2 cups fresh basil leaves (packed)",
+          "present": true
+        },
+        {
+          "name": "1 cup fresh parsley (packed)",
+          "present": true
+        },
+        {
+          "name": "1/4 cup freshly grated Parmesan cheese (about 1 ounce)",
+          "present": true
+        },
+        {
+          "name": "1/4 cup walnuts (about 1 ounce)",
+          "present": false
+        },
+        {
+          "name": "3 cloves garlic",
+          "present": true
+        },
+        {
+          "name": "1/2 cup olive oil",
+          "present": false
+        },
+        {
+          "name": "Salt and freshly ground black pepper",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 71,
+        "matched": 5,
+        "total": 7,
+        "use_first_matches": 2,
+        "use_first_score": 34,
+        "primary_ingredients": [],
+        "primary_matched": 0,
+        "primary_total": 0,
+        "primary_present": null,
+        "as_of": "2026-08-31",
+        "basis": "public recipe ingredient lines"
+      }
     }
   ],
   "visuals": {
     "thumbnail_strategy": "Open Graph thumbnails from public source pages; cards lazy-load them.",
-    "recipes_with_thumbnails": 67,
+    "recipes_with_thumbnails": 68,
     "recipes_in_variant_families": 6
   },
   "content_import": {
     "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
-    "linked_targets": 76,
-    "extracted": 75,
+    "linked_targets": 77,
+    "extracted": 76,
     "partial": 0,
     "unavailable": 1,
-    "updated": "2026-08-30"
+    "updated": "2026-08-31"
   },
   "inventory_fit": {
     "updated": "2026-08-30",
