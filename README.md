@@ -16,12 +16,13 @@ The menu is sorted by current use-first urgency, then inventory fit. Recipes who
 
 ## Data provenance
 
-- 84 recipe rows are currently published: the existing Notion/registry catalog, eight source-verified additions selected for current inventory gaps or explicitly requested by the household, and four concise household-reference basics for weekday convenience.
-- 78 linked source rows have concise in-site ingredient and step cards; one source remains explicitly unavailable because it is video/social-only or blocked, and five private/household rows have no public source link.
+- 86 recipe rows are currently published: the existing Notion/registry catalog, eight source-verified additions selected for current inventory gaps or explicitly requested by the household, four concise household-reference basics for weekday convenience, and two explicitly successful household-cooked keepers.
+- 78 linked source rows have concise in-site ingredient and step cards; one source remains explicitly unavailable because it is video/social-only or blocked, and eight private/household rows have no public source link.
 - The eight added candidates—How to Cook Broccoli, Lebanese Rice, Grilled Lemon Chicken, Creamy Cucumber Salad, Shirazi Salad, Tomato Cucumber Avocado Salad, Classic Greek Salad, and Basil Walnut Pesto—each display the canonical source URL and a source photo; the first seven display a 5.0 rating with at least 10 ratings, and Basil Walnut Pesto displays 5.0 from 150 ratings.
-- 68 of 84 recipes have verified public source thumbnails; private, blocked, video-only, and otherwise unresolved sources remain image-less rather than receiving guessed images.
+- 68 of 86 recipes have verified public source thumbnails; private, blocked, video-only, and otherwise unresolved sources remain image-less rather than receiving guessed images.
 - Duplicate exported rows were consolidated by canonical recipe URL, and conceptual variants such as Focaccia are grouped without deleting their distinct sources.
-- Four Golden convenience additions are intentionally short and flexible: Rice Cooker Rice, Air Fryer Broccoli, Chicken Thighs (Oven or Air Fryer), and Caprese Salad. Rice and chicken remain household references; Air Fryer Broccoli is linked to the verified Julie’s Eats & Treats recipe page and selected for its five simple ingredients and 7–9 minute air-fryer method. Caprese requires fresh tomatoes and is inventory-gated when those are unavailable.
+- Six Golden household entries are intentionally practical: Rice Cooker Rice, Air Fryer Broccoli, Chicken Thighs (Oven or Air Fryer), Caprese Salad, Chicken Sausage Brami Fusilli with Kale, Broccoli + Green Garlic Scape Pesto, and Oven Lemon-Garlic Mahi Mahi with Pearl Couscous and Spinach. The two new family-cooked keepers are recorded in the private blessed registry and offline recipe database with their positive outcome notes.
+- The tomato-basil Brami pasta that Kristina rated only “so-so” is intentionally not Golden. Proposed sheet-pan recipes without a recorded cook/result remain candidates rather than being promoted automatically.
 - Private inline household instructions and the attached private pasta PDF are not published; those entries appear without a public source link.
 - Recipe stories and extra editorial copy are not imported; the extraction script stores ingredients, yield/timing metadata, and cooking steps only.
 - Every recipe carries deterministic inventory-fit metadata generated locally from the private household inventory. The public data includes the percentage, matched-count, date, and a present/not-present flag for each public ingredient line; raw inventory names, quantities, and missing-item lists are not published.
@@ -33,6 +34,7 @@ python3 -m http.server 8000
 # open http://localhost:8000
 python3 scripts/add_trusted_candidates.py
 python3 scripts/add_household_basics.py
+python3 scripts/promote_family_keepers.py
 python3 scripts/refresh_recipe_photos.py
 python3 scripts/update_inventory_fit.py
 python3 scripts/audit_inventory_fit.py

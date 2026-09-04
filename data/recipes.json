@@ -2,7 +2,7 @@
   "site_name": "Westina’s Cantina",
   "updated": "2026-09-03",
   "source": "Notion export + household golden-recipe registry",
-  "recipe_count": 84,
+  "recipe_count": 86,
   "recipes": [
     {
       "id": "blistered-shishito-peppers",
@@ -10018,6 +10018,253 @@
         "use_first_score": 10,
         "primary_ingredients": [
           "broccoli"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-09-03",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "household-oven-lemon-garlic-mahi-mahi-green-garlic-spinach",
+      "title": "Oven Lemon-Garlic Mahi Mahi with Pearl Couscous and Spinach",
+      "cuisine": "Mediterranean household recipe",
+      "component_types": [
+        "carb",
+        "protein",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Mahi mahi",
+        "Pearl couscous",
+        "Spinach",
+        "Green garlic",
+        "Lemon",
+        "Olive oil"
+      ],
+      "tried": true,
+      "golden": true,
+      "source_url": null,
+      "source_publisher": "Ruths household cooking record",
+      "source_entries": 0,
+      "private_attachment": false,
+      "golden_note": "Confirmed keeper: Kristina reported the mahi-mahi with green garlic and spinach was delicious.",
+      "notes": "Household-cooked recipe. The successful version used oven-baked mahi, pearl couscous, sautéed spinach, and green garlic; scallions are only a disclosed fallback.",
+      "content_status": "household_reference",
+      "content_note": "Reproduced from the successful sub-40-minute family cooking card.",
+      "recipe_ingredients": [
+        "1–1 1/2 lb mahi mahi",
+        "1 1/2 cups pearl couscous",
+        "6–8 cups spinach",
+        "1–2 stalks green garlic, thinly sliced; reserve tender green tops for the spinach",
+        "1–2 garlic cloves, minced or grated, optional if the green garlic is strong",
+        "1 lemon",
+        "1 tablespoon olive oil for the fish, plus more for couscous and spinach",
+        "2 1/4 cups water or chicken stock",
+        "Salt and black pepper",
+        "Optional: paprika and oregano or thyme"
+      ],
+      "recipe_steps": [
+        "Heat the oven to 425°F and line a sheet pan. Start the pearl couscous with 2 1/4 cups water or stock and a pinch of salt; simmer covered for 10–12 minutes, then rest covered.",
+        "Pat the mahi dry. Mix lemon zest, the juice of 1/2 lemon, 1 tablespoon olive oil, the garlic or green garlic, pepper, and a small pinch of salt; rub over the fish.",
+        "Put the fish on the sheet pan. Scatter the firmer green-garlic pieces around it with a small drizzle of oil. Bake for 8–12 minutes, depending on thickness, until it flakes and reaches 145°F if temperature-checked.",
+        "While the fish bakes, sauté the spinach with olive oil and the tender green-garlic tops. Add a splash of water and cook for 2–4 minutes until wilted. Finish with the remaining lemon juice.",
+        "Fluff the couscous. Serve couscous, spinach, and mahi together, spooning the lemony pan juices and roasted green garlic over the fish."
+      ],
+      "recipe_yield": "2 adults + Aria",
+      "recipe_timings": {
+        "prepTime": "PT10M",
+        "cookTime": "PT12M",
+        "totalTime": "PT35M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1–1 1/2 lb mahi mahi",
+          "present": true
+        },
+        {
+          "name": "1 1/2 cups pearl couscous",
+          "present": true
+        },
+        {
+          "name": "6–8 cups spinach",
+          "present": false
+        },
+        {
+          "name": "1–2 stalks green garlic, thinly sliced; reserve tender green tops for the spinach",
+          "present": false
+        },
+        {
+          "name": "1–2 garlic cloves, minced or grated, optional if the green garlic is strong",
+          "present": true
+        },
+        {
+          "name": "1 lemon",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon olive oil for the fish, plus more for couscous and spinach",
+          "present": false
+        },
+        {
+          "name": "2 1/4 cups water or chicken stock",
+          "present": true
+        },
+        {
+          "name": "Salt and black pepper",
+          "present": true
+        },
+        {
+          "name": "Optional: paprika and oregano or thyme",
+          "present": false
+        }
+      ],
+      "inventory_fit": {
+        "percent": 60,
+        "matched": 6,
+        "total": 10,
+        "use_first_matches": 1,
+        "use_first_score": 7,
+        "primary_ingredients": [
+          "spinach"
+        ],
+        "primary_matched": 0,
+        "primary_total": 1,
+        "primary_present": false,
+        "as_of": "2026-09-03",
+        "basis": "public recipe ingredient lines"
+      }
+    },
+    {
+      "id": "chicken-sausage-brami-pasta-green-garlic-scape-pesto-broccoli",
+      "title": "Chicken Sausage Brami Fusilli with Kale, Broccoli + Green Garlic Scape Pesto",
+      "cuisine": "Italian-inspired household recipe",
+      "component_types": [
+        "carb",
+        "protein",
+        "sauce",
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Brami fusilli",
+        "Breakfast chicken sausage",
+        "Garlic scapes",
+        "Basil",
+        "Broccoli",
+        "Kale",
+        "Parmesan",
+        "Lemon"
+      ],
+      "tried": true,
+      "golden": true,
+      "source_url": null,
+      "source_publisher": "Ruths household cooking record",
+      "source_entries": 0,
+      "private_attachment": false,
+      "golden_note": "Confirmed keeper: Kristina called the broccoli version a slam dunk and delicious.",
+      "notes": "Household-cooked recipe. Canonical successful version is recorded in the offline recipe database; this is a complete dinner card, not a generic pasta template.",
+      "content_status": "household_reference",
+      "content_note": "Reproduced from the successful cooked version and its recorded next-time finishing note.",
+      "recipe_ingredients": [
+        "1/2 box Brami fusilli pasta",
+        "1/2 package breakfast chicken sausage (10 links), cut into half-coins",
+        "1/2 bag pre-chopped kale",
+        "2 heads broccoli, cut into small florets",
+        "2 green garlic white bulbs, thinly sliced, if available",
+        "6 garlic scapes, trimmed and chopped",
+        "Basil as the pesto herb",
+        "1/4 cup nuts",
+        "1/4–1/3 cup grated Parmesan for the pesto, plus more to finish",
+        "Zest of 1/2 lemon plus 1–2 teaspoons lemon juice for the pesto, plus more to finish",
+        "1/4–1/3 cup olive oil for the pesto, plus 1–2 tablespoons for cooking",
+        "1/2 cup reserved pasta water",
+        "Salt, black pepper, and optional adult chili flakes"
+      ],
+      "recipe_steps": [
+        "Make pesto: blend the chopped garlic scapes, basil, nuts, Parmesan, lemon zest, lemon juice, olive oil, and a pinch of salt. If the scapes taste sharply raw, blanch them for 30–60 seconds first.",
+        "Boil salted water. Cook the Brami fusilli until just tender; reserve 1/2 cup pasta water, then drain.",
+        "While the pasta cooks, heat olive oil in a large skillet. Brown the 10 chicken-sausage half-coins for 3–5 minutes.",
+        "Add the sliced green garlic with a pinch of salt. Cook gently for 2–3 minutes until soft and fragrant; do not hard-brown it.",
+        "Add the broccoli and a splash of water. Cover for 2–4 minutes until bright green and just tender.",
+        "Add the kale and another splash of water if needed. Cover for 1–2 minutes, then stir until wilted and tender.",
+        "Add the drained pasta. Turn the heat low or off. Toss with approximately 1/2 cup pesto and splashes of pasta water until glossy.",
+        "Finish with lemon juice and Parmesan to balance the garlic. Add black pepper, olive oil, and adult chili flakes at the table if desired."
+      ],
+      "recipe_yield": "2 adults + Aria; possible adult lunch depending on amount",
+      "recipe_timings": {
+        "prepTime": "PT15M",
+        "cookTime": "PT20M",
+        "totalTime": "PT35M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "1/2 box Brami fusilli pasta",
+          "present": true
+        },
+        {
+          "name": "1/2 package breakfast chicken sausage (10 links), cut into half-coins",
+          "present": true
+        },
+        {
+          "name": "1/2 bag pre-chopped kale",
+          "present": true
+        },
+        {
+          "name": "2 heads broccoli, cut into small florets",
+          "present": true
+        },
+        {
+          "name": "2 green garlic white bulbs, thinly sliced, if available",
+          "present": true
+        },
+        {
+          "name": "6 garlic scapes, trimmed and chopped",
+          "present": true
+        },
+        {
+          "name": "Basil as the pesto herb",
+          "present": false
+        },
+        {
+          "name": "1/4 cup nuts",
+          "present": false
+        },
+        {
+          "name": "1/4–1/3 cup grated Parmesan for the pesto, plus more to finish",
+          "present": false
+        },
+        {
+          "name": "Zest of 1/2 lemon plus 1–2 teaspoons lemon juice for the pesto, plus more to finish",
+          "present": false
+        },
+        {
+          "name": "1/4–1/3 cup olive oil for the pesto, plus 1–2 tablespoons for cooking",
+          "present": false
+        },
+        {
+          "name": "1/2 cup reserved pasta water",
+          "present": false
+        },
+        {
+          "name": "Salt, black pepper, and optional adult chili flakes",
+          "present": true
+        }
+      ],
+      "inventory_fit": {
+        "percent": 54,
+        "matched": 7,
+        "total": 13,
+        "use_first_matches": 2,
+        "use_first_score": 13,
+        "primary_ingredients": [
+          "lacinato kale"
         ],
         "primary_matched": 1,
         "primary_total": 1,
