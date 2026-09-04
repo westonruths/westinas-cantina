@@ -16,6 +16,8 @@ assert meta
 assert set(meta) <= set(recipes_by_id)
 assert all(item["family"] and isinstance(item["active_minutes"], int) for item in meta.values())
 assert all(0 <= item["active_minutes"] < 60 for item in meta.values())
+assert meta["mahi-mahi-lemon-garlic-sauce"] == {"family": "mediterranean", "active_minutes": 15}
+assert meta["julies-eats-treats-air-fryer-broccoli"]["family"] == "universal"
 
 pairings = PLANNER["pairings"]
 assert len(pairings) >= 7

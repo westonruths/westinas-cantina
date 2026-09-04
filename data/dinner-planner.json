@@ -129,8 +129,9 @@
     "feel-good-foodie-shirazi-salad": {"family": "middle_eastern", "active_minutes": 12},
     "feel-good-foodie-tomato-cucumber-avocado-salad": {"family": "mediterranean", "active_minutes": 8},
     "feel-good-foodie-classic-greek-salad": {"family": "mediterranean", "active_minutes": 10},
+    "mahi-mahi-lemon-garlic-sauce": {"family": "mediterranean", "active_minutes": 15},
     "household-rice-cooker-rice": {"family": "universal", "active_minutes": 2},
-    "julies-eats-treats-air-fryer-broccoli": {"family": "american", "active_minutes": 5},
+    "julies-eats-treats-air-fryer-broccoli": {"family": "universal", "active_minutes": 5},
     "household-chicken-thighs-oven-air-fryer": {"family": "universal", "active_minutes": 5},
     "household-caprese-salad": {"family": "mediterranean", "active_minutes": 5}
   },

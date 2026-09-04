@@ -7,7 +7,8 @@ const COMPONENTS = [
   ['carb', 'Carb'],
   ['veggie', 'Vegetable']
 ];
-const PLAN_KEY = 'westinas-cantina-component-plan-v7';
+const MAX_PROTEIN_CATEGORY_DINNERS = 2;
+const PLAN_KEY = 'westinas-cantina-component-plan-v8';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
@@ -139,6 +140,31 @@ function useFirstMatches(recipe) {
 
 function useFirstScore(recipe) {
   return Number(fitData(recipe).use_first_score) || 0;
+}
+
+function proteinCategory(recipe) {
+  const primary = (fitData(recipe).primary_ingredients || []).join(' ');
+  const text = `${primary} ${recipe.title || ''}`.toLowerCase();
+  if (/chicken/.test(text)) return 'chicken';
+  if (/pork/.test(text)) return 'pork';
+  if (/beef|steak/.test(text)) return 'beef';
+  if (/mahi|salmon|shrimp|fish/.test(text)) return 'seafood';
+  if (/turkey/.test(text)) return 'turkey';
+  if (/lamb/.test(text)) return 'lamb';
+  if (/duck/.test(text)) return 'duck';
+  if (/tofu/.test(text)) return 'tofu';
+  return primary.trim().toLowerCase() || 'other';
+}
+
+function proteinCategoryCounts(used) {
+  return Array.from(used).reduce((counts, id) => {
+    const recipe = state.recipes.find((item) => item.id === id);
+    if (recipe && (recipe.component_types || []).includes('protein') && !isAppetizer(recipe)) {
+      const category = proteinCategory(recipe);
+      counts[category] = (counts[category] || 0) + 1;
+    }
+    return counts;
+  }, {});
 }
 
 function fitWidget(recipe, compact = false) {
@@ -415,7 +441,7 @@ function candidatePool(component, excluded = [], day = null) {
   return sortedRecipes(state.recipes.filter((recipe) => {
     const types = recipe.component_types || [];
     const roleMatches = component === 'protein'
-      ? types.includes('protein') && !types.includes('carb') && !isAppetizer(recipe) && !/brine|stock|marinade|sauce/i.test(recipe.title)
+      ? types.includes('protein') && !types.includes('carb') && !types.includes('sauce') && !isAppetizer(recipe) && !/brine|stock|marinade/i.test(recipe.title)
       : component === 'carb'
         ? types.includes('carb') && !types.includes('protein') && !types.includes('soup')
         : types.includes('veggie') && !types.includes('protein') && !types.includes('carb') && !types.includes('soup');
@@ -473,20 +499,25 @@ function pairingIds(pairing) {
   return COMPONENTS.map(([component]) => pairing.components[component]);
 }
 
-function pairingIsAvailable(day, pairing, used) {
+function pairingIsAvailable(day, pairing, used, proteinCounts) {
   const ids = pairingIds(pairing);
   if (new Set(ids).size !== ids.length || ids.some((id) => used.has(id))) return false;
+  const protein = state.recipes.find((item) => item.id === ids[0]);
+  const category = protein ? proteinCategory(protein) : 'other';
+  if ((proteinCounts[category] || 0) >= MAX_PROTEIN_CATEGORY_DINNERS) return false;
   return ids.every((id) => {
     const recipe = state.recipes.find((item) => item.id === id);
     return recipe && primaryAvailable(recipe);
   }) && dinnerFits(day, ids);
 }
 
-function bestFallbackDinner(day, used, allowUsed = false) {
+function bestFallbackDinner(day, used, allowUsed = false, proteinCounts = proteinCategoryCounts(used), allowProteinOverage = false) {
   const pools = Object.fromEntries(COMPONENTS.map(([component]) => [component, candidatePool(component)]));
   let best = null;
   for (const protein of pools.protein) {
     if (!allowUsed && used.has(protein.id)) continue;
+    const category = proteinCategory(protein);
+    if (!allowProteinOverage && (proteinCounts[category] || 0) >= MAX_PROTEIN_CATEGORY_DINNERS) continue;
     for (const carb of pools.carb) {
       if ((!allowUsed && used.has(carb.id)) || carb.id === protein.id) continue;
       for (const veggie of pools.veggie) {
@@ -506,20 +537,25 @@ function bestFallbackDinner(day, used, allowUsed = false) {
 function proposeWeek() {
   state.plan = blankPlan();
   const used = new Set();
+  const proteinCounts = {};
   let complete = 0;
   for (const [day] of DAYS) {
-    const pairing = state.planner?.pairings?.find((candidate) => candidate.day_type === dayType(day) && pairingIsAvailable(day, candidate, used));
-    const ids = pairing ? pairingIds(pairing) : bestFallbackDinner(day, used) || bestFallbackDinner(day, used, true);
+    const pairing = state.planner?.pairings?.find((candidate) => candidate.day_type === dayType(day) && pairingIsAvailable(day, candidate, used, proteinCounts));
+    const ids = pairing
+      ? pairingIds(pairing)
+      : bestFallbackDinner(day, used, false, proteinCounts) || bestFallbackDinner(day, used, true, proteinCounts);
     if (!ids) continue;
     COMPONENTS.forEach(([component], index) => { state.plan[day][component] = ids[index]; });
     ids.forEach((id) => used.add(id));
+    const category = proteinCategory(state.recipes.find((recipe) => recipe.id === ids[0]));
+    proteinCounts[category] = (proteinCounts[category] || 0) + 1;
     complete += 1;
   }
   savePlan();
   renderCalendar();
   announce(complete === DAYS.length
-    ? 'A coherent dinner week is ready; every dinner stays within its active-time budget.'
-    : `${complete} of ${DAYS.length} dinners could be proposed within the pairing and active-time rules.`);
+    ? 'A coherent, protein-rotated dinner week is ready; every dinner stays within its active-time budget.'
+    : `${complete} of ${DAYS.length} dinners could be proposed within the pairing, active-time, and protein-rotation rules.`);
 }
 
 function replaceSlot(day, component, removedId = null) {

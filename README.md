@@ -12,7 +12,7 @@ The site is a dinner planner with two restaurant-style browsing modes:
 Each recipe is published for dinner only (`meal_slots: ["dinner"]`); every planned dinner is assembled from one Protein, one Carb, and one Vegetable component. The planner uses `data/dinner-planner.json` to keep those components cuisine-compatible and under 30 active minutes on weekdays or 60 active minutes on weekends; oven and air-fryer time is excluded.
 
 The planner is a rolling local-date calendar: it starts on the browser’s current day, shows the next seven dates, resets saved plans when the date changes, and reloads itself after local midnight. On page load and every five minutes while open, it checks the latest published aggregate inventory-fit timestamp and reloads when that timestamp changes. The inventory line displays the latest published aggregate refresh date; private inventory is never sent to the browser. Run `scripts/update_inventory_fit.py` and publish the updated data for refreshed inventory fit to appear on the public site.
-The menu is sorted by current use-first urgency, then inventory fit. Recipes whose inferred primary ingredient is explicitly absent are excluded from the menu and suggestion pools. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
+The menu is sorted by current use-first urgency, then inventory fit. Recipes whose inferred primary ingredient is explicitly absent are excluded from the menu and suggestion pools. The automatic calendar limits each protein category to two dinners per seven-day plan; exact recipe reuse is considered only after the category rotation is applied. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
 ## Data provenance
 
