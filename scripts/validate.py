@@ -18,6 +18,20 @@ for first, row in planner['compatibility'].items():
     for second, allowed in row.items():
         assert planner['compatibility'].get(second, {}).get(first) == allowed
 recipe_by_id={r['id']: r for r in data['recipes']}
+expected_basics={
+    'household-rice-cooker-rice': 'carb',
+    'household-roasted-any-vegetable': 'veggie',
+    'household-chicken-thighs-oven-air-fryer': 'protein',
+    'household-caprese-salad': 'veggie',
+}
+for recipe_id, component in expected_basics.items():
+    recipe=recipe_by_id[recipe_id]
+    assert recipe['golden'] and recipe['content_status']=='household_reference'
+    assert recipe['component_types']==[component]
+assert recipe_by_id['household-caprese-salad']['inventory_fit']['primary_present'] is False
+assert recipe_by_id['household-chicken-thighs-oven-air-fryer']['inventory_fit']['primary_present'] is True
+assert planner['compatibility']['universal']['chinese'] and planner['compatibility']['italian']['universal']
+assert len(planner['recipe_meta']) >= len(expected_basics)
 assert len(planner['pairings']) >= 7
 for pairing in planner['pairings']:
     assert pairing['day_type'] in planner['limits']
@@ -59,11 +73,12 @@ assert sum(bool(r['golden']) for r in data['recipes']) >= 7
 ci=data.get('content_import',{})
 linked=sum(bool(r.get('source_url')) for r in data['recipes'])
 embedded=sum(r.get('content_status') in ('extracted','extracted_fallback') for r in data['recipes'])
+household=sum(r.get('content_status') == 'household_reference' for r in data['recipes'])
 assert ci.get('linked_targets')==linked, (ci.get('linked_targets'),linked)
 assert ci.get('extracted')==embedded, (ci.get('extracted'),embedded)
 assert ci.get('extracted')+ci.get('unavailable')==linked, (ci.get('extracted'),ci.get('unavailable'),linked)
 for r in data['recipes']:
-    if r.get('content_status') in ('extracted','extracted_fallback'):
+    if r.get('content_status') in ('extracted','extracted_fallback','household_reference'):
         assert r.get('recipe_ingredients') or r.get('recipe_steps'), r['title']
         steps=[]
         def flatten(value):

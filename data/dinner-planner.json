@@ -11,7 +11,8 @@
       "middle_eastern": true,
       "spanish": true,
       "chinese": false,
-      "east_asian": false
+      "east_asian": false,
+      "universal": true
     },
     "italian": {
       "american": true,
@@ -20,7 +21,8 @@
       "middle_eastern": true,
       "spanish": true,
       "chinese": false,
-      "east_asian": false
+      "east_asian": false,
+      "universal": true
     },
     "mediterranean": {
       "american": true,
@@ -29,7 +31,8 @@
       "middle_eastern": true,
       "spanish": true,
       "chinese": false,
-      "east_asian": false
+      "east_asian": false,
+      "universal": true
     },
     "middle_eastern": {
       "american": true,
@@ -38,7 +41,8 @@
       "middle_eastern": true,
       "spanish": true,
       "chinese": false,
-      "east_asian": false
+      "east_asian": false,
+      "universal": true
     },
     "spanish": {
       "american": true,
@@ -47,7 +51,8 @@
       "middle_eastern": true,
       "spanish": true,
       "chinese": false,
-      "east_asian": false
+      "east_asian": false,
+      "universal": true
     },
     "chinese": {
       "american": false,
@@ -56,7 +61,8 @@
       "middle_eastern": false,
       "spanish": false,
       "chinese": true,
-      "east_asian": true
+      "east_asian": true,
+      "universal": true
     },
     "east_asian": {
       "american": false,
@@ -65,7 +71,18 @@
       "middle_eastern": false,
       "spanish": false,
       "chinese": true,
-      "east_asian": true
+      "east_asian": true,
+      "universal": true
+    },
+    "universal": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": true,
+      "east_asian": true,
+      "universal": true
     }
   },
   "recipe_meta": {
@@ -111,7 +128,11 @@
     "feel-good-foodie-creamy-cucumber-salad": {"family": "american", "active_minutes": 5},
     "feel-good-foodie-shirazi-salad": {"family": "middle_eastern", "active_minutes": 12},
     "feel-good-foodie-tomato-cucumber-avocado-salad": {"family": "mediterranean", "active_minutes": 8},
-    "feel-good-foodie-classic-greek-salad": {"family": "mediterranean", "active_minutes": 10}
+    "feel-good-foodie-classic-greek-salad": {"family": "mediterranean", "active_minutes": 10},
+    "household-rice-cooker-rice": {"family": "universal", "active_minutes": 2},
+    "household-roasted-any-vegetable": {"family": "universal", "active_minutes": 5},
+    "household-chicken-thighs-oven-air-fryer": {"family": "universal", "active_minutes": 5},
+    "household-caprese-salad": {"family": "mediterranean", "active_minutes": 5}
   },
   "pairings": [
     {

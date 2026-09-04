@@ -137,6 +137,8 @@ ALIASES = {
     "sage": ["sage"],
     "rosemary": ["rosemary"],
     "tomato": ["tomatoes", "cherry tomatoes", "heirloom tomatoes", "slicer tomatoes"],
+    "fresh tomato": ["fresh tomatoes", "cherry tomatoes", "heirloom tomatoes", "slicer tomatoes"],
+    "fresh tomatoes": ["fresh tomatoes", "cherry tomatoes", "heirloom tomatoes", "slicer tomatoes"],
     "tomato paste": ["tomato paste"],
     "sundried tomatoes": ["sundried tomatoes"],
     "sun dried tomatoes": ["sun dried tomatoes"],
@@ -291,6 +293,7 @@ def infer_primary_ingredients(recipe):
     types = set(recipe.get("component_types", []))
     ingredient_text = " ".join(normalize(line) for line in public_ingredient_lines(recipe))
     primary_cut_rules = [
+        ("fresh tomato", "fresh tomatoes"),
         ("honeycomb beef tripe", "tripe"),
         ("pork shoulder", "pork shoulder"),
         ("pork belly", "pork belly"),

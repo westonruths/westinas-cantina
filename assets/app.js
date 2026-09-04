@@ -192,7 +192,7 @@ function ingredientMarkup(recipe) {
 }
 
 function sourceCredit(recipe) {
-  const publisher = recipe.source_publisher && recipe.source_publisher !== 'Notion recipe list'
+  const publisher = recipe.source_publisher && !['Notion recipe list', 'Household reference'].includes(recipe.source_publisher)
     ? ` · Source: ${esc(recipe.source_publisher)}`
     : '';
   const originalLink = recipe.source_url
@@ -200,12 +200,14 @@ function sourceCredit(recipe) {
     : '';
   const status = recipe.content_status === 'unavailable'
     ? 'Recipe copy unavailable'
-    : 'In-site recipe copy';
+    : recipe.content_status === 'household_reference'
+      ? 'Household reference'
+      : 'In-site recipe copy';
   return `<span class="source-credit">${status}${publisher}${ratingMarkup(recipe)}${originalLink}</span>`;
 }
 
 function recipeBody(recipe) {
-  const available = ['extracted', 'extracted_fallback'].includes(recipe.content_status);
+  const available = ['extracted', 'extracted_fallback', 'household_reference'].includes(recipe.content_status);
   if (!available) {
     return `<div class="recipe-gap"><strong>Recipe copy unavailable.</strong><span>${esc(recipe.content_error || 'The source did not expose usable ingredient and step data.')}</span></div>`;
   }
