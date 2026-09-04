@@ -42,33 +42,37 @@ BASICS = [
         "recipe_timings": {"prepTime": "PT2M", "totalTime": "PT5M"},
     },
     {
-        "id": "household-roasted-any-vegetable",
-        "title": "Roasted Any Vegetable",
-        "cuisine": "Household basic",
+        "id": "julies-eats-treats-air-fryer-broccoli",
+        "title": "Air Fryer Broccoli",
+        "cuisine": "American",
         "component_types": ["veggie"],
         "meal_slots": ["dinner"],
-        "key_ingredients": ["Vegetable", "Olive oil", "Salt", "Black pepper"],
+        "key_ingredients": ["Broccoli", "Olive oil", "Garlic powder", "Salt", "Black pepper"],
         "tried": False,
         "golden": True,
-        "source_url": None,
-        "source_publisher": "Household reference",
+        "source_url": "https://www.julieseatsandtreats.com/air-fryer-broccoli/",
+        "source_publisher": "Julie’s Eats & Treats",
         "source_entries": 0,
+        "source_rating": None,
         "private_attachment": False,
-        "golden_note": "Weeknight default: roast whichever sturdy vegetable needs using, in the oven or air fryer.",
-        "notes": "Flexible household reference, not a sourced recipe. Current inventory examples include broccoli, beets, and potatoes; cut size determines timing.",
-        "content_status": "household_reference",
-        "content_note": "Short household method with oven and air-fryer timing ranges; vegetable choice is intentionally flexible.",
+        "golden_note": "Golden weeknight broccoli side when fresh broccoli is in inventory.",
+        "notes": "Added after checking the canonical recipe page; chosen for five simple ingredients and an air-fryer-only method.",
+        "content_status": "extracted",
+        "content_note": "Ingredients, method, and timings transcribed from the canonical recipe page; the source has no displayed rating included here.",
         "recipe_ingredients": [
-            "1–2 lb vegetable of choice, cut into similarly sized pieces",
-            "1–2 tablespoons olive or avocado oil",
-            "Salt and black pepper",
+            "4 cups fresh broccoli (about 1 lb, trimmed into even-sized florets)",
+            "1 tablespoon olive oil",
+            "⅛ teaspoon kosher salt",
+            "⅛ teaspoon ground black pepper",
+            "⅛ teaspoon garlic powder",
         ],
         "recipe_steps": [
-            "Toss the vegetable with oil, salt, and pepper. Spread it in one layer on a rimmed sheet pan or in the air-fryer basket.",
-            "Oven: roast at 425°F until browned and tender, usually 20–35 minutes. Air fryer: cook at 400°F until browned and tender, usually 10–18 minutes; shake once if useful.",
+            "Preheat the air fryer to 390°F according to the manufacturer’s instructions.",
+            "Toss the broccoli with olive oil first, then add the salt, pepper, and garlic powder and toss until evenly coated.",
+            "Place the broccoli in the air-fryer basket and cook at 390°F for 7–9 minutes, until roasted to your preference.",
         ],
         "recipe_yield": "2–4 servings",
-        "recipe_timings": {"prepTime": "PT5M", "totalTime": "PT25M"},
+        "recipe_timings": {"prepTime": "PT5M", "cookTime": "PT7M", "totalTime": "PT12M"},
     },
     {
         "id": "household-chicken-thighs-oven-air-fryer",
@@ -147,6 +151,13 @@ def atomic_write(data: dict) -> None:
 def main() -> None:
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     by_id = {recipe["id"]: recipe for recipe in data["recipes"]}
+    migrated = 0
+    legacy_id = "household-roasted-any-vegetable"
+    replacement_id = "julies-eats-treats-air-fryer-broccoli"
+    if legacy_id in by_id and replacement_id not in by_id:
+        data["recipes"] = [recipe for recipe in data["recipes"] if recipe["id"] != legacy_id]
+        by_id.pop(legacy_id)
+        migrated = 1
     added = 0
     updated = 0
     for recipe in BASICS:
@@ -154,7 +165,7 @@ def main() -> None:
             data["recipes"].append(recipe)
             by_id[recipe["id"]] = recipe
             added += 1
-        elif by_id[recipe["id"]].get("content_status") != "household_reference":
+        elif by_id[recipe["id"]].get("content_status") != recipe.get("content_status"):
             by_id[recipe["id"]].update(recipe)
             updated += 1
     data["recipe_count"] = len(data["recipes"])
@@ -165,7 +176,7 @@ def main() -> None:
     data["content_import"]["unavailable"] = sum(r.get("content_status") == "unavailable" for r in data["recipes"])
     data["content_import"]["updated"] = data["updated"]
     atomic_write(data)
-    print(f"catalog now has {len(data['recipes'])} recipes; added {added}; updated {updated} household basics")
+    print(f"catalog now has {len(data['recipes'])} recipes; added {added}; migrated {migrated}; updated {updated} household basics")
 
 
 if __name__ == "__main__":

@@ -9799,74 +9799,6 @@
       }
     },
     {
-      "id": "household-roasted-any-vegetable",
-      "title": "Roasted Any Vegetable",
-      "cuisine": "Household basic",
-      "component_types": [
-        "veggie"
-      ],
-      "meal_slots": [
-        "dinner"
-      ],
-      "key_ingredients": [
-        "Vegetable",
-        "Olive oil",
-        "Salt",
-        "Black pepper"
-      ],
-      "tried": false,
-      "golden": true,
-      "source_url": null,
-      "source_publisher": "Household reference",
-      "source_entries": 0,
-      "private_attachment": false,
-      "golden_note": "Weeknight default: roast whichever sturdy vegetable needs using, in the oven or air fryer.",
-      "notes": "Flexible household reference, not a sourced recipe. Current inventory examples include broccoli, beets, and potatoes; cut size determines timing.",
-      "content_status": "household_reference",
-      "content_note": "Short household method with oven and air-fryer timing ranges; vegetable choice is intentionally flexible.",
-      "recipe_ingredients": [
-        "1–2 lb vegetable of choice, cut into similarly sized pieces",
-        "1–2 tablespoons olive or avocado oil",
-        "Salt and black pepper"
-      ],
-      "recipe_steps": [
-        "Toss the vegetable with oil, salt, and pepper. Spread it in one layer on a rimmed sheet pan or in the air-fryer basket.",
-        "Oven: roast at 425°F until browned and tender, usually 20–35 minutes. Air fryer: cook at 400°F until browned and tender, usually 10–18 minutes; shake once if useful."
-      ],
-      "recipe_yield": "2–4 servings",
-      "recipe_timings": {
-        "prepTime": "PT5M",
-        "totalTime": "PT25M"
-      },
-      "ingredient_inventory": [
-        {
-          "name": "1–2 lb vegetable of choice, cut into similarly sized pieces",
-          "present": false
-        },
-        {
-          "name": "1–2 tablespoons olive or avocado oil",
-          "present": true
-        },
-        {
-          "name": "Salt and black pepper",
-          "present": true
-        }
-      ],
-      "inventory_fit": {
-        "percent": 67,
-        "matched": 2,
-        "total": 3,
-        "use_first_matches": 0,
-        "use_first_score": 0,
-        "primary_ingredients": [],
-        "primary_matched": 0,
-        "primary_total": 0,
-        "primary_present": null,
-        "as_of": "2026-09-03",
-        "basis": "public recipe ingredient lines"
-      }
-    },
-    {
       "id": "household-chicken-thighs-oven-air-fryer",
       "title": "Chicken Thighs (Oven or Air Fryer)",
       "cuisine": "Household basic",
@@ -10009,6 +9941,90 @@
         "as_of": "2026-09-03",
         "basis": "public recipe ingredient lines"
       }
+    },
+    {
+      "id": "julies-eats-treats-air-fryer-broccoli",
+      "title": "Air Fryer Broccoli",
+      "cuisine": "American",
+      "component_types": [
+        "veggie"
+      ],
+      "meal_slots": [
+        "dinner"
+      ],
+      "key_ingredients": [
+        "Broccoli",
+        "Olive oil",
+        "Garlic powder",
+        "Salt",
+        "Black pepper"
+      ],
+      "tried": false,
+      "golden": true,
+      "source_url": "https://www.julieseatsandtreats.com/air-fryer-broccoli/",
+      "source_publisher": "Julie’s Eats & Treats",
+      "source_entries": 0,
+      "source_rating": null,
+      "private_attachment": false,
+      "golden_note": "Golden weeknight broccoli side when fresh broccoli is in inventory.",
+      "notes": "Added after checking the canonical recipe page; chosen for five simple ingredients and an air-fryer-only method.",
+      "content_status": "extracted",
+      "content_note": "Ingredients, method, and timings transcribed from the canonical recipe page; the source has no displayed rating included here.",
+      "recipe_ingredients": [
+        "4 cups fresh broccoli (about 1 lb, trimmed into even-sized florets)",
+        "1 tablespoon olive oil",
+        "⅛ teaspoon kosher salt",
+        "⅛ teaspoon ground black pepper",
+        "⅛ teaspoon garlic powder"
+      ],
+      "recipe_steps": [
+        "Preheat the air fryer to 390°F according to the manufacturer’s instructions.",
+        "Toss the broccoli with olive oil first, then add the salt, pepper, and garlic powder and toss until evenly coated.",
+        "Place the broccoli in the air-fryer basket and cook at 390°F for 7–9 minutes, until roasted to your preference."
+      ],
+      "recipe_yield": "2–4 servings",
+      "recipe_timings": {
+        "prepTime": "PT5M",
+        "cookTime": "PT7M",
+        "totalTime": "PT12M"
+      },
+      "ingredient_inventory": [
+        {
+          "name": "4 cups fresh broccoli (about 1 lb, trimmed into even-sized florets)",
+          "present": true
+        },
+        {
+          "name": "1 tablespoon olive oil",
+          "present": false
+        },
+        {
+          "name": "⅛ teaspoon kosher salt",
+          "present": true
+        },
+        {
+          "name": "⅛ teaspoon ground black pepper",
+          "present": true
+        },
+        {
+          "name": "⅛ teaspoon garlic powder",
+          "present": false
+        }
+      ],
+      "inventory_fit": {
+        "percent": 60,
+        "matched": 3,
+        "total": 5,
+        "use_first_matches": 1,
+        "use_first_score": 10,
+        "primary_ingredients": [
+          "broccoli"
+        ],
+        "primary_matched": 1,
+        "primary_total": 1,
+        "primary_present": true,
+        "as_of": "2026-09-03",
+        "basis": "public recipe ingredient lines"
+      }
     }
   ],
   "visuals": {
@@ -10018,8 +10034,8 @@
   },
   "content_import": {
     "strategy": "JSON-LD recipe fields first, then common recipe-card markup; source-recovered fallbacks used only when canonical page/video content was verified",
-    "linked_targets": 77,
-    "extracted": 76,
+    "linked_targets": 78,
+    "extracted": 77,
     "partial": 0,
     "unavailable": 1,
     "updated": "2026-09-03"

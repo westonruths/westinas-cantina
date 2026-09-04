@@ -19,14 +19,14 @@ for first, row in planner['compatibility'].items():
         assert planner['compatibility'].get(second, {}).get(first) == allowed
 recipe_by_id={r['id']: r for r in data['recipes']}
 expected_basics={
-    'household-rice-cooker-rice': 'carb',
-    'household-roasted-any-vegetable': 'veggie',
-    'household-chicken-thighs-oven-air-fryer': 'protein',
-    'household-caprese-salad': 'veggie',
+    'household-rice-cooker-rice': ('carb', 'household_reference'),
+    'julies-eats-treats-air-fryer-broccoli': ('veggie', 'extracted'),
+    'household-chicken-thighs-oven-air-fryer': ('protein', 'household_reference'),
+    'household-caprese-salad': ('veggie', 'household_reference'),
 }
-for recipe_id, component in expected_basics.items():
+for recipe_id, (component, status) in expected_basics.items():
     recipe=recipe_by_id[recipe_id]
-    assert recipe['golden'] and recipe['content_status']=='household_reference'
+    assert recipe['golden'] and recipe['content_status']==status
     assert recipe['component_types']==[component]
 assert recipe_by_id['household-caprese-salad']['inventory_fit']['primary_present'] is False
 assert recipe_by_id['household-chicken-thighs-oven-air-fryer']['inventory_fit']['primary_present'] is True
