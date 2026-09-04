@@ -12,7 +12,7 @@ const COMPONENTS = [
   ['carb', 'Carb'],
   ['veggie', 'Vegetable']
 ];
-const PLAN_KEY = 'westinas-cantina-component-plan-v5';
+const PLAN_KEY = 'westinas-cantina-component-plan-v6';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
@@ -116,6 +116,57 @@ function fitWidget(recipe, compact = false) {
   const classes = `fit-widget${compact ? ' compact' : ''}${percent === null ? ' unknown' : ''}`;
   const style = `--fit: ${percent === null ? 0 : percent}%;`;
   return `<span class="${classes}" title="${esc(label)}" aria-label="${esc(label)}"><span class="fit-ring" style="${style}"><span>${display}</span></span><span class="fit-copy"><strong>${compact ? 'Fit' : 'On hand'}</strong><small>${percent === null ? 'No public ingredient list' : `${fit.matched} / ${fit.total}`}</small></span></span>`;
+}
+
+function plannerMeta(recipe) {
+  return state.planner?.recipe_meta?.[recipe.id] || null;
+}
+
+function activeMinutes(recipe) {
+  const value = plannerMeta(recipe)?.active_minutes;
+  return Number.isInteger(value) ? value : null;
+}
+
+function dinnerFamily(recipe) {
+  return plannerMeta(recipe)?.family || null;
+}
+
+function dayType(day) {
+  return day === 'saturday' || day === 'sunday' ? 'weekend' : 'weekday';
+}
+
+function dinnerLimit(day) {
+  return state.planner?.limits?.[dayType(day)] ?? (dayType(day) === 'weekend' ? 59 : 29);
+}
+
+function familiesCompatible(first, second) {
+  return Boolean(state.planner?.compatibility?.[first]?.[second]);
+}
+
+function dinnerActiveMinutes(recipes) {
+  const values = recipes.filter(Boolean).map(activeMinutes);
+  return values.every((value) => value !== null) ? values.reduce((sum, value) => sum + value, 0) : null;
+}
+
+function dinnerFits(day, recipeIds) {
+  const recipes = recipeIds.filter(Boolean).map((id) => state.recipes.find((recipe) => recipe.id === id));
+  if (recipes.some((recipe) => !recipe || !plannerMeta(recipe))) return false;
+  const families = recipes.map(dinnerFamily);
+  for (let index = 0; index < families.length; index += 1) {
+    for (let other = index + 1; other < families.length; other += 1) {
+      if (!familiesCompatible(families[index], families[other])) return false;
+    }
+  }
+  const total = dinnerActiveMinutes(recipes);
+  return total !== null && total < dinnerLimit(day);
+}
+
+function dinnerDescription(day) {
+  const ids = COMPONENTS.map(([component]) => state.plan[day][component]);
+  const recipes = ids.map((id) => id ? state.recipes.find((recipe) => recipe.id === id) : null);
+  const total = recipes.every(Boolean) ? dinnerActiveMinutes(recipes) : null;
+  const limit = dinnerLimit(day) + 1;
+  return total === null ? `Dinner · active budget <${limit} min` : `Dinner · ${total} active min of <${limit}`;
 }
 
 function ratingMarkup(recipe) {
@@ -276,10 +327,13 @@ function displayTypes(recipe) {
 function menuEntry(recipe) {
   const tags = displayTypes(recipe).map((type) => labels[type] || type).join(' · ');
   const badges = `${recipe.golden ? '<span class="badge gold">Golden</span>' : ''}${recipe.tried ? '<span class="badge">Tried</span>' : ''}`;
+  const planning = plannerMeta(recipe);
+  const plannerCopy = planning ? ` · ${planning.family} · ${planning.active_minutes} active min` : '';
+  const addAction = planning ? `<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button>` : '';
   const photo = recipe.image_url
     ? `<img class="menu-thumb" src="${esc(recipe.image_url)}" alt="" loading="lazy" referrerpolicy="no-referrer">`
     : '';
-  return `<article class="menu-entry" draggable="true" tabindex="0" data-recipe-id="${esc(recipe.id)}" aria-label="Open ${esc(recipe.title)} recipe"><div class="menu-entry-row">${photo}<div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">⋮⋮</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}${ratingMarkup(recipe)}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}<button class="add-button" type="button" data-add-id="${esc(recipe.id)}">Add</button></div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
+  return `<article class="menu-entry" draggable="${planning ? 'true' : 'false'}" tabindex="0" data-recipe-id="${esc(recipe.id)}" aria-label="Open ${esc(recipe.title)} recipe"><div class="menu-entry-row">${photo}<div class="menu-entry-copy"><span class="drag-handle" aria-hidden="true">${planning ? '⋮⋮' : ''}</span><div><div class="menu-entry-badges">${badges}</div><h3>${esc(recipe.title)}</h3><p class="menu-meta">${esc(recipe.cuisine || 'House recipe')}${tags ? ` · ${esc(tags)}` : ''}${plannerCopy}${ratingMarkup(recipe)}</p></div></div><div class="menu-entry-actions">${fitWidget(recipe, true)}${addAction}</div></div><details class="recipe-details"><summary>View recipe</summary>${recipeBody(recipe)}${sourceCredit(recipe)}</details></article>`;
 }
 
 function renderMenu() {
@@ -314,12 +368,12 @@ function renderCalendar() {
       const recipe = byId.get(state.plan[day][component]);
       return `<section class="meal-slot" data-day="${day}" data-component="${component}" aria-label="${dayLabel} ${componentLabel}"><div class="meal-slot-label"><strong>${componentLabel}</strong><small>${recipe ? 'Planned' : 'Open'}</small></div><div class="meal-slot-content">${recipe ? plannedItem(recipe, day, component) : `<p class="slot-empty">Drop a ${componentLabel.toLowerCase()} here</p><button class="fill-slot" type="button" data-fill-day="${day}" data-fill-component="${component}">Suggest one</button>`}</div></section>`;
     }).join('');
-    return `<article class="day-card"><div class="day-card-heading"><h3>${dayLabel}</h3><span>${day === 'saturday' || day === 'sunday' ? 'Weekend' : 'Weekday'}</span></div>${slots}</article>`;
+    return `<article class="day-card"><div class="day-card-heading"><h3>${dayLabel}</h3><span>${dinnerDescription(day)}</span></div>${slots}</article>`;
   }).join('');
   bindCalendarInteractions();
 }
 
-function candidatePool(component, excluded = []) {
+function candidatePool(component, excluded = [], day = null) {
   const blocked = new Set(excluded);
   return sortedRecipes(state.recipes.filter((recipe) => {
     const types = recipe.component_types || [];
@@ -328,7 +382,10 @@ function candidatePool(component, excluded = []) {
       : component === 'carb'
         ? types.includes('carb') && !types.includes('protein') && !types.includes('soup')
         : types.includes('veggie') && !types.includes('protein') && !types.includes('carb') && !types.includes('soup');
-    return recipe.meal_slots.includes('dinner') && primaryAvailable(recipe) && roleMatches && !blocked.has(recipe.id);
+    const proposedIds = day
+      ? COMPONENTS.map(([key]) => key === component ? recipe.id : state.plan[day][key])
+      : [];
+    return recipe.meal_slots.includes('dinner') && primaryAvailable(recipe) && plannerMeta(recipe) && roleMatches && !blocked.has(recipe.id) && (!day || dinnerFits(day, proposedIds));
   }));
 }
 
@@ -341,7 +398,7 @@ function allPlannedIds(excludedSlot = null) {
 
 function chooseSuggestion(day, component, extraExcluded = []) {
   const excluded = new Set([...allPlannedIds([day, component]), ...extraExcluded]);
-  return candidatePool(component, [...excluded])[0] || candidatePool(component, extraExcluded)[0] || null;
+  return candidatePool(component, [...excluded], day)[0] || null;
 }
 
 function sanitizePlan() {
@@ -350,10 +407,15 @@ function sanitizePlan() {
     for (const [component] of COMPONENTS) {
       const recipeId = state.plan[day][component];
       const recipe = state.recipes.find((item) => item.id === recipeId);
-      if (recipeId && (!recipe || !primaryAvailable(recipe) || !(recipe.component_types || []).includes(component))) {
+      if (recipeId && (!recipe || !primaryAvailable(recipe) || !plannerMeta(recipe) || !(recipe.component_types || []).includes(component))) {
         state.plan[day][component] = null;
         changed = true;
       }
+    }
+    const ids = COMPONENTS.map(([component]) => state.plan[day][component]);
+    if (ids.some(Boolean) && !dinnerFits(day, ids)) {
+      COMPONENTS.forEach(([component]) => { state.plan[day][component] = null; });
+      changed = true;
     }
   }
   return changed;
@@ -370,17 +432,56 @@ function fillOpenSlots() {
   }
 }
 
+function pairingIds(pairing) {
+  return COMPONENTS.map(([component]) => pairing.components[component]);
+}
+
+function pairingIsAvailable(day, pairing, used) {
+  const ids = pairingIds(pairing);
+  if (new Set(ids).size !== ids.length || ids.some((id) => used.has(id))) return false;
+  return ids.every((id) => {
+    const recipe = state.recipes.find((item) => item.id === id);
+    return recipe && primaryAvailable(recipe);
+  }) && dinnerFits(day, ids);
+}
+
+function bestFallbackDinner(day, used) {
+  const pools = Object.fromEntries(COMPONENTS.map(([component]) => [component, candidatePool(component)]));
+  let best = null;
+  for (const protein of pools.protein) {
+    if (used.has(protein.id)) continue;
+    for (const carb of pools.carb) {
+      if (used.has(carb.id) || carb.id === protein.id) continue;
+      for (const veggie of pools.veggie) {
+        const recipes = [protein, carb, veggie];
+        const ids = recipes.map((recipe) => recipe.id);
+        if (used.has(veggie.id) || new Set(ids).size !== ids.length || !dinnerFits(day, ids)) continue;
+        const active = dinnerActiveMinutes(recipes);
+        const score = recipes.reduce((sum, recipe) => sum + useFirstScore(recipe) * 1000 + (fitPercent(recipe) || 0), 0);
+        if (!best || score > best.score || (score === best.score && active < best.active)) best = { ids, score, active };
+      }
+    }
+  }
+  return best?.ids || null;
+}
+
 function proposeWeek() {
   state.plan = blankPlan();
+  const used = new Set();
+  let complete = 0;
   for (const [day] of DAYS) {
-    for (const [component] of COMPONENTS) {
-      const recipe = chooseSuggestion(day, component);
-      if (recipe) state.plan[day][component] = recipe.id;
-    }
+    const pairing = state.planner?.pairings?.find((candidate) => candidate.day_type === dayType(day) && pairingIsAvailable(day, candidate, used));
+    const ids = pairing ? pairingIds(pairing) : bestFallbackDinner(day, used);
+    if (!ids) continue;
+    COMPONENTS.forEach(([component], index) => { state.plan[day][component] = ids[index]; });
+    ids.forEach((id) => used.add(id));
+    complete += 1;
   }
   savePlan();
   renderCalendar();
-  announce('A suggested protein, carb, and vegetable are ready for each dinner.');
+  announce(complete === DAYS.length
+    ? 'A coherent dinner week is ready; every dinner stays within its active-time budget.'
+    : `${complete} of ${DAYS.length} dinners could be proposed within the pairing and active-time rules.`);
 }
 
 function replaceSlot(day, component, removedId = null) {
@@ -393,8 +494,8 @@ function replaceSlot(day, component, removedId = null) {
 
 function putInSlot(day, component, recipeId) {
   const recipe = state.recipes.find((item) => item.id === recipeId);
-  if (!recipe || !primaryAvailable(recipe) || !COMPONENTS.some(([key]) => key === component) || !(recipe.component_types || []).includes(component)) {
-    announce('That recipe does not belong in this component slot.');
+  if (!recipe || !primaryAvailable(recipe) || !COMPONENTS.some(([key]) => key === component) || !plannerMeta(recipe) || !(recipe.component_types || []).includes(component)) {
+    announce('That recipe is not available as a timed dinner component.');
     return;
   }
   const alreadyPlanned = DAYS.some(([otherDay]) => COMPONENTS.some(([otherComponent]) => (otherDay !== day || otherComponent !== component) && state.plan[otherDay][otherComponent] === recipe.id));
@@ -402,10 +503,15 @@ function putInSlot(day, component, recipeId) {
     announce(`${recipe.title} is already planned elsewhere this week.`);
     return;
   }
+  const proposedIds = COMPONENTS.map(([key]) => key === component ? recipe.id : state.plan[day][key]);
+  if (!dinnerFits(day, proposedIds)) {
+    announce('That change would break the dinner pairing or active-time budget.');
+    return;
+  }
   state.plan[day][component] = recipe.id;
   savePlan();
   renderCalendar();
-  announce(`${recipe.title} added to ${day} ${component}.`);
+  announce(`${recipe.title} added to ${day} dinner.`);
 }
 
 function movePlanItem(sourceDay, sourceComponent, destinationDay, destinationComponent) {
@@ -420,6 +526,12 @@ function movePlanItem(sourceDay, sourceComponent, destinationDay, destinationCom
   }
   if (displaced && !(displaced.component_types || []).includes(sourceComponent)) {
     announce('Those two recipes cannot swap component slots.');
+    return;
+  }
+  const sourceIds = COMPONENTS.map(([key]) => key === sourceComponent ? displacedId : state.plan[sourceDay][key]);
+  const destinationIds = COMPONENTS.map(([key]) => key === destinationComponent ? movingId : state.plan[destinationDay][key]);
+  if (!dinnerFits(sourceDay, sourceIds) || !dinnerFits(destinationDay, destinationIds)) {
+    announce('That move would break a dinner pairing or active-time budget.');
     return;
   }
   state.plan[destinationDay][destinationComponent] = movingId;
@@ -505,8 +617,12 @@ function render() {
 
 async function init() {
   addDialogOptions();
-  const response = await fetch('data/recipes.json');
-  const data = await response.json();
+  const [recipesResponse, plannerResponse] = await Promise.all([
+    fetch('data/recipes.json'),
+    fetch('data/dinner-planner.json')
+  ]);
+  const data = await recipesResponse.json();
+  state.planner = await plannerResponse.json();
   state.recipes = data.recipes;
   const saved = localStorage.getItem(PLAN_KEY);
   const invalidPlan = sanitizePlan();

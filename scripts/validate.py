@@ -1,13 +1,34 @@
 #!/usr/bin/env python3
 import json
 import re
+from itertools import combinations
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 data=json.loads((root/'data/recipes.json').read_text())
+planner=json.loads((root/'data/dinner-planner.json').read_text())
 assert data['site_name']=="Westina’s Cantina"
 assert data['recipe_count']==len(data['recipes'])
 assert len({r['id'] for r in data['recipes']})==len(data['recipes'])
 assert data.get('inventory_fit', {}).get('private_source') == 'local household inventory; not published'
+meta=planner['recipe_meta']
+assert planner['limits'] == {'weekday': 29, 'weekend': 59}
+assert meta and set(meta) <= {r['id'] for r in data['recipes']}
+assert all(item.get('family') and isinstance(item.get('active_minutes'), int) and 0 <= item['active_minutes'] < 60 for item in meta.values())
+for first, row in planner['compatibility'].items():
+    for second, allowed in row.items():
+        assert planner['compatibility'].get(second, {}).get(first) == allowed
+recipe_by_id={r['id']: r for r in data['recipes']}
+assert len(planner['pairings']) >= 7
+for pairing in planner['pairings']:
+    assert pairing['day_type'] in planner['limits']
+    components=pairing['components']
+    assert set(components) == {'protein', 'carb', 'veggie'}
+    ids=list(components.values())
+    assert len(set(ids)) == 3 and all(recipe_by_id[id]['id'] in meta for id in ids)
+    families=[meta[id]['family'] for id in ids]
+    assert all(planner['compatibility'][first][second] for first, second in combinations(families, 2))
+    assert pairing['active_minutes'] == sum(meta[id]['active_minutes'] for id in ids)
+    assert pairing['active_minutes'] < planner['limits'][pairing['day_type']]
 for recipe in data['recipes']:
     fit=recipe.get('inventory_fit', {})
     assert fit.get('as_of') and fit.get('basis')

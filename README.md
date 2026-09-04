@@ -9,7 +9,7 @@ The site is a dinner planner with two restaurant-style browsing modes:
 - **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
 - **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
 
-Each recipe is published for dinner only (`meal_slots: ["dinner"]`); every planned dinner is assembled from one Protein, one Carb, and one Vegetable component.
+Each recipe is published for dinner only (`meal_slots: ["dinner"]`); every planned dinner is assembled from one Protein, one Carb, and one Vegetable component. The planner uses `data/dinner-planner.json` to keep those components cuisine-compatible and under 30 active minutes on weekdays or 60 active minutes on weekends; oven and air-fryer time is excluded.
 
 The menu is sorted by current use-first urgency, then inventory fit. Recipes whose inferred primary ingredient is explicitly absent are excluded from the menu and suggestion pools. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
@@ -35,6 +35,7 @@ python3 scripts/refresh_recipe_photos.py
 python3 scripts/update_inventory_fit.py
 python3 scripts/audit_inventory_fit.py
 python3 scripts/validate.py
+python3 scripts/test_dinner_planner.py
 ```
 
 The site is plain static HTML/CSS/JS so it can be hosted directly by GitHub Pages.

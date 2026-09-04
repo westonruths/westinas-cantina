@@ -1,0 +1,195 @@
+{
+  "limits": {
+    "weekday": 29,
+    "weekend": 59
+  },
+  "compatibility": {
+    "american": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": false,
+      "east_asian": false
+    },
+    "italian": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": false,
+      "east_asian": false
+    },
+    "mediterranean": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": false,
+      "east_asian": false
+    },
+    "middle_eastern": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": false,
+      "east_asian": false
+    },
+    "spanish": {
+      "american": true,
+      "italian": true,
+      "mediterranean": true,
+      "middle_eastern": true,
+      "spanish": true,
+      "chinese": false,
+      "east_asian": false
+    },
+    "chinese": {
+      "american": false,
+      "italian": false,
+      "mediterranean": false,
+      "middle_eastern": false,
+      "spanish": false,
+      "chinese": true,
+      "east_asian": true
+    },
+    "east_asian": {
+      "american": false,
+      "italian": false,
+      "mediterranean": false,
+      "middle_eastern": false,
+      "spanish": false,
+      "chinese": true,
+      "east_asian": true
+    }
+  },
+  "recipe_meta": {
+    "twice-cooked-pork-hui-guo-rou": {"family": "chinese", "active_minutes": 15},
+    "egg-drop-soup": {"family": "chinese", "active_minutes": 5},
+    "herb-roasted-rack-of-lamb": {"family": "american", "active_minutes": 7},
+    "pan-seared-chicken-thighs": {"family": "mediterranean", "active_minutes": 12},
+    "peking-duck-mas-version": {"family": "chinese", "active_minutes": 20},
+    "pork-dumplings-with-napa-cabbage": {"family": "chinese", "active_minutes": 55},
+    "salt-pepper-pork-chops": {"family": "chinese", "active_minutes": 18},
+    "braised-beef-shank": {"family": "american", "active_minutes": 12},
+    "chicken-gyros-with-feta-tzatziki": {"family": "mediterranean", "active_minutes": 15},
+    "chongqing-chicken": {"family": "chinese", "active_minutes": 20},
+    "hamburger-helper": {"family": "american", "active_minutes": 18},
+    "lemon-rosemary-chicken": {"family": "american", "active_minutes": 12},
+    "peking-duck-westinas-version": {"family": "chinese", "active_minutes": 25},
+    "roast-chicken": {"family": "american", "active_minutes": 10},
+    "sichuan-fuqi-feipian": {"family": "chinese", "active_minutes": 35},
+    "spicy-cilantro-beef": {"family": "chinese", "active_minutes": 12},
+    "spicy-cumin-lamb": {"family": "chinese", "active_minutes": 10},
+    "feel-good-foodie-grilled-lemon-chicken": {"family": "mediterranean", "active_minutes": 12},
+    "overnight-focaccia": {"family": "italian", "active_minutes": 10},
+    "hasselback-potatoes": {"family": "american", "active_minutes": 12},
+    "fettuccine-alfredo": {"family": "italian", "active_minutes": 12},
+    "foccacia-bread": {"family": "italian", "active_minutes": 10},
+    "10-minute-homemade-ramen": {"family": "chinese", "active_minutes": 5},
+    "biang-biang-noodles": {"family": "chinese", "active_minutes": 25},
+    "fresh-homemade-pasta": {"family": "italian", "active_minutes": 30},
+    "orzo-pasta-salad": {"family": "mediterranean", "active_minutes": 8},
+    "wuhan-hot-dry-noodle": {"family": "chinese", "active_minutes": 12},
+    "feel-good-foodie-lebanese-rice": {"family": "middle_eastern", "active_minutes": 8},
+    "blistered-shishito-peppers": {"family": "spanish", "active_minutes": 10},
+    "korean-bbq-salad": {"family": "east_asian", "active_minutes": 8},
+    "tuscan-kale-salad": {"family": "american", "active_minutes": 15},
+    "baby-bok-choy": {"family": "chinese", "active_minutes": 8},
+    "grilled-artichokes": {"family": "american", "active_minutes": 15},
+    "heirloom-tomato-salad": {"family": "mediterranean", "active_minutes": 5},
+    "spinach-artichoke-dip": {"family": "italian", "active_minutes": 8},
+    "korean-spinach-banchan": {"family": "east_asian", "active_minutes": 8},
+    "roast-cauliflower-with-lemon-garlic-yogurt-sauce": {"family": "mediterranean", "active_minutes": 10},
+    "roasted-cauliflower": {"family": "american", "active_minutes": 8},
+    "feel-good-foodie-how-to-cook-broccoli": {"family": "american", "active_minutes": 8},
+    "feel-good-foodie-creamy-cucumber-salad": {"family": "american", "active_minutes": 5},
+    "feel-good-foodie-shirazi-salad": {"family": "middle_eastern", "active_minutes": 12},
+    "feel-good-foodie-tomato-cucumber-avocado-salad": {"family": "mediterranean", "active_minutes": 8},
+    "feel-good-foodie-classic-greek-salad": {"family": "mediterranean", "active_minutes": 10}
+  },
+  "pairings": [
+    {
+      "id": "lemon-rosemary-chicken-orzo-broccoli",
+      "day_type": "weekday",
+      "family": "american-mediterranean",
+      "active_minutes": 28,
+      "components": {
+        "protein": "lemon-rosemary-chicken",
+        "carb": "orzo-pasta-salad",
+        "veggie": "feel-good-foodie-how-to-cook-broccoli"
+      }
+    },
+    {
+      "id": "roast-chicken-hasselback-heirloom-tomato",
+      "day_type": "weekday",
+      "family": "american",
+      "active_minutes": 27,
+      "components": {
+        "protein": "roast-chicken",
+        "carb": "hasselback-potatoes",
+        "veggie": "heirloom-tomato-salad"
+      }
+    },
+    {
+      "id": "grilled-lemon-chicken-lebanese-rice-tomato-avocado",
+      "day_type": "weekday",
+      "family": "mediterranean-middle-eastern",
+      "active_minutes": 28,
+      "components": {
+        "protein": "feel-good-foodie-grilled-lemon-chicken",
+        "carb": "feel-good-foodie-lebanese-rice",
+        "veggie": "feel-good-foodie-tomato-cucumber-avocado-salad"
+      }
+    },
+    {
+      "id": "herb-lamb-focaccia-roasted-cauliflower",
+      "day_type": "weekday",
+      "family": "american-italian-mediterranean",
+      "active_minutes": 27,
+      "components": {
+        "protein": "herb-roasted-rack-of-lamb",
+        "carb": "overnight-focaccia",
+        "veggie": "roast-cauliflower-with-lemon-garlic-yogurt-sauce"
+      }
+    },
+    {
+      "id": "spicy-cumin-lamb-ramen-korean-salad",
+      "day_type": "weekday",
+      "family": "chinese-east_asian",
+      "active_minutes": 23,
+      "components": {
+        "protein": "spicy-cumin-lamb",
+        "carb": "10-minute-homemade-ramen",
+        "veggie": "korean-bbq-salad"
+      }
+    },
+    {
+      "id": "salt-pepper-pork-wuhan-korean-spinach",
+      "day_type": "weekend",
+      "family": "chinese-east-asian",
+      "active_minutes": 38,
+      "components": {
+        "protein": "salt-pepper-pork-chops",
+        "carb": "wuhan-hot-dry-noodle",
+        "veggie": "korean-spinach-banchan"
+      }
+    },
+    {
+      "id": "chicken-gyros-focaccia-artichokes",
+      "day_type": "weekend",
+      "family": "mediterranean-italian-american",
+      "active_minutes": 40,
+      "components": {
+        "protein": "chicken-gyros-with-feta-tzatziki",
+        "carb": "foccacia-bread",
+        "veggie": "grilled-artichokes"
+      }
+    }
+  ]
+}
