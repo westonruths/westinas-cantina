@@ -16,7 +16,6 @@ const PLAN_KEY = 'westinas-cantina-component-plan-v5';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
-  slot: 'dinner',
   view: params.get('view') === 'components' ? 'components' : 'dishes',
   query: '',
   plan: loadPlan()

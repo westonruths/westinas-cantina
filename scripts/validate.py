@@ -32,7 +32,8 @@ for recipe in data['recipes']:
         assert float(rating['rating']) >= 5.0
         assert int(rating['rating_count']) >= 10
         assert recipe.get('image_url')
-assert all(r['title'] and r['meal_slots'] and r['component_types'] for r in data['recipes'])
+    assert recipe['meal_slots'] == ['dinner'], recipe['title']
+    assert recipe['title'] and recipe['meal_slots'] and recipe['component_types']
 assert sum(bool(r['golden']) for r in data['recipes']) >= 7
 ci=data.get('content_import',{})
 linked=sum(bool(r.get('source_url')) for r in data['recipes'])

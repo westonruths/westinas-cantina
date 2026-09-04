@@ -9,7 +9,7 @@ The site is a dinner planner with two restaurant-style browsing modes:
 - **Dishes:** Main Courses, Proteins, Soups, Appetizers & Small Plates, and Sides & Extras.
 - **Components / Sides:** standalone Proteins, Vegetables & Salads, Carbs & Grains, Soups, and Sauces & Extras.
 
-Each day in the seven-day dinner calendar has three explicit slots—**Protein**, **Carb**, and **Vegetable**. The first visit proposes one distinct component for every slot, and deleting a planned component automatically selects another option for that slot. The plan stores only in the browser’s local storage; it is not published.
+Each recipe is published for dinner only (`meal_slots: ["dinner"]`); every planned dinner is assembled from one Protein, one Carb, and one Vegetable component.
 
 The menu is sorted by current use-first urgency, then inventory fit. Recipes whose inferred primary ingredient is explicitly absent are excluded from the menu and suggestion pools. Fit is deterministic ingredient-line presence coverage, not a quantity or freshness check.
 
