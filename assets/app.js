@@ -445,20 +445,21 @@ function pairingIsAvailable(day, pairing, used) {
   }) && dinnerFits(day, ids);
 }
 
-function bestFallbackDinner(day, used) {
+function bestFallbackDinner(day, used, allowUsed = false) {
   const pools = Object.fromEntries(COMPONENTS.map(([component]) => [component, candidatePool(component)]));
   let best = null;
   for (const protein of pools.protein) {
-    if (used.has(protein.id)) continue;
+    if (!allowUsed && used.has(protein.id)) continue;
     for (const carb of pools.carb) {
-      if (used.has(carb.id) || carb.id === protein.id) continue;
+      if ((!allowUsed && used.has(carb.id)) || carb.id === protein.id) continue;
       for (const veggie of pools.veggie) {
         const recipes = [protein, carb, veggie];
         const ids = recipes.map((recipe) => recipe.id);
-        if (used.has(veggie.id) || new Set(ids).size !== ids.length || !dinnerFits(day, ids)) continue;
+        const reuseCount = ids.filter((id) => used.has(id)).length;
+        if ((!allowUsed && used.has(veggie.id)) || new Set(ids).size !== ids.length || !dinnerFits(day, ids)) continue;
         const active = dinnerActiveMinutes(recipes);
         const score = recipes.reduce((sum, recipe) => sum + useFirstScore(recipe) * 1000 + (fitPercent(recipe) || 0), 0);
-        if (!best || score > best.score || (score === best.score && active < best.active)) best = { ids, score, active };
+        if (!best || reuseCount < best.reuseCount || (reuseCount === best.reuseCount && (score > best.score || (score === best.score && active < best.active)))) best = { ids, score, active, reuseCount };
       }
     }
   }
@@ -471,7 +472,7 @@ function proposeWeek() {
   let complete = 0;
   for (const [day] of DAYS) {
     const pairing = state.planner?.pairings?.find((candidate) => candidate.day_type === dayType(day) && pairingIsAvailable(day, candidate, used));
-    const ids = pairing ? pairingIds(pairing) : bestFallbackDinner(day, used);
+    const ids = pairing ? pairingIds(pairing) : bestFallbackDinner(day, used) || bestFallbackDinner(day, used, true);
     if (!ids) continue;
     COMPONENTS.forEach(([component], index) => { state.plan[day][component] = ids[index]; });
     ids.forEach((id) => used.add(id));
