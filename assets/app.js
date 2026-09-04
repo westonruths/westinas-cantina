@@ -1,25 +1,58 @@
-const DAYS = [
-  ['monday', 'Monday'],
-  ['tuesday', 'Tuesday'],
-  ['wednesday', 'Wednesday'],
-  ['thursday', 'Thursday'],
-  ['friday', 'Friday'],
-  ['saturday', 'Saturday'],
-  ['sunday', 'Sunday']
-];
+const DAY_KEYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+const TODAY = new Date();
+const TODAY_KEY = dateKey(TODAY);
+const DAYS = rollingDays(TODAY);
 const COMPONENTS = [
   ['protein', 'Protein'],
   ['carb', 'Carb'],
   ['veggie', 'Vegetable']
 ];
-const PLAN_KEY = 'westinas-cantina-component-plan-v6';
+const PLAN_KEY = 'westinas-cantina-component-plan-v7';
 const params = new URLSearchParams(location.search);
 const state = {
   recipes: [],
   view: params.get('view') === 'components' ? 'components' : 'dishes',
   query: '',
+  inventoryUpdated: null,
   plan: loadPlan()
 };
+
+function dateKey(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function rollingDays(startDate) {
+  return Array.from({ length: 7 }, (_, offset) => {
+    const date = new Date(startDate);
+    date.setHours(12, 0, 0, 0);
+    date.setDate(startDate.getDate() + offset);
+    return [
+      DAY_KEYS[date.getDay()],
+      date.toLocaleDateString(undefined, { weekday: 'long' }),
+      date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }),
+      dateKey(date)
+    ];
+  });
+}
+
+function readableDate(value) {
+  const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return String(value || '');
+  return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]))
+    .toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function currentPlanSaved() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || '{}');
+    return saved?.anchor_date === TODAY_KEY && saved?.plan && typeof saved.plan === 'object';
+  } catch (error) {
+    return false;
+  }
+}
 const labels = {
   protein: 'Proteins',
   veggie: 'Vegetables & salads',
@@ -46,9 +79,11 @@ function loadPlan() {
   const used = new Set();
   try {
     const saved = JSON.parse(localStorage.getItem(PLAN_KEY) || '{}');
+    if (saved?.anchor_date && saved.anchor_date !== TODAY_KEY) return blank;
+    const savedPlan = saved?.plan && typeof saved.plan === 'object' ? saved.plan : saved;
     for (const [day] of DAYS) {
       for (const [component] of COMPONENTS) {
-        const value = saved?.[day]?.[component];
+        const value = savedPlan?.[day]?.[component];
         if (typeof value === 'string' && !used.has(value)) {
           blank[day][component] = value;
           used.add(value);
@@ -63,7 +98,7 @@ function loadPlan() {
 
 function savePlan() {
   try {
-    localStorage.setItem(PLAN_KEY, JSON.stringify(state.plan));
+    localStorage.setItem(PLAN_KEY, JSON.stringify({ anchor_date: TODAY_KEY, plan: state.plan }));
   } catch (error) {
     console.warn('Could not save the component calendar', error);
   }
@@ -294,7 +329,7 @@ function sortedRecipes(recipes) {
 }
 
 function addDialogOptions() {
-  $('#add-day').innerHTML = DAYS.map(([key, label]) => `<option value="${key}">${label}</option>`).join('');
+  $('#add-day').innerHTML = DAYS.map(([key, label, date]) => `<option value="${key}">${label} · ${date}</option>`).join('');
   $('#add-component').innerHTML = COMPONENTS.map(([key, label]) => `<option value="${key}">${label}</option>`).join('');
 }
 
@@ -365,12 +400,12 @@ function plannedItem(recipe, day, component) {
 
 function renderCalendar() {
   const byId = new Map(state.recipes.map((recipe) => [recipe.id, recipe]));
-  $('#week-calendar').innerHTML = DAYS.map(([day, dayLabel]) => {
+  $('#week-calendar').innerHTML = DAYS.map(([day, dayLabel, dayDate]) => {
     const slots = COMPONENTS.map(([component, componentLabel]) => {
       const recipe = byId.get(state.plan[day][component]);
       return `<section class="meal-slot" data-day="${day}" data-component="${component}" aria-label="${dayLabel} ${componentLabel}"><div class="meal-slot-label"><strong>${componentLabel}</strong><small>${recipe ? 'Planned' : 'Open'}</small></div><div class="meal-slot-content">${recipe ? plannedItem(recipe, day, component) : `<p class="slot-empty">Drop a ${componentLabel.toLowerCase()} here</p><button class="fill-slot" type="button" data-fill-day="${day}" data-fill-component="${component}">Suggest one</button>`}</div></section>`;
     }).join('');
-    return `<article class="day-card"><div class="day-card-heading"><h3>${dayLabel}</h3><span>${dinnerDescription(day)}</span></div>${slots}</article>`;
+    return `<article class="day-card"><div class="day-card-heading"><h3>${dayLabel}</h3><span>${esc(dayDate)} · ${dinnerDescription(day)}</span></div>${slots}</article>`;
   }).join('');
   bindCalendarInteractions();
 }
@@ -618,22 +653,58 @@ function render() {
   renderMenu();
 }
 
+function scheduleDayRollover() {
+  if (typeof window === 'undefined' || typeof window.setTimeout !== 'function') return;
+  const nextDay = new Date();
+  nextDay.setHours(24, 0, 1, 0);
+  window.setTimeout(() => window.location.reload(), Math.max(1000, nextDay.getTime() - Date.now()));
+}
+
+function scheduleInventoryRefresh() {
+  if (typeof window === 'undefined' || typeof window.setTimeout !== 'function' || typeof fetch !== 'function') return;
+  const check = async () => {
+    try {
+      const response = await fetch(`data/recipes.json?refresh=${Date.now()}`, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`inventory data request failed: ${response.status}`);
+      const data = await response.json();
+      const nextUpdated = data.inventory_fit?.updated || data.updated;
+      if (state.inventoryUpdated && nextUpdated && nextUpdated !== state.inventoryUpdated) {
+        window.location.reload();
+        return;
+      }
+    } catch (error) {
+      console.warn('Could not check for an inventory refresh', error);
+    }
+    window.setTimeout(check, 5 * 60 * 1000);
+  };
+  window.setTimeout(check, 5 * 60 * 1000);
+}
+
 async function init() {
   addDialogOptions();
   const [recipesResponse, plannerResponse] = await Promise.all([
-    fetch('data/recipes.json'),
-    fetch('data/dinner-planner.json')
+    fetch(`data/recipes.json?refresh=${Date.now()}`, { cache: 'no-store' }),
+    fetch(`data/dinner-planner.json?refresh=${Date.now()}`, { cache: 'no-store' })
   ]);
   const data = await recipesResponse.json();
   state.planner = await plannerResponse.json();
   state.recipes = data.recipes;
-  const saved = localStorage.getItem(PLAN_KEY);
+  const inventoryDate = data.inventory_fit?.updated || data.updated;
+  state.inventoryUpdated = inventoryDate || null;
+  if ($('#inventory-status')) {
+    $('#inventory-status').textContent = inventoryDate
+      ? `Inventory fit refreshed ${readableDate(inventoryDate)} · private inventory stays local`
+      : 'Inventory fit refresh date unavailable';
+  }
+  const hasCurrentPlan = currentPlanSaved();
   const invalidPlan = sanitizePlan();
-  if (!saved) proposeWeek();
+  if (!hasCurrentPlan) proposeWeek();
   else if (invalidPlan) {
     fillOpenSlots();
     savePlan();
   }
+  scheduleDayRollover();
+  scheduleInventoryRefresh();
   document.querySelectorAll('.view-button').forEach((button) => {
     button.addEventListener('click', () => {
       state.view = button.dataset.view;

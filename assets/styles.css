@@ -36,6 +36,7 @@ button, select { cursor: pointer; }
 .primary-button:hover { background: #3c594a; }
 .clear:hover { border-color: var(--sage-dark); color: var(--sage-dark); }
 .planner-status { min-height: 19px; margin: 9px 0 3px; color: var(--sage-dark); font-size: .72rem; }
+.inventory-status { margin: 0 0 10px; color: var(--muted); font-size: .66rem; }
 
 .week-calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; align-items: start; }
 .day-card { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: rgba(255, 253, 248, .64); overflow: hidden; }
