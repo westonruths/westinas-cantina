@@ -196,12 +196,19 @@ def upsert_by_id(items: list[dict], additions: list[dict], *, replace: bool = Fa
     added = updated = 0
     for item in additions:
         if item["id"] not in by_id:
-            items.append(item)
-            by_id[item["id"]] = item
+            items.append(dict(item))
+            by_id[item["id"]] = items[-1]
             added += 1
         elif replace:
-            by_id[item["id"]].update(item)
-            updated += 1
+            existing = by_id[item["id"]]
+            candidate = dict(existing)
+            candidate.update(item)
+            if "added" in existing:
+                candidate["added"] = existing["added"]
+            if existing != candidate:
+                existing.clear()
+                existing.update(candidate)
+                updated += 1
     return added, updated
 
 
@@ -213,7 +220,8 @@ def main() -> None:
     ]
     catalog_added, catalog_updated = upsert_by_id(catalog["recipes"], CATALOG_ENTRIES, replace=True)
     catalog["recipe_count"] = len(catalog["recipes"])
-    catalog["updated"] = TODAY
+    if catalog_added or catalog_updated:
+        catalog["updated"] = TODAY
     atomic_write(CATALOG_PATH, catalog)
 
     registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
@@ -222,7 +230,8 @@ def main() -> None:
         if recipe["id"] != "household-chicken-sausage-brami-garlic-scape-pesto"
     ]
     registry_added, registry_updated = upsert_by_id(registry["recipes"], REGISTRY_ENTRIES, replace=True)
-    registry["updated"] = TODAY
+    if registry_added or registry_updated:
+        registry["updated"] = TODAY
     atomic_write(REGISTRY_PATH, registry)
 
     offline = json.loads(OFFLINE_PATH.read_text(encoding="utf-8"))
@@ -233,7 +242,8 @@ def main() -> None:
         if recipe["id"] in blessed_ids and recipe.get("registry_status") != "blessed":
             recipe["registry_status"] = "blessed"
             offline_updated += 1
-    offline["updated"] = TODAY
+    if offline_added or offline_updated:
+        offline["updated"] = TODAY
     atomic_write(OFFLINE_PATH, offline)
 
     print(
